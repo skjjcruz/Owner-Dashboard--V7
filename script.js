@@ -171,4 +171,45 @@ className=“bg-slate-800 border border-slate-600 rounded px-3 py-1.5 text-sm te
           value={leagueSeason}
           onChange={(e) => setLeagueSeason(Number(e.target.value))}
           className="bg-slate-800 border border-slate-600
+
+// Add info icon to player cards
+function addInfoIconToPlayerCards() {
+    const playerCards = document.querySelectorAll('.player-card');
+    
+    playerCards.forEach(card => {
+        if (card.querySelector('.player-info-icon')) return;
+        
+        const infoIcon = document.createElement('div');
+        infoIcon.className = 'player-info-icon';
+        infoIcon.innerHTML = 'ⓘ';
+        infoIcon.title = 'View player details';
+        
+        const playerNameEl = card.querySelector('.player-name');
+        if (!playerNameEl) return;
+        
+        const playerName = playerNameEl.textContent.trim();
+        
+        infoIcon.addEventListener('click', (e) => {
+            e.stopPropagation();
+            e.preventDefault();
+            window.location.href = `player-detail.html?player=${encodeURIComponent(playerName)}`;
+        });
+        
+        card.appendChild(infoIcon);
+    });
+}
+
+// Auto-add info icons
+const observer = new MutationObserver(() => {
+    addInfoIconToPlayerCards();
+});
+
+const playerContainer = document.querySelector('.players-grid') || document.body;
+observer.observe(playerContainer, { childList: true, subtree: true });
+
+// Add to existing cards on load
+setTimeout(() => {
+    addInfoIconToPlayerCards();
+}, 500);
+
 ```
