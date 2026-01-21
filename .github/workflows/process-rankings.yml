@@ -21,10 +21,10 @@ jobs:
       
       - name: Process Rankings
         run: node process-excel-rankings.js
-
-      - name: Commit and push if changes
+      
+       - name: Commit and push if changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add players-final.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update rankings" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update rankings" && git 
