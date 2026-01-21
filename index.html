@@ -44,7 +44,7 @@
       { id: 10, name: 'Abdul Carter', pos: 'EDGE', school: 'Penn State', size: '6\'3"', weight: 252, speed: 4.4, tier: 1 },
     ];
 
-    const positions = ['QB', 'RB', 'WR', 'TE', 'EDGE', 'DL', 'LB', 'DB', 'K'];
+    const positions = ['QB', 'RB', 'WR', 'TE', 'EDGE', 'DL', 'LB', 'CB', 'S', 'K'];
 
     async function fetchJSON(url) {
       const res = await fetch(url);
@@ -67,7 +67,7 @@
       const [draftType] = useState('snake');
       const [selectedPos, setSelectedPos] = useState('ALL');
       const [searchTerm, setSearchTerm] = useState('');
-      const [players] = useState(mockPlayers);
+      const [players, setPlayers] = useState([]);
       const [draftPicks, setDraftPicks] = useState({});
       const [selectedPickSlot, setSelectedPickSlot] = useState(null);
       
@@ -102,6 +102,21 @@
         } else {
           setStatus('Enter Sleeper username and click Reload');
         }
+      }, []);
+
+      // Load players from JSON file
+      useEffect(() => {
+        fetch('./players-final.json')
+          .then(res => res.json())
+          .then(data => {
+            console.log(`Loaded ${data.length} players from players-final.json`);
+            setPlayers(data);
+          })
+          .catch(err => {
+            console.error('Error loading players:', err);
+            // Fallback to mock players if JSON fails to load
+            setPlayers(mockPlayers);
+          });
       }, []);
 
       const fetchSleeperUser = async (username) => {
@@ -293,7 +308,8 @@
 
       const filteredPlayers = players.filter(p => {
         const matchesPos = selectedPos === 'ALL' || p.pos === selectedPos;
-        const matchesSearch = p.name.toLowerCase().includes(searchTerm.toLowerCase());
+        const matchesSearch = p.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                             (p.school && p.school.toLowerCase().includes(searchTerm.toLowerCase()));
         const notDrafted = !Object.values(draftPicks).includes(p.id);
         return matchesPos && matchesSearch && notDrafted;
       });
