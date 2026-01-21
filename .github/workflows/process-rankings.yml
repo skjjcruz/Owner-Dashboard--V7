@@ -1,1 +1,32 @@
+name: Process Rankings
+
+on:
+  push:
+    paths:
+      - '**.csv'
+  workflow_dispatch:
+
+jobs:
+  process-rankings:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Process Rankings
+        run: |
+          node process-excel-rankings.js
+      
+      - name: Commit and push if changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add players-final.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update rankings" && git push)
 
