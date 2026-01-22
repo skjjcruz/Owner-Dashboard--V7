@@ -403,23 +403,25 @@
                   className="bg-slate-800 border border-slate-600 rounded px-2 py-1 text-xs text-slate-100 w-20 md:w-32"
                 />
 
+                <label className="text-xs text-slate-400 whitespace-nowrap">League Season:</label>
                 <select
                   value={leagueSeason}
                   onChange={(e) => setLeagueSeason(e.target.value)}
                   className="bg-slate-800 border border-slate-600 rounded px-2 py-1 text-xs text-slate-100"
                 >
                   {['2026', '2025', '2024', '2023'].map(year => (
-                    <option key={year} value={year}>LSn: {year}</option>
+                    <option key={year} value={year}>{year}</option>
                   ))}
                 </select>
 
+                <label className="text-xs text-slate-400 whitespace-nowrap">Stats Season:</label>
                 <select
                   value={statsSeason}
                   onChange={(e) => setStatsSeason(e.target.value)}
                   className="bg-slate-800 border border-slate-600 rounded px-2 py-1 text-xs text-slate-100"
                 >
                   {['2025', '2024', '2023', '2022'].map(year => (
-                    <option key={year} value={year}>SSn: {year}</option>
+                    <option key={year} value={year}>{year}</option>
                   ))}
                 </select>
 
