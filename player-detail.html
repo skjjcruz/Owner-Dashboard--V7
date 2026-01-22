@@ -12,46 +12,49 @@
             box-sizing: border-box;
         }
 
-```
-    body {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-        background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-        min-height: 100vh;
-        padding: 20px;
-    }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #020617;
+            min-height: 100vh;
+            padding: 20px;
+            color: #f1f5f9;
+        }
 
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        background: white;
-        border-radius: 16px;
-        box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-        overflow: hidden;
-    }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #0f172a;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+            overflow: hidden;
+            border: 1px solid #334155;
+        }
 
-    .header {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        padding: 30px;
-        color: white;
-    }
+        .header {
+            background: #1e293b;
+            padding: 30px;
+            color: white;
+            border-bottom: 2px solid #eab308;
+        }
 
-    .back-button {
-        display: inline-block;
-        padding: 10px 20px;
-        background: rgba(255,255,255,0.2);
-        border: 2px solid white;
-        border-radius: 8px;
-        color: white;
-        text-decoration: none;
-        font-weight: 600;
-        margin-bottom: 20px;
-        transition: all 0.3s;
-    }
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #334155;
+            border: 2px solid #eab308;
+            border-radius: 8px;
+            color: #eab308;
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 20px;
+            transition: all 0.3s;
+        }
 
-    .back-button:hover {
-        background: rgba(255,255,255,0.3);
-        transform: translateX(-5px);
-    }
+        .back-button:hover {
+            background: #eab308;
+            color: #0f172a;
+            transform: translateX(-5px);
+        }
 
     .player-header {
         display: flex;
@@ -64,8 +67,8 @@
         height: 200px;
         border-radius: 12px;
         object-fit: cover;
-        border: 4px solid rgba(255,255,255,0.3);
-        background: rgba(255,255,255,0.1);
+        border: 4px solid #eab308;
+        background: #334155;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -85,15 +88,17 @@
     }
 
     .meta-item {
-        background: rgba(255,255,255,0.2);
+        background: #334155;
         padding: 8px 16px;
         border-radius: 20px;
         font-size: 14px;
         font-weight: 600;
+        color: #eab308;
     }
 
     .content {
         padding: 30px;
+        background: #0f172a;
     }
 
     .section {
@@ -102,21 +107,21 @@
 
     .section-title {
         font-size: 24px;
-        color: #333;
+        color: #eab308;
         margin-bottom: 20px;
         padding-bottom: 10px;
-        border-bottom: 3px solid #667eea;
+        border-bottom: 3px solid #eab308;
         display: inline-block;
     }
 
     .player-summary {
         font-size: 16px;
         line-height: 1.8;
-        color: #555;
-        background: #f8f9fa;
+        color: #cbd5e1;
+        background: #1e293b;
         padding: 20px;
         border-radius: 8px;
-        border-left: 4px solid #667eea;
+        border-left: 4px solid #eab308;
     }
 
     .video-container {
@@ -140,14 +145,15 @@
     .rankings-table {
         width: 100%;
         border-collapse: collapse;
-        box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        box-shadow: 0 2px 15px rgba(0,0,0,0.3);
         border-radius: 8px;
         overflow: hidden;
+        background: #1e293b;
     }
 
     .rankings-table th {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        color: white;
+        background: #334155;
+        color: #eab308;
         padding: 15px;
         text-align: left;
         font-weight: 600;
@@ -155,17 +161,18 @@
 
     .rankings-table td {
         padding: 15px;
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px solid #334155;
+        color: #cbd5e1;
     }
 
     .rankings-table tr:hover {
-        background: #f8f9fa;
+        background: #334155;
     }
 
     .rank-badge {
         display: inline-block;
-        background: #667eea;
-        color: white;
+        background: #eab308;
+        color: #0f172a;
         padding: 4px 12px;
         border-radius: 12px;
         font-weight: 600;
@@ -175,7 +182,7 @@
     .no-data {
         text-align: center;
         padding: 40px;
-        color: #999;
+        color: #64748b;
         font-style: italic;
     }
 
@@ -183,7 +190,7 @@
         text-align: center;
         padding: 60px;
         font-size: 18px;
-        color: #667eea;
+        color: #eab308;
     }
 
     .player-stats {
@@ -194,7 +201,8 @@
     }
 
     .stat-card {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: #1e293b;
+        border: 2px solid #334155;
         color: white;
         padding: 20px;
         border-radius: 12px;
@@ -212,9 +220,9 @@
     .stat-value {
         font-size: 24px;
         font-weight: 700;
+        color: #eab308;
     }
 </style>
-```
 
 </head>
 <body>
@@ -234,7 +242,6 @@
             </div>
         </div>
 
-```
     <div class="content">
         <!-- Physical Stats -->
         <div class="section">
@@ -393,7 +400,6 @@
     // Load data on page load
     loadPlayerData();
 </script>
-```
 
 </body>
 </html>
