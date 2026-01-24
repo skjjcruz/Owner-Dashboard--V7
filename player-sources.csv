@@ -1,0 +1,4649 @@
+player_id,source,rank,weight
+1,PFF,1,1.2
+1,PFN,1,0.9
+1,SI,1,0.9
+1,NFL Draft Buzz,1,0.9
+1,Bleacher Report,1,0.8
+1,Athletic,1,1
+1,CBS,1,1
+1,USA Today,1,1
+1,SCOUTD,1,0.8
+1,Mel Kiper,1,1.1
+1,Matt Miller,1,1
+1,Daniel Jeremiah,1,1.1
+1,Dane Brugler,1,1.2
+1,Charlie Campbell,1,1
+2,PFF,2,1.2
+2,PFN,2,0.9
+2,SI,2,0.9
+2,NFL Draft Buzz,2,0.9
+2,Bleacher Report,2,0.8
+2,Athletic,2,1
+2,CBS,2,1
+2,USA Today,2,1
+2,SCOUTD,2,0.8
+2,Mel Kiper,2,1.1
+2,Matt Miller,2,1
+2,Daniel Jeremiah,2,1.1
+2,Dane Brugler,2,1.2
+2,Charlie Campbell,2,1
+3,PFF,3,1.2
+3,PFN,3,0.9
+3,SI,3,0.9
+3,NFL Draft Buzz,3,0.9
+3,Bleacher Report,3,0.8
+3,Athletic,3,1
+3,CBS,3,1
+3,USA Today,3,1
+3,SCOUTD,3,0.8
+3,Mel Kiper,3,1.1
+3,Matt Miller,3,1
+3,Daniel Jeremiah,3,1.1
+3,Dane Brugler,3,1.2
+3,Charlie Campbell,3,1
+4,PFF,4,1.2
+4,PFN,4,0.9
+4,SI,4,0.9
+4,NFL Draft Buzz,4,0.9
+4,Bleacher Report,4,0.8
+4,Athletic,4,1
+4,CBS,4,1
+4,USA Today,4,1
+4,SCOUTD,4,0.8
+4,Mel Kiper,4,1.1
+4,Matt Miller,4,1
+4,Daniel Jeremiah,4,1.1
+4,Dane Brugler,4,1.2
+4,Charlie Campbell,4,1
+5,PFF,4,1.2
+5,PFN,5,0.9
+5,SI,4,0.9
+5,NFL Draft Buzz,4,0.9
+5,Bleacher Report,4,0.8
+5,Athletic,5,1
+5,CBS,4,1
+5,USA Today,4,1
+5,SCOUTD,4,0.8
+5,Mel Kiper,4,1.1
+5,Matt Miller,4,1
+5,Daniel Jeremiah,5,1.1
+5,Dane Brugler,4,1.2
+5,Charlie Campbell,5,1
+6,PFF,5,1.2
+6,PFN,5,0.9
+6,SI,6,0.9
+6,NFL Draft Buzz,6,0.9
+6,Bleacher Report,6,0.8
+6,Athletic,6,1
+6,CBS,5,1
+6,USA Today,6,1
+6,SCOUTD,5,0.8
+6,Mel Kiper,5,1.1
+6,Matt Miller,6,1
+6,Daniel Jeremiah,5,1.1
+6,Dane Brugler,5,1.2
+6,Charlie Campbell,5,1
+7,PFF,7,1.2
+7,PFN,7,0.9
+7,SI,6,0.9
+7,NFL Draft Buzz,6,0.9
+7,Bleacher Report,6,0.8
+7,Athletic,6,1
+7,CBS,6,1
+7,USA Today,7,1
+7,SCOUTD,6,0.8
+7,Mel Kiper,7,1.1
+7,Matt Miller,6,1
+7,Daniel Jeremiah,7,1.1
+7,Dane Brugler,6,1.2
+7,Charlie Campbell,6,1
+8,PFF,8,1.2
+8,PFN,8,0.9
+8,SI,8,0.9
+8,NFL Draft Buzz,7,0.9
+8,Bleacher Report,7,0.8
+8,Athletic,7,1
+8,CBS,8,1
+8,USA Today,8,1
+8,SCOUTD,7,0.8
+8,Mel Kiper,7,1.1
+8,Matt Miller,8,1
+8,Daniel Jeremiah,8,1.1
+8,Dane Brugler,8,1.2
+8,Charlie Campbell,7,1
+9,PFF,8,1.2
+9,PFN,8,0.9
+9,SI,8,0.9
+9,NFL Draft Buzz,8,0.9
+9,Bleacher Report,9,0.8
+9,Athletic,9,1
+9,CBS,8,1
+9,USA Today,8,1
+9,SCOUTD,8,0.8
+9,Mel Kiper,8,1.1
+9,Matt Miller,9,1
+9,Daniel Jeremiah,9,1.1
+9,Dane Brugler,9,1.2
+9,Charlie Campbell,8,1
+10,PFF,9,1.2
+10,PFN,9,0.9
+10,SI,10,0.9
+10,NFL Draft Buzz,8,0.9
+10,Bleacher Report,9,0.8
+10,Athletic,9,1
+10,CBS,10,1
+10,USA Today,8,1
+10,SCOUTD,9,0.8
+10,Mel Kiper,9,1.1
+10,Matt Miller,8,1
+10,Daniel Jeremiah,8,1.1
+10,Dane Brugler,10,1.2
+10,Charlie Campbell,10,1
+11,PFF,12,1.2
+11,PFN,10,0.9
+11,SI,10,0.9
+11,NFL Draft Buzz,10,0.9
+11,Bleacher Report,10,0.8
+11,Athletic,9,1
+11,CBS,12,1
+11,USA Today,11,1
+11,SCOUTD,12,0.8
+11,Mel Kiper,12,1.1
+11,Matt Miller,12,1
+11,Daniel Jeremiah,11,1.1
+11,Dane Brugler,12,1.2
+11,Charlie Campbell,9,1
+12,PFF,12,1.2
+12,PFN,13,0.9
+12,SI,11,0.9
+12,NFL Draft Buzz,10,0.9
+12,Bleacher Report,10,0.8
+12,Athletic,13,1
+12,CBS,11,1
+12,USA Today,12,1
+12,SCOUTD,10,0.8
+12,Mel Kiper,13,1.1
+12,Matt Miller,13,1
+12,Daniel Jeremiah,11,1.1
+12,Dane Brugler,13,1.2
+12,Charlie Campbell,12,1
+13,PFF,11,1.2
+13,PFN,14,0.9
+13,SI,11,0.9
+13,NFL Draft Buzz,11,0.9
+13,Bleacher Report,13,0.8
+13,Athletic,14,1
+13,CBS,11,1
+13,USA Today,14,1
+13,SCOUTD,11,0.8
+13,Mel Kiper,11,1.1
+13,Matt Miller,12,1
+13,Daniel Jeremiah,14,1.1
+13,Dane Brugler,12,1.2
+13,Charlie Campbell,13,1
+14,PFF,12,1.2
+14,PFN,12,0.9
+14,SI,14,0.9
+14,NFL Draft Buzz,13,0.9
+14,Bleacher Report,14,0.8
+14,Athletic,14,1
+14,CBS,14,1
+14,USA Today,15,1
+14,SCOUTD,14,0.8
+14,Mel Kiper,14,1.1
+14,Matt Miller,13,1
+14,Daniel Jeremiah,12,1.1
+14,Dane Brugler,14,1.2
+14,Charlie Campbell,15,1
+15,PFF,12,1.2
+15,PFN,14,0.9
+15,SI,15,0.9
+15,NFL Draft Buzz,12,0.9
+15,Bleacher Report,14,0.8
+15,Athletic,14,1
+15,CBS,16,1
+15,USA Today,13,1
+15,SCOUTD,12,0.8
+15,Mel Kiper,13,1.1
+15,Matt Miller,17,1
+15,Daniel Jeremiah,17,1.1
+15,Dane Brugler,15,1.2
+15,Charlie Campbell,13,1
+16,PFF,16,1.2
+16,PFN,18,0.9
+16,SI,17,0.9
+16,NFL Draft Buzz,17,0.9
+16,Bleacher Report,14,0.8
+16,Athletic,13,1
+16,CBS,13,1
+16,USA Today,15,1
+16,SCOUTD,18,0.8
+16,Mel Kiper,15,1.1
+16,Matt Miller,14,1
+16,Daniel Jeremiah,13,1.1
+16,Dane Brugler,18,1.2
+16,Charlie Campbell,17,1
+17,PFF,17,1.2
+17,PFN,14,0.9
+17,SI,16,0.9
+17,NFL Draft Buzz,15,0.9
+17,Bleacher Report,17,0.8
+17,Athletic,14,1
+17,CBS,14,1
+17,USA Today,16,1
+17,SCOUTD,17,0.8
+17,Mel Kiper,19,1.1
+17,Matt Miller,17,1
+17,Daniel Jeremiah,19,1.1
+17,Dane Brugler,18,1.2
+17,Charlie Campbell,14,1
+18,PFF,16,1.2
+18,PFN,19,0.9
+18,SI,16,0.9
+18,NFL Draft Buzz,16,0.9
+18,Bleacher Report,19,0.8
+18,Athletic,19,1
+18,CBS,19,1
+18,USA Today,20,1
+18,SCOUTD,15,0.8
+18,Mel Kiper,16,1.1
+18,Matt Miller,18,1
+18,Daniel Jeremiah,17,1.1
+18,Dane Brugler,15,1.2
+18,Charlie Campbell,18,1
+19,PFF,16,1.2
+19,PFN,18,0.9
+19,SI,19,0.9
+19,NFL Draft Buzz,16,0.9
+19,Bleacher Report,20,0.8
+19,Athletic,20,1
+19,CBS,17,1
+19,USA Today,21,1
+19,SCOUTD,21,0.8
+19,Mel Kiper,19,1.1
+19,Matt Miller,20,1
+19,Daniel Jeremiah,20,1.1
+19,Dane Brugler,20,1.2
+19,Charlie Campbell,20,1
+20,PFF,17,1.2
+20,PFN,17,0.9
+20,SI,21,0.9
+20,NFL Draft Buzz,20,0.9
+20,Bleacher Report,17,0.8
+20,Athletic,18,1
+20,CBS,20,1
+20,USA Today,19,1
+20,SCOUTD,21,0.8
+20,Mel Kiper,20,1.1
+20,Matt Miller,20,1
+20,Daniel Jeremiah,23,1.1
+20,Dane Brugler,20,1.2
+20,Charlie Campbell,20,1
+21,PFF,17,1.2
+21,PFN,17,0.9
+21,SI,18,0.9
+21,NFL Draft Buzz,20,0.9
+21,Bleacher Report,24,0.8
+21,Athletic,20,1
+21,CBS,22,1
+21,USA Today,22,1
+21,SCOUTD,21,0.8
+21,Mel Kiper,23,1.1
+21,Matt Miller,17,1
+21,Daniel Jeremiah,18,1.1
+21,Dane Brugler,18,1.2
+21,Charlie Campbell,22,1
+22,PFF,24,1.2
+22,PFN,25,0.9
+22,SI,20,0.9
+22,NFL Draft Buzz,18,0.9
+22,Bleacher Report,20,0.8
+22,Athletic,20,1
+22,CBS,18,1
+22,USA Today,22,1
+22,SCOUTD,23,0.8
+22,Mel Kiper,18,1.1
+22,Matt Miller,25,1
+22,Daniel Jeremiah,20,1.1
+22,Dane Brugler,25,1.2
+22,Charlie Campbell,21,1
+23,PFF,19,1.2
+23,PFN,24,0.9
+23,SI,25,0.9
+23,NFL Draft Buzz,22,0.9
+23,Bleacher Report,25,0.8
+23,Athletic,26,1
+23,CBS,20,1
+23,USA Today,19,1
+23,SCOUTD,21,0.8
+23,Mel Kiper,20,1.1
+23,Matt Miller,25,1
+23,Daniel Jeremiah,19,1.1
+23,Dane Brugler,24,1.2
+23,Charlie Campbell,25,1
+24,PFF,26,1.2
+24,PFN,21,0.9
+24,SI,25,0.9
+24,NFL Draft Buzz,27,0.9
+24,Bleacher Report,24,0.8
+24,Athletic,24,1
+24,CBS,24,1
+24,USA Today,24,1
+24,SCOUTD,27,0.8
+24,Mel Kiper,20,1.1
+24,Matt Miller,21,1
+24,Daniel Jeremiah,20,1.1
+24,Dane Brugler,27,1.2
+24,Charlie Campbell,27,1
+25,PFF,23,1.2
+25,PFN,20,0.9
+25,SI,24,0.9
+25,NFL Draft Buzz,26,0.9
+25,Bleacher Report,25,0.8
+25,Athletic,25,1
+25,CBS,28,1
+25,USA Today,26,1
+25,SCOUTD,24,0.8
+25,Mel Kiper,25,1.1
+25,Matt Miller,25,1
+25,Daniel Jeremiah,25,1.1
+25,Dane Brugler,28,1.2
+25,Charlie Campbell,29,1
+26,PFF,26,1.2
+26,PFN,23,0.9
+26,SI,26,0.9
+26,NFL Draft Buzz,27,0.9
+26,Bleacher Report,29,0.8
+26,Athletic,26,1
+26,CBS,24,1
+26,USA Today,29,1
+26,SCOUTD,23,0.8
+26,Mel Kiper,22,1.1
+26,Matt Miller,27,1
+26,Daniel Jeremiah,26,1.1
+26,Dane Brugler,26,1.2
+26,Charlie Campbell,22,1
+27,PFF,22,1.2
+27,PFN,30,0.9
+27,SI,24,0.9
+27,NFL Draft Buzz,28,0.9
+27,Bleacher Report,28,0.8
+27,Athletic,24,1
+27,CBS,27,1
+27,USA Today,24,1
+27,SCOUTD,30,0.8
+27,Mel Kiper,21,1.1
+27,Matt Miller,22,1
+27,Daniel Jeremiah,30,1.1
+27,Dane Brugler,24,1.2
+27,Charlie Campbell,22,1
+28,PFF,29,1.2
+28,PFN,32,0.9
+28,SI,30,0.9
+28,NFL Draft Buzz,24,0.9
+28,Bleacher Report,30,0.8
+28,Athletic,24,1
+28,CBS,23,1
+28,USA Today,25,1
+28,SCOUTD,23,0.8
+28,Mel Kiper,23,1.1
+28,Matt Miller,32,1
+28,Daniel Jeremiah,29,1.1
+28,Dane Brugler,28,1.2
+28,Charlie Campbell,28,1
+29,PFF,28,1.2
+29,PFN,28,0.9
+29,SI,24,0.9
+29,NFL Draft Buzz,24,0.9
+29,Bleacher Report,24,0.8
+29,Athletic,33,1
+29,CBS,30,1
+29,USA Today,28,1
+29,SCOUTD,30,0.8
+29,Mel Kiper,30,1.1
+29,Matt Miller,28,1
+29,Daniel Jeremiah,27,1.1
+29,Dane Brugler,30,1.2
+29,Charlie Campbell,33,1
+30,PFF,34,1.2
+30,PFN,28,0.9
+30,SI,25,0.9
+30,NFL Draft Buzz,29,0.9
+30,Bleacher Report,24,0.8
+30,Athletic,27,1
+30,CBS,24,1
+30,USA Today,29,1
+30,SCOUTD,25,0.8
+30,Mel Kiper,35,1.1
+30,Matt Miller,33,1
+30,Daniel Jeremiah,26,1.1
+30,Dane Brugler,35,1.2
+30,Charlie Campbell,26,1
+31,PFF,29,1.2
+31,PFN,28,0.9
+31,SI,29,0.9
+31,NFL Draft Buzz,27,0.9
+31,Bleacher Report,27,0.8
+31,Athletic,29,1
+31,CBS,35,1
+31,USA Today,31,1
+31,SCOUTD,30,0.8
+31,Mel Kiper,34,1.1
+31,Matt Miller,31,1
+31,Daniel Jeremiah,28,1.1
+31,Dane Brugler,38,1.2
+31,Charlie Campbell,35,1
+32,PFF,35,1.2
+32,PFN,26,0.9
+32,SI,36,0.9
+32,NFL Draft Buzz,33,0.9
+32,Bleacher Report,33,0.8
+32,Athletic,33,1
+32,CBS,32,1
+32,USA Today,32,1
+32,SCOUTD,32,0.8
+32,Mel Kiper,28,1.1
+32,Matt Miller,28,1
+32,Daniel Jeremiah,26,1.1
+32,Dane Brugler,32,1.2
+32,Charlie Campbell,33,1
+33,PFF,30,1.2
+33,PFN,32,0.9
+33,SI,31,0.9
+33,NFL Draft Buzz,31,0.9
+33,Bleacher Report,33,0.8
+33,Athletic,32,1
+33,CBS,36,1
+33,USA Today,35,1
+33,SCOUTD,28,0.8
+33,Mel Kiper,30,1.1
+33,Matt Miller,34,1
+33,Daniel Jeremiah,30,1.1
+33,Dane Brugler,37,1.2
+33,Charlie Campbell,30,1
+34,PFF,37,1.2
+34,PFN,40,0.9
+34,SI,28,0.9
+34,NFL Draft Buzz,28,0.9
+34,Bleacher Report,34,0.8
+34,Athletic,36,1
+34,CBS,30,1
+34,USA Today,35,1
+34,SCOUTD,33,0.8
+34,Mel Kiper,38,1.1
+34,Matt Miller,30,1
+34,Daniel Jeremiah,31,1.1
+34,Dane Brugler,32,1.2
+34,Charlie Campbell,33,1
+35,PFF,38,1.2
+35,PFN,32,0.9
+35,SI,39,0.9
+35,NFL Draft Buzz,29,0.9
+35,Bleacher Report,38,0.8
+35,Athletic,39,1
+35,CBS,36,1
+35,USA Today,28,1
+35,SCOUTD,35,0.8
+35,Mel Kiper,28,1.1
+35,Matt Miller,35,1
+35,Daniel Jeremiah,32,1.1
+35,Dane Brugler,30,1.2
+35,Charlie Campbell,35,1
+36,PFF,40,1.2
+36,PFN,36,0.9
+36,SI,36,0.9
+36,NFL Draft Buzz,34,0.9
+36,Bleacher Report,35,0.8
+36,Athletic,30,1
+36,CBS,36,1
+36,USA Today,30,1
+36,SCOUTD,32,0.8
+36,Mel Kiper,33,1.1
+36,Matt Miller,41,1
+36,Daniel Jeremiah,31,1.1
+36,Dane Brugler,37,1.2
+36,Charlie Campbell,35,1
+37,PFF,40,1.2
+37,PFN,38,0.9
+37,SI,30,0.9
+37,NFL Draft Buzz,42,0.9
+37,Bleacher Report,39,0.8
+37,Athletic,34,1
+37,CBS,31,1
+37,USA Today,30,1
+37,SCOUTD,33,0.8
+37,Mel Kiper,43,1.1
+37,Matt Miller,43,1
+37,Daniel Jeremiah,41,1.1
+37,Dane Brugler,36,1.2
+37,Charlie Campbell,40,1
+38,PFF,39,1.2
+38,PFN,31,0.9
+38,SI,31,0.9
+38,NFL Draft Buzz,44,0.9
+38,Bleacher Report,41,0.8
+38,Athletic,36,1
+38,CBS,42,1
+38,USA Today,34,1
+38,SCOUTD,40,0.8
+38,Mel Kiper,42,1.1
+38,Matt Miller,33,1
+38,Daniel Jeremiah,41,1.1
+38,Dane Brugler,38,1.2
+38,Charlie Campbell,32,1
+39,PFF,43,1.2
+39,PFN,32,0.9
+39,SI,34,0.9
+39,NFL Draft Buzz,45,0.9
+39,Bleacher Report,34,0.8
+39,Athletic,37,1
+39,CBS,32,1
+39,USA Today,43,1
+39,SCOUTD,46,0.8
+39,Mel Kiper,42,1.1
+39,Matt Miller,40,1
+39,Daniel Jeremiah,42,1.1
+39,Dane Brugler,40,1.2
+39,Charlie Campbell,35,1
+40,PFF,39,1.2
+40,PFN,34,0.9
+40,SI,45,0.9
+40,NFL Draft Buzz,38,0.9
+40,Bleacher Report,43,0.8
+40,Athletic,43,1
+40,CBS,43,1
+40,USA Today,40,1
+40,SCOUTD,39,0.8
+40,Mel Kiper,34,1.1
+40,Matt Miller,42,1
+40,Daniel Jeremiah,35,1.1
+40,Dane Brugler,35,1.2
+40,Charlie Campbell,39,1
+41,PFF,43,1.2
+41,PFN,37,0.9
+41,SI,44,0.9
+41,NFL Draft Buzz,43,0.9
+41,Bleacher Report,41,0.8
+41,Athletic,39,1
+41,CBS,46,1
+41,USA Today,36,1
+41,SCOUTD,33,0.8
+41,Mel Kiper,42,1.1
+41,Matt Miller,44,1
+41,Daniel Jeremiah,35,1.1
+41,Dane Brugler,47,1.2
+41,Charlie Campbell,40,1
+42,PFF,42,1.2
+42,PFN,41,0.9
+42,SI,49,0.9
+42,NFL Draft Buzz,47,0.9
+42,Bleacher Report,44,0.8
+42,Athletic,35,1
+42,CBS,35,1
+42,USA Today,44,1
+42,SCOUTD,38,0.8
+42,Mel Kiper,37,1.1
+42,Matt Miller,41,1
+42,Daniel Jeremiah,43,1.1
+42,Dane Brugler,38,1.2
+42,Charlie Campbell,36,1
+43,PFF,42,1.2
+43,PFN,36,0.9
+43,SI,46,0.9
+43,NFL Draft Buzz,42,0.9
+43,Bleacher Report,47,0.8
+43,Athletic,39,1
+43,CBS,48,1
+43,USA Today,35,1
+43,SCOUTD,49,0.8
+43,Mel Kiper,47,1.1
+43,Matt Miller,45,1
+43,Daniel Jeremiah,42,1.1
+43,Dane Brugler,38,1.2
+43,Charlie Campbell,36,1
+44,PFF,36,1.2
+44,PFN,39,0.9
+44,SI,43,0.9
+44,NFL Draft Buzz,41,0.9
+44,Bleacher Report,49,0.8
+44,Athletic,42,1
+44,CBS,51,1
+44,USA Today,36,1
+44,SCOUTD,43,0.8
+44,Mel Kiper,36,1.1
+44,Matt Miller,47,1
+44,Daniel Jeremiah,39,1.1
+44,Dane Brugler,38,1.2
+44,Charlie Campbell,53,1
+45,PFF,36,1.2
+45,PFN,50,0.9
+45,SI,43,0.9
+45,NFL Draft Buzz,47,0.9
+45,Bleacher Report,41,0.8
+45,Athletic,51,1
+45,CBS,49,1
+45,USA Today,51,1
+45,SCOUTD,38,0.8
+45,Mel Kiper,43,1.1
+45,Matt Miller,41,1
+45,Daniel Jeremiah,49,1.1
+45,Dane Brugler,50,1.2
+45,Charlie Campbell,39,1
+46,PFF,50,1.2
+46,PFN,49,0.9
+46,SI,47,0.9
+46,NFL Draft Buzz,46,0.9
+46,Bleacher Report,38,0.8
+46,Athletic,50,1
+46,CBS,40,1
+46,USA Today,48,1
+46,SCOUTD,44,0.8
+46,Mel Kiper,41,1.1
+46,Matt Miller,50,1
+46,Daniel Jeremiah,40,1.1
+46,Dane Brugler,43,1.2
+46,Charlie Campbell,46,1
+47,PFF,38,1.2
+47,PFN,41,0.9
+47,SI,48,0.9
+47,NFL Draft Buzz,43,0.9
+47,Bleacher Report,49,0.8
+47,Athletic,43,1
+47,CBS,43,1
+47,USA Today,49,1
+47,SCOUTD,50,0.8
+47,Mel Kiper,51,1.1
+47,Matt Miller,43,1
+47,Daniel Jeremiah,38,1.1
+47,Dane Brugler,41,1.2
+47,Charlie Campbell,54,1
+48,PFF,53,1.2
+48,PFN,40,0.9
+48,SI,48,0.9
+48,NFL Draft Buzz,45,0.9
+48,Bleacher Report,41,0.8
+48,Athletic,48,1
+48,CBS,55,1
+48,USA Today,41,1
+48,SCOUTD,56,0.8
+48,Mel Kiper,49,1.1
+48,Matt Miller,51,1
+48,Daniel Jeremiah,45,1.1
+48,Dane Brugler,41,1.2
+48,Charlie Campbell,43,1
+49,PFF,51,1.2
+49,PFN,42,0.9
+49,SI,47,0.9
+49,NFL Draft Buzz,54,0.9
+49,Bleacher Report,50,0.8
+49,Athletic,46,1
+49,CBS,48,1
+49,USA Today,43,1
+49,SCOUTD,43,0.8
+49,Mel Kiper,39,1.1
+49,Matt Miller,55,1
+49,Daniel Jeremiah,47,1.1
+49,Dane Brugler,51,1.2
+49,Charlie Campbell,54,1
+50,PFF,51,1.2
+50,PFN,57,0.9
+50,SI,43,0.9
+50,NFL Draft Buzz,55,0.9
+50,Bleacher Report,49,0.8
+50,Athletic,44,1
+50,CBS,48,1
+50,USA Today,48,1
+50,SCOUTD,46,0.8
+50,Mel Kiper,40,1.1
+50,Matt Miller,40,1
+50,Daniel Jeremiah,46,1.1
+50,Dane Brugler,45,1.2
+50,Charlie Campbell,56,1
+51,PFF,54,1.2
+51,PFN,60,0.9
+51,SI,42,0.9
+51,NFL Draft Buzz,46,0.9
+51,Bleacher Report,59,0.8
+51,Athletic,51,1
+51,CBS,58,1
+51,USA Today,50,1
+51,SCOUTD,48,0.8
+51,Mel Kiper,54,1.1
+51,Matt Miller,43,1
+51,Daniel Jeremiah,50,1.1
+51,Dane Brugler,46,1.2
+51,Charlie Campbell,43,1
+52,PFF,52,1.2
+52,PFN,48,0.9
+52,SI,58,0.9
+52,NFL Draft Buzz,60,0.9
+52,Bleacher Report,53,0.8
+52,Athletic,44,1
+52,CBS,57,1
+52,USA Today,47,1
+52,SCOUTD,45,0.8
+52,Mel Kiper,60,1.1
+52,Matt Miller,46,1
+52,Daniel Jeremiah,43,1.1
+52,Dane Brugler,50,1.2
+52,Charlie Campbell,50,1
+53,PFF,52,1.2
+53,PFN,53,0.9
+53,SI,61,0.9
+53,NFL Draft Buzz,54,0.9
+53,Bleacher Report,55,0.8
+53,Athletic,57,1
+53,CBS,48,1
+53,USA Today,43,1
+53,SCOUTD,44,0.8
+53,Mel Kiper,45,1.1
+53,Matt Miller,55,1
+53,Daniel Jeremiah,47,1.1
+53,Dane Brugler,61,1.2
+53,Charlie Campbell,55,1
+54,PFF,61,1.2
+54,PFN,52,0.9
+54,SI,49,0.9
+54,NFL Draft Buzz,56,0.9
+54,Bleacher Report,50,0.8
+54,Athletic,47,1
+54,CBS,57,1
+54,USA Today,45,1
+54,SCOUTD,53,0.8
+54,Mel Kiper,52,1.1
+54,Matt Miller,62,1
+54,Daniel Jeremiah,50,1.1
+54,Dane Brugler,56,1.2
+54,Charlie Campbell,53,1
+55,PFF,55,1.2
+55,PFN,59,0.9
+55,SI,59,0.9
+55,NFL Draft Buzz,63,0.9
+55,Bleacher Report,46,0.8
+55,Athletic,44,1
+55,CBS,47,1
+55,USA Today,47,1
+55,SCOUTD,48,0.8
+55,Mel Kiper,60,1.1
+55,Matt Miller,53,1
+55,Daniel Jeremiah,65,1.1
+55,Dane Brugler,51,1.2
+55,Charlie Campbell,48,1
+56,PFF,55,1.2
+56,PFN,50,0.9
+56,SI,53,0.9
+56,NFL Draft Buzz,59,0.9
+56,Bleacher Report,55,0.8
+56,Athletic,50,1
+56,CBS,60,1
+56,USA Today,56,1
+56,SCOUTD,52,0.8
+56,Mel Kiper,46,1.1
+56,Matt Miller,52,1
+56,Daniel Jeremiah,63,1.1
+56,Dane Brugler,46,1.2
+56,Charlie Campbell,58,1
+57,PFF,61,1.2
+57,PFN,46,0.9
+57,SI,52,0.9
+57,NFL Draft Buzz,63,0.9
+57,Bleacher Report,50,0.8
+57,Athletic,62,1
+57,CBS,64,1
+57,USA Today,65,1
+57,SCOUTD,51,0.8
+57,Mel Kiper,52,1.1
+57,Matt Miller,58,1
+57,Daniel Jeremiah,57,1.1
+57,Dane Brugler,60,1.2
+57,Charlie Campbell,55,1
+58,PFF,65,1.2
+58,PFN,49,0.9
+58,SI,62,0.9
+58,NFL Draft Buzz,51,0.9
+58,Bleacher Report,49,0.8
+58,Athletic,66,1
+58,CBS,60,1
+58,USA Today,57,1
+58,SCOUTD,59,0.8
+58,Mel Kiper,68,1.1
+58,Matt Miller,52,1
+58,Daniel Jeremiah,64,1.1
+58,Dane Brugler,50,1.2
+58,Charlie Campbell,51,1
+59,PFF,55,1.2
+59,PFN,54,0.9
+59,SI,59,0.9
+59,NFL Draft Buzz,52,0.9
+59,Bleacher Report,60,0.8
+59,Athletic,57,1
+59,CBS,48,1
+59,USA Today,63,1
+59,SCOUTD,61,0.8
+59,Mel Kiper,48,1.1
+59,Matt Miller,51,1
+59,Daniel Jeremiah,65,1.1
+59,Dane Brugler,62,1.2
+59,Charlie Campbell,64,1
+60,PFF,62,1.2
+60,PFN,57,0.9
+60,SI,56,0.9
+60,NFL Draft Buzz,58,0.9
+60,Bleacher Report,52,0.8
+60,Athletic,58,1
+60,CBS,50,1
+60,USA Today,72,1
+60,SCOUTD,54,0.8
+60,Mel Kiper,51,1.1
+60,Matt Miller,57,1
+60,Daniel Jeremiah,56,1.1
+60,Dane Brugler,65,1.2
+60,Charlie Campbell,63,1
+61,PFF,59,1.2
+61,PFN,59,0.9
+61,SI,72,0.9
+61,NFL Draft Buzz,71,0.9
+61,Bleacher Report,59,0.8
+61,Athletic,60,1
+61,CBS,55,1
+61,USA Today,55,1
+61,SCOUTD,54,0.8
+61,Mel Kiper,52,1.1
+61,Matt Miller,69,1
+61,Daniel Jeremiah,75,1.1
+61,Dane Brugler,59,1.2
+61,Charlie Campbell,57,1
+62,PFF,52,1.2
+62,PFN,55,0.9
+62,SI,64,0.9
+62,NFL Draft Buzz,52,0.9
+62,Bleacher Report,59,0.8
+62,Athletic,67,1
+62,CBS,68,1
+62,USA Today,65,1
+62,SCOUTD,68,0.8
+62,Mel Kiper,63,1.1
+62,Matt Miller,63,1
+62,Daniel Jeremiah,66,1.1
+62,Dane Brugler,48,1.2
+62,Charlie Campbell,69,1
+63,PFF,59,1.2
+63,PFN,53,0.9
+63,SI,57,0.9
+63,NFL Draft Buzz,61,0.9
+63,Bleacher Report,59,0.8
+63,Athletic,57,1
+63,CBS,70,1
+63,USA Today,51,1
+63,SCOUTD,69,0.8
+63,Mel Kiper,68,1.1
+63,Matt Miller,71,1
+63,Daniel Jeremiah,73,1.1
+63,Dane Brugler,58,1.2
+63,Charlie Campbell,57,1
+64,PFF,73,1.2
+64,PFN,51,0.9
+64,SI,69,0.9
+64,NFL Draft Buzz,67,0.9
+64,Bleacher Report,58,0.8
+64,Athletic,56,1
+64,CBS,66,1
+64,USA Today,71,1
+64,SCOUTD,73,0.8
+64,Mel Kiper,69,1.1
+64,Matt Miller,58,1
+64,Daniel Jeremiah,52,1.1
+64,Dane Brugler,51,1.2
+64,Charlie Campbell,64,1
+65,PFF,60,1.2
+65,PFN,65,0.9
+65,SI,74,0.9
+65,NFL Draft Buzz,54,0.9
+65,Bleacher Report,67,0.8
+65,Athletic,71,1
+65,CBS,68,1
+65,USA Today,73,1
+65,SCOUTD,64,0.8
+65,Mel Kiper,71,1.1
+65,Matt Miller,58,1
+65,Daniel Jeremiah,54,1.1
+65,Dane Brugler,66,1.2
+65,Charlie Campbell,53,1
+66,PFF,57,1.2
+66,PFN,64,0.9
+66,SI,55,0.9
+66,NFL Draft Buzz,67,0.9
+66,Bleacher Report,70,0.8
+66,Athletic,69,1
+66,CBS,67,1
+66,USA Today,75,1
+66,SCOUTD,62,0.8
+66,Mel Kiper,77,1.1
+66,Matt Miller,65,1
+66,Daniel Jeremiah,59,1.1
+66,Dane Brugler,52,1.2
+66,Charlie Campbell,58,1
+67,PFF,70,1.2
+67,PFN,72,0.9
+67,SI,61,0.9
+67,NFL Draft Buzz,58,0.9
+67,Bleacher Report,57,0.8
+67,Athletic,59,1
+67,CBS,73,1
+67,USA Today,61,1
+67,SCOUTD,66,0.8
+67,Mel Kiper,63,1.1
+67,Matt Miller,72,1
+67,Daniel Jeremiah,58,1.1
+67,Dane Brugler,70,1.2
+67,Charlie Campbell,76,1
+68,PFF,70,1.2
+68,PFN,62,0.9
+68,SI,61,0.9
+68,NFL Draft Buzz,59,0.9
+68,Bleacher Report,66,0.8
+68,Athletic,67,1
+68,CBS,77,1
+68,USA Today,59,1
+68,SCOUTD,68,0.8
+68,Mel Kiper,62,1.1
+68,Matt Miller,78,1
+68,Daniel Jeremiah,55,1.1
+68,Dane Brugler,64,1.2
+68,Charlie Campbell,66,1
+69,PFF,54,1.2
+69,PFN,76,0.9
+69,SI,64,0.9
+69,NFL Draft Buzz,72,0.9
+69,Bleacher Report,60,0.8
+69,Athletic,78,1
+69,CBS,71,1
+69,USA Today,61,1
+69,SCOUTD,77,0.8
+69,Mel Kiper,62,1.1
+69,Matt Miller,77,1
+69,Daniel Jeremiah,58,1.1
+69,Dane Brugler,63,1.2
+69,Charlie Campbell,60,1
+70,PFF,65,1.2
+70,PFN,71,0.9
+70,SI,63,0.9
+70,NFL Draft Buzz,75,0.9
+70,Bleacher Report,64,0.8
+70,Athletic,67,1
+70,CBS,76,1
+70,USA Today,70,1
+70,SCOUTD,69,0.8
+70,Mel Kiper,56,1.1
+70,Matt Miller,59,1
+70,Daniel Jeremiah,80,1.1
+70,Dane Brugler,79,1.2
+70,Charlie Campbell,68,1
+71,PFF,81,1.2
+71,PFN,70,0.9
+71,SI,79,0.9
+71,NFL Draft Buzz,72,0.9
+71,Bleacher Report,61,0.8
+71,Athletic,75,1
+71,CBS,72,1
+71,USA Today,78,1
+71,SCOUTD,71,0.8
+71,Mel Kiper,61,1.1
+71,Matt Miller,59,1
+71,Daniel Jeremiah,61,1.1
+71,Dane Brugler,58,1.2
+71,Charlie Campbell,77,1
+72,PFF,85,1.2
+72,PFN,63,0.9
+72,SI,77,0.9
+72,NFL Draft Buzz,76,0.9
+72,Bleacher Report,79,0.8
+72,Athletic,84,1
+72,CBS,71,1
+72,USA Today,65,1
+72,SCOUTD,67,0.8
+72,Mel Kiper,67,1.1
+72,Matt Miller,59,1
+72,Daniel Jeremiah,73,1.1
+72,Dane Brugler,60,1.2
+72,Charlie Campbell,62,1
+73,PFF,65,1.2
+73,PFN,70,0.9
+73,SI,74,0.9
+73,NFL Draft Buzz,82,0.9
+73,Bleacher Report,78,0.8
+73,Athletic,70,1
+73,CBS,62,1
+73,USA Today,68,1
+73,SCOUTD,73,0.8
+73,Mel Kiper,62,1.1
+73,Matt Miller,78,1
+73,Daniel Jeremiah,88,1.1
+73,Dane Brugler,75,1.2
+73,Charlie Campbell,65,1
+74,PFF,65,1.2
+74,PFN,88,0.9
+74,SI,68,0.9
+74,NFL Draft Buzz,65,0.9
+74,Bleacher Report,69,0.8
+74,Athletic,79,1
+74,CBS,76,1
+74,USA Today,72,1
+74,SCOUTD,83,0.8
+74,Mel Kiper,60,1.1
+74,Matt Miller,74,1
+74,Daniel Jeremiah,74,1.1
+74,Dane Brugler,86,1.2
+74,Charlie Campbell,63,1
+75,PFF,64,1.2
+75,PFN,86,0.9
+75,SI,71,0.9
+75,NFL Draft Buzz,71,0.9
+75,Bleacher Report,75,0.8
+75,Athletic,81,1
+75,CBS,84,1
+75,USA Today,80,1
+75,SCOUTD,79,0.8
+75,Mel Kiper,77,1.1
+75,Matt Miller,70,1
+75,Daniel Jeremiah,81,1.1
+75,Dane Brugler,72,1.2
+75,Charlie Campbell,67,1
+76,PFF,64,1.2
+76,PFN,89,0.9
+76,SI,80,0.9
+76,NFL Draft Buzz,76,0.9
+76,Bleacher Report,88,0.8
+76,Athletic,69,1
+76,CBS,64,1
+76,USA Today,68,1
+76,SCOUTD,85,0.8
+76,Mel Kiper,75,1.1
+76,Matt Miller,73,1
+76,Daniel Jeremiah,78,1.1
+76,Dane Brugler,76,1.2
+76,Charlie Campbell,67,1
+77,PFF,75,1.2
+77,PFN,85,0.9
+77,SI,79,0.9
+77,NFL Draft Buzz,84,0.9
+77,Bleacher Report,85,0.8
+77,Athletic,69,1
+77,CBS,74,1
+77,USA Today,68,1
+77,SCOUTD,69,0.8
+77,Mel Kiper,81,1.1
+77,Matt Miller,85,1
+77,Daniel Jeremiah,84,1.1
+77,Dane Brugler,60,1.2
+77,Charlie Campbell,75,1
+78,PFF,83,1.2
+78,PFN,81,0.9
+78,SI,83,0.9
+78,NFL Draft Buzz,87,0.9
+78,Bleacher Report,65,0.8
+78,Athletic,71,1
+78,CBS,92,1
+78,USA Today,90,1
+78,SCOUTD,73,0.8
+78,Mel Kiper,71,1.1
+78,Matt Miller,68,1
+78,Daniel Jeremiah,85,1.1
+78,Dane Brugler,66,1.2
+78,Charlie Campbell,71,1
+79,PFF,73,1.2
+79,PFN,84,0.9
+79,SI,64,0.9
+79,NFL Draft Buzz,72,0.9
+79,Bleacher Report,88,0.8
+79,Athletic,68,1
+79,CBS,70,1
+79,USA Today,92,1
+79,SCOUTD,72,0.8
+79,Mel Kiper,91,1.1
+79,Matt Miller,88,1
+79,Daniel Jeremiah,88,1.1
+79,Dane Brugler,87,1.2
+79,Charlie Campbell,75,1
+80,PFF,88,1.2
+80,PFN,85,0.9
+80,SI,77,0.9
+80,NFL Draft Buzz,79,0.9
+80,Bleacher Report,91,0.8
+80,Athletic,85,1
+80,CBS,73,1
+80,USA Today,65,1
+80,SCOUTD,81,0.8
+80,Mel Kiper,65,1.1
+80,Matt Miller,92,1
+80,Daniel Jeremiah,75,1.1
+80,Dane Brugler,83,1.2
+80,Charlie Campbell,73,1
+81,PFF,88,1.2
+81,PFN,75,0.9
+81,SI,90,0.9
+81,NFL Draft Buzz,78,0.9
+81,Bleacher Report,84,0.8
+81,Athletic,77,1
+81,CBS,82,1
+81,USA Today,85,1
+81,SCOUTD,92,0.8
+81,Mel Kiper,90,1.1
+81,Matt Miller,75,1
+81,Daniel Jeremiah,85,1.1
+81,Dane Brugler,66,1.2
+81,Charlie Campbell,67,1
+82,PFF,96,1.2
+82,PFN,74,0.9
+82,SI,93,0.9
+82,NFL Draft Buzz,69,0.9
+82,Bleacher Report,68,0.8
+82,Athletic,85,1
+82,CBS,76,1
+82,USA Today,82,1
+82,SCOUTD,87,0.8
+82,Mel Kiper,84,1.1
+82,Matt Miller,95,1
+82,Daniel Jeremiah,71,1.1
+82,Dane Brugler,94,1.2
+82,Charlie Campbell,91,1
+83,PFF,87,1.2
+83,PFN,78,0.9
+83,SI,91,0.9
+83,NFL Draft Buzz,92,0.9
+83,Bleacher Report,70,0.8
+83,Athletic,74,1
+83,CBS,83,1
+83,USA Today,68,1
+83,SCOUTD,96,0.8
+83,Mel Kiper,76,1.1
+83,Matt Miller,70,1
+83,Daniel Jeremiah,98,1.1
+83,Dane Brugler,91,1.2
+83,Charlie Campbell,90,1
+84,PFF,78,1.2
+84,PFN,92,0.9
+84,SI,68,0.9
+84,NFL Draft Buzz,96,0.9
+84,Bleacher Report,98,0.8
+84,Athletic,87,1
+84,CBS,89,1
+84,USA Today,93,1
+84,SCOUTD,83,0.8
+84,Mel Kiper,83,1.1
+84,Matt Miller,70,1
+84,Daniel Jeremiah,69,1.1
+84,Dane Brugler,91,1.2
+84,Charlie Campbell,86,1
+85,PFF,81,1.2
+85,PFN,77,0.9
+85,SI,101,0.9
+85,NFL Draft Buzz,84,0.9
+85,Bleacher Report,92,0.8
+85,Athletic,99,1
+85,CBS,87,1
+85,USA Today,82,1
+85,SCOUTD,76,0.8
+85,Mel Kiper,80,1.1
+85,Matt Miller,107,1
+85,Daniel Jeremiah,78,1.1
+85,Dane Brugler,77,1.2
+85,Charlie Campbell,73,1
+86,PFF,92,1.2
+86,PFN,74,0.9
+86,SI,72,0.9
+86,NFL Draft Buzz,82,0.9
+86,Bleacher Report,87,0.8
+86,Athletic,94,1
+86,CBS,98,1
+86,USA Today,85,1
+86,SCOUTD,81,0.8
+86,Mel Kiper,87,1.1
+86,Matt Miller,100,1
+86,Daniel Jeremiah,87,1.1
+86,Dane Brugler,77,1.2
+86,Charlie Campbell,91,1
+87,PFF,81,1.2
+87,PFN,82,0.9
+87,SI,101,0.9
+87,NFL Draft Buzz,82,0.9
+87,Bleacher Report,82,0.8
+87,Athletic,101,1
+87,CBS,73,1
+87,USA Today,95,1
+87,SCOUTD,79,0.8
+87,Mel Kiper,83,1.1
+87,Matt Miller,84,1
+87,Daniel Jeremiah,98,1.1
+87,Dane Brugler,104,1.2
+87,Charlie Campbell,100,1
+88,PFF,91,1.2
+88,PFN,74,0.9
+88,SI,101,0.9
+88,NFL Draft Buzz,86,0.9
+88,Bleacher Report,94,0.8
+88,Athletic,94,1
+88,CBS,94,1
+88,USA Today,78,1
+88,SCOUTD,99,0.8
+88,Mel Kiper,69,1.1
+88,Matt Miller,93,1
+88,Daniel Jeremiah,87,1.1
+88,Dane Brugler,93,1.2
+88,Charlie Campbell,92,1
+89,PFF,89,1.2
+89,PFN,99,0.9
+89,SI,100,0.9
+89,NFL Draft Buzz,102,0.9
+89,Bleacher Report,70,0.8
+89,Athletic,100,1
+89,CBS,75,1
+89,USA Today,94,1
+89,SCOUTD,70,0.8
+89,Mel Kiper,103,1.1
+89,Matt Miller,99,1
+89,Daniel Jeremiah,81,1.1
+89,Dane Brugler,79,1.2
+89,Charlie Campbell,95,1
+90,PFF,93,1.2
+90,PFN,75,0.9
+90,SI,90,0.9
+90,NFL Draft Buzz,73,0.9
+90,Bleacher Report,87,0.8
+90,Athletic,83,1
+90,CBS,91,1
+90,USA Today,106,1
+90,SCOUTD,81,0.8
+90,Mel Kiper,108,1.1
+90,Matt Miller,108,1
+90,Daniel Jeremiah,85,1.1
+90,Dane Brugler,89,1.2
+90,Charlie Campbell,95,1
+91,PFF,84,1.2
+91,PFN,87,0.9
+91,SI,101,0.9
+91,NFL Draft Buzz,95,0.9
+91,Bleacher Report,96,0.8
+91,Athletic,93,1
+91,CBS,95,1
+91,USA Today,85,1
+91,SCOUTD,94,0.8
+91,Mel Kiper,101,1.1
+91,Matt Miller,91,1
+91,Daniel Jeremiah,75,1.1
+91,Dane Brugler,98,1.2
+91,Charlie Campbell,71,1
+92,PFF,82,1.2
+92,PFN,94,0.9
+92,SI,86,0.9
+92,NFL Draft Buzz,98,0.9
+92,Bleacher Report,94,0.8
+92,Athletic,88,1
+92,CBS,104,1
+92,USA Today,100,1
+92,SCOUTD,87,0.8
+92,Mel Kiper,83,1.1
+92,Matt Miller,96,1
+92,Daniel Jeremiah,83,1.1
+92,Dane Brugler,97,1.2
+92,Charlie Campbell,89,1
+93,PFF,91,1.2
+93,PFN,101,0.9
+93,SI,100,0.9
+93,NFL Draft Buzz,102,0.9
+93,Bleacher Report,91,0.8
+93,Athletic,100,1
+93,CBS,95,1
+93,USA Today,89,1
+93,SCOUTD,74,0.8
+93,Mel Kiper,102,1.1
+93,Matt Miller,79,1
+93,Daniel Jeremiah,87,1.1
+93,Dane Brugler,85,1.2
+93,Charlie Campbell,91,1
+94,PFF,98,1.2
+94,PFN,111,0.9
+94,SI,113,0.9
+94,NFL Draft Buzz,104,0.9
+94,Bleacher Report,79,0.8
+94,Athletic,93,1
+94,CBS,87,1
+94,USA Today,95,1
+94,SCOUTD,85,0.8
+94,Mel Kiper,92,1.1
+94,Matt Miller,89,1
+94,Daniel Jeremiah,84,1.1
+94,Dane Brugler,84,1.2
+94,Charlie Campbell,82,1
+95,PFF,81,1.2
+95,PFN,84,0.9
+95,SI,88,0.9
+95,NFL Draft Buzz,104,0.9
+95,Bleacher Report,86,0.8
+95,Athletic,91,1
+95,CBS,91,1
+95,USA Today,108,1
+95,SCOUTD,81,0.8
+95,Mel Kiper,85,1.1
+95,Matt Miller,108,1
+95,Daniel Jeremiah,85,1.1
+95,Dane Brugler,102,1.2
+95,Charlie Campbell,110,1
+96,PFF,79,1.2
+96,PFN,96,0.9
+96,SI,81,0.9
+96,NFL Draft Buzz,85,0.9
+96,Bleacher Report,93,0.8
+96,Athletic,111,1
+96,CBS,93,1
+96,USA Today,95,1
+96,SCOUTD,86,0.8
+96,Mel Kiper,88,1.1
+96,Matt Miller,85,1
+96,Daniel Jeremiah,112,1.1
+96,Dane Brugler,105,1.2
+96,Charlie Campbell,100,1
+97,PFF,113,1.2
+97,PFN,90,0.9
+97,SI,92,0.9
+97,NFL Draft Buzz,81,0.9
+97,Bleacher Report,103,0.8
+97,Athletic,86,1
+97,CBS,78,1
+97,USA Today,93,1
+97,SCOUTD,104,0.8
+97,Mel Kiper,102,1.1
+97,Matt Miller,106,1
+97,Daniel Jeremiah,97,1.1
+97,Dane Brugler,91,1.2
+97,Charlie Campbell,80,1
+98,PFF,82,1.2
+98,PFN,93,0.9
+98,SI,103,0.9
+98,NFL Draft Buzz,101,0.9
+98,Bleacher Report,87,0.8
+98,Athletic,98,1
+98,CBS,87,1
+98,USA Today,90,1
+98,SCOUTD,101,0.8
+98,Mel Kiper,115,1.1
+98,Matt Miller,101,1
+98,Daniel Jeremiah,81,1.1
+98,Dane Brugler,100,1.2
+98,Charlie Campbell,80,1
+99,PFF,95,1.2
+99,PFN,94,0.9
+99,SI,100,0.9
+99,NFL Draft Buzz,111,0.9
+99,Bleacher Report,104,0.8
+99,Athletic,108,1
+99,CBS,93,1
+99,USA Today,85,1
+99,SCOUTD,99,0.8
+99,Mel Kiper,95,1.1
+99,Matt Miller,107,1
+99,Daniel Jeremiah,98,1.1
+99,Dane Brugler,84,1.2
+99,Charlie Campbell,88,1
+100,PFF,116,1.2
+100,PFN,89,0.9
+100,SI,96,0.9
+100,NFL Draft Buzz,119,0.9
+100,Bleacher Report,85,0.8
+100,Athletic,88,1
+100,CBS,90,1
+100,USA Today,103,1
+100,SCOUTD,118,0.8
+100,Mel Kiper,90,1.1
+100,Matt Miller,83,1
+100,Daniel Jeremiah,105,1.1
+100,Dane Brugler,115,1.2
+100,Charlie Campbell,92,1
+101,PFF,81,1.2
+101,PFN,86,0.9
+101,SI,90,0.9
+101,NFL Draft Buzz,105,0.9
+101,Bleacher Report,85,0.8
+101,Athletic,113,1
+101,CBS,111,1
+101,USA Today,119,1
+101,SCOUTD,98,0.8
+101,Mel Kiper,91,1.1
+101,Matt Miller,119,1
+101,Daniel Jeremiah,89,1.1
+101,Dane Brugler,98,1.2
+101,Charlie Campbell,106,1
+102,PFF,115,1.2
+102,PFN,101,0.9
+102,SI,114,0.9
+102,NFL Draft Buzz,99,0.9
+102,Bleacher Report,83,0.8
+102,Athletic,101,1
+102,CBS,82,1
+102,USA Today,81,1
+102,SCOUTD,111,0.8
+102,Mel Kiper,119,1.1
+102,Matt Miller,91,1
+102,Daniel Jeremiah,102,1.1
+102,Dane Brugler,104,1.2
+102,Charlie Campbell,108,1
+103,PFF,112,1.2
+103,PFN,90,0.9
+103,SI,124,0.9
+103,NFL Draft Buzz,96,0.9
+103,Bleacher Report,110,0.8
+103,Athletic,90,1
+103,CBS,117,1
+103,USA Today,103,1
+103,SCOUTD,99,0.8
+103,Mel Kiper,94,1.1
+103,Matt Miller,101,1
+103,Daniel Jeremiah,101,1.1
+103,Dane Brugler,92,1.2
+103,Charlie Campbell,114,1
+104,PFF,93,1.2
+104,PFN,120,0.9
+104,SI,107,0.9
+104,NFL Draft Buzz,101,0.9
+104,Bleacher Report,89,0.8
+104,Athletic,114,1
+104,CBS,86,1
+104,USA Today,92,1
+104,SCOUTD,90,0.8
+104,Mel Kiper,107,1.1
+104,Matt Miller,117,1
+104,Daniel Jeremiah,113,1.1
+104,Dane Brugler,123,1.2
+104,Charlie Campbell,119,1
+105,PFF,113,1.2
+105,PFN,95,0.9
+105,SI,102,0.9
+105,NFL Draft Buzz,104,0.9
+105,Bleacher Report,99,0.8
+105,Athletic,106,1
+105,CBS,117,1
+105,USA Today,123,1
+105,SCOUTD,89,0.8
+105,Mel Kiper,96,1.1
+105,Matt Miller,103,1
+105,Daniel Jeremiah,107,1.1
+105,Dane Brugler,101,1.2
+105,Charlie Campbell,121,1
+106,PFF,97,1.2
+106,PFN,105,0.9
+106,SI,122,0.9
+106,NFL Draft Buzz,87,0.9
+106,Bleacher Report,100,0.8
+106,Athletic,97,1
+106,CBS,118,1
+106,USA Today,119,1
+106,SCOUTD,95,0.8
+106,Mel Kiper,118,1.1
+106,Matt Miller,115,1
+106,Daniel Jeremiah,104,1.1
+106,Dane Brugler,107,1.2
+106,Charlie Campbell,105,1
+107,PFF,122,1.2
+107,PFN,102,0.9
+107,SI,106,0.9
+107,NFL Draft Buzz,102,0.9
+107,Bleacher Report,114,0.8
+107,Athletic,99,1
+107,CBS,103,1
+107,USA Today,120,1
+107,SCOUTD,116,0.8
+107,Mel Kiper,123,1.1
+107,Matt Miller,97,1
+107,Daniel Jeremiah,88,1.1
+107,Dane Brugler,92,1.2
+107,Charlie Campbell,101,1
+108,PFF,112,1.2
+108,PFN,99,0.9
+108,SI,124,0.9
+108,NFL Draft Buzz,131,0.9
+108,Bleacher Report,99,0.8
+108,Athletic,93,1
+108,CBS,95,1
+108,USA Today,95,1
+108,SCOUTD,119,0.8
+108,Mel Kiper,98,1.1
+108,Matt Miller,95,1
+108,Daniel Jeremiah,123,1.1
+108,Dane Brugler,96,1.2
+108,Charlie Campbell,109,1
+109,PFF,92,1.2
+109,PFN,111,0.9
+109,SI,121,0.9
+109,NFL Draft Buzz,119,0.9
+109,Bleacher Report,113,0.8
+109,Athletic,124,1
+109,CBS,123,1
+109,USA Today,89,1
+109,SCOUTD,95,0.8
+109,Mel Kiper,86,1.1
+109,Matt Miller,88,1
+109,Daniel Jeremiah,122,1.1
+109,Dane Brugler,88,1.2
+109,Charlie Campbell,121,1
+110,PFF,94,1.2
+110,PFN,91,0.9
+110,SI,100,0.9
+110,NFL Draft Buzz,95,0.9
+110,Bleacher Report,122,0.8
+110,Athletic,102,1
+110,CBS,125,1
+110,USA Today,110,1
+110,SCOUTD,112,0.8
+110,Mel Kiper,128,1.1
+110,Matt Miller,101,1
+110,Daniel Jeremiah,126,1.1
+110,Dane Brugler,115,1.2
+110,Charlie Campbell,97,1
+111,PFF,91,1.2
+111,PFN,92,0.9
+111,SI,90,0.9
+111,NFL Draft Buzz,121,0.9
+111,Bleacher Report,130,0.8
+111,Athletic,128,1
+111,CBS,107,1
+111,USA Today,107,1
+111,SCOUTD,128,0.8
+111,Mel Kiper,91,1.1
+111,Matt Miller,120,1
+111,Daniel Jeremiah,96,1.1
+111,Dane Brugler,110,1.2
+111,Charlie Campbell,108,1
+112,PFF,124,1.2
+112,PFN,101,0.9
+112,SI,97,0.9
+112,NFL Draft Buzz,107,0.9
+112,Bleacher Report,108,0.8
+112,Athletic,103,1
+112,CBS,123,1
+112,USA Today,117,1
+112,SCOUTD,103,0.8
+112,Mel Kiper,111,1.1
+112,Matt Miller,115,1
+112,Daniel Jeremiah,99,1.1
+112,Dane Brugler,126,1.2
+112,Charlie Campbell,123,1
+113,PFF,114,1.2
+113,PFN,109,0.9
+113,SI,104,0.9
+113,NFL Draft Buzz,127,0.9
+113,Bleacher Report,113,0.8
+113,Athletic,111,1
+113,CBS,105,1
+113,USA Today,91,1
+113,SCOUTD,130,0.8
+113,Mel Kiper,96,1.1
+113,Matt Miller,118,1
+113,Daniel Jeremiah,100,1.1
+113,Dane Brugler,117,1.2
+113,Charlie Campbell,110,1
+114,PFF,120,1.2
+114,PFN,135,0.9
+114,SI,101,0.9
+114,NFL Draft Buzz,107,0.9
+114,Bleacher Report,104,0.8
+114,Athletic,120,1
+114,CBS,102,1
+114,USA Today,107,1
+114,SCOUTD,117,0.8
+114,Mel Kiper,134,1.1
+114,Matt Miller,110,1
+114,Daniel Jeremiah,105,1.1
+114,Dane Brugler,95,1.2
+114,Charlie Campbell,100,1
+115,PFF,96,1.2
+115,PFN,100,0.9
+115,SI,94,0.9
+115,NFL Draft Buzz,117,0.9
+115,Bleacher Report,122,0.8
+115,Athletic,99,1
+115,CBS,129,1
+115,USA Today,135,1
+115,SCOUTD,123,0.8
+115,Mel Kiper,123,1.1
+115,Matt Miller,124,1
+115,Daniel Jeremiah,107,1.1
+115,Dane Brugler,115,1.2
+115,Charlie Campbell,119,1
+116,PFF,131,1.2
+116,PFN,97,0.9
+116,SI,111,0.9
+116,NFL Draft Buzz,99,0.9
+116,Bleacher Report,110,0.8
+116,Athletic,115,1
+116,CBS,134,1
+116,USA Today,143,1
+116,SCOUTD,108,0.8
+116,Mel Kiper,114,1.1
+116,Matt Miller,131,1
+116,Daniel Jeremiah,116,1.1
+116,Dane Brugler,117,1.2
+116,Charlie Campbell,106,1
+117,PFF,128,1.2
+117,PFN,99,0.9
+117,SI,122,0.9
+117,NFL Draft Buzz,136,0.9
+117,Bleacher Report,100,0.8
+117,Athletic,104,1
+117,CBS,107,1
+117,USA Today,100,1
+117,SCOUTD,123,0.8
+117,Mel Kiper,140,1.1
+117,Matt Miller,116,1
+117,Daniel Jeremiah,116,1.1
+117,Dane Brugler,106,1.2
+117,Charlie Campbell,139,1
+118,PFF,123,1.2
+118,PFN,135,0.9
+118,SI,111,0.9
+118,NFL Draft Buzz,109,0.9
+118,Bleacher Report,128,0.8
+118,Athletic,120,1
+118,CBS,92,1
+118,USA Today,119,1
+118,SCOUTD,93,0.8
+118,Mel Kiper,131,1.1
+118,Matt Miller,127,1
+118,Daniel Jeremiah,129,1.1
+118,Dane Brugler,134,1.2
+118,Charlie Campbell,101,1
+119,PFF,96,1.2
+119,PFN,102,0.9
+119,SI,116,0.9
+119,NFL Draft Buzz,128,0.9
+119,Bleacher Report,125,0.8
+119,Athletic,120,1
+119,CBS,118,1
+119,USA Today,99,1
+119,SCOUTD,124,0.8
+119,Mel Kiper,131,1.1
+119,Matt Miller,117,1
+119,Daniel Jeremiah,125,1.1
+119,Dane Brugler,139,1.2
+119,Charlie Campbell,105,1
+120,PFF,146,1.2
+120,PFN,138,0.9
+120,SI,122,0.9
+120,NFL Draft Buzz,104,0.9
+120,Bleacher Report,126,0.8
+120,Athletic,100,1
+120,CBS,143,1
+120,USA Today,131,1
+120,SCOUTD,116,0.8
+120,Mel Kiper,125,1.1
+120,Matt Miller,99,1
+120,Daniel Jeremiah,135,1.1
+120,Dane Brugler,101,1.2
+120,Charlie Campbell,113,1
+121,PFF,112,1.2
+121,PFN,131,0.9
+121,SI,119,0.9
+121,NFL Draft Buzz,119,0.9
+121,Bleacher Report,127,0.8
+121,Athletic,134,1
+121,CBS,122,1
+121,USA Today,107,1
+121,SCOUTD,137,0.8
+121,Mel Kiper,98,1.1
+121,Matt Miller,119,1
+121,Daniel Jeremiah,102,1.1
+121,Dane Brugler,135,1.2
+121,Charlie Campbell,130,1
+122,PFF,133,1.2
+122,PFN,140,0.9
+122,SI,137,0.9
+122,NFL Draft Buzz,103,0.9
+122,Bleacher Report,112,0.8
+122,Athletic,119,1
+122,CBS,137,1
+122,USA Today,116,1
+122,SCOUTD,136,0.8
+122,Mel Kiper,108,1.1
+122,Matt Miller,114,1
+122,Daniel Jeremiah,124,1.1
+122,Dane Brugler,127,1.2
+122,Charlie Campbell,99,1
+123,PFF,112,1.2
+123,PFN,117,0.9
+123,SI,108,0.9
+123,NFL Draft Buzz,110,0.9
+123,Bleacher Report,130,0.8
+123,Athletic,124,1
+123,CBS,108,1
+123,USA Today,148,1
+123,SCOUTD,111,0.8
+123,Mel Kiper,133,1.1
+123,Matt Miller,137,1
+123,Daniel Jeremiah,110,1.1
+123,Dane Brugler,146,1.2
+123,Charlie Campbell,128,1
+124,PFF,133,1.2
+124,PFN,99,0.9
+124,SI,119,0.9
+124,NFL Draft Buzz,144,0.9
+124,Bleacher Report,135,0.8
+124,Athletic,141,1
+124,CBS,129,1
+124,USA Today,141,1
+124,SCOUTD,102,0.8
+124,Mel Kiper,127,1.1
+124,Matt Miller,98,1
+124,Daniel Jeremiah,97,1.1
+124,Dane Brugler,128,1.2
+124,Charlie Campbell,139,1
+125,PFF,122,1.2
+125,PFN,123,0.9
+125,SI,145,0.9
+125,NFL Draft Buzz,114,0.9
+125,Bleacher Report,117,0.8
+125,Athletic,113,1
+125,CBS,151,1
+125,USA Today,107,1
+125,SCOUTD,146,0.8
+125,Mel Kiper,123,1.1
+125,Matt Miller,121,1
+125,Daniel Jeremiah,103,1.1
+125,Dane Brugler,136,1.2
+125,Charlie Campbell,129,1
+126,PFF,107,1.2
+126,PFN,132,0.9
+126,SI,135,0.9
+126,NFL Draft Buzz,114,0.9
+126,Bleacher Report,133,0.8
+126,Athletic,104,1
+126,CBS,119,1
+126,USA Today,145,1
+126,SCOUTD,124,0.8
+126,Mel Kiper,109,1.1
+126,Matt Miller,118,1
+126,Daniel Jeremiah,153,1.1
+126,Dane Brugler,152,1.2
+126,Charlie Campbell,112,1
+127,PFF,141,1.2
+127,PFN,102,0.9
+127,SI,113,0.9
+127,NFL Draft Buzz,121,0.9
+127,Bleacher Report,136,0.8
+127,Athletic,137,1
+127,CBS,121,1
+127,USA Today,143,1
+127,SCOUTD,131,0.8
+127,Mel Kiper,139,1.1
+127,Matt Miller,110,1
+127,Daniel Jeremiah,140,1.1
+127,Dane Brugler,106,1.2
+127,Charlie Campbell,134,1
+128,PFF,159,1.2
+128,PFN,141,0.9
+128,SI,110,0.9
+128,NFL Draft Buzz,110,0.9
+128,Bleacher Report,138,0.8
+128,Athletic,118,1
+128,CBS,128,1
+128,USA Today,124,1
+128,SCOUTD,138,0.8
+128,Mel Kiper,113,1.1
+128,Matt Miller,122,1
+128,Daniel Jeremiah,119,1.1
+128,Dane Brugler,137,1.2
+128,Charlie Campbell,119,1
+129,PFF,119,1.2
+129,PFN,121,0.9
+129,SI,118,0.9
+129,NFL Draft Buzz,128,0.9
+129,Bleacher Report,140,0.8
+129,Athletic,133,1
+129,CBS,120,1
+129,USA Today,123,1
+129,SCOUTD,132,0.8
+129,Mel Kiper,137,1.1
+129,Matt Miller,102,1
+129,Daniel Jeremiah,116,1.1
+129,Dane Brugler,147,1.2
+129,Charlie Campbell,143,1
+130,PFF,143,1.2
+130,PFN,139,0.9
+130,SI,135,0.9
+130,NFL Draft Buzz,128,0.9
+130,Bleacher Report,152,0.8
+130,Athletic,106,1
+130,CBS,126,1
+130,USA Today,147,1
+130,SCOUTD,135,0.8
+130,Mel Kiper,135,1.1
+130,Matt Miller,112,1
+130,Daniel Jeremiah,106,1.1
+130,Dane Brugler,111,1.2
+130,Charlie Campbell,111,1
+131,PFF,132,1.2
+131,PFN,152,0.9
+131,SI,138,0.9
+131,NFL Draft Buzz,150,0.9
+131,Bleacher Report,114,0.8
+131,Athletic,122,1
+131,CBS,124,1
+131,USA Today,153,1
+131,SCOUTD,117,0.8
+131,Mel Kiper,122,1.1
+131,Matt Miller,127,1
+131,Daniel Jeremiah,126,1.1
+131,Dane Brugler,115,1.2
+131,Charlie Campbell,121,1
+132,PFF,115,1.2
+132,PFN,158,0.9
+132,SI,125,0.9
+132,NFL Draft Buzz,122,0.9
+132,Bleacher Report,108,0.8
+132,Athletic,142,1
+132,CBS,123,1
+132,USA Today,143,1
+132,SCOUTD,137,0.8
+132,Mel Kiper,146,1.1
+132,Matt Miller,120,1
+132,Daniel Jeremiah,133,1.1
+132,Dane Brugler,140,1.2
+132,Charlie Campbell,107,1
+133,PFF,109,1.2
+133,PFN,118,0.9
+133,SI,133,0.9
+133,NFL Draft Buzz,136,0.9
+133,Bleacher Report,130,0.8
+133,Athletic,105,1
+133,CBS,140,1
+133,USA Today,148,1
+133,SCOUTD,151,0.8
+133,Mel Kiper,132,1.1
+133,Matt Miller,117,1
+133,Daniel Jeremiah,142,1.1
+133,Dane Brugler,148,1.2
+133,Charlie Campbell,125,1
+134,PFF,124,1.2
+134,PFN,143,0.9
+134,SI,120,0.9
+134,NFL Draft Buzz,116,0.9
+134,Bleacher Report,137,0.8
+134,Athletic,150,1
+134,CBS,144,1
+134,USA Today,156,1
+134,SCOUTD,114,0.8
+134,Mel Kiper,121,1.1
+134,Matt Miller,121,1
+134,Daniel Jeremiah,135,1.1
+134,Dane Brugler,154,1.2
+134,Charlie Campbell,122,1
+135,PFF,155,1.2
+135,PFN,123,0.9
+135,SI,119,0.9
+135,NFL Draft Buzz,131,0.9
+135,Bleacher Report,125,0.8
+135,Athletic,161,1
+135,CBS,116,1
+135,USA Today,130,1
+135,SCOUTD,161,0.8
+135,Mel Kiper,137,1.1
+135,Matt Miller,133,1
+135,Daniel Jeremiah,111,1.1
+135,Dane Brugler,150,1.2
+135,Charlie Campbell,128,1
+136,PFF,138,1.2
+136,PFN,120,0.9
+136,SI,157,0.9
+136,NFL Draft Buzz,152,0.9
+136,Bleacher Report,115,0.8
+136,Athletic,130,1
+136,CBS,154,1
+136,USA Today,108,1
+136,SCOUTD,129,0.8
+136,Mel Kiper,143,1.1
+136,Matt Miller,126,1
+136,Daniel Jeremiah,137,1.1
+136,Dane Brugler,138,1.2
+136,Charlie Campbell,141,1
+137,PFF,129,1.2
+137,PFN,139,0.9
+137,SI,123,0.9
+137,NFL Draft Buzz,140,0.9
+137,Bleacher Report,147,0.8
+137,Athletic,140,1
+137,CBS,128,1
+137,USA Today,144,1
+137,SCOUTD,124,0.8
+137,Mel Kiper,155,1.1
+137,Matt Miller,135,1
+137,Daniel Jeremiah,116,1.1
+137,Dane Brugler,141,1.2
+137,Charlie Campbell,133,1
+138,PFF,152,1.2
+138,PFN,120,0.9
+138,SI,144,0.9
+138,NFL Draft Buzz,141,0.9
+138,Bleacher Report,143,0.8
+138,Athletic,148,1
+138,CBS,125,1
+138,USA Today,136,1
+138,SCOUTD,151,0.8
+138,Mel Kiper,119,1.1
+138,Matt Miller,152,1
+138,Daniel Jeremiah,112,1.1
+138,Dane Brugler,135,1.2
+138,Charlie Campbell,119,1
+139,PFF,160,1.2
+139,PFN,146,0.9
+139,SI,122,0.9
+139,NFL Draft Buzz,133,0.9
+139,Bleacher Report,126,0.8
+139,Athletic,158,1
+139,CBS,119,1
+139,USA Today,131,1
+139,SCOUTD,151,0.8
+139,Mel Kiper,120,1.1
+139,Matt Miller,121,1
+139,Daniel Jeremiah,113,1.1
+139,Dane Brugler,167,1.2
+139,Charlie Campbell,147,1
+140,PFF,135,1.2
+140,PFN,127,0.9
+140,SI,159,0.9
+140,NFL Draft Buzz,117,0.9
+140,Bleacher Report,138,0.8
+140,Athletic,145,1
+140,CBS,139,1
+140,USA Today,155,1
+140,SCOUTD,129,0.8
+140,Mel Kiper,114,1.1
+140,Matt Miller,152,1
+140,Daniel Jeremiah,132,1.1
+140,Dane Brugler,161,1.2
+140,Charlie Campbell,129,1
+141,PFF,135,1.2
+141,PFN,143,0.9
+141,SI,119,0.9
+141,NFL Draft Buzz,159,0.9
+141,Bleacher Report,131,0.8
+141,Athletic,139,1
+141,CBS,135,1
+141,USA Today,157,1
+141,SCOUTD,132,0.8
+141,Mel Kiper,148,1.1
+141,Matt Miller,146,1
+141,Daniel Jeremiah,168,1.1
+141,Dane Brugler,116,1.2
+141,Charlie Campbell,116,1
+142,PFF,158,1.2
+142,PFN,153,0.9
+142,SI,141,0.9
+142,NFL Draft Buzz,123,0.9
+142,Bleacher Report,119,0.8
+142,Athletic,124,1
+142,CBS,140,1
+142,USA Today,154,1
+142,SCOUTD,114,0.8
+142,Mel Kiper,164,1.1
+142,Matt Miller,148,1
+142,Daniel Jeremiah,164,1.1
+142,Dane Brugler,161,1.2
+142,Charlie Campbell,113,1
+143,PFF,161,1.2
+143,PFN,152,0.9
+143,SI,148,0.9
+143,NFL Draft Buzz,135,0.9
+143,Bleacher Report,137,0.8
+143,Athletic,127,1
+143,CBS,168,1
+143,USA Today,120,1
+143,SCOUTD,123,0.8
+143,Mel Kiper,152,1.1
+143,Matt Miller,170,1
+143,Daniel Jeremiah,124,1.1
+143,Dane Brugler,124,1.2
+143,Charlie Campbell,138,1
+144,PFF,125,1.2
+144,PFN,135,0.9
+144,SI,158,0.9
+144,NFL Draft Buzz,143,0.9
+144,Bleacher Report,152,0.8
+144,Athletic,128,1
+144,CBS,143,1
+144,USA Today,156,1
+144,SCOUTD,146,0.8
+144,Mel Kiper,140,1.1
+144,Matt Miller,126,1
+144,Daniel Jeremiah,123,1.1
+144,Dane Brugler,164,1.2
+144,Charlie Campbell,152,1
+145,PFF,171,1.2
+145,PFN,118,0.9
+145,SI,136,0.9
+145,NFL Draft Buzz,163,0.9
+145,Bleacher Report,133,0.8
+145,Athletic,148,1
+145,CBS,128,1
+145,USA Today,175,1
+145,SCOUTD,143,0.8
+145,Mel Kiper,140,1.1
+145,Matt Miller,163,1
+145,Daniel Jeremiah,132,1.1
+145,Dane Brugler,122,1.2
+145,Charlie Campbell,137,1
+146,PFF,129,1.2
+146,PFN,138,0.9
+146,SI,141,0.9
+146,NFL Draft Buzz,153,0.9
+146,Bleacher Report,157,0.8
+146,Athletic,162,1
+146,CBS,142,1
+146,USA Today,116,1
+146,SCOUTD,164,0.8
+146,Mel Kiper,140,1.1
+146,Matt Miller,116,1
+146,Daniel Jeremiah,157,1.1
+146,Dane Brugler,162,1.2
+146,Charlie Campbell,131,1
+147,PFF,136,1.2
+147,PFN,150,0.9
+147,SI,171,0.9
+147,NFL Draft Buzz,165,0.9
+147,Bleacher Report,155,0.8
+147,Athletic,133,1
+147,CBS,132,1
+147,USA Today,120,1
+147,SCOUTD,147,0.8
+147,Mel Kiper,136,1.1
+147,Matt Miller,124,1
+147,Daniel Jeremiah,156,1.1
+147,Dane Brugler,147,1.2
+147,Charlie Campbell,133,1
+148,PFF,153,1.2
+148,PFN,133,0.9
+148,SI,163,0.9
+148,NFL Draft Buzz,142,0.9
+148,Bleacher Report,161,0.8
+148,Athletic,162,1
+148,CBS,129,1
+148,USA Today,119,1
+148,SCOUTD,152,0.8
+148,Mel Kiper,137,1.1
+148,Matt Miller,161,1
+148,Daniel Jeremiah,131,1.1
+148,Dane Brugler,156,1.2
+148,Charlie Campbell,139,1
+149,PFF,121,1.2
+149,PFN,147,0.9
+149,SI,175,0.9
+149,NFL Draft Buzz,132,0.9
+149,Bleacher Report,160,0.8
+149,Athletic,150,1
+149,CBS,160,1
+149,USA Today,153,1
+149,SCOUTD,140,0.8
+149,Mel Kiper,132,1.1
+149,Matt Miller,150,1
+149,Daniel Jeremiah,122,1.1
+149,Dane Brugler,133,1.2
+149,Charlie Campbell,161,1
+150,PFF,121,1.2
+150,PFN,177,0.9
+150,SI,171,0.9
+150,NFL Draft Buzz,135,0.9
+150,Bleacher Report,121,0.8
+150,Athletic,177,1
+150,CBS,128,1
+150,USA Today,159,1
+150,SCOUTD,144,0.8
+150,Mel Kiper,126,1.1
+150,Matt Miller,146,1
+150,Daniel Jeremiah,177,1.1
+150,Dane Brugler,133,1.2
+150,Charlie Campbell,133,1
+151,PFF,179,1.2
+151,PFN,144,0.9
+151,SI,129,0.9
+151,NFL Draft Buzz,149,0.9
+151,Bleacher Report,162,0.8
+151,Athletic,173,1
+151,CBS,164,1
+151,USA Today,134,1
+151,SCOUTD,148,0.8
+151,Mel Kiper,162,1.1
+151,Matt Miller,132,1
+151,Daniel Jeremiah,140,1.1
+151,Dane Brugler,132,1.2
+151,Charlie Campbell,130,1
+152,PFF,153,1.2
+152,PFN,130,0.9
+152,SI,174,0.9
+152,NFL Draft Buzz,129,0.9
+152,Bleacher Report,141,0.8
+152,Athletic,178,1
+152,CBS,179,1
+152,USA Today,146,1
+152,SCOUTD,171,0.8
+152,Mel Kiper,146,1.1
+152,Matt Miller,132,1
+152,Daniel Jeremiah,145,1.1
+152,Dane Brugler,153,1.2
+152,Charlie Campbell,166,1
+153,PFF,177,1.2
+153,PFN,134,0.9
+153,SI,171,0.9
+153,NFL Draft Buzz,134,0.9
+153,Bleacher Report,184,0.8
+153,Athletic,144,1
+153,CBS,163,1
+153,USA Today,163,1
+153,SCOUTD,169,0.8
+153,Mel Kiper,129,1.1
+153,Matt Miller,153,1
+153,Daniel Jeremiah,149,1.1
+153,Dane Brugler,129,1.2
+153,Charlie Campbell,143,1
+154,PFF,135,1.2
+154,PFN,184,0.9
+154,SI,160,0.9
+154,NFL Draft Buzz,184,0.9
+154,Bleacher Report,128,0.8
+154,Athletic,168,1
+154,CBS,170,1
+154,USA Today,130,1
+154,SCOUTD,147,0.8
+154,Mel Kiper,176,1.1
+154,Matt Miller,150,1
+154,Daniel Jeremiah,130,1.1
+154,Dane Brugler,182,1.2
+154,Charlie Campbell,150,1
+155,PFF,167,1.2
+155,PFN,162,0.9
+155,SI,172,0.9
+155,NFL Draft Buzz,162,0.9
+155,Bleacher Report,184,0.8
+155,Athletic,166,1
+155,CBS,137,1
+155,USA Today,144,1
+155,SCOUTD,176,0.8
+155,Mel Kiper,134,1.1
+155,Matt Miller,133,1
+155,Daniel Jeremiah,181,1.1
+155,Dane Brugler,135,1.2
+155,Charlie Campbell,142,1
+156,PFF,134,1.2
+156,PFN,172,0.9
+156,SI,125,0.9
+156,NFL Draft Buzz,182,0.9
+156,Bleacher Report,160,0.8
+156,Athletic,171,1
+156,CBS,181,1
+156,USA Today,171,1
+156,SCOUTD,124,0.8
+156,Mel Kiper,143,1.1
+156,Matt Miller,181,1
+156,Daniel Jeremiah,175,1.1
+156,Dane Brugler,168,1.2
+156,Charlie Campbell,131,1
+157,PFF,155,1.2
+157,PFN,158,0.9
+157,SI,165,0.9
+157,NFL Draft Buzz,128,0.9
+157,Bleacher Report,176,0.8
+157,Athletic,162,1
+157,CBS,142,1
+157,USA Today,165,1
+157,SCOUTD,176,0.8
+157,Mel Kiper,149,1.1
+157,Matt Miller,123,1
+157,Daniel Jeremiah,182,1.1
+157,Dane Brugler,171,1.2
+157,Charlie Campbell,165,1
+158,PFF,147,1.2
+158,PFN,155,0.9
+158,SI,148,0.9
+158,NFL Draft Buzz,137,0.9
+158,Bleacher Report,137,0.8
+158,Athletic,156,1
+158,CBS,157,1
+158,USA Today,176,1
+158,SCOUTD,155,0.8
+158,Mel Kiper,182,1.1
+158,Matt Miller,185,1
+158,Daniel Jeremiah,182,1.1
+158,Dane Brugler,185,1.2
+158,Charlie Campbell,176,1
+159,PFF,179,1.2
+159,PFN,181,0.9
+159,SI,183,0.9
+159,NFL Draft Buzz,144,0.9
+159,Bleacher Report,141,0.8
+159,Athletic,141,1
+159,CBS,136,1
+159,USA Today,180,1
+159,SCOUTD,154,0.8
+159,Mel Kiper,187,1.1
+159,Matt Miller,144,1
+159,Daniel Jeremiah,177,1.1
+159,Dane Brugler,131,1.2
+159,Charlie Campbell,190,1
+160,PFF,128,1.2
+160,PFN,145,0.9
+160,SI,166,0.9
+160,NFL Draft Buzz,182,0.9
+160,Bleacher Report,169,0.8
+160,Athletic,155,1
+160,CBS,181,1
+160,USA Today,179,1
+160,SCOUTD,173,0.8
+160,Mel Kiper,167,1.1
+160,Matt Miller,157,1
+160,Daniel Jeremiah,126,1.1
+160,Dane Brugler,168,1.2
+160,Charlie Campbell,174,1
+161,PFF,169,1.2
+161,PFN,182,0.9
+161,SI,187,0.9
+161,NFL Draft Buzz,185,0.9
+161,Bleacher Report,151,0.8
+161,Athletic,144,1
+161,CBS,177,1
+161,USA Today,127,1
+161,SCOUTD,143,0.8
+161,Mel Kiper,183,1.1
+161,Matt Miller,180,1
+161,Daniel Jeremiah,143,1.1
+161,Dane Brugler,132,1.2
+161,Charlie Campbell,183,1
+162,PFF,143,1.2
+162,PFN,194,0.9
+162,SI,140,0.9
+162,NFL Draft Buzz,145,0.9
+162,Bleacher Report,181,0.8
+162,Athletic,162,1
+162,CBS,186,1
+162,USA Today,160,1
+162,SCOUTD,156,0.8
+162,Mel Kiper,164,1.1
+162,Matt Miller,195,1
+162,Daniel Jeremiah,181,1.1
+162,Dane Brugler,146,1.2
+162,Charlie Campbell,134,1
+163,PFF,138,1.2
+163,PFN,172,0.9
+163,SI,147,0.9
+163,NFL Draft Buzz,151,0.9
+163,Bleacher Report,180,0.8
+163,Athletic,182,1
+163,CBS,149,1
+163,USA Today,182,1
+163,SCOUTD,165,0.8
+163,Mel Kiper,132,1.1
+163,Matt Miller,182,1
+163,Daniel Jeremiah,175,1.1
+163,Dane Brugler,189,1.2
+163,Charlie Campbell,150,1
+164,PFF,150,1.2
+164,PFN,194,0.9
+164,SI,145,0.9
+164,NFL Draft Buzz,166,0.9
+164,Bleacher Report,167,0.8
+164,Athletic,181,1
+164,CBS,154,1
+164,USA Today,147,1
+164,SCOUTD,152,0.8
+164,Mel Kiper,175,1.1
+164,Matt Miller,194,1
+164,Daniel Jeremiah,158,1.1
+164,Dane Brugler,163,1.2
+164,Charlie Campbell,153,1
+165,PFF,187,1.2
+165,PFN,175,0.9
+165,SI,150,0.9
+165,NFL Draft Buzz,174,0.9
+165,Bleacher Report,164,0.8
+165,Athletic,160,1
+165,CBS,191,1
+165,USA Today,131,1
+165,SCOUTD,187,0.8
+165,Mel Kiper,146,1.1
+165,Matt Miller,178,1
+165,Daniel Jeremiah,168,1.1
+165,Dane Brugler,173,1.2
+165,Charlie Campbell,140,1
+166,PFF,147,1.2
+166,PFN,176,0.9
+166,SI,183,0.9
+166,NFL Draft Buzz,194,0.9
+166,Bleacher Report,195,0.8
+166,Athletic,171,1
+166,CBS,137,1
+166,USA Today,170,1
+166,SCOUTD,155,0.8
+166,Mel Kiper,167,1.1
+166,Matt Miller,164,1
+166,Daniel Jeremiah,143,1.1
+166,Dane Brugler,175,1.2
+166,Charlie Campbell,136,1
+167,PFF,172,1.2
+167,PFN,141,0.9
+167,SI,183,0.9
+167,NFL Draft Buzz,200,0.9
+167,Bleacher Report,179,0.8
+167,Athletic,141,1
+167,CBS,149,1
+167,USA Today,150,1
+167,SCOUTD,180,0.8
+167,Mel Kiper,166,1.1
+167,Matt Miller,203,1
+167,Daniel Jeremiah,148,1.1
+167,Dane Brugler,168,1.2
+167,Charlie Campbell,157,1
+168,PFF,150,1.2
+168,PFN,184,0.9
+168,SI,157,0.9
+168,NFL Draft Buzz,180,0.9
+168,Bleacher Report,186,0.8
+168,Athletic,159,1
+168,CBS,190,1
+168,USA Today,140,1
+168,SCOUTD,172,0.8
+168,Mel Kiper,185,1.1
+168,Matt Miller,166,1
+168,Daniel Jeremiah,144,1.1
+168,Dane Brugler,146,1.2
+168,Charlie Campbell,183,1
+169,PFF,162,1.2
+169,PFN,170,0.9
+169,SI,176,0.9
+169,NFL Draft Buzz,162,0.9
+169,Bleacher Report,200,0.8
+169,Athletic,166,1
+169,CBS,202,1
+169,USA Today,154,1
+169,SCOUTD,175,0.8
+169,Mel Kiper,156,1.1
+169,Matt Miller,147,1
+169,Daniel Jeremiah,159,1.1
+169,Dane Brugler,169,1.2
+169,Charlie Campbell,164,1
+170,PFF,162,1.2
+170,PFN,195,0.9
+170,SI,169,0.9
+170,NFL Draft Buzz,184,0.9
+170,Bleacher Report,148,0.8
+170,Athletic,183,1
+170,CBS,155,1
+170,USA Today,149,1
+170,SCOUTD,192,0.8
+170,Mel Kiper,161,1.1
+170,Matt Miller,170,1
+170,Daniel Jeremiah,210,1.1
+170,Dane Brugler,144,1.2
+170,Charlie Campbell,153,1
+171,PFF,165,1.2
+171,PFN,166,0.9
+171,SI,143,0.9
+171,NFL Draft Buzz,189,0.9
+171,Bleacher Report,192,0.8
+171,Athletic,182,1
+171,CBS,173,1
+171,USA Today,179,1
+171,SCOUTD,185,0.8
+171,Mel Kiper,139,1.1
+171,Matt Miller,165,1
+171,Daniel Jeremiah,188,1.1
+171,Dane Brugler,160,1.2
+171,Charlie Campbell,144,1
+172,PFF,174,1.2
+172,PFN,147,0.9
+172,SI,173,0.9
+172,NFL Draft Buzz,163,0.9
+172,Bleacher Report,194,0.8
+172,Athletic,183,1
+172,CBS,187,1
+172,USA Today,179,1
+172,SCOUTD,144,0.8
+172,Mel Kiper,150,1.1
+172,Matt Miller,185,1
+172,Daniel Jeremiah,140,1.1
+172,Dane Brugler,168,1.2
+172,Charlie Campbell,199,1
+173,PFF,156,1.2
+173,PFN,154,0.9
+173,SI,170,0.9
+173,NFL Draft Buzz,144,0.9
+173,Bleacher Report,185,0.8
+173,Athletic,160,1
+173,CBS,202,1
+173,USA Today,164,1
+173,SCOUTD,163,0.8
+173,Mel Kiper,191,1.1
+173,Matt Miller,161,1
+173,Daniel Jeremiah,204,1.1
+173,Dane Brugler,155,1.2
+173,Charlie Campbell,201,1
+174,PFF,183,1.2
+174,PFN,192,0.9
+174,SI,169,0.9
+174,NFL Draft Buzz,204,0.9
+174,Bleacher Report,153,0.8
+174,Athletic,143,1
+174,CBS,147,1
+174,USA Today,188,1
+174,SCOUTD,179,0.8
+174,Mel Kiper,179,1.1
+174,Matt Miller,185,1
+174,Daniel Jeremiah,170,1.1
+174,Dane Brugler,172,1.2
+174,Charlie Campbell,166,1
+175,PFF,151,1.2
+175,PFN,177,0.9
+175,SI,163,0.9
+175,NFL Draft Buzz,168,0.9
+175,Bleacher Report,202,0.8
+175,Athletic,198,1
+175,CBS,147,1
+175,USA Today,142,1
+175,SCOUTD,207,0.8
+175,Mel Kiper,172,1.1
+175,Matt Miller,166,1
+175,Daniel Jeremiah,183,1.1
+175,Dane Brugler,194,1.2
+175,Charlie Campbell,151,1
+176,PFF,189,1.2
+176,PFN,154,0.9
+176,SI,169,0.9
+176,NFL Draft Buzz,163,0.9
+176,Bleacher Report,150,0.8
+176,Athletic,187,1
+176,CBS,220,1
+176,USA Today,201,1
+176,SCOUTD,157,0.8
+176,Mel Kiper,157,1.1
+176,Matt Miller,159,1
+176,Daniel Jeremiah,185,1.1
+176,Dane Brugler,203,1.2
+176,Charlie Campbell,164,1
+177,PFF,207,1.2
+177,PFN,165,0.9
+177,SI,148,0.9
+177,NFL Draft Buzz,157,0.9
+177,Bleacher Report,166,0.8
+177,Athletic,167,1
+177,CBS,217,1
+177,USA Today,172,1
+177,SCOUTD,176,0.8
+177,Mel Kiper,195,1.1
+177,Matt Miller,171,1
+177,Daniel Jeremiah,147,1.1
+177,Dane Brugler,161,1.2
+177,Charlie Campbell,202,1
+178,PFF,143,1.2
+178,PFN,183,0.9
+178,SI,195,0.9
+178,NFL Draft Buzz,146,0.9
+178,Bleacher Report,188,0.8
+178,Athletic,155,1
+178,CBS,135,1
+178,USA Today,198,1
+178,SCOUTD,198,0.8
+178,Mel Kiper,180,1.1
+178,Matt Miller,197,1
+178,Daniel Jeremiah,193,1.1
+178,Dane Brugler,150,1.2
+178,Charlie Campbell,165,1
+179,PFF,155,1.2
+179,PFN,183,0.9
+179,SI,168,0.9
+179,NFL Draft Buzz,174,0.9
+179,Bleacher Report,210,0.8
+179,Athletic,198,1
+179,CBS,165,1
+179,USA Today,144,1
+179,SCOUTD,175,0.8
+179,Mel Kiper,204,1.1
+179,Matt Miller,148,1
+179,Daniel Jeremiah,187,1.1
+179,Dane Brugler,144,1.2
+179,Charlie Campbell,179,1
+180,PFF,148,1.2
+180,PFN,191,0.9
+180,SI,180,0.9
+180,NFL Draft Buzz,157,0.9
+180,Bleacher Report,184,0.8
+180,Athletic,203,1
+180,CBS,177,1
+180,USA Today,182,1
+180,SCOUTD,170,0.8
+180,Mel Kiper,149,1.1
+180,Matt Miller,153,1
+180,Daniel Jeremiah,194,1.1
+180,Dane Brugler,190,1.2
+180,Charlie Campbell,174,1
+181,PFF,158,1.2
+181,PFN,192,0.9
+181,SI,145,0.9
+181,NFL Draft Buzz,165,0.9
+181,Bleacher Report,199,0.8
+181,Athletic,194,1
+181,CBS,174,1
+181,USA Today,193,1
+181,SCOUTD,152,0.8
+181,Mel Kiper,181,1.1
+181,Matt Miller,150,1
+181,Daniel Jeremiah,202,1.1
+181,Dane Brugler,189,1.2
+181,Charlie Campbell,169,1
+182,PFF,152,1.2
+182,PFN,152,0.9
+182,SI,225,0.9
+182,NFL Draft Buzz,200,0.9
+182,Bleacher Report,213,0.8
+182,Athletic,154,1
+182,CBS,164,1
+182,USA Today,161,1
+182,SCOUTD,186,0.8
+182,Mel Kiper,162,1.1
+182,Matt Miller,169,1
+182,Daniel Jeremiah,158,1.1
+182,Dane Brugler,175,1.2
+182,Charlie Campbell,173,1
+183,PFF,196,1.2
+183,PFN,175,0.9
+183,SI,200,0.9
+183,NFL Draft Buzz,152,0.9
+183,Bleacher Report,146,0.8
+183,Athletic,163,1
+183,CBS,171,1
+183,USA Today,178,1
+183,SCOUTD,200,0.8
+183,Mel Kiper,199,1.1
+183,Matt Miller,163,1
+183,Daniel Jeremiah,183,1.1
+183,Dane Brugler,187,1.2
+183,Charlie Campbell,174,1
+184,PFF,219,1.2
+184,PFN,213,0.9
+184,SI,149,0.9
+184,NFL Draft Buzz,155,0.9
+184,Bleacher Report,163,0.8
+184,Athletic,191,1
+184,CBS,174,1
+184,USA Today,188,1
+184,SCOUTD,148,0.8
+184,Mel Kiper,195,1.1
+184,Matt Miller,175,1
+184,Daniel Jeremiah,176,1.1
+184,Dane Brugler,173,1.2
+184,Charlie Campbell,188,1
+185,PFF,203,1.2
+185,PFN,150,0.9
+185,SI,157,0.9
+185,NFL Draft Buzz,166,0.9
+185,Bleacher Report,164,0.8
+185,Athletic,177,1
+185,CBS,170,1
+185,USA Today,223,1
+185,SCOUTD,153,0.8
+185,Mel Kiper,223,1.1
+185,Matt Miller,219,1
+185,Daniel Jeremiah,186,1.1
+185,Dane Brugler,156,1.2
+185,Charlie Campbell,163,1
+186,PFF,206,1.2
+186,PFN,189,0.9
+186,SI,156,0.9
+186,NFL Draft Buzz,177,0.9
+186,Bleacher Report,178,0.8
+186,Athletic,165,1
+186,CBS,199,1
+186,USA Today,151,1
+186,SCOUTD,179,0.8
+186,Mel Kiper,168,1.1
+186,Matt Miller,179,1
+186,Daniel Jeremiah,170,1.1
+186,Dane Brugler,207,1.2
+186,Charlie Campbell,186,1
+187,PFF,195,1.2
+187,PFN,184,0.9
+187,SI,212,0.9
+187,NFL Draft Buzz,166,0.9
+187,Bleacher Report,154,0.8
+187,Athletic,154,1
+187,CBS,176,1
+187,USA Today,151,1
+187,SCOUTD,188,0.8
+187,Mel Kiper,170,1.1
+187,Matt Miller,219,1
+187,Daniel Jeremiah,180,1.1
+187,Dane Brugler,210,1.2
+187,Charlie Campbell,199,1
+188,PFF,184,1.2
+188,PFN,157,0.9
+188,SI,174,0.9
+188,NFL Draft Buzz,188,0.9
+188,Bleacher Report,179,0.8
+188,Athletic,210,1
+188,CBS,184,1
+188,USA Today,159,1
+188,SCOUTD,200,0.8
+188,Mel Kiper,184,1.1
+188,Matt Miller,207,1
+188,Daniel Jeremiah,178,1.1
+188,Dane Brugler,188,1.2
+188,Charlie Campbell,165,1
+189,PFF,165,1.2
+189,PFN,204,0.9
+189,SI,175,0.9
+189,NFL Draft Buzz,222,0.9
+189,Bleacher Report,173,0.8
+189,Athletic,194,1
+189,CBS,155,1
+189,USA Today,200,1
+189,SCOUTD,163,0.8
+189,Mel Kiper,223,1.1
+189,Matt Miller,198,1
+189,Daniel Jeremiah,170,1.1
+189,Dane Brugler,209,1.2
+189,Charlie Campbell,175,1
+190,PFF,215,1.2
+190,PFN,182,0.9
+190,SI,193,0.9
+190,NFL Draft Buzz,185,0.9
+190,Bleacher Report,203,0.8
+190,Athletic,198,1
+190,CBS,170,1
+190,USA Today,157,1
+190,SCOUTD,202,0.8
+190,Mel Kiper,202,1.1
+190,Matt Miller,196,1
+190,Daniel Jeremiah,209,1.1
+190,Dane Brugler,161,1.2
+190,Charlie Campbell,177,1
+191,PFF,209,1.2
+191,PFN,156,0.9
+191,SI,191,0.9
+191,NFL Draft Buzz,225,0.9
+191,Bleacher Report,192,0.8
+191,Athletic,171,1
+191,CBS,182,1
+191,USA Today,174,1
+191,SCOUTD,206,0.8
+191,Mel Kiper,184,1.1
+191,Matt Miller,157,1
+191,Daniel Jeremiah,227,1.1
+191,Dane Brugler,229,1.2
+191,Charlie Campbell,191,1
+192,PFF,227,1.2
+192,PFN,170,0.9
+192,SI,230,0.9
+192,NFL Draft Buzz,181,0.9
+192,Bleacher Report,199,0.8
+192,Athletic,177,1
+192,CBS,168,1
+192,USA Today,167,1
+192,SCOUTD,167,0.8
+192,Mel Kiper,230,1.1
+192,Matt Miller,221,1
+192,Daniel Jeremiah,173,1.1
+192,Dane Brugler,227,1.2
+192,Charlie Campbell,190,1
+193,PFF,226,1.2
+193,PFN,192,0.9
+193,SI,171,0.9
+193,NFL Draft Buzz,214,0.9
+193,Bleacher Report,225,0.8
+193,Athletic,164,1
+193,CBS,207,1
+193,USA Today,198,1
+193,SCOUTD,197,0.8
+193,Mel Kiper,175,1.1
+193,Matt Miller,174,1
+193,Daniel Jeremiah,191,1.1
+193,Dane Brugler,220,1.2
+193,Charlie Campbell,163,1
+194,PFF,163,1.2
+194,PFN,163,0.9
+194,SI,216,0.9
+194,NFL Draft Buzz,208,0.9
+194,Bleacher Report,214,0.8
+194,Athletic,193,1
+194,CBS,217,1
+194,USA Today,201,1
+194,SCOUTD,191,0.8
+194,Mel Kiper,155,1.1
+194,Matt Miller,223,1
+194,Daniel Jeremiah,199,1.1
+194,Dane Brugler,159,1.2
+194,Charlie Campbell,202,1
+195,PFF,213,1.2
+195,PFN,179,0.9
+195,SI,240,0.9
+195,NFL Draft Buzz,210,0.9
+195,Bleacher Report,182,0.8
+195,Athletic,229,1
+195,CBS,197,1
+195,USA Today,199,1
+195,SCOUTD,164,0.8
+195,Mel Kiper,185,1.1
+195,Matt Miller,186,1
+195,Daniel Jeremiah,190,1.1
+195,Dane Brugler,169,1.2
+195,Charlie Campbell,194,1
+196,PFF,167,1.2
+196,PFN,219,0.9
+196,SI,233,0.9
+196,NFL Draft Buzz,206,0.9
+196,Bleacher Report,161,0.8
+196,Athletic,179,1
+196,CBS,198,1
+196,USA Today,178,1
+196,SCOUTD,194,0.8
+196,Mel Kiper,231,1.1
+196,Matt Miller,176,1
+196,Daniel Jeremiah,198,1.1
+196,Dane Brugler,200,1.2
+196,Charlie Campbell,203,1
+197,PFF,182,1.2
+197,PFN,232,0.9
+197,SI,172,0.9
+197,NFL Draft Buzz,189,0.9
+197,Bleacher Report,190,0.8
+197,Athletic,191,1
+197,CBS,223,1
+197,USA Today,198,1
+197,SCOUTD,169,0.8
+197,Mel Kiper,171,1.1
+197,Matt Miller,234,1
+197,Daniel Jeremiah,233,1.1
+197,Dane Brugler,206,1.2
+197,Charlie Campbell,189,1
+198,PFF,196,1.2
+198,PFN,238,0.9
+198,SI,170,0.9
+198,NFL Draft Buzz,218,0.9
+198,Bleacher Report,190,0.8
+198,Athletic,235,1
+198,CBS,200,1
+198,USA Today,182,1
+198,SCOUTD,220,0.8
+198,Mel Kiper,184,1.1
+198,Matt Miller,181,1
+198,Daniel Jeremiah,180,1.1
+198,Dane Brugler,195,1.2
+198,Charlie Campbell,173,1
+199,PFF,195,1.2
+199,PFN,207,0.9
+199,SI,180,0.9
+199,NFL Draft Buzz,208,0.9
+199,Bleacher Report,180,0.8
+199,Athletic,202,1
+199,CBS,181,1
+199,USA Today,217,1
+199,SCOUTD,233,0.8
+199,Mel Kiper,195,1.1
+199,Matt Miller,204,1
+199,Daniel Jeremiah,172,1.1
+199,Dane Brugler,195,1.2
+199,Charlie Campbell,208,1
+200,PFF,188,1.2
+200,PFN,197,0.9
+200,SI,206,0.9
+200,NFL Draft Buzz,204,0.9
+200,Bleacher Report,186,0.8
+200,Athletic,183,1
+200,CBS,175,1
+200,USA Today,204,1
+200,SCOUTD,222,0.8
+200,Mel Kiper,160,1.1
+200,Matt Miller,204,1
+200,Daniel Jeremiah,212,1.1
+200,Dane Brugler,228,1.2
+200,Charlie Campbell,216,1
+201,PFF,204,1.2
+201,PFN,230,0.9
+201,SI,217,0.9
+201,NFL Draft Buzz,180,0.9
+201,Bleacher Report,199,0.8
+201,Athletic,167,1
+201,CBS,194,1
+201,USA Today,204,1
+201,SCOUTD,189,0.8
+201,Mel Kiper,232,1.1
+201,Matt Miller,191,1
+201,Daniel Jeremiah,173,1.1
+201,Dane Brugler,232,1.2
+201,Charlie Campbell,187,1
+202,PFF,195,1.2
+202,PFN,215,0.9
+202,SI,190,0.9
+202,NFL Draft Buzz,189,0.9
+202,Bleacher Report,208,0.8
+202,Athletic,215,1
+202,CBS,192,1
+202,USA Today,167,1
+202,SCOUTD,186,0.8
+202,Mel Kiper,221,1.1
+202,Matt Miller,222,1
+202,Daniel Jeremiah,179,1.1
+202,Dane Brugler,192,1.2
+202,Charlie Campbell,233,1
+203,PFF,221,1.2
+203,PFN,199,0.9
+203,SI,187,0.9
+203,NFL Draft Buzz,184,0.9
+203,Bleacher Report,217,0.8
+203,Athletic,226,1
+203,CBS,162,1
+203,USA Today,196,1
+203,SCOUTD,187,0.8
+203,Mel Kiper,208,1.1
+203,Matt Miller,215,1
+203,Daniel Jeremiah,211,1.1
+203,Dane Brugler,177,1.2
+203,Charlie Campbell,233,1
+204,PFF,245,1.2
+204,PFN,217,0.9
+204,SI,245,0.9
+204,NFL Draft Buzz,187,0.9
+204,Bleacher Report,201,0.8
+204,Athletic,171,1
+204,CBS,199,1
+204,USA Today,241,1
+204,SCOUTD,179,0.8
+204,Mel Kiper,178,1.1
+204,Matt Miller,171,1
+204,Daniel Jeremiah,225,1.1
+204,Dane Brugler,179,1.2
+204,Charlie Campbell,185,1
+205,PFF,180,1.2
+205,PFN,192,0.9
+205,SI,215,0.9
+205,NFL Draft Buzz,190,0.9
+205,Bleacher Report,208,0.8
+205,Athletic,238,1
+205,CBS,188,1
+205,USA Today,190,1
+205,SCOUTD,178,0.8
+205,Mel Kiper,232,1.1
+205,Matt Miller,178,1
+205,Daniel Jeremiah,192,1.1
+205,Dane Brugler,226,1.2
+205,Charlie Campbell,250,1
+206,PFF,244,1.2
+206,PFN,201,0.9
+206,SI,192,0.9
+206,NFL Draft Buzz,216,0.9
+206,Bleacher Report,227,0.8
+206,Athletic,212,1
+206,CBS,211,1
+206,USA Today,217,1
+206,SCOUTD,206,0.8
+206,Mel Kiper,210,1.1
+206,Matt Miller,176,1
+206,Daniel Jeremiah,200,1.1
+206,Dane Brugler,186,1.2
+206,Charlie Campbell,200,1
+207,PFF,210,1.2
+207,PFN,209,0.9
+207,SI,230,0.9
+207,NFL Draft Buzz,193,0.9
+207,Bleacher Report,190,0.8
+207,Athletic,176,1
+207,CBS,243,1
+207,USA Today,194,1
+207,SCOUTD,177,0.8
+207,Mel Kiper,229,1.1
+207,Matt Miller,239,1
+207,Daniel Jeremiah,239,1.1
+207,Dane Brugler,187,1.2
+207,Charlie Campbell,199,1
+208,PFF,242,1.2
+208,PFN,174,0.9
+208,SI,185,0.9
+208,NFL Draft Buzz,172,0.9
+208,Bleacher Report,233,0.8
+208,Athletic,237,1
+208,CBS,206,1
+208,USA Today,236,1
+208,SCOUTD,212,0.8
+208,Mel Kiper,196,1.1
+208,Matt Miller,210,1
+208,Daniel Jeremiah,182,1.1
+208,Dane Brugler,231,1.2
+208,Charlie Campbell,201,1
+209,PFF,243,1.2
+209,PFN,238,0.9
+209,SI,184,0.9
+209,NFL Draft Buzz,223,0.9
+209,Bleacher Report,182,0.8
+209,Athletic,215,1
+209,CBS,237,1
+209,USA Today,219,1
+209,SCOUTD,201,0.8
+209,Mel Kiper,235,1.1
+209,Matt Miller,175,1
+209,Daniel Jeremiah,187,1.1
+209,Dane Brugler,172,1.2
+209,Charlie Campbell,210,1
+210,PFF,182,1.2
+210,PFN,190,0.9
+210,SI,249,0.9
+210,NFL Draft Buzz,225,0.9
+210,Bleacher Report,198,0.8
+210,Athletic,245,1
+210,CBS,234,1
+210,USA Today,191,1
+210,SCOUTD,202,0.8
+210,Mel Kiper,211,1.1
+210,Matt Miller,218,1
+210,Daniel Jeremiah,172,1.1
+210,Dane Brugler,222,1.2
+210,Charlie Campbell,175,1
+211,PFF,220,1.2
+211,PFN,188,0.9
+211,SI,228,0.9
+211,NFL Draft Buzz,219,0.9
+211,Bleacher Report,219,0.8
+211,Athletic,174,1
+211,CBS,214,1
+211,USA Today,202,1
+211,SCOUTD,200,0.8
+211,Mel Kiper,227,1.1
+211,Matt Miller,229,1
+211,Daniel Jeremiah,214,1.1
+211,Dane Brugler,239,1.2
+211,Charlie Campbell,168,1
+212,PFF,205,1.2
+212,PFN,213,0.9
+212,SI,207,0.9
+212,NFL Draft Buzz,199,0.9
+212,Bleacher Report,236,0.8
+212,Athletic,192,1
+212,CBS,228,1
+212,USA Today,203,1
+212,SCOUTD,231,0.8
+212,Mel Kiper,229,1.1
+212,Matt Miller,229,1
+212,Daniel Jeremiah,160,1.1
+212,Dane Brugler,166,1.2
+212,Charlie Campbell,215,1
+213,PFF,212,1.2
+213,PFN,189,0.9
+213,SI,227,0.9
+213,NFL Draft Buzz,166,0.9
+213,Bleacher Report,246,0.8
+213,Athletic,194,1
+213,CBS,231,1
+213,USA Today,170,1
+213,SCOUTD,245,0.8
+213,Mel Kiper,212,1.1
+213,Matt Miller,193,1
+213,Daniel Jeremiah,185,1.1
+213,Dane Brugler,214,1.2
+213,Charlie Campbell,238,1
+214,PFF,193,1.2
+214,PFN,220,0.9
+214,SI,176,0.9
+214,NFL Draft Buzz,238,0.9
+214,Bleacher Report,174,0.8
+214,Athletic,227,1
+214,CBS,244,1
+214,USA Today,188,1
+214,SCOUTD,240,0.8
+214,Mel Kiper,206,1.1
+214,Matt Miller,187,1
+214,Daniel Jeremiah,247,1.1
+214,Dane Brugler,225,1.2
+214,Charlie Campbell,189,1
+215,PFF,180,1.2
+215,PFN,191,0.9
+215,SI,205,0.9
+215,NFL Draft Buzz,256,0.9
+215,Bleacher Report,246,0.8
+215,Athletic,184,1
+215,CBS,219,1
+215,USA Today,205,1
+215,SCOUTD,200,0.8
+215,Mel Kiper,193,1.1
+215,Matt Miller,251,1
+215,Daniel Jeremiah,236,1.1
+215,Dane Brugler,180,1.2
+215,Charlie Campbell,195,1
+216,PFF,206,1.2
+216,PFN,235,0.9
+216,SI,228,0.9
+216,NFL Draft Buzz,202,0.9
+216,Bleacher Report,255,0.8
+216,Athletic,220,1
+216,CBS,252,1
+216,USA Today,174,1
+216,SCOUTD,214,0.8
+216,Mel Kiper,181,1.1
+216,Matt Miller,190,1
+216,Daniel Jeremiah,232,1.1
+216,Dane Brugler,189,1.2
+216,Charlie Campbell,186,1
+217,PFF,183,1.2
+217,PFN,234,0.9
+217,SI,205,0.9
+217,NFL Draft Buzz,208,0.9
+217,Bleacher Report,218,0.8
+217,Athletic,205,1
+217,CBS,170,1
+217,USA Today,224,1
+217,SCOUTD,226,0.8
+217,Mel Kiper,240,1.1
+217,Matt Miller,234,1
+217,Daniel Jeremiah,219,1.1
+217,Dane Brugler,251,1.2
+217,Charlie Campbell,233,1
+218,PFF,177,1.2
+218,PFN,206,0.9
+218,SI,227,0.9
+218,NFL Draft Buzz,202,0.9
+218,Bleacher Report,245,0.8
+218,Athletic,241,1
+218,CBS,195,1
+218,USA Today,218,1
+218,SCOUTD,258,0.8
+218,Mel Kiper,190,1.1
+218,Matt Miller,250,1
+218,Daniel Jeremiah,183,1.1
+218,Dane Brugler,196,1.2
+218,Charlie Campbell,232,1
+219,PFF,191,1.2
+219,PFN,193,0.9
+219,SI,191,0.9
+219,NFL Draft Buzz,239,0.9
+219,Bleacher Report,211,0.8
+219,Athletic,226,1
+219,CBS,270,1
+219,USA Today,254,1
+219,SCOUTD,214,0.8
+219,Mel Kiper,208,1.1
+219,Matt Miller,219,1
+219,Daniel Jeremiah,258,1.1
+219,Dane Brugler,216,1.2
+219,Charlie Campbell,202,1
+220,PFF,228,1.2
+220,PFN,230,0.9
+220,SI,243,0.9
+220,NFL Draft Buzz,226,0.9
+220,Bleacher Report,249,0.8
+220,Athletic,173,1
+220,CBS,200,1
+220,USA Today,247,1
+220,SCOUTD,184,0.8
+220,Mel Kiper,236,1.1
+220,Matt Miller,169,1
+220,Daniel Jeremiah,237,1.1
+220,Dane Brugler,227,1.2
+220,Charlie Campbell,252,1
+221,PFF,235,1.2
+221,PFN,182,0.9
+221,SI,243,0.9
+221,NFL Draft Buzz,225,0.9
+221,Bleacher Report,249,0.8
+221,Athletic,263,1
+221,CBS,196,1
+221,USA Today,246,1
+221,SCOUTD,262,0.8
+221,Mel Kiper,178,1.1
+221,Matt Miller,222,1
+221,Daniel Jeremiah,190,1.1
+221,Dane Brugler,187,1.2
+221,Charlie Campbell,195,1
+222,PFF,226,1.2
+222,PFN,249,0.9
+222,SI,189,0.9
+222,NFL Draft Buzz,202,0.9
+222,Bleacher Report,191,0.8
+222,Athletic,249,1
+222,CBS,203,1
+222,USA Today,237,1
+222,SCOUTD,226,0.8
+222,Mel Kiper,253,1.1
+222,Matt Miller,218,1
+222,Daniel Jeremiah,200,1.1
+222,Dane Brugler,228,1.2
+222,Charlie Campbell,262,1
+223,PFF,233,1.2
+223,PFN,226,0.9
+223,SI,265,0.9
+223,NFL Draft Buzz,193,0.9
+223,Bleacher Report,218,0.8
+223,Athletic,218,1
+223,CBS,233,1
+223,USA Today,190,1
+223,SCOUTD,208,0.8
+223,Mel Kiper,204,1.1
+223,Matt Miller,210,1
+223,Daniel Jeremiah,233,1.1
+223,Dane Brugler,244,1.2
+223,Charlie Campbell,256,1
+224,PFF,206,1.2
+224,PFN,197,0.9
+224,SI,192,0.9
+224,NFL Draft Buzz,218,0.9
+224,Bleacher Report,260,0.8
+224,Athletic,208,1
+224,CBS,246,1
+224,USA Today,180,1
+224,SCOUTD,239,0.8
+224,Mel Kiper,222,1.1
+224,Matt Miller,228,1
+224,Daniel Jeremiah,242,1.1
+224,Dane Brugler,224,1.2
+224,Charlie Campbell,258,1
+225,PFF,227,1.2
+225,PFN,193,0.9
+225,SI,195,0.9
+225,NFL Draft Buzz,245,0.9
+225,Bleacher Report,237,0.8
+225,Athletic,231,1
+225,CBS,208,1
+225,USA Today,243,1
+225,SCOUTD,241,0.8
+225,Mel Kiper,234,1.1
+225,Matt Miller,190,1
+225,Daniel Jeremiah,250,1.1
+225,Dane Brugler,186,1.2
+225,Charlie Campbell,243,1
+226,PFF,239,1.2
+226,PFN,214,0.9
+226,SI,203,0.9
+226,NFL Draft Buzz,185,0.9
+226,Bleacher Report,259,0.8
+226,Athletic,208,1
+226,CBS,205,1
+226,USA Today,240,1
+226,SCOUTD,236,0.8
+226,Mel Kiper,270,1.1
+226,Matt Miller,235,1
+226,Daniel Jeremiah,196,1.1
+226,Dane Brugler,235,1.2
+226,Charlie Campbell,212,1
+227,PFF,197,1.2
+227,PFN,212,0.9
+227,SI,233,0.9
+227,NFL Draft Buzz,212,0.9
+227,Bleacher Report,250,0.8
+227,Athletic,183,1
+227,CBS,206,1
+227,USA Today,227,1
+227,SCOUTD,228,0.8
+227,Mel Kiper,240,1.1
+227,Matt Miller,226,1
+227,Daniel Jeremiah,241,1.1
+227,Dane Brugler,236,1.2
+227,Charlie Campbell,246,1
+228,PFF,201,1.2
+228,PFN,180,0.9
+228,SI,249,0.9
+228,NFL Draft Buzz,229,0.9
+228,Bleacher Report,236,0.8
+228,Athletic,232,1
+228,CBS,228,1
+228,USA Today,234,1
+228,SCOUTD,246,0.8
+228,Mel Kiper,199,1.1
+228,Matt Miller,242,1
+228,Daniel Jeremiah,200,1.1
+228,Dane Brugler,231,1.2
+228,Charlie Campbell,235,1
+229,PFF,243,1.2
+229,PFN,233,0.9
+229,SI,246,0.9
+229,NFL Draft Buzz,232,0.9
+229,Bleacher Report,265,0.8
+229,Athletic,217,1
+229,CBS,213,1
+229,USA Today,187,1
+229,SCOUTD,192,0.8
+229,Mel Kiper,270,1.1
+229,Matt Miller,232,1
+229,Daniel Jeremiah,258,1.1
+229,Dane Brugler,187,1.2
+229,Charlie Campbell,211,1
+230,PFF,255,1.2
+230,PFN,282,0.9
+230,SI,254,0.9
+230,NFL Draft Buzz,205,0.9
+230,Bleacher Report,196,0.8
+230,Athletic,281,1
+230,CBS,191,1
+230,USA Today,221,1
+230,SCOUTD,202,0.8
+230,Mel Kiper,191,1.1
+230,Matt Miller,206,1
+230,Daniel Jeremiah,280,1.1
+230,Dane Brugler,208,1.2
+230,Charlie Campbell,234,1
+231,PFF,225,1.2
+231,PFN,192,0.9
+231,SI,247,0.9
+231,NFL Draft Buzz,241,0.9
+231,Bleacher Report,249,0.8
+231,Athletic,206,1
+231,CBS,257,1
+231,USA Today,182,1
+231,SCOUTD,205,0.8
+231,Mel Kiper,238,1.1
+231,Matt Miller,239,1
+231,Daniel Jeremiah,250,1.1
+231,Dane Brugler,209,1.2
+231,Charlie Campbell,258,1
+232,PFF,195,1.2
+232,PFN,263,0.9
+232,SI,214,0.9
+232,NFL Draft Buzz,233,0.9
+232,Bleacher Report,231,0.8
+232,Athletic,263,1
+232,CBS,209,1
+232,USA Today,267,1
+232,SCOUTD,216,0.8
+232,Mel Kiper,206,1.1
+232,Matt Miller,215,1
+232,Daniel Jeremiah,211,1.1
+232,Dane Brugler,221,1.2
+232,Charlie Campbell,261,1
+233,PFF,228,1.2
+233,PFN,237,0.9
+233,SI,215,0.9
+233,NFL Draft Buzz,211,0.9
+233,Bleacher Report,237,0.8
+233,Athletic,244,1
+233,CBS,198,1
+233,USA Today,278,1
+233,SCOUTD,210,0.8
+233,Mel Kiper,241,1.1
+233,Matt Miller,228,1
+233,Daniel Jeremiah,209,1.1
+233,Dane Brugler,247,1.2
+233,Charlie Campbell,253,1
+234,PFF,263,1.2
+234,PFN,209,0.9
+234,SI,222,0.9
+234,NFL Draft Buzz,192,0.9
+234,Bleacher Report,211,0.8
+234,Athletic,267,1
+234,CBS,228,1
+234,USA Today,249,1
+234,SCOUTD,222,0.8
+234,Mel Kiper,267,1.1
+234,Matt Miller,272,1
+234,Daniel Jeremiah,201,1.1
+234,Dane Brugler,197,1.2
+234,Charlie Campbell,277,1
+235,PFF,262,1.2
+235,PFN,251,0.9
+235,SI,263,0.9
+235,NFL Draft Buzz,228,0.9
+235,Bleacher Report,229,0.8
+235,Athletic,184,1
+235,CBS,248,1
+235,USA Today,244,1
+235,SCOUTD,241,0.8
+235,Mel Kiper,252,1.1
+235,Matt Miller,233,1
+235,Daniel Jeremiah,210,1.1
+235,Dane Brugler,183,1.2
+235,Charlie Campbell,226,1
+236,PFF,241,1.2
+236,PFN,262,0.9
+236,SI,217,0.9
+236,NFL Draft Buzz,205,0.9
+236,Bleacher Report,272,0.8
+236,Athletic,214,1
+236,CBS,235,1
+236,USA Today,288,1
+236,SCOUTD,244,0.8
+236,Mel Kiper,236,1.1
+236,Matt Miller,218,1
+236,Daniel Jeremiah,193,1.1
+236,Dane Brugler,202,1.2
+236,Charlie Campbell,235,1
+237,PFF,268,1.2
+237,PFN,240,0.9
+237,SI,231,0.9
+237,NFL Draft Buzz,245,0.9
+237,Bleacher Report,273,0.8
+237,Athletic,212,1
+237,CBS,213,1
+237,USA Today,238,1
+237,SCOUTD,193,0.8
+237,Mel Kiper,196,1.1
+237,Matt Miller,258,1
+237,Daniel Jeremiah,241,1.1
+237,Dane Brugler,199,1.2
+237,Charlie Campbell,279,1
+238,PFF,252,1.2
+238,PFN,268,0.9
+238,SI,199,0.9
+238,NFL Draft Buzz,202,0.9
+238,Bleacher Report,242,0.8
+238,Athletic,255,1
+238,CBS,251,1
+238,USA Today,266,1
+238,SCOUTD,218,0.8
+238,Mel Kiper,241,1.1
+238,Matt Miller,278,1
+238,Daniel Jeremiah,214,1.1
+238,Dane Brugler,214,1.2
+238,Charlie Campbell,205,1
+239,PFF,256,1.2
+239,PFN,272,0.9
+239,SI,249,0.9
+239,NFL Draft Buzz,200,0.9
+239,Bleacher Report,249,0.8
+239,Athletic,216,1
+239,CBS,285,1
+239,USA Today,233,1
+239,SCOUTD,231,0.8
+239,Mel Kiper,258,1.1
+239,Matt Miller,217,1
+239,Daniel Jeremiah,218,1.1
+239,Dane Brugler,199,1.2
+239,Charlie Campbell,224,1
+240,PFF,259,1.2
+240,PFN,228,0.9
+240,SI,252,0.9
+240,NFL Draft Buzz,215,0.9
+240,Bleacher Report,269,0.8
+240,Athletic,221,1
+240,CBS,211,1
+240,USA Today,253,1
+240,SCOUTD,208,0.8
+240,Mel Kiper,220,1.1
+240,Matt Miller,266,1
+240,Daniel Jeremiah,239,1.1
+240,Dane Brugler,228,1.2
+240,Charlie Campbell,255,1
+241,PFF,247,1.2
+241,PFN,262,0.9
+241,SI,253,0.9
+241,NFL Draft Buzz,260,0.9
+241,Bleacher Report,240,0.8
+241,Athletic,231,1
+241,CBS,236,1
+241,USA Today,247,1
+241,SCOUTD,239,0.8
+241,Mel Kiper,257,1.1
+241,Matt Miller,236,1
+241,Daniel Jeremiah,189,1.1
+241,Dane Brugler,234,1.2
+241,Charlie Campbell,201,1
+242,PFF,200,1.2
+242,PFN,267,0.9
+242,SI,268,0.9
+242,NFL Draft Buzz,257,0.9
+242,Bleacher Report,211,0.8
+242,Athletic,241,1
+242,CBS,238,1
+242,USA Today,232,1
+242,SCOUTD,217,0.8
+242,Mel Kiper,247,1.1
+242,Matt Miller,225,1
+242,Daniel Jeremiah,272,1.1
+242,Dane Brugler,235,1.2
+242,Charlie Campbell,263,1
+243,PFF,292,1.2
+243,PFN,245,0.9
+243,SI,199,0.9
+243,NFL Draft Buzz,293,0.9
+243,Bleacher Report,217,0.8
+243,Athletic,248,1
+243,CBS,218,1
+243,USA Today,209,1
+243,SCOUTD,212,0.8
+243,Mel Kiper,260,1.1
+243,Matt Miller,264,1
+243,Daniel Jeremiah,234,1.1
+243,Dane Brugler,289,1.2
+243,Charlie Campbell,267,1
+244,PFF,282,1.2
+244,PFN,252,0.9
+244,SI,217,0.9
+244,NFL Draft Buzz,262,0.9
+244,Bleacher Report,246,0.8
+244,Athletic,190,1
+244,CBS,208,1
+244,USA Today,222,1
+244,SCOUTD,260,0.8
+244,Mel Kiper,283,1.1
+244,Matt Miller,254,1
+244,Daniel Jeremiah,268,1.1
+244,Dane Brugler,230,1.2
+244,Charlie Campbell,267,1
+245,PFF,245,1.2
+245,PFN,226,0.9
+245,SI,205,0.9
+245,NFL Draft Buzz,250,0.9
+245,Bleacher Report,211,0.8
+245,Athletic,257,1
+245,CBS,303,1
+245,USA Today,283,1
+245,SCOUTD,211,0.8
+245,Mel Kiper,285,1.1
+245,Matt Miller,266,1
+245,Daniel Jeremiah,209,1.1
+245,Dane Brugler,274,1.2
+245,Charlie Campbell,261,1
+246,PFF,245,1.2
+246,PFN,287,0.9
+246,SI,238,0.9
+246,NFL Draft Buzz,196,0.9
+246,Bleacher Report,283,0.8
+246,Athletic,203,1
+246,CBS,273,1
+246,USA Today,260,1
+246,SCOUTD,198,0.8
+246,Mel Kiper,256,1.1
+246,Matt Miller,280,1
+246,Daniel Jeremiah,266,1.1
+246,Dane Brugler,245,1.2
+246,Charlie Campbell,247,1
+247,PFF,270,1.2
+247,PFN,268,0.9
+247,SI,246,0.9
+247,NFL Draft Buzz,270,0.9
+247,Bleacher Report,265,0.8
+247,Athletic,220,1
+247,CBS,192,1
+247,USA Today,243,1
+247,SCOUTD,273,0.8
+247,Mel Kiper,185,1.1
+247,Matt Miller,268,1
+247,Daniel Jeremiah,271,1.1
+247,Dane Brugler,204,1.2
+247,Charlie Campbell,276,1
+248,PFF,244,1.2
+248,PFN,218,0.9
+248,SI,289,0.9
+248,NFL Draft Buzz,225,0.9
+248,Bleacher Report,292,0.8
+248,Athletic,219,1
+248,CBS,242,1
+248,USA Today,242,1
+248,SCOUTD,250,0.8
+248,Mel Kiper,248,1.1
+248,Matt Miller,279,1
+248,Daniel Jeremiah,278,1.1
+248,Dane Brugler,218,1.2
+248,Charlie Campbell,219,1
+249,PFF,266,1.2
+249,PFN,255,0.9
+249,SI,254,0.9
+249,NFL Draft Buzz,221,0.9
+249,Bleacher Report,266,0.8
+249,Athletic,209,1
+249,CBS,237,1
+249,USA Today,206,1
+249,SCOUTD,287,0.8
+249,Mel Kiper,275,1.1
+249,Matt Miller,273,1
+249,Daniel Jeremiah,251,1.1
+249,Dane Brugler,235,1.2
+249,Charlie Campbell,233,1
+250,PFF,227,1.2
+250,PFN,280,0.9
+250,SI,214,0.9
+250,NFL Draft Buzz,283,0.9
+250,Bleacher Report,279,0.8
+250,Athletic,213,1
+250,CBS,278,1
+250,USA Today,223,1
+250,SCOUTD,276,0.8
+250,Mel Kiper,214,1.1
+250,Matt Miller,238,1
+250,Daniel Jeremiah,227,1.1
+250,Dane Brugler,224,1.2
+250,Charlie Campbell,270,1
+251,PFF,239,1.2
+251,PFN,208,0.9
+251,SI,210,0.9
+251,NFL Draft Buzz,253,0.9
+251,Bleacher Report,273,0.8
+251,Athletic,203,1
+251,CBS,295,1
+251,USA Today,222,1
+251,SCOUTD,264,0.8
+251,Mel Kiper,277,1.1
+251,Matt Miller,231,1
+251,Daniel Jeremiah,253,1.1
+251,Dane Brugler,278,1.2
+251,Charlie Campbell,278,1
+252,PFF,211,1.2
+252,PFN,242,0.9
+252,SI,215,0.9
+252,NFL Draft Buzz,300,0.9
+252,Bleacher Report,235,0.8
+252,Athletic,243,1
+252,CBS,244,1
+252,USA Today,223,1
+252,SCOUTD,296,0.8
+252,Mel Kiper,242,1.1
+252,Matt Miller,232,1
+252,Daniel Jeremiah,271,1.1
+252,Dane Brugler,215,1.2
+252,Charlie Campbell,296,1
+253,PFF,248,1.2
+253,PFN,229,0.9
+253,SI,282,0.9
+253,NFL Draft Buzz,230,0.9
+253,Bleacher Report,220,0.8
+253,Athletic,287,1
+253,CBS,286,1
+253,USA Today,240,1
+253,SCOUTD,233,0.8
+253,Mel Kiper,244,1.1
+253,Matt Miller,278,1
+253,Daniel Jeremiah,276,1.1
+253,Dane Brugler,255,1.2
+253,Charlie Campbell,212,1
+254,PFF,293,1.2
+254,PFN,231,0.9
+254,SI,304,0.9
+254,NFL Draft Buzz,269,0.9
+254,Bleacher Report,213,0.8
+254,Athletic,228,1
+254,CBS,212,1
+254,USA Today,277,1
+254,SCOUTD,217,0.8
+254,Mel Kiper,294,1.1
+254,Matt Miller,279,1
+254,Daniel Jeremiah,241,1.1
+254,Dane Brugler,265,1.2
+254,Charlie Campbell,212,1
+255,PFF,251,1.2
+255,PFN,297,0.9
+255,SI,227,0.9
+255,NFL Draft Buzz,241,0.9
+255,Bleacher Report,225,0.8
+255,Athletic,247,1
+255,CBS,214,1
+255,USA Today,309,1
+255,SCOUTD,294,0.8
+255,Mel Kiper,217,1.1
+255,Matt Miller,225,1
+255,Daniel Jeremiah,264,1.1
+255,Dane Brugler,216,1.2
+255,Charlie Campbell,275,1
+256,PFF,213,1.2
+256,PFN,257,0.9
+256,SI,271,0.9
+256,NFL Draft Buzz,204,0.9
+256,Bleacher Report,289,0.8
+256,Athletic,226,1
+256,CBS,277,1
+256,USA Today,284,1
+256,SCOUTD,233,0.8
+256,Mel Kiper,208,1.1
+256,Matt Miller,255,1
+256,Daniel Jeremiah,272,1.1
+256,Dane Brugler,253,1.2
+256,Charlie Campbell,271,1
+257,PFF,229,1.2
+257,PFN,292,0.9
+257,SI,227,0.9
+257,NFL Draft Buzz,267,0.9
+257,Bleacher Report,257,0.8
+257,Athletic,236,1
+257,CBS,227,1
+257,USA Today,284,1
+257,SCOUTD,223,0.8
+257,Mel Kiper,281,1.1
+257,Matt Miller,266,1
+257,Daniel Jeremiah,229,1.1
+257,Dane Brugler,243,1.2
+257,Charlie Campbell,286,1
+258,PFF,275,1.2
+258,PFN,228,0.9
+258,SI,238,0.9
+258,NFL Draft Buzz,219,0.9
+258,Bleacher Report,250,0.8
+258,Athletic,304,1
+258,CBS,275,1
+258,USA Today,255,1
+258,SCOUTD,272,0.8
+258,Mel Kiper,287,1.1
+258,Matt Miller,236,1
+258,Daniel Jeremiah,274,1.1
+258,Dane Brugler,234,1.2
+258,Charlie Campbell,221,1
+259,PFF,282,1.2
+259,PFN,263,0.9
+259,SI,232,0.9
+259,NFL Draft Buzz,237,0.9
+259,Bleacher Report,284,0.8
+259,Athletic,267,1
+259,CBS,277,1
+259,USA Today,284,1
+259,SCOUTD,251,0.8
+259,Mel Kiper,215,1.1
+259,Matt Miller,285,1
+259,Daniel Jeremiah,225,1.1
+259,Dane Brugler,251,1.2
+259,Charlie Campbell,201,1
+260,PFF,238,1.2
+260,PFN,246,0.9
+260,SI,253,0.9
+260,NFL Draft Buzz,290,0.9
+260,Bleacher Report,258,0.8
+260,Athletic,288,1
+260,CBS,289,1
+260,USA Today,214,1
+260,SCOUTD,235,0.8
+260,Mel Kiper,256,1.1
+260,Matt Miller,284,1
+260,Daniel Jeremiah,244,1.1
+260,Dane Brugler,227,1.2
+260,Charlie Campbell,238,1
+261,PFF,259,1.2
+261,PFN,276,0.9
+261,SI,198,0.9
+261,NFL Draft Buzz,232,0.9
+261,Bleacher Report,278,0.8
+261,Athletic,287,1
+261,CBS,258,1
+261,USA Today,277,1
+261,SCOUTD,241,0.8
+261,Mel Kiper,209,1.1
+261,Matt Miller,274,1
+261,Daniel Jeremiah,273,1.1
+261,Dane Brugler,232,1.2
+261,Charlie Campbell,283,1
+262,PFF,291,1.2
+262,PFN,227,0.9
+262,SI,223,0.9
+262,NFL Draft Buzz,247,0.9
+262,Bleacher Report,294,0.8
+262,Athletic,262,1
+262,CBS,221,1
+262,USA Today,287,1
+262,SCOUTD,255,0.8
+262,Mel Kiper,227,1.1
+262,Matt Miller,319,1
+262,Daniel Jeremiah,232,1.1
+262,Dane Brugler,249,1.2
+262,Charlie Campbell,242,1
+263,PFF,233,1.2
+263,PFN,229,0.9
+263,SI,297,0.9
+263,NFL Draft Buzz,240,0.9
+263,Bleacher Report,261,0.8
+263,Athletic,302,1
+263,CBS,262,1
+263,USA Today,289,1
+263,SCOUTD,230,0.8
+263,Mel Kiper,228,1.1
+263,Matt Miller,241,1
+263,Daniel Jeremiah,253,1.1
+263,Dane Brugler,282,1.2
+263,Charlie Campbell,239,1
+264,PFF,219,1.2
+264,PFN,232,0.9
+264,SI,222,0.9
+264,NFL Draft Buzz,296,0.9
+264,Bleacher Report,283,0.8
+264,Athletic,238,1
+264,CBS,267,1
+264,USA Today,252,1
+264,SCOUTD,223,0.8
+264,Mel Kiper,247,1.1
+264,Matt Miller,288,1
+264,Daniel Jeremiah,268,1.1
+264,Dane Brugler,305,1.2
+264,Charlie Campbell,250,1
+265,PFF,277,1.2
+265,PFN,272,0.9
+265,SI,267,0.9
+265,NFL Draft Buzz,248,0.9
+265,Bleacher Report,245,0.8
+265,Athletic,219,1
+265,CBS,222,1
+265,USA Today,258,1
+265,SCOUTD,293,0.8
+265,Mel Kiper,272,1.1
+265,Matt Miller,262,1
+265,Daniel Jeremiah,229,1.1
+265,Dane Brugler,274,1.2
+265,Charlie Campbell,245,1
+266,PFF,300,1.2
+266,PFN,255,0.9
+266,SI,284,0.9
+266,NFL Draft Buzz,206,0.9
+266,Bleacher Report,278,0.8
+266,Athletic,251,1
+266,CBS,295,1
+266,USA Today,296,1
+266,SCOUTD,246,0.8
+266,Mel Kiper,281,1.1
+266,Matt Miller,235,1
+266,Daniel Jeremiah,219,1.1
+266,Dane Brugler,232,1.2
+266,Charlie Campbell,226,1
+267,PFF,260,1.2
+267,PFN,237,0.9
+267,SI,264,0.9
+267,NFL Draft Buzz,306,0.9
+267,Bleacher Report,229,0.8
+267,Athletic,239,1
+267,CBS,285,1
+267,USA Today,239,1
+267,SCOUTD,210,0.8
+267,Mel Kiper,303,1.1
+267,Matt Miller,273,1
+267,Daniel Jeremiah,277,1.1
+267,Dane Brugler,234,1.2
+267,Charlie Campbell,263,1
+268,PFF,246,1.2
+268,PFN,272,0.9
+268,SI,214,0.9
+268,NFL Draft Buzz,252,0.9
+268,Bleacher Report,268,0.8
+268,Athletic,256,1
+268,CBS,271,1
+268,USA Today,220,1
+268,SCOUTD,267,0.8
+268,Mel Kiper,310,1.1
+268,Matt Miller,251,1
+268,Daniel Jeremiah,264,1.1
+268,Dane Brugler,273,1.2
+268,Charlie Campbell,261,1
+269,PFF,288,1.2
+269,PFN,244,0.9
+269,SI,261,0.9
+269,NFL Draft Buzz,220,0.9
+269,Bleacher Report,297,0.8
+269,Athletic,294,1
+269,CBS,295,1
+269,USA Today,205,1
+269,SCOUTD,296,0.8
+269,Mel Kiper,223,1.1
+269,Matt Miller,205,1
+269,Daniel Jeremiah,286,1.1
+269,Dane Brugler,287,1.2
+269,Charlie Campbell,251,1
+270,PFF,264,1.2
+270,PFN,267,0.9
+270,SI,271,0.9
+270,NFL Draft Buzz,278,0.9
+270,Bleacher Report,230,0.8
+270,Athletic,239,1
+270,CBS,267,1
+270,USA Today,294,1
+270,SCOUTD,260,0.8
+270,Mel Kiper,275,1.1
+270,Matt Miller,287,1
+270,Daniel Jeremiah,233,1.1
+270,Dane Brugler,234,1.2
+270,Charlie Campbell,263,1
+271,PFF,294,1.2
+271,PFN,214,0.9
+271,SI,263,0.9
+271,NFL Draft Buzz,287,0.9
+271,Bleacher Report,307,0.8
+271,Athletic,307,1
+271,CBS,220,1
+271,USA Today,296,1
+271,SCOUTD,225,0.8
+271,Mel Kiper,266,1.1
+271,Matt Miller,250,1
+271,Daniel Jeremiah,252,1.1
+271,Dane Brugler,313,1.2
+271,Charlie Campbell,225,1
+272,PFF,248,1.2
+272,PFN,253,0.9
+272,SI,300,0.9
+272,NFL Draft Buzz,252,0.9
+272,Bleacher Report,227,0.8
+272,Athletic,307,1
+272,CBS,249,1
+272,USA Today,308,1
+272,SCOUTD,311,0.8
+272,Mel Kiper,229,1.1
+272,Matt Miller,243,1
+272,Daniel Jeremiah,276,1.1
+272,Dane Brugler,250,1.2
+272,Charlie Campbell,266,1
+273,PFF,311,1.2
+273,PFN,251,0.9
+273,SI,249,0.9
+273,NFL Draft Buzz,312,0.9
+273,Bleacher Report,252,0.8
+273,Athletic,293,1
+273,CBS,281,1
+273,USA Today,270,1
+273,SCOUTD,239,0.8
+273,Mel Kiper,261,1.1
+273,Matt Miller,285,1
+273,Daniel Jeremiah,228,1.1
+273,Dane Brugler,301,1.2
+273,Charlie Campbell,262,1
+274,PFF,279,1.2
+274,PFN,244,0.9
+274,SI,232,0.9
+274,NFL Draft Buzz,309,0.9
+274,Bleacher Report,286,0.8
+274,Athletic,257,1
+274,CBS,238,1
+274,USA Today,250,1
+274,SCOUTD,323,0.8
+274,Mel Kiper,315,1.1
+274,Matt Miller,310,1
+274,Daniel Jeremiah,265,1.1
+274,Dane Brugler,227,1.2
+274,Charlie Campbell,295,1
+275,PFF,225,1.2
+275,PFN,225,0.9
+275,SI,281,0.9
+275,NFL Draft Buzz,271,0.9
+275,Bleacher Report,281,0.8
+275,Athletic,300,1
+275,CBS,267,1
+275,USA Today,237,1
+275,SCOUTD,318,0.8
+275,Mel Kiper,255,1.1
+275,Matt Miller,294,1
+275,Daniel Jeremiah,330,1.1
+275,Dane Brugler,269,1.2
+275,Charlie Campbell,282,1
+276,PFF,302,1.2
+276,PFN,242,0.9
+276,SI,284,0.9
+276,NFL Draft Buzz,250,0.9
+276,Bleacher Report,298,0.8
+276,Athletic,260,1
+276,CBS,311,1
+276,USA Today,269,1
+276,SCOUTD,229,0.8
+276,Mel Kiper,257,1.1
+276,Matt Miller,300,1
+276,Daniel Jeremiah,273,1.1
+276,Dane Brugler,289,1.2
+276,Charlie Campbell,301,1
+277,PFF,310,1.2
+277,PFN,273,0.9
+277,SI,314,0.9
+277,NFL Draft Buzz,279,0.9
+277,Bleacher Report,256,0.8
+277,Athletic,297,1
+277,CBS,309,1
+277,USA Today,301,1
+277,SCOUTD,238,0.8
+277,Mel Kiper,268,1.1
+277,Matt Miller,304,1
+277,Daniel Jeremiah,235,1.1
+277,Dane Brugler,228,1.2
+277,Charlie Campbell,244,1
+278,PFF,276,1.2
+278,PFN,269,0.9
+278,SI,278,0.9
+278,NFL Draft Buzz,268,0.9
+278,Bleacher Report,229,0.8
+278,Athletic,303,1
+278,CBS,286,1
+278,USA Today,311,1
+278,SCOUTD,284,0.8
+278,Mel Kiper,310,1.1
+278,Matt Miller,243,1
+278,Daniel Jeremiah,299,1.1
+278,Dane Brugler,276,1.2
+278,Charlie Campbell,246,1
+279,PFF,292,1.2
+279,PFN,258,0.9
+279,SI,300,0.9
+279,NFL Draft Buzz,237,0.9
+279,Bleacher Report,264,0.8
+279,Athletic,250,1
+279,CBS,343,1
+279,USA Today,243,1
+279,SCOUTD,248,0.8
+279,Mel Kiper,284,1.1
+279,Matt Miller,329,1
+279,Daniel Jeremiah,274,1.1
+279,Dane Brugler,281,1.2
+279,Charlie Campbell,305,1
+280,PFF,319,1.2
+280,PFN,288,0.9
+280,SI,242,0.9
+280,NFL Draft Buzz,266,0.9
+280,Bleacher Report,308,0.8
+280,Athletic,301,1
+280,CBS,279,1
+280,USA Today,268,1
+280,SCOUTD,284,0.8
+280,Mel Kiper,292,1.1
+280,Matt Miller,259,1
+280,Daniel Jeremiah,243,1.1
+280,Dane Brugler,222,1.2
+280,Charlie Campbell,313,1
+281,PFF,248,1.2
+281,PFN,284,0.9
+281,SI,300,0.9
+281,NFL Draft Buzz,302,0.9
+281,Bleacher Report,293,0.8
+281,Athletic,232,1
+281,CBS,269,1
+281,USA Today,242,1
+281,SCOUTD,277,0.8
+281,Mel Kiper,242,1.1
+281,Matt Miller,250,1
+281,Daniel Jeremiah,341,1.1
+281,Dane Brugler,329,1.2
+281,Charlie Campbell,289,1
+282,PFF,272,1.2
+282,PFN,270,0.9
+282,SI,236,0.9
+282,NFL Draft Buzz,247,0.9
+282,Bleacher Report,236,0.8
+282,Athletic,232,1
+282,CBS,329,1
+282,USA Today,279,1
+282,SCOUTD,288,0.8
+282,Mel Kiper,339,1.1
+282,Matt Miller,231,1
+282,Daniel Jeremiah,319,1.1
+282,Dane Brugler,335,1.2
+282,Charlie Campbell,326,1
+283,PFF,302,1.2
+283,PFN,293,0.9
+283,SI,242,0.9
+283,NFL Draft Buzz,238,0.9
+283,Bleacher Report,258,0.8
+283,Athletic,238,1
+283,CBS,294,1
+283,USA Today,285,1
+283,SCOUTD,303,0.8
+283,Mel Kiper,317,1.1
+283,Matt Miller,310,1
+283,Daniel Jeremiah,301,1.1
+283,Dane Brugler,250,1.2
+283,Charlie Campbell,286,1
+284,PFF,225,1.2
+284,PFN,304,0.9
+284,SI,312,0.9
+284,NFL Draft Buzz,283,0.9
+284,Bleacher Report,312,0.8
+284,Athletic,319,1
+284,CBS,227,1
+284,USA Today,274,1
+284,SCOUTD,251,0.8
+284,Mel Kiper,299,1.1
+284,Matt Miller,299,1
+284,Daniel Jeremiah,255,1.1
+284,Dane Brugler,237,1.2
+284,Charlie Campbell,297,1
+285,PFF,327,1.2
+285,PFN,269,0.9
+285,SI,276,0.9
+285,NFL Draft Buzz,295,0.9
+285,Bleacher Report,226,0.8
+285,Athletic,294,1
+285,CBS,315,1
+285,USA Today,266,1
+285,SCOUTD,227,0.8
+285,Mel Kiper,307,1.1
+285,Matt Miller,293,1
+285,Daniel Jeremiah,317,1.1
+285,Dane Brugler,294,1.2
+285,Charlie Campbell,267,1
+286,PFF,245,1.2
+286,PFN,238,0.9
+286,SI,252,0.9
+286,NFL Draft Buzz,283,0.9
+286,Bleacher Report,248,0.8
+286,Athletic,344,1
+286,CBS,286,1
+286,USA Today,281,1
+286,SCOUTD,261,0.8
+286,Mel Kiper,344,1.1
+286,Matt Miller,314,1
+286,Daniel Jeremiah,326,1.1
+286,Dane Brugler,298,1.2
+286,Charlie Campbell,237,1
+287,PFF,286,1.2
+287,PFN,328,0.9
+287,SI,290,0.9
+287,NFL Draft Buzz,331,0.9
+287,Bleacher Report,240,0.8
+287,Athletic,228,1
+287,CBS,317,1
+287,USA Today,301,1
+287,SCOUTD,308,0.8
+287,Mel Kiper,251,1.1
+287,Matt Miller,300,1
+287,Daniel Jeremiah,287,1.1
+287,Dane Brugler,242,1.2
+287,Charlie Campbell,229,1
+288,PFF,276,1.2
+288,PFN,305,0.9
+288,SI,267,0.9
+288,NFL Draft Buzz,260,0.9
+288,Bleacher Report,268,0.8
+288,Athletic,255,1
+288,CBS,245,1
+288,USA Today,307,1
+288,SCOUTD,318,0.8
+288,Mel Kiper,284,1.1
+288,Matt Miller,249,1
+288,Daniel Jeremiah,326,1.1
+288,Dane Brugler,263,1.2
+288,Charlie Campbell,333,1
+289,PFF,301,1.2
+289,PFN,314,0.9
+289,SI,308,0.9
+289,NFL Draft Buzz,268,0.9
+289,Bleacher Report,277,0.8
+289,Athletic,260,1
+289,CBS,239,1
+289,USA Today,273,1
+289,SCOUTD,312,0.8
+289,Mel Kiper,257,1.1
+289,Matt Miller,315,1
+289,Daniel Jeremiah,237,1.1
+289,Dane Brugler,298,1.2
+289,Charlie Campbell,299,1
+290,PFF,310,1.2
+290,PFN,248,0.9
+290,SI,306,0.9
+290,NFL Draft Buzz,299,0.9
+290,Bleacher Report,332,0.8
+290,Athletic,329,1
+290,CBS,325,1
+290,USA Today,301,1
+290,SCOUTD,249,0.8
+290,Mel Kiper,270,1.1
+290,Matt Miller,276,1
+290,Daniel Jeremiah,270,1.1
+290,Dane Brugler,228,1.2
+290,Charlie Campbell,236,1
+291,PFF,335,1.2
+291,PFN,259,0.9
+291,SI,280,0.9
+291,NFL Draft Buzz,327,0.9
+291,Bleacher Report,321,0.8
+291,Athletic,242,1
+291,CBS,239,1
+291,USA Today,304,1
+291,SCOUTD,282,0.8
+291,Mel Kiper,233,1.1
+291,Matt Miller,308,1
+291,Daniel Jeremiah,331,1.1
+291,Dane Brugler,267,1.2
+291,Charlie Campbell,258,1
+292,PFF,294,1.2
+292,PFN,258,0.9
+292,SI,277,0.9
+292,NFL Draft Buzz,270,0.9
+292,Bleacher Report,297,0.8
+292,Athletic,239,1
+292,CBS,288,1
+292,USA Today,268,1
+292,SCOUTD,281,0.8
+292,Mel Kiper,248,1.1
+292,Matt Miller,341,1
+292,Daniel Jeremiah,327,1.1
+292,Dane Brugler,327,1.2
+292,Charlie Campbell,320,1
+293,PFF,283,1.2
+293,PFN,337,0.9
+293,SI,339,0.9
+293,NFL Draft Buzz,256,0.9
+293,Bleacher Report,285,0.8
+293,Athletic,269,1
+293,CBS,257,1
+293,USA Today,261,1
+293,SCOUTD,313,0.8
+293,Mel Kiper,272,1.1
+293,Matt Miller,313,1
+293,Daniel Jeremiah,233,1.1
+293,Dane Brugler,282,1.2
+293,Charlie Campbell,336,1
+294,PFF,262,1.2
+294,PFN,262,0.9
+294,SI,273,0.9
+294,NFL Draft Buzz,258,0.9
+294,Bleacher Report,325,0.8
+294,Athletic,308,1
+294,CBS,352,1
+294,USA Today,278,1
+294,SCOUTD,270,0.8
+294,Mel Kiper,296,1.1
+294,Matt Miller,259,1
+294,Daniel Jeremiah,256,1.1
+294,Dane Brugler,336,1.2
+294,Charlie Campbell,329,1
+295,PFF,316,1.2
+295,PFN,344,0.9
+295,SI,246,0.9
+295,NFL Draft Buzz,258,0.9
+295,Bleacher Report,332,0.8
+295,Athletic,255,1
+295,CBS,265,1
+295,USA Today,323,1
+295,SCOUTD,330,0.8
+295,Mel Kiper,349,1.1
+295,Matt Miller,259,1
+295,Daniel Jeremiah,254,1.1
+295,Dane Brugler,245,1.2
+295,Charlie Campbell,281,1
+296,PFF,266,1.2
+296,PFN,317,0.9
+296,SI,305,0.9
+296,NFL Draft Buzz,259,0.9
+296,Bleacher Report,308,0.8
+296,Athletic,292,1
+296,CBS,318,1
+296,USA Today,279,1
+296,SCOUTD,287,0.8
+296,Mel Kiper,258,1.1
+296,Matt Miller,329,1
+296,Daniel Jeremiah,355,1.1
+296,Dane Brugler,270,1.2
+296,Charlie Campbell,268,1
+297,PFF,348,1.2
+297,PFN,345,0.9
+297,SI,255,0.9
+297,NFL Draft Buzz,293,0.9
+297,Bleacher Report,293,0.8
+297,Athletic,293,1
+297,CBS,271,1
+297,USA Today,249,1
+297,SCOUTD,291,0.8
+297,Mel Kiper,288,1.1
+297,Matt Miller,324,1
+297,Daniel Jeremiah,318,1.1
+297,Dane Brugler,268,1.2
+297,Charlie Campbell,301,1
+298,PFF,285,1.2
+298,PFN,303,0.9
+298,SI,265,0.9
+298,NFL Draft Buzz,263,0.9
+298,Bleacher Report,280,0.8
+298,Athletic,329,1
+298,CBS,345,1
+298,USA Today,341,1
+298,SCOUTD,275,0.8
+298,Mel Kiper,306,1.1
+298,Matt Miller,252,1
+298,Daniel Jeremiah,348,1.1
+298,Dane Brugler,311,1.2
+298,Charlie Campbell,261,1
+299,PFF,315,1.2
+299,PFN,316,0.9
+299,SI,325,0.9
+299,NFL Draft Buzz,296,0.9
+299,Bleacher Report,332,0.8
+299,Athletic,368,1
+299,CBS,249,1
+299,USA Today,291,1
+299,SCOUTD,248,0.8
+299,Mel Kiper,257,1.1
+299,Matt Miller,281,1
+299,Daniel Jeremiah,338,1.1
+299,Dane Brugler,262,1.2
+299,Charlie Campbell,279,1
+300,PFF,330,1.2
+300,PFN,302,0.9
+300,SI,282,0.9
+300,NFL Draft Buzz,321,0.9
+300,Bleacher Report,289,0.8
+300,Athletic,332,1
+300,CBS,232,1
+300,USA Today,277,1
+300,SCOUTD,292,0.8
+300,Mel Kiper,263,1.1
+300,Matt Miller,329,1
+300,Daniel Jeremiah,292,1.1
+300,Dane Brugler,312,1.2
+300,Charlie Campbell,329,1
+301,PFF,289,1.2
+301,PFN,342,0.9
+301,SI,269,0.9
+301,NFL Draft Buzz,289,0.9
+301,Bleacher Report,334,0.8
+301,Athletic,259,1
+301,CBS,284,1
+301,USA Today,348,1
+301,SCOUTD,252,0.8
+301,Mel Kiper,264,1.1
+301,Matt Miller,308,1
+301,Daniel Jeremiah,266,1.1
+301,Dane Brugler,338,1.2
+301,Charlie Campbell,339,1
+302,PFF,291,1.2
+302,PFN,304,0.9
+302,SI,343,0.9
+302,NFL Draft Buzz,342,0.9
+302,Bleacher Report,263,0.8
+302,Athletic,316,1
+302,CBS,313,1
+302,USA Today,312,1
+302,SCOUTD,248,0.8
+302,Mel Kiper,350,1.1
+302,Matt Miller,298,1
+302,Daniel Jeremiah,289,1.1
+302,Dane Brugler,287,1.2
+302,Charlie Campbell,247,1
+303,PFF,300,1.2
+303,PFN,350,0.9
+303,SI,297,0.9
+303,NFL Draft Buzz,307,0.9
+303,Bleacher Report,284,0.8
+303,Athletic,285,1
+303,CBS,263,1
+303,USA Today,282,1
+303,SCOUTD,333,0.8
+303,Mel Kiper,353,1.1
+303,Matt Miller,332,1
+303,Daniel Jeremiah,270,1.1
+303,Dane Brugler,296,1.2
+303,Charlie Campbell,243,1
+304,PFF,251,1.2
+304,PFN,321,0.9
+304,SI,268,0.9
+304,NFL Draft Buzz,332,0.9
+304,Bleacher Report,270,0.8
+304,Athletic,269,1
+304,CBS,256,1
+304,USA Today,275,1
+304,SCOUTD,313,0.8
+304,Mel Kiper,333,1.1
+304,Matt Miller,333,1
+304,Daniel Jeremiah,279,1.1
+304,Dane Brugler,362,1.2
+304,Charlie Campbell,347,1
+305,PFF,290,1.2
+305,PFN,273,0.9
+305,SI,316,0.9
+305,NFL Draft Buzz,273,0.9
+305,Bleacher Report,334,0.8
+305,Athletic,312,1
+305,CBS,341,1
+305,USA Today,328,1
+305,SCOUTD,287,0.8
+305,Mel Kiper,348,1.1
+305,Matt Miller,263,1
+305,Daniel Jeremiah,288,1.1
+305,Dane Brugler,253,1.2
+305,Charlie Campbell,298,1
+306,PFF,251,1.2
+306,PFN,273,0.9
+306,SI,332,0.9
+306,NFL Draft Buzz,329,0.9
+306,Bleacher Report,275,0.8
+306,Athletic,251,1
+306,CBS,355,1
+306,USA Today,276,1
+306,SCOUTD,280,0.8
+306,Mel Kiper,318,1.1
+306,Matt Miller,356,1
+306,Daniel Jeremiah,339,1.1
+306,Dane Brugler,289,1.2
+306,Charlie Campbell,294,1
+307,PFF,364,1.2
+307,PFN,271,0.9
+307,SI,319,0.9
+307,NFL Draft Buzz,334,0.9
+307,Bleacher Report,310,0.8
+307,Athletic,312,1
+307,CBS,266,1
+307,USA Today,298,1
+307,SCOUTD,287,0.8
+307,Mel Kiper,274,1.1
+307,Matt Miller,348,1
+307,Daniel Jeremiah,328,1.1
+307,Dane Brugler,262,1.2
+307,Charlie Campbell,255,1
+308,PFF,263,1.2
+308,PFN,309,0.9
+308,SI,268,0.9
+308,NFL Draft Buzz,289,0.9
+308,Bleacher Report,308,0.8
+308,Athletic,260,1
+308,CBS,375,1
+308,USA Today,294,1
+308,SCOUTD,286,0.8
+308,Mel Kiper,254,1.1
+308,Matt Miller,300,1
+308,Daniel Jeremiah,375,1.1
+308,Dane Brugler,311,1.2
+308,Charlie Campbell,348,1
+309,PFF,356,1.2
+309,PFN,255,0.9
+309,SI,329,0.9
+309,NFL Draft Buzz,318,0.9
+309,Bleacher Report,250,0.8
+309,Athletic,268,1
+309,CBS,324,1
+309,USA Today,327,1
+309,SCOUTD,315,0.8
+309,Mel Kiper,351,1.1
+309,Matt Miller,270,1
+309,Daniel Jeremiah,300,1.1
+309,Dane Brugler,340,1.2
+309,Charlie Campbell,296,1
+310,PFF,328,1.2
+310,PFN,262,0.9
+310,SI,279,0.9
+310,NFL Draft Buzz,301,0.9
+310,Bleacher Report,297,0.8
+310,Athletic,312,1
+310,CBS,363,1
+310,USA Today,294,1
+310,SCOUTD,332,0.8
+310,Mel Kiper,249,1.1
+310,Matt Miller,284,1
+310,Daniel Jeremiah,352,1.1
+310,Dane Brugler,275,1.2
+310,Charlie Campbell,342,1
+311,PFF,299,1.2
+311,PFN,377,0.9
+311,SI,370,0.9
+311,NFL Draft Buzz,255,0.9
+311,Bleacher Report,286,0.8
+311,Athletic,274,1
+311,CBS,357,1
+311,USA Today,334,1
+311,SCOUTD,267,0.8
+311,Mel Kiper,300,1.1
+311,Matt Miller,280,1
+311,Daniel Jeremiah,298,1.1
+311,Dane Brugler,355,1.2
+311,Charlie Campbell,283,1
+312,PFF,359,1.2
+312,PFN,254,0.9
+312,SI,361,0.9
+312,NFL Draft Buzz,273,0.9
+312,Bleacher Report,351,0.8
+312,Athletic,345,1
+312,CBS,280,1
+312,USA Today,317,1
+312,SCOUTD,271,0.8
+312,Mel Kiper,287,1.1
+312,Matt Miller,324,1
+312,Daniel Jeremiah,284,1.1
+312,Dane Brugler,341,1.2
+312,Charlie Campbell,310,1
+313,PFF,289,1.2
+313,PFN,329,0.9
+313,SI,284,0.9
+313,NFL Draft Buzz,348,0.9
+313,Bleacher Report,320,0.8
+313,Athletic,286,1
+313,CBS,291,1
+313,USA Today,343,1
+313,SCOUTD,273,0.8
+313,Mel Kiper,356,1.1
+313,Matt Miller,276,1
+313,Daniel Jeremiah,295,1.1
+313,Dane Brugler,375,1.2
+313,Charlie Campbell,311,1
+314,PFF,274,1.2
+314,PFN,335,0.9
+314,SI,335,0.9
+314,NFL Draft Buzz,278,0.9
+314,Bleacher Report,280,0.8
+314,Athletic,324,1
+314,CBS,307,1
+314,USA Today,317,1
+314,SCOUTD,337,0.8
+314,Mel Kiper,349,1.1
+314,Matt Miller,342,1
+314,Daniel Jeremiah,319,1.1
+314,Dane Brugler,290,1.2
+314,Charlie Campbell,275,1
+315,PFF,323,1.2
+315,PFN,370,0.9
+315,SI,268,0.9
+315,NFL Draft Buzz,259,0.9
+315,Bleacher Report,375,0.8
+315,Athletic,320,1
+315,CBS,340,1
+315,USA Today,255,1
+315,SCOUTD,313,0.8
+315,Mel Kiper,369,1.1
+315,Matt Miller,270,1
+315,Daniel Jeremiah,334,1.1
+315,Dane Brugler,253,1.2
+315,Charlie Campbell,317,1
+316,PFF,285,1.2
+316,PFN,258,0.9
+316,SI,279,0.9
+316,NFL Draft Buzz,322,0.9
+316,Bleacher Report,264,0.8
+316,Athletic,368,1
+316,CBS,284,1
+316,USA Today,289,1
+316,SCOUTD,272,0.8
+316,Mel Kiper,311,1.1
+316,Matt Miller,372,1
+316,Daniel Jeremiah,381,1.1
+316,Dane Brugler,383,1.2
+316,Charlie Campbell,362,1
+317,PFF,278,1.2
+317,PFN,369,0.9
+317,SI,351,0.9
+317,NFL Draft Buzz,348,0.9
+317,Bleacher Report,298,0.8
+317,Athletic,309,1
+317,CBS,258,1
+317,USA Today,340,1
+317,SCOUTD,266,0.8
+317,Mel Kiper,306,1.1
+317,Matt Miller,286,1
+317,Daniel Jeremiah,379,1.1
+317,Dane Brugler,284,1.2
+317,Charlie Campbell,331,1
+318,PFF,269,1.2
+318,PFN,373,0.9
+318,SI,268,0.9
+318,NFL Draft Buzz,363,0.9
+318,Bleacher Report,373,0.8
+318,Athletic,327,1
+318,CBS,268,1
+318,USA Today,319,1
+318,SCOUTD,296,0.8
+318,Mel Kiper,324,1.1
+318,Matt Miller,279,1
+318,Daniel Jeremiah,255,1.1
+318,Dane Brugler,296,1.2
+318,Charlie Campbell,373,1
+319,PFF,279,1.2
+319,PFN,371,0.9
+319,SI,352,0.9
+319,NFL Draft Buzz,266,0.9
+319,Bleacher Report,341,0.8
+319,Athletic,276,1
+319,CBS,278,1
+319,USA Today,345,1
+319,SCOUTD,307,0.8
+319,Mel Kiper,298,1.1
+319,Matt Miller,337,1
+319,Daniel Jeremiah,361,1.1
+319,Dane Brugler,294,1.2
+319,Charlie Campbell,322,1
+320,PFF,314,1.2
+320,PFN,309,0.9
+320,SI,349,0.9
+320,NFL Draft Buzz,335,0.9
+320,Bleacher Report,277,0.8
+320,Athletic,376,1
+320,CBS,326,1
+320,USA Today,315,1
+320,SCOUTD,313,0.8
+320,Mel Kiper,265,1.1
+320,Matt Miller,303,1
+320,Daniel Jeremiah,314,1.1
+320,Dane Brugler,319,1.2
+320,Charlie Campbell,330,1
+321,PFF,371,1.2
+321,PFN,377,0.9
+321,SI,272,0.9
+321,NFL Draft Buzz,302,0.9
+321,Bleacher Report,348,0.8
+321,Athletic,270,1
+321,CBS,355,1
+321,USA Today,328,1
+321,SCOUTD,343,0.8
+321,Mel Kiper,279,1.1
+321,Matt Miller,270,1
+321,Daniel Jeremiah,300,1.1
+321,Dane Brugler,311,1.2
+321,Charlie Campbell,318,1
+322,PFF,366,1.2
+322,PFN,322,0.9
+322,SI,308,0.9
+322,NFL Draft Buzz,377,0.9
+322,Bleacher Report,339,0.8
+322,Athletic,294,1
+322,CBS,323,1
+322,USA Today,263,1
+322,SCOUTD,354,0.8
+322,Mel Kiper,312,1.1
+322,Matt Miller,277,1
+322,Daniel Jeremiah,301,1.1
+322,Dane Brugler,324,1.2
+322,Charlie Campbell,288,1
+323,PFF,343,1.2
+323,PFN,359,0.9
+323,SI,351,0.9
+323,NFL Draft Buzz,293,0.9
+323,Bleacher Report,286,0.8
+323,Athletic,352,1
+323,CBS,319,1
+323,USA Today,309,1
+323,SCOUTD,324,0.8
+323,Mel Kiper,319,1.1
+323,Matt Miller,259,1
+323,Daniel Jeremiah,283,1.1
+323,Dane Brugler,350,1.2
+323,Charlie Campbell,330,1
+324,PFF,353,1.2
+324,PFN,271,0.9
+324,SI,272,0.9
+324,NFL Draft Buzz,358,0.9
+324,Bleacher Report,372,0.8
+324,Athletic,363,1
+324,CBS,357,1
+324,USA Today,275,1
+324,SCOUTD,350,0.8
+324,Mel Kiper,329,1.1
+324,Matt Miller,293,1
+324,Daniel Jeremiah,339,1.1
+324,Dane Brugler,262,1.2
+324,Charlie Campbell,263,1
+325,PFF,287,1.2
+325,PFN,264,0.9
+325,SI,350,0.9
+325,NFL Draft Buzz,378,0.9
+325,Bleacher Report,378,0.8
+325,Athletic,304,1
+325,CBS,299,1
+325,USA Today,263,1
+325,SCOUTD,267,0.8
+325,Mel Kiper,333,1.1
+325,Matt Miller,338,1
+325,Daniel Jeremiah,303,1.1
+325,Dane Brugler,364,1.2
+325,Charlie Campbell,351,1
+326,PFF,267,1.2
+326,PFN,343,0.9
+326,SI,323,0.9
+326,NFL Draft Buzz,270,0.9
+326,Bleacher Report,346,0.8
+326,Athletic,315,1
+326,CBS,352,1
+326,USA Today,290,1
+326,SCOUTD,382,0.8
+326,Mel Kiper,327,1.1
+326,Matt Miller,322,1
+326,Daniel Jeremiah,263,1.1
+326,Dane Brugler,368,1.2
+326,Charlie Campbell,331,1
+327,PFF,384,1.2
+327,PFN,336,0.9
+327,SI,272,0.9
+327,NFL Draft Buzz,343,0.9
+327,Bleacher Report,314,0.8
+327,Athletic,373,1
+327,CBS,370,1
+327,USA Today,328,1
+327,SCOUTD,310,0.8
+327,Mel Kiper,321,1.1
+327,Matt Miller,276,1
+327,Daniel Jeremiah,338,1.1
+327,Dane Brugler,311,1.2
+327,Charlie Campbell,293,1
+328,PFF,284,1.2
+328,PFN,306,0.9
+328,SI,285,0.9
+328,NFL Draft Buzz,342,0.9
+328,Bleacher Report,383,0.8
+328,Athletic,263,1
+328,CBS,324,1
+328,USA Today,274,1
+328,SCOUTD,366,0.8
+328,Mel Kiper,378,1.1
+328,Matt Miller,373,1
+328,Daniel Jeremiah,316,1.1
+328,Dane Brugler,300,1.2
+328,Charlie Campbell,341,1
+329,PFF,348,1.2
+329,PFN,262,0.9
+329,SI,332,0.9
+329,NFL Draft Buzz,369,0.9
+329,Bleacher Report,386,0.8
+329,Athletic,342,1
+329,CBS,316,1
+329,USA Today,356,1
+329,SCOUTD,307,0.8
+329,Mel Kiper,279,1.1
+329,Matt Miller,303,1
+329,Daniel Jeremiah,267,1.1
+329,Dane Brugler,345,1.2
+329,Charlie Campbell,341,1
+330,PFF,321,1.2
+330,PFN,281,0.9
+330,SI,310,0.9
+330,NFL Draft Buzz,370,0.9
+330,Bleacher Report,330,0.8
+330,Athletic,307,1
+330,CBS,324,1
+330,USA Today,391,1
+330,SCOUTD,285,0.8
+330,Mel Kiper,350,1.1
+330,Matt Miller,383,1
+330,Daniel Jeremiah,326,1.1
+330,Dane Brugler,393,1.2
+330,Charlie Campbell,264,1
+331,PFF,351,1.2
+331,PFN,313,0.9
+331,SI,380,0.9
+331,NFL Draft Buzz,296,0.9
+331,Bleacher Report,393,0.8
+331,Athletic,290,1
+331,CBS,306,1
+331,USA Today,278,1
+331,SCOUTD,326,0.8
+331,Mel Kiper,359,1.1
+331,Matt Miller,348,1
+331,Daniel Jeremiah,336,1.1
+331,Dane Brugler,292,1.2
+331,Charlie Campbell,350,1
+332,PFF,378,1.2
+332,PFN,332,0.9
+332,SI,351,0.9
+332,NFL Draft Buzz,288,0.9
+332,Bleacher Report,337,0.8
+332,Athletic,296,1
+332,CBS,379,1
+332,USA Today,325,1
+332,SCOUTD,285,0.8
+332,Mel Kiper,344,1.1
+332,Matt Miller,378,1
+332,Daniel Jeremiah,355,1.1
+332,Dane Brugler,373,1.2
+332,Charlie Campbell,297,1

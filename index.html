@@ -9,6 +9,7 @@
   <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./csv-loader.js"></script>
   <style>
     body { margin: 0; padding: 0; overflow: hidden; }
     .scroll-container { 
@@ -105,17 +106,16 @@
         }
       }, []);
 
-      // Load players from JSON file
+      // Load players from CSV files
       useEffect(() => {
-        fetch('./players-final.json')
-          .then(res => res.json())
+        loadPlayersFromCSV()
           .then(data => {
-            console.log(`Loaded ${data.length} players from players-final.json`);
+            console.log(`Loaded ${data.length} players from CSV files`);
             setPlayers(data);
           })
           .catch(err => {
             console.error('Error loading players:', err);
-            // Fallback to mock players if JSON fails to load
+            // Fallback to mock players if CSV fails to load
             setPlayers(mockPlayers);
           });
       }, []);
