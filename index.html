@@ -307,13 +307,15 @@
 
       const draftOrder = generateDraftOrder();
 
-      const filteredPlayers = players.filter(p => {
-        const matchesPos = selectedPos === 'ALL' || p.pos === selectedPos;
-        const matchesSearch = p.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                             (p.school && p.school.toLowerCase().includes(searchTerm.toLowerCase()));
-        const notDrafted = !Object.values(draftPicks).includes(p.id);
-        return matchesPos && matchesSearch && notDrafted;
-      });
+      const filteredPlayers = players
+        .filter(p => {
+          const matchesPos = selectedPos === 'ALL' || p.pos === selectedPos;
+          const matchesSearch = p.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                               (p.school && p.school.toLowerCase().includes(searchTerm.toLowerCase()));
+          const notDrafted = !Object.values(draftPicks).includes(p.id);
+          return matchesPos && matchesSearch && notDrafted;
+        })
+        .sort((a, b) => (a.consensusRank || 999) - (b.consensusRank || 999));
 
       const positionCounts = positions.reduce((acc, pos) => {
         acc[pos] = players.filter(p => p.pos === pos && !Object.values(draftPicks).includes(p.id)).length;

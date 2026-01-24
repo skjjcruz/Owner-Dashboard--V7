@@ -49,8 +49,10 @@ async function loadPlayersFromCSV() {
         headers.forEach((header, index) => {
           const value = values[index] || '';
           // Convert numeric fields
-          if (['id', 'rank', 'weight', 'tier', 'consensusRank', 'sourceCount'].includes(header)) {
+          if (['id', 'rank', 'weight', 'tier', 'sourceCount'].includes(header)) {
             obj[header] = value ? parseInt(value, 10) : null;
+          } else if (header === 'consensusRank') {
+            obj[header] = value ? parseFloat(value) : null;
           } else if (header === 'speed') {
             obj[header] = value || null;
           } else {
