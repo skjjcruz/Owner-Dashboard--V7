@@ -690,7 +690,6 @@
                         onClick={() => handlePlayerClick(player)}
                       >
                         <div className="font-bold text-xs md:text-base truncate flex items-center gap-1">
-                          {player.isGenerational && <span className="text-yellow-400">⭐</span>}
                           {player.name}
                         </div>
                         <div className="text-[10px] md:text-xs text-slate-400 truncate">
@@ -776,7 +775,7 @@
                       <h3 className="text-purple-400 font-bold text-lg mb-4 flex items-center gap-2">
                         🏈 Fantasy Draft Score
                         {selectedPlayerDetail.isGenerational && (
-                          <span className="text-yellow-400 text-sm">⭐ Generational</span>
+                          <span className="text-yellow-400 text-sm">Generational</span>
                         )}
                       </h3>
                       <div className="grid grid-cols-4 gap-4">
@@ -800,7 +799,7 @@
                       <div className="mt-3 text-xs text-slate-400">
                         {selectedPlayerDetail.isGenerational && ['EDGE', 'LB', 'DL', 'S', 'CB'].includes(selectedPlayerDetail.pos) && (
                           <div className="text-yellow-400">
-                            ⭐ Elite defender bonus applied (+1.5)
+                            Elite defender bonus applied (+1.5)
                           </div>
                         )}
                         <div className="mt-1">
