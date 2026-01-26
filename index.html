@@ -715,11 +715,10 @@
                         onClick={() => handlePlayerClick(player)}
                       >
                         <div className="player-name font-bold text-xs md:text-base truncate flex items-center gap-1">
-                          <span>{player.name}</span>
-                          <span className="text-slate-400 font-normal">• {player.pos}</span>
+                          {player.name}
                         </div>
                         <div className="player-details text-[9px] md:text-xs text-slate-400 truncate">
-                          {player.school} • {player.size} • {player.weight} lbs
+                          {player.pos} • {player.school} • {player.size} • {player.weight} lbs
                         </div>
                       </div>
                       <button
