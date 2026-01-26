@@ -557,13 +557,14 @@
                       {picks.map(pick => {
                         const pickData = draftPicks[pick.key];
                         const isSelected = selectedPickSlot === pick.key;
-                        
+
                         let player = null;
                         let displayName = 'Available';
                         let displayDetails = null;
                         let ownerInfo = null;
                         let isMyPick = false;
-                        
+                        let playerRank = null;
+
                         if (pickData) {
                           // Check if it's historical Sleeper data
                           if (typeof pickData === 'object' && pickData.playerId) {
@@ -572,12 +573,12 @@
                               displayName = sleeperPlayer.full_name || sleeperPlayer.first_name + ' ' + sleeperPlayer.last_name || 'Unknown Player';
                               displayDetails = `${sleeperPlayer.position || ''} • ${sleeperPlayer.team || 'FA'}`;
                             } else {
-                              displayName = pickData.metadata?.first_name && pickData.metadata?.last_name 
+                              displayName = pickData.metadata?.first_name && pickData.metadata?.last_name
                                 ? `${pickData.metadata.first_name} ${pickData.metadata.last_name}`
                                 : 'Unknown Player';
                               displayDetails = pickData.metadata?.position || '';
                             }
-                            
+
                             // Get owner info
                             const pickedByUserId = pickData.pickedBy;
                             const owner = leagueUsers.find(u => u.user_id === pickedByUserId);
@@ -595,6 +596,8 @@
                             if (player) {
                               displayName = player.name;
                               displayDetails = `${player.pos} • ${player.school}`;
+                              // Get the rank based on current ranking mode
+                              playerRank = rankingMode === 'fantasy' ? player.fantasyRank : player.rank;
                             }
                           }
                         }
@@ -612,6 +615,9 @@
                           >
                             <div className="w-10 md:w-20 text-center flex-shrink-0">
                               <div className="pick-number font-bold text-yellow-500 text-xs md:text-base">{pick.key}</div>
+                              {playerRank && (
+                                <div className="pick-overall text-slate-500 text-[9px] md:text-xs mt-0.5">#{playerRank}</div>
+                              )}
                             </div>
 
                             <div className="flex-1 min-w-0">
