@@ -20,12 +20,50 @@
     .scroll-container::-webkit-scrollbar-track { background: #1e293b; }
     .scroll-container::-webkit-scrollbar-thumb { background: #475569; border-radius: 4px; }
 
-    /* Mobile optimizations */
+    /* Mobile optimizations for phones only */
     @media (max-width: 768px) {
       .mobile-compact { font-size: 0.75rem; }
       .mobile-compact-xs { font-size: 0.65rem; }
       .mobile-padding { padding: 0.5rem; }
       .mobile-gap { gap: 0.5rem; }
+
+      /* More aggressive phone-specific optimizations */
+      .font-bold { font-weight: 600 !important; }
+      h2 { font-size: 0.875rem !important; }
+      h3 { font-size: 0.8rem !important; }
+
+      /* Draft Board optimizations */
+      .draft-board-container .space-y-2 { gap: 0.25rem !important; }
+      .draft-board-pick { padding: 0.5rem !important; }
+      .pick-number { font-size: 0.7rem !important; }
+      .pick-overall { font-size: 0.6rem !important; }
+      .pick-name { font-size: 0.7rem !important; }
+      .pick-details { font-size: 0.6rem !important; }
+
+      /* Player Rankings optimizations */
+      .player-card-mobile { padding: 0.5rem 0.25rem !important; }
+      .player-name { font-size: 0.7rem !important; line-height: 1.2 !important; }
+      .player-details { font-size: 0.6rem !important; line-height: 1.1 !important; }
+      .player-rank-number { font-size: 0.65rem !important; }
+      .tier-badge { font-size: 0.6rem !important; padding: 0.125rem 0.25rem !important; }
+
+      /* Position filters - more compact */
+      .position-filter-btn {
+        font-size: 0.6rem !important;
+        padding: 0.25rem 0.5rem !important;
+      }
+
+      /* Ranking mode buttons - more compact */
+      .ranking-mode-btn {
+        font-size: 0.65rem !important;
+        padding: 0.375rem 0.5rem !important;
+      }
+
+      /* Search bar - more compact */
+      .search-input-mobile {
+        font-size: 0.7rem !important;
+        padding: 0.375rem 0.5rem !important;
+      }
     }
 
     /* Info icon in top-right corner of player cards */
@@ -508,11 +546,11 @@
                 <h2 className="font-bold text-yellow-500 text-sm md:text-base">Draft Board</h2>
               </div>
 
-              <div className="flex-1 p-1 md:p-4 space-y-2 md:space-y-6 overflow-y-auto scroll-container">
+              <div className="flex-1 p-1 md:p-4 space-y-2 md:space-y-6 overflow-y-auto scroll-container draft-board-container">
                 {Object.entries(picksByRound).map(([round, picks]) => (
                   <div key={round}>
-                    <div className="sticky top-0 bg-slate-900 py-1 md:py-2 mb-1 md:mb-3 border-b-2 border-yellow-500 z-10">
-                      <h3 className="font-bold text-yellow-500 text-sm md:text-lg">Round {round}</h3>
+                    <div className="sticky top-0 bg-slate-900 py-0.5 md:py-2 mb-1 md:mb-3 border-b-2 border-yellow-500 z-10">
+                      <h3 className="font-bold text-yellow-500 text-xs md:text-lg">Round {round}</h3>
                     </div>
 
                     <div className="space-y-1 md:space-y-2">
@@ -565,36 +603,36 @@
                           <div
                             key={pick.key}
                             onClick={() => handlePickSlotClick(pick.key)}
-                            className={`p-1.5 md:p-3 rounded border cursor-pointer transition-all flex items-center gap-1 md:gap-3 ${
+                            className={`draft-board-pick p-1 md:p-3 rounded border cursor-pointer transition-all flex items-center gap-1 md:gap-3 ${
                               isSelected ? 'border-yellow-500 bg-yellow-500 bg-opacity-10' :
                               isMyPick ? 'border-emerald-600 bg-emerald-900 bg-opacity-40' :
                               pickData ? 'border-slate-600 bg-slate-800' :
                               'border-slate-600 bg-slate-800 hover:border-slate-500'
                             }`}
                           >
-                            <div className="w-12 md:w-20 text-center">
-                              <div className="font-bold text-yellow-500 text-xs md:text-base">{pick.key}</div>
-                              <div className="text-[10px] md:text-xs text-slate-500">#{pick.overall}</div>
+                            <div className="w-10 md:w-20 text-center flex-shrink-0">
+                              <div className="pick-number font-bold text-yellow-500 text-xs md:text-base">{pick.key}</div>
+                              <div className="pick-overall text-[9px] md:text-xs text-slate-500">#{pick.overall}</div>
                             </div>
 
                             <div className="flex-1 min-w-0">
-                              <div className="font-bold truncate text-xs md:text-base">{displayName}</div>
+                              <div className="pick-name font-bold truncate text-xs md:text-base">{displayName}</div>
                               {displayDetails && (
-                                <div className="text-[10px] md:text-sm text-slate-400 flex gap-1 md:gap-3 mt-0.5">
+                                <div className="pick-details text-[9px] md:text-sm text-slate-400 flex gap-0.5 md:gap-3 mt-0.5">
                                   {displayDetails}
                                 </div>
                               )}
                               {ownerInfo && (
-                                <div className="flex items-center gap-1 md:gap-2 mt-0.5 md:mt-1">
+                                <div className="flex items-center gap-0.5 md:gap-2 mt-0.5 md:mt-1">
                                   {ownerInfo.avatar && (
                                     <img
                                       src={`https://sleepercdn.com/avatars/thumbs/${ownerInfo.avatar}`}
                                       alt=""
-                                      className="w-3 h-3 md:w-5 md:h-5 rounded-full"
+                                      className="w-2.5 h-2.5 md:w-5 md:h-5 rounded-full"
                                       onError={(e) => e.target.style.display = 'none'}
                                     />
                                   )}
-                                  <span className="text-[10px] md:text-xs text-slate-500">
+                                  <span className="text-[9px] md:text-xs text-slate-500">
                                     {isMyPick ? '✓ ' : ''}{ownerInfo.name}
                                   </span>
                                 </div>
@@ -610,21 +648,21 @@
             </div>
 
             <div className="w-1/2 bg-slate-900 border border-slate-700 rounded-lg overflow-hidden flex flex-col">
-              <div className="bg-slate-800 px-2 md:px-4 py-2 md:py-3 border-b border-slate-700 flex-shrink-0">
-                <h2 className="font-bold text-yellow-500 mb-2 md:mb-3 text-sm md:text-base">Player Rankings</h2>
+              <div className="bg-slate-800 px-2 md:px-4 py-1.5 md:py-3 border-b border-slate-700 flex-shrink-0">
+                <h2 className="font-bold text-yellow-500 mb-1.5 md:mb-3 text-xs md:text-base">Player Rankings</h2>
 
                 <input
                   type="text"
                   placeholder="Search..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full bg-slate-900 border border-slate-600 rounded px-2 md:px-3 py-1 md:py-2 text-xs md:text-sm text-slate-100 mb-2 md:mb-3"
+                  className="search-input-mobile w-full bg-slate-900 border border-slate-600 rounded px-2 md:px-3 py-1 md:py-2 text-xs md:text-sm text-slate-100 mb-1.5 md:mb-3"
                 />
 
-                <div className="flex gap-2 mb-2 md:mb-3">
+                <div className="flex gap-1 md:gap-2 mb-1.5 md:mb-3">
                   <button
                     onClick={() => setRankingMode('fantasy')}
-                    className={`flex-1 px-2 md:px-3 py-1 md:py-2 rounded text-xs md:text-sm font-semibold ${
+                    className={`ranking-mode-btn flex-1 px-1.5 md:px-3 py-1 md:py-2 rounded text-xs md:text-sm font-semibold ${
                       rankingMode === 'fantasy' ? 'bg-purple-600 text-white' : 'bg-slate-700 text-slate-300'
                     }`}
                   >
@@ -632,7 +670,7 @@
                   </button>
                   <button
                     onClick={() => setRankingMode('consensus')}
-                    className={`flex-1 px-2 md:px-3 py-1 md:py-2 rounded text-xs md:text-sm font-semibold ${
+                    className={`ranking-mode-btn flex-1 px-1.5 md:px-3 py-1 md:py-2 rounded text-xs md:text-sm font-semibold ${
                       rankingMode === 'consensus' ? 'bg-blue-600 text-white' : 'bg-slate-700 text-slate-300'
                     }`}
                   >
@@ -640,10 +678,10 @@
                   </button>
                 </div>
 
-                <div className="flex flex-wrap gap-1 md:gap-2">
+                <div className="flex flex-wrap gap-0.5 md:gap-2">
                   <button
                     onClick={() => setSelectedPos('ALL')}
-                    className={`px-1.5 md:px-3 py-0.5 md:py-1 rounded text-[10px] md:text-xs font-bold ${
+                    className={`position-filter-btn px-1 md:px-3 py-0.5 md:py-1 rounded text-[9px] md:text-xs font-bold ${
                       selectedPos === 'ALL' ? 'bg-yellow-500 text-slate-900' : 'bg-slate-700'
                     }`}
                   >
@@ -653,7 +691,7 @@
                     <button
                       key={pos}
                       onClick={() => setSelectedPos(pos)}
-                      className={`px-1.5 md:px-3 py-0.5 md:py-1 rounded text-[10px] md:text-xs font-bold ${
+                      className={`position-filter-btn px-1 md:px-3 py-0.5 md:py-1 rounded text-[9px] md:text-xs font-bold ${
                         selectedPos === pos ? 'bg-yellow-500 text-slate-900' : 'bg-slate-700'
                       }`}
                     >
@@ -667,20 +705,20 @@
                 {filteredPlayers.map((player) => (
                   <div
                     key={player.id}
-                    className="p-1.5 md:p-3 hover:bg-slate-800 border-b border-slate-700"
+                    className="player-card-mobile p-1 md:p-3 hover:bg-slate-800 border-b border-slate-700"
                   >
-                    <div className="flex items-center gap-1 md:gap-3">
-                      <div className="w-8 md:w-12 text-slate-500 font-bold text-xs md:text-base text-center">
+                    <div className="flex items-center gap-0.5 md:gap-3">
+                      <div className="player-rank-number w-7 md:w-12 text-slate-500 font-bold text-xs md:text-base text-center flex-shrink-0">
                         #{rankingMode === 'fantasy' ? player.fantasyRank : player.rank}
                       </div>
                       <div
                         className="flex-1 min-w-0 cursor-pointer"
                         onClick={() => handlePlayerClick(player)}
                       >
-                        <div className="font-bold text-xs md:text-base truncate flex items-center gap-1">
+                        <div className="player-name font-bold text-xs md:text-base truncate flex items-center gap-1">
                           {player.name}
                         </div>
-                        <div className="text-[10px] md:text-xs text-slate-400 truncate">
+                        <div className="player-details text-[9px] md:text-xs text-slate-400 truncate">
                           {player.pos} • {player.school} • {player.size} • {player.weight} lbs
                           {rankingMode === 'fantasy' && player.draftScore && (
                             <span className="font-semibold"> • Fantasy: {player.draftScore}</span>
@@ -693,7 +731,7 @@
                       >
                         Details
                       </button>
-                      <div className="text-[10px] md:text-xs px-1 md:px-2 py-0.5 md:py-1 rounded bg-slate-700 flex-shrink-0">
+                      <div className="tier-badge text-[9px] md:text-xs px-1 md:px-2 py-0.5 md:py-1 rounded bg-slate-700 flex-shrink-0">
                         T{player.tier}
                       </div>
                     </div>
