@@ -45,13 +45,12 @@
       .player-name { font-size: 0.7rem !important; line-height: 1.2 !important; }
       .player-details { font-size: 0.6rem !important; line-height: 1.1 !important; }
       .player-rank-number { font-size: 0.65rem !important; }
-      .tier-badge { font-size: 0.6rem !important; padding: 0.125rem 0.25rem !important; }
 
-      /* Position filters - more compact */
+      /* Position filters - better spacing */
       .position-filter-btn {
-        font-size: 0.5rem !important;
-        padding: 0.35rem 0.6rem !important;
-        margin: 0.1rem !important;
+        font-size: 0.65rem !important;
+        padding: 0.5rem 0.8rem !important;
+        margin: 0.2rem !important;
       }
 
       /* Ranking mode buttons - more compact */
@@ -736,9 +735,6 @@
                         <span className="md:hidden">ℹ️</span>
                         <span className="hidden md:inline">Details</span>
                       </button>
-                      <div className="tier-badge text-[9px] md:text-xs px-1 md:px-2 py-0.5 md:py-1 rounded bg-slate-700 flex-shrink-0">
-                        T{player.tier}
-                      </div>
                     </div>
                   </div>
                 ))}
