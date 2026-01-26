@@ -695,7 +695,7 @@
                         <div className="text-[10px] md:text-xs text-slate-400 truncate">
                           {player.pos} • {player.school} • {player.size} • {player.weight} lbs
                           {rankingMode === 'fantasy' && player.draftScore && (
-                            <span className="text-purple-400 font-semibold"> • Fantasy: {player.draftScore}</span>
+                            <span className="font-semibold"> • Fantasy: {player.draftScore}</span>
                           )}
                         </div>
                       </div>
@@ -771,38 +771,38 @@
 
                   {/* Fantasy Scoring */}
                   {selectedPlayerDetail.draftScore && (
-                    <div className="bg-purple-900 bg-opacity-30 rounded-lg p-4 border border-purple-700 mb-6">
-                      <h3 className="text-purple-400 font-bold text-lg mb-4 flex items-center gap-2">
+                    <div className="bg-purple-900 bg-opacity-30 rounded-lg p-2 border border-purple-700 mb-6">
+                      <h3 className="text-purple-400 font-bold text-sm mb-2 flex items-center gap-1">
                         🏈 Fantasy Draft Score
                         {selectedPlayerDetail.isGenerational && (
-                          <span className="text-yellow-400 text-sm">Generational</span>
+                          <span className="text-yellow-400 text-xs">Generational</span>
                         )}
                       </h3>
-                      <div className="grid grid-cols-4 gap-4">
+                      <div className="grid grid-cols-4 gap-2">
                         <div>
-                          <div className="text-slate-400 text-xs uppercase mb-1">Draft Score</div>
-                          <div className="text-purple-400 text-2xl font-bold">{selectedPlayerDetail.draftScore}</div>
+                          <div className="text-slate-400 text-[10px] uppercase mb-0.5">Draft Score</div>
+                          <div className="text-purple-400 text-base font-bold">{selectedPlayerDetail.draftScore}</div>
                         </div>
                         <div>
-                          <div className="text-slate-400 text-xs uppercase mb-1">Fantasy Rank</div>
-                          <div className="text-purple-400 text-2xl font-bold">#{selectedPlayerDetail.fantasyRank}</div>
+                          <div className="text-slate-400 text-[10px] uppercase mb-0.5">Fantasy Rank</div>
+                          <div className="text-purple-400 text-base font-bold">#{selectedPlayerDetail.fantasyRank}</div>
                         </div>
                         <div>
-                          <div className="text-slate-400 text-xs uppercase mb-1">Grade</div>
-                          <div className="text-purple-400 text-2xl font-bold">{selectedPlayerDetail.grade}/10</div>
+                          <div className="text-slate-400 text-[10px] uppercase mb-0.5">Grade</div>
+                          <div className="text-purple-400 text-base font-bold">{selectedPlayerDetail.grade}/10</div>
                         </div>
                         <div>
-                          <div className="text-slate-400 text-xs uppercase mb-1">Position Mult</div>
-                          <div className="text-purple-400 text-2xl font-bold">{selectedPlayerDetail.fantasyMultiplier}x</div>
+                          <div className="text-slate-400 text-[10px] uppercase mb-0.5">Position Mult</div>
+                          <div className="text-purple-400 text-base font-bold">{selectedPlayerDetail.fantasyMultiplier}x</div>
                         </div>
                       </div>
-                      <div className="mt-3 text-xs text-slate-400">
+                      <div className="mt-2 text-[10px] text-slate-400">
                         {selectedPlayerDetail.isGenerational && ['EDGE', 'LB', 'DL', 'S', 'CB'].includes(selectedPlayerDetail.pos) && (
                           <div className="text-yellow-400">
                             Elite defender bonus applied (+1.5)
                           </div>
                         )}
-                        <div className="mt-1">
+                        <div className="mt-0.5">
                           Formula: Grade ({selectedPlayerDetail.grade}) × Multiplier ({selectedPlayerDetail.fantasyMultiplier})
                           {selectedPlayerDetail.isGenerational && ['EDGE', 'LB', 'DL', 'S', 'CB'].includes(selectedPlayerDetail.pos) && ' + 1.5 (elite defender bonus)'}
                         </div>
