@@ -635,20 +635,20 @@
 
                 <div className="flex gap-2 mb-2 md:mb-3">
                   <button
+                    onClick={() => setRankingMode('fantasy')}
+                    className={`flex-1 px-2 md:px-3 py-1 md:py-2 rounded text-xs md:text-sm font-semibold ${
+                      rankingMode === 'fantasy' ? 'bg-purple-600 text-white' : 'bg-slate-700 text-slate-300'
+                    }`}
+                  >
+                    🏈 Fantasy Ranking
+                  </button>
+                  <button
                     onClick={() => setRankingMode('consensus')}
                     className={`flex-1 px-2 md:px-3 py-1 md:py-2 rounded text-xs md:text-sm font-semibold ${
                       rankingMode === 'consensus' ? 'bg-blue-600 text-white' : 'bg-slate-700 text-slate-300'
                     }`}
                   >
                     📊 Consensus Rank
-                  </button>
-                  <button
-                    onClick={() => setRankingMode('fantasy')}
-                    className={`flex-1 px-2 md:px-3 py-1 md:py-2 rounded text-xs md:text-sm font-semibold ${
-                      rankingMode === 'fantasy' ? 'bg-purple-600 text-white' : 'bg-slate-700 text-slate-300'
-                    }`}
-                  >
-                    🏈 Fantasy Score
                   </button>
                 </div>
 
