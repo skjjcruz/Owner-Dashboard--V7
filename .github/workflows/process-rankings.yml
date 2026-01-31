@@ -1,1 +1,62 @@
+name: Process Rankings
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch: # This gives you the manual "Run" button
+
+permissions:
+  contents: write    # Permission to save the CSV/JSON
+  pages: write       # Permission to update the website
+  id-token: write
+
+jobs:
+  process-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Python Dependencies
+        run: pip install pandas
+
+      - name: Run Python Data Sync
+        run: |
+          # Create data folder if it doesn't exist to prevent pathspec errors
+          mkdir -p data
+          python scripts/merge_stats.py
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Run Node Processing
+        run: node process-excel-rankings.js
+
+      - name: Save Data to Repository
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "DraftBot"
+          git add data/prospects_test_2025.csv || true
+          git add players-final.json || true
+          # Only commit if there are actual changes
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update rankings" && git push)
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload Website Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
