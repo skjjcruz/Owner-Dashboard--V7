@@ -19,7 +19,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Fetches all history so push doesn't get rejected
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -40,7 +40,6 @@ jobs:
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "DraftBot"
-          # Pull first to avoid the [rejected] error from iPad conflicts
           git pull --rebase origin main
           git add .
           if [ -n "$(git status --porcelain)" ]; then
