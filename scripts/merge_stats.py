@@ -2,6 +2,7 @@ import pandas as pd
 import requests
 import os
 import sys
+from io import StringIO
 
 def run_draft_pipeline():
     url = "https://www.drafttek.com/2026-NFL-Draft-Big-Board/Top-NFL-Draft-Prospects-2026-Page-1.asp"
@@ -11,18 +12,20 @@ def run_draft_pipeline():
         print("Scraping Drafttek 2026 Big Board...")
         response = requests.get(url, headers=headers, timeout=15)
         
-        # Identify the correct table by searching for 'Prospect'
-        tables = pd.read_html(response.text, match='Prospect')
+        # FIX: Wrap response.text in StringIO to avoid the FutureWarning
+        # match='Prospect' ensures we grab the player table
+        tables = pd.read_html(StringIO(response.text), match='Prospect')
         df = tables[0]
 
-        # STEP 1: NORMALIZE COLUMNS
+        # STEP 1: NORMALIZE COLUMNS (Case-insensitive)
         df.columns = df.columns.str.strip().str.lower()
         
         # STEP 2: RENAME FOR DASHBOARD
         df = df.rename(columns={'prospect': 'player', 'pos': 'pos', 'rank': 'rank'})
 
         # STEP 3: THE "BRICK WALL" FIX
-        # Convert the 'pos' column to string type to prevent the AttributeError
+        # Force 'pos' to be a string to prevent the AttributeError
+        # Then clean it up for filtering
         df['pos'] = df['pos'].astype(str).str.strip().str.upper()
 
         # STEP 4: FILTERING (Screen out Offensive Linemen)
