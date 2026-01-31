@@ -1,40 +1,49 @@
-name: Deploy to GitHub Pages
-
+name: Sync Data and Deploy
 on:
+  workflow_dispatch: # Allows the manual button on iPad
   push:
     branches:
       - main
-  workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
+  contents: write    # Crucial: Allows the script to save the new CSV
+  pages: write       # Allows the script to update your website
   id-token: write
 
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout Repo
         uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Requirements
+        run: pip install pandas
+
+      - name: Run Python Data Sync
+        run: python scripts/merge_stats.py  # This pulls Jack's 2025 data
+
+      - name: Commit New Data
+        run: |
+          git config --global user.name "DraftBot"
+          git config --global user.email "actions@github.com"
+          git add data/prospects_test_2025.csv
+          git commit -m "Auto-update 2025 Data: $(date)" || echo "No changes"
+          git push origin main
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      - name: Upload Website Package
-  uses: actions/upload-pages-artifact@v3
-  with:
-    path: '.'
-    name: ${{ github.run_id }}-github-pages  # Make the artifact name unique
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
 
-    - name: Deploy to GitHub Pages
-  uses: actions/deploy-pages@v4
-  with:
-    artifact_name: ${{ github.run_id }}-github-pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
