@@ -12,7 +12,7 @@ def run_draft_pipeline():
         print("Scraping Drafttek 2026 Big Board...")
         response = requests.get(url, headers=headers, timeout=15)
         
-        # FIX: Wrap response.text in StringIO to avoid the FutureWarning
+        # Wrap response.text in StringIO to avoid the FutureWarning
         # match='Prospect' ensures we grab the player table
         tables = pd.read_html(StringIO(response.text), match='Prospect')
         df = tables[0]
@@ -21,11 +21,11 @@ def run_draft_pipeline():
         df.columns = df.columns.str.strip().str.lower()
         
         # STEP 2: RENAME FOR DASHBOARD
+        # Drafttek columns: Rank, CNG, Prospect, College, POS, Ht, Wt, CLS...
         df = df.rename(columns={'prospect': 'player', 'pos': 'pos', 'rank': 'rank'})
 
         # STEP 3: THE "BRICK WALL" FIX
         # Force 'pos' to be a string to prevent the AttributeError
-        # Then clean it up for filtering
         df['pos'] = df['pos'].astype(str).str.strip().str.upper()
 
         # STEP 4: FILTERING (Screen out Offensive Linemen)
