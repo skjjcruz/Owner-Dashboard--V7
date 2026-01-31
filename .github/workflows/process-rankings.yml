@@ -5,7 +5,6 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
-# REQUIRED: Permissions for the "robot" to save data and update the site
 permissions:
   contents: write
   pages: write
@@ -18,7 +17,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup Python & Node
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
@@ -28,32 +27,39 @@ jobs:
 
       - name: Run Python Data Sync
         run: |
+          # FORCE the data folder to exist so Git doesn't crash later
           mkdir -p data
           python scripts/merge_stats.py
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
       - name: Run Node Processing
-        run: |
-          node -v
-          node process-excel-rankings.js
+        run: node process-excel-rankings.js
 
       - name: Save Data to GitHub
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "DraftBot"
+          
+          # This 'add .' grabs everything including new files in the data folder
           git add .
+          
+          # Only commit if there are actually changes to avoid Exit 128
           if [ -n "$(git status --porcelain)" ]; then
             git commit -m "Auto-update rankings"
             git push origin main
           else
-            echo "No changes to save."
+            echo "No changes detected, skipping push."
           fi
 
-      # --- CRITICAL FIX: The Packaging Step ---
       - name: Upload Website Package
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'  # This packages your whole folder for the website
+          path: '.'
 
       - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
-
