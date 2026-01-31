@@ -1,9 +1,11 @@
-name: Process Rankings
+name: Process 2026 Rankings
 
 on:
   push:
     branches: [ main ]
-  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'  # Runs automatically at midnight
+  workflow_dispatch:      # Adds a manual "Run workflow" button
 
 permissions:
   contents: write
@@ -11,11 +13,13 @@ permissions:
   id-token: write
 
 jobs:
-  process-and-deploy:
+  scrape-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Fetches all history so push doesn't get rejected
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -23,39 +27,30 @@ jobs:
           python-version: '3.10'
 
       - name: Install Python Dependencies
-        run: pip install pandas
-
-      - name: Run Python Data Sync
         run: |
-          # FORCE the data folder to exist so Git doesn't crash later
+          python -m pip install --upgrade pip
+          pip install pandas requests beautifulsoup4 lxml
+
+      - name: Run 2026 Scraper
+        run: |
           mkdir -p data
           python scripts/merge_stats.py
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-
-      - name: Run Node Processing
-        run: node process-excel-rankings.js
-
-      - name: Save Data to GitHub
+      - name: Save Data to Repo
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "DraftBot"
-          
-          # This 'add .' grabs everything including new files in the data folder
+          # Pull first to avoid the [rejected] error from iPad conflicts
+          git pull --rebase origin main
           git add .
-          
-          # Only commit if there are actually changes to avoid Exit 128
           if [ -n "$(git status --porcelain)" ]; then
-            git commit -m "Auto-update rankings"
+            git commit -m "Auto-update 2026 rankings"
             git push origin main
           else
-            echo "No changes detected, skipping push."
+            echo "No new data found, skipping commit."
           fi
 
-      - name: Upload Website Package
+      - name: Upload Website Artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
