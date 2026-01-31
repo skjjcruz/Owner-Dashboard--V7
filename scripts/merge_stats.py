@@ -3,72 +3,66 @@ import requests
 from bs4 import BeautifulSoup
 import os
 import sys
-import time
 
 def run_draft_pipeline():
-    url = "https://www.profootballnetwork.com/nfl-draft-hq/custom-big-board/"
+    # The live URL for Jack's 2025 Consensus Big Board
+    url = "https://jacklich10.com/bigboard/nfl/"
     
-    # Advanced headers to bypass bot detection
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
-        'Accept-Language': 'en-US,en;q=0.5',
-        'Referer': 'https://www.google.com/'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
     }
 
     try:
-        print("Starting PFN Scrape session...")
-        session = requests.Session() # Persists cookies to look like a real user
-        response = session.get(url, headers=headers, timeout=15)
+        print("Connecting to Jack Lichtenstein's 2025 Big Board...")
+        response = requests.get(url, headers=headers, timeout=15)
         
         if response.status_code != 200:
-            raise ConnectionError(f"Site blocked access (Status {response.status_code}).")
+            raise ConnectionError(f"Could not reach the site. Status code: {response.status_code}")
 
-        soup = BeautifulSoup(response.content, 'html.parser')
+        # Jack's site often uses a standard HTML table for the 'Consensus' view
+        # We'll use Pandas to grab all tables and find the one with player data
+        tables = pd.read_html(response.text)
         
-        # PFN's board is often dynamic; we search for the standard table rows
-        players = []
-        rows = soup.find_all('tr') 
+        # Usually, the main board is the first or largest table
+        df = max(tables, key=len)
 
-        for row in rows:
-            cols = row.find_all('td')
-            if len(cols) >= 3:
-                name = cols[0].text.strip()
-                pos = cols[1].text.strip()
-                rank = cols[2].text.strip()
-                
-                # Basic validation to ensure it's a player row
-                if name and pos and any(char.isdigit() for char in rank):
-                    players.append({'player': name, 'pos': pos, 'rank': rank})
+        # 1. CLEANING & COLUMN MATCHING
+        # Standardize column names (Jack usually uses 'Player', 'Pos', and 'Rank')
+        df.columns = [c.strip() for c in df.columns]
+        
+        # Locate columns regardless of exact capitalization
+        player_col = next((c for c in ['Player', 'Name', 'player'] if c in df.columns), None)
+        pos_col = next((c for c in ['Pos', 'Position', 'pos'] if c in df.columns), None)
+        rank_col = next((c for c in ['Rank', 'rank', 'Consensus Rank'] if c in df.columns), None)
 
-        df = pd.DataFrame(players)
+        if not all([player_col, pos_col, rank_col]):
+            print(f"Columns found: {df.columns.tolist()}")
+            raise KeyError("Could not find required columns on Jack's site.")
 
-        if df.empty:
-            raise ValueError("Scraper found 0 players. The board might be loading via JavaScript.")
-
-        # 1. FILTERING (No OL, 2026 Class)
+        # 2. FILTERING (Screen out OL, Keep 2025 Stars)
         ol_positions = ['OT', 'OG', 'C', 'OL', 'G', 'LS', 'IOL']
-        df_filtered = df[~df['pos'].str.upper().isin(ol_positions)].copy()
-        
-        # 2. FANTASY MULTIPLIERS
+        df_filtered = df[~df[pos_col].str.upper().isin(ol_positions)].copy()
+
+        # 3. FANTASY MULTIPLIERS
         multipliers = {'QB': 1.0, 'RB': 1.5, 'WR': 1.4, 'TE': 1.2}
-        df_filtered['rank_num'] = pd.to_numeric(df_filtered['rank'].str.extract('(\d+)', expand=False), errors='coerce').fillna(999)
+        
+        # Convert rank to numeric (Jack's ranks are sometimes strings)
+        df_filtered[rank_col] = pd.to_numeric(df_filtered[rank_col], errors='coerce').fillna(999)
         
         df_filtered['fantasy_rank'] = df_filtered.apply(
-            lambda r: round(r['rank_num'] / multipliers.get(r['pos'].upper(), 1.0), 2), axis=1
+            lambda r: round(r[rank_col] / multipliers.get(str(r[pos_col]).upper(), 1.0), 2), axis=1
         )
 
-        # 3. SAVE DATA
+        # 4. SAVE
         os.makedirs('data', exist_ok=True)
         output_path = 'data/prospects_test_2025.csv'
         df_filtered.to_csv(output_path, index=False)
         
-        print(f"✅ Success! Found {len(df_filtered)} 2026 prospects.")
+        print(f"✅ Success! Captured {len(df_filtered)} players from Jack's 2025 board.")
 
     except Exception as e:
-        print(f"❌ Scraper failure: {e}")
+        print(f"❌ JackLich Sync failed: {e}")
         sys.exit(1)
 
 if __name__ == "__main__":
     run_draft_pipeline()
-
