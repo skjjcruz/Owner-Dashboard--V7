@@ -11,36 +11,33 @@ def run_draft_pipeline():
         print("Scraping Drafttek 2026 Big Board...")
         response = requests.get(url, headers=headers, timeout=15)
         
-        # match='Prospect' ensures we grab the main player table
+        # Identify the correct table by searching for 'Prospect'
         tables = pd.read_html(response.text, match='Prospect')
         df = tables[0]
 
-        # STEP 1: NORMALIZE COLUMNS (Fixes the KeyError)
-        # Strips extra spaces and converts 'POS' to 'pos', 'Prospect' to 'prospect', etc.
+        # STEP 1: NORMALIZE COLUMNS
         df.columns = df.columns.str.strip().str.lower()
-        print(f"Detected columns: {df.columns.tolist()}")
-
+        
         # STEP 2: RENAME FOR DASHBOARD
-        # We map the Drafttek names to your required keys
-        df = df.rename(columns={
-            'prospect': 'player',
-            'pos': 'pos',
-            'rank': 'rank'
-        })
+        df = df.rename(columns={'prospect': 'player', 'pos': 'pos', 'rank': 'rank'})
 
-        # STEP 3: FILTERING (Screen out Offensive Linemen)
-        ol_positions = ['OT', 'OG', 'C', 'OL', 'G', 'LS', 'IOL', 'OC']
-        df_filtered = df[~df['pos'].str.upper().isin(ol_positions)].copy()
+        # STEP 3: THE "BRICK WALL" FIX
+        # Convert the 'pos' column to string type to prevent the AttributeError
+        df['pos'] = df['pos'].astype(str).str.strip().str.upper()
 
-        # STEP 4: FANTASY MULTIPLIERS
+        # STEP 4: FILTERING (Screen out Offensive Linemen)
+        ol_positions = ['OT', 'OG', 'C', 'OL', 'G', 'LS', 'IOL', 'OC', 'NAN']
+        df_filtered = df[~df['pos'].isin(ol_positions)].copy()
+
+        # STEP 5: FANTASY MULTIPLIERS
         multipliers = {'QB': 1.0, 'RB': 1.5, 'WR': 1.4, 'TE': 1.2}
         df_filtered['rank'] = pd.to_numeric(df_filtered['rank'], errors='coerce').fillna(999)
         
         df_filtered['fantasy_rank'] = df_filtered.apply(
-            lambda r: round(r['rank'] / multipliers.get(str(r['pos']).upper(), 1.0), 2), axis=1
+            lambda r: round(r['rank'] / multipliers.get(r['pos'], 1.0), 2), axis=1
         )
 
-        # STEP 5: SAVE
+        # STEP 6: SAVE
         os.makedirs('data', exist_ok=True)
         df_filtered.to_csv('data/prospects_test_2025.csv', index=False)
         print(f"✅ Success! Captured {len(df_filtered)} players for 2026.")
@@ -51,4 +48,3 @@ def run_draft_pipeline():
 
 if __name__ == "__main__":
     run_draft_pipeline()
-
