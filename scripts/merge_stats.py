@@ -1,47 +1,64 @@
 import pandas as pd
+import requests
+from bs4 import BeautifulSoup
 import os
 import sys
 
 def run_draft_pipeline():
-    # NEW 2026 DATA SOURCE
-    url = "https://raw.githubusercontent.com/danmorse314/nfl-draft/main/data/2026/consensus_board.csv"
+    url = "https://www.nflmockdraftdatabase.com/big-boards/2026/consensus-big-board-2026"
+    headers = {'User-Agent': 'Mozilla/5.0'} # Pretend to be a browser to avoid getting blocked
     
     try:
-        print("Connecting to 2026 Consensus Data...")
-        df = pd.read_csv(url, low_memory=False)
+        print("Scraping 2026 NFL Mock Draft Database...")
+        response = requests.get(url, headers=headers)
+        soup = BeautifulSoup(response.content, 'html.parser')
 
-        # 1. SMART COLUMN LOCATOR
-        pos_col = next((c for c in ['pos', 'position', 'Pos', 'Position'] if c in df.columns), None)
-        rank_col = next((c for c in ['consensus_rank', 'rank', 'Rank'] if c in df.columns), None)
-        
-        if not pos_col:
-            print(f"Current columns: {df.columns.tolist()}")
-            raise KeyError("Could not find a 'Position' column.")
+        players = []
+        # NFLMDDB stores players in 'prospect-list-item' classes
+        items = soup.find_all('div', class_='prospect-list-item')
 
-        # 2. FILTERING (Remove OL, Keep 2026 Prospects)
-        ol_positions = ['OT', 'OG', 'C', 'OL', 'G', 'LS']
-        print(f"Screening Offensive Linemen using column: {pos_col}")
-        df_filtered = df[~df[pos_col].isin(ol_positions)].copy()
+        for item in items:
+            try:
+                # Extracting Data from their specific layout
+                name = item.find('div', class_='player-name').text.strip()
+                pos = item.find('div', class_='position-label').text.strip()
+                rank = item.find('div', class_='rank-number').text.strip()
+                
+                players.append({
+                    'player': name,
+                    'pos': pos,
+                    'rank': rank
+                })
+            except AttributeError:
+                continue # Skip items that don't have full info
+
+        df = pd.DataFrame(players)
+
+        if df.empty:
+            raise ValueError("Scraper found 0 players. The website layout might have changed.")
+
+        # 1. CLEANING
+        df['rank'] = pd.to_numeric(df['rank'], errors='coerce').fillna(999)
         
-        # 3. FANTASY MULTIPLIERS (Weighted Rankings)
+        # 2. FILTERING (Screen out OL)
+        ol_positions = ['OT', 'OG', 'C', 'OL', 'G', 'LS', 'IOL']
+        df_filtered = df[~df['pos'].str.upper().isin(ol_positions)].copy()
+
+        # 3. FANTASY MULTIPLIERS
         multipliers = {'QB': 1.0, 'RB': 1.5, 'WR': 1.4, 'TE': 1.2}
-        if rank_col:
-            df_filtered['fantasy_rank'] = df_filtered.apply(
-                lambda r: round(r[rank_col] / multipliers.get(r[pos_col], 1.0), 2) 
-                if pd.notnull(r[rank_col]) else 999, axis=1
-            )
-        else:
-            df_filtered['fantasy_rank'] = 999
+        df_filtered['fantasy_rank'] = df_filtered.apply(
+            lambda r: round(r['rank'] / multipliers.get(r['pos'].upper(), 1.0), 2), axis=1
+        )
 
-        # 4. SAVE DATA (Match your YAML path)
+        # 4. SAVE
         os.makedirs('data', exist_ok=True)
-        output_path = 'data/prospects_test_2025.csv' # Keeping name same so website doesn't break
+        output_path = 'data/prospects_test_2025.csv'
         df_filtered.to_csv(output_path, index=False)
         
-        print(f"✅ Success! Created {output_path} with {len(df_filtered)} 2026 players.")
+        print(f"✅ Success! Captured {len(df_filtered)} players for 2026.")
 
     except Exception as e:
-        print(f"❌ Error during 2026 sync: {e}")
+        print(f"❌ Scraper failed: {e}")
         sys.exit(1)
 
 if __name__ == "__main__":
