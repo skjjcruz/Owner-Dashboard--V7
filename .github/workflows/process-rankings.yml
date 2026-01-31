@@ -3,11 +3,11 @@ name: Process Rankings
 on:
   push:
     branches: [ main ]
-  workflow_dispatch: # This gives you the manual "Run" button
+  workflow_dispatch:
 
 permissions:
-  contents: write    # Permission to save the CSV/JSON
-  pages: write       # Permission to update the website
+  contents: write
+  pages: write
   id-token: write
 
 jobs:
@@ -16,19 +16,20 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Pulls full history to avoid 'non-fast-forward' errors
 
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
-      - name: Install Python Dependencies
+      - name: Install Dependencies
         run: pip install pandas
 
-      - name: Run Python Data Sync
+      - name: Run Python Sync
         run: |
-          # Create data folder if it doesn't exist to prevent pathspec errors
-          mkdir -p data
+          mkdir -p data # FORCE the folder to exist
           python scripts/merge_stats.py
 
       - name: Setup Node.js
@@ -39,24 +40,21 @@ jobs:
       - name: Run Node Processing
         run: node process-excel-rankings.js
 
-      - name: Save Data to Repository
+      - name: Save Data
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "DraftBot"
-          git add data/prospects_test_2025.csv || true
-          git add players-final.json || true
-          # Only commit if there are actual changes
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update rankings" && git push)
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
-      - name: Upload Website Artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: '.'
+          
+          # Use 'git add .' to grab everything that changed automatically
+          git add . 
+          
+          # Only commit if there are actual changes to avoid the 'nothing to commit' error
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m "Auto-update rankings"
+            git push origin main
+          else
+            echo "No changes detected, skipping push."
+          fi
 
       - name: Deploy to GitHub Pages
-        id: deployment
         uses: actions/deploy-pages@v4
-
