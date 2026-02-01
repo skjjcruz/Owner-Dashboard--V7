@@ -6,7 +6,7 @@ def run_draft_pipeline():
     """Process the NFL Mock Draft Database CSV and apply fantasy rankings."""
 
     input_file = 'data/mock_draft_db.csv'
-    output_file = 'data/prospects_2026.csv'
+    output_file = 'data/prospects_test_2025.csv'  # Keep this name so the app doesn't break
 
     try:
         print("Processing NFL Mock Draft Database...")
