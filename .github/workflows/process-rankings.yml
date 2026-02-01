@@ -3,9 +3,9 @@ name: Process 2026 Rankings
 on:
   push:
     branches: [ main ]
-  schedule:
-    - cron: '0 0 * * *'  # Runs automatically at midnight
-  workflow_dispatch:      # Adds a manual "Run workflow" button
+    paths:
+      - 'data/mock_draft_db.csv'  # Only run when CSV is updated
+  workflow_dispatch:  # Manual trigger button
 
 permissions:
   contents: write
@@ -13,7 +13,7 @@ permissions:
   id-token: write
 
 jobs:
-  scrape-and-deploy:
+  process-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -29,12 +29,16 @@ jobs:
       - name: Install Python Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pandas requests beautifulsoup4 lxml
+          pip install pandas requests
 
-      - name: Run 2026 Scraper
+      - name: Process Mock Draft Database
         run: |
           mkdir -p data
           python scripts/merge_stats.py
+
+      - name: Enrich with ESPN Data
+        run: |
+          python scripts/enrich_players.py data/prospects_2026.csv data/prospects_2026_enriched.csv
 
       - name: Save Data to Repo
         run: |
@@ -43,7 +47,7 @@ jobs:
           git pull --rebase origin main
           git add .
           if [ -n "$(git status --porcelain)" ]; then
-            git commit -m "Auto-update 2026 rankings"
+            git commit -m "Auto-update 2026 rankings with ESPN data"
             git push origin main
           else
             echo "No new data found, skipping commit."
