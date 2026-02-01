@@ -79,6 +79,17 @@ async function loadPlayersFromCSV() {
       return name.split(' ').map(n => n[0]).join('').toUpperCase().slice(0, 2);
     }
 
+    // Helper to get player photo URL
+    // If ESPN ID is available, use ESPN CDN; otherwise use UI Avatars as fallback
+    function getPhotoUrl(player) {
+      if (player.espn_id) {
+        return `https://a.espncdn.com/i/headshots/college-football/players/full/${player.espn_id}.png`;
+      }
+      // Fallback to UI Avatars service
+      const name = encodeURIComponent(player.name);
+      return `https://ui-avatars.com/api/?name=${name}&background=ca8a04&color=1e293b&size=128&bold=true`;
+    }
+
     // 4. Combine players with their sources
     const combinedPlayers = playersRaw.map(player => {
       const id = parseInt(player.id, 10);
@@ -103,7 +114,8 @@ async function loadPlayersFromCSV() {
         draftScore: parseFloat(player.draftScore) || 0,
         sources: sourcesMap[id] || [],
         highlightUrl: getHighlightUrl(player.name, player.school),
-        initials: getInitials(player.name)
+        initials: getInitials(player.name),
+        photoUrl: getPhotoUrl(player)
       };
     });
 
