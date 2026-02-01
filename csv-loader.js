@@ -80,12 +80,17 @@ async function loadPlayersFromCSV() {
     }
 
     // Helper to get player photo URL
-    // If ESPN ID is available, use ESPN CDN; otherwise use UI Avatars as fallback
+    // Priority: custom photo_url > ESPN ID > UI Avatars fallback
     function getPhotoUrl(player) {
+      // 1. Use custom photo URL if provided (college athletic sites, etc.)
+      if (player.photo_url) {
+        return player.photo_url;
+      }
+      // 2. Use ESPN CDN if ESPN ID is available
       if (player.espn_id) {
         return `https://a.espncdn.com/i/headshots/college-football/players/full/${player.espn_id}.png`;
       }
-      // Fallback to UI Avatars service
+      // 3. Fallback to UI Avatars service
       const name = encodeURIComponent(player.name);
       return `https://ui-avatars.com/api/?name=${name}&background=ca8a04&color=1e293b&size=128&bold=true`;
     }
