@@ -68,6 +68,17 @@ async function loadPlayersFromCSV() {
       });
     });
 
+    // Helper to generate YouTube search URL for highlights
+    function getHighlightUrl(name, school) {
+      const query = encodeURIComponent(`${name} ${school} football highlights 2025`);
+      return `https://www.youtube.com/results?search_query=${query}`;
+    }
+
+    // Helper to get player initials for avatar
+    function getInitials(name) {
+      return name.split(' ').map(n => n[0]).join('').toUpperCase().slice(0, 2);
+    }
+
     // 4. Combine players with their sources
     const combinedPlayers = playersRaw.map(player => {
       const id = parseInt(player.id, 10);
@@ -90,7 +101,9 @@ async function loadPlayersFromCSV() {
         isGenerational: player.isGenerational === 'true',
         fantasyMultiplier: parseFloat(player.fantasyMultiplier) || 1.0,
         draftScore: parseFloat(player.draftScore) || 0,
-        sources: sourcesMap[id] || []
+        sources: sourcesMap[id] || [],
+        highlightUrl: getHighlightUrl(player.name, player.school),
+        initials: getInitials(player.name)
       };
     });
 
