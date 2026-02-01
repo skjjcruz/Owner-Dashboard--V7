@@ -1,0 +1,28 @@
+name: Fetch ESPN Player IDs
+
+on:
+  workflow_dispatch:  # Manual trigger from GitHub UI
+
+jobs:
+  fetch-ids:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch ESPN IDs
+        run: node scripts/fetch-espn-ids.js
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add players.csv
+          git diff --staged --quiet || git commit -m "Update players.csv with ESPN IDs"
+          git push
