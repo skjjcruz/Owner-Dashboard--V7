@@ -38,7 +38,7 @@ jobs:
 
       - name: Enrich with ESPN Data
         run: |
-          python scripts/enrich_players.py data/prospects_2026.csv data/prospects_2026_enriched.csv
+          python scripts/enrich_players.py data/prospects_test_2025.csv data/prospects_test_2025.csv
 
       - name: Save Data to Repo
         run: |
