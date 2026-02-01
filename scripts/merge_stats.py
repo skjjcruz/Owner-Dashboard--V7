@@ -18,7 +18,8 @@ def run_draft_pipeline():
         df = tables[0]
 
         # STEP 1: NORMALIZE COLUMNS (Case-insensitive)
-        df.columns = df.columns.str.strip().str.lower()
+        # Convert to string first to handle MultiIndex or non-string column names
+        df.columns = df.columns.astype(str).str.strip().str.lower()
         
         # STEP 2: RENAME FOR DASHBOARD
         # Drafttek columns: Rank, CNG, Prospect, College, POS, Ht, Wt, CLS...
