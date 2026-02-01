@@ -39,21 +39,21 @@ id,rank,name,pos,school,year,size,weight,speed,tier,consensusRank,sourceCount,gr
 38,38,Germie Bernard,WR,Alabama,Senior,6'1,204,4.52,3,45.1,8,2.8,false,1.4,3.92,11,4685261
 39,39,Emmanuel McNeil-Warren,S,Toledo,Senior,6'2,202,4.52,3,45.2,7,2.8,false,0.35,0.98,86,4837186
 40,40,Lee Hunter,DL,Texas Tech,Senior,6'4,325,5.2,3,45.9,3,2.8,false,0.35,0.98,87,4431551
-41,41,Joshua Josephs,EDGE,Tennessee,Senior,6'3,240,4.68,3,47.4,7,2.7,false,0.5,1.35,63,
+41,41,Joshua Josephs,EDGE,Tennessee,Senior,6'3,240,4.68,3,47.4,7,2.7,false,0.5,1.35,63,4870890
 42,42,Chris Brazzell,WR,Tennessee,Junior,6'5,200,4.48,3,47.7,6,2.7,false,1.4,3.78,12,5091739
 43,43,D'angelo Ponds,CB,Indiana,Junior,5'9,170,4.35,3,49.6,7,2.6,false,0.25,0.65,116,
-44,44,Jake Golday,LB,Cincinnati,Senior,6'4,240,4.55,3,49.8,7,2.6,false,0.4,1.04,82,
+44,44,Jake Golday,LB,Cincinnati,Senior,6'4,240,4.55,3,49.8,7,2.6,false,0.4,1.04,82,4877652
 45,45,A.J. Haulcy,S,LSU,Senior,6'0,222,4.55,3,50.4,6,2.6,false,0.35,0.91,99,4905664
-46,46,Max Klare,TE,Ohio State,Junior,6'5,243,4.7,3,51.4,7,2.6,true,1.2,3.12,18,
+46,46,Max Klare,TE,Ohio State,Junior,6'5,243,4.7,3,51.4,7,2.6,true,1.2,3.12,18,4685265
 47,47,Elijah Sarratt,WR,Indiana,Senior,6'2,209,4.6,3,51.5,6,2.6,false,1.4,3.64,13,5088338
 48,48,Zion Young,EDGE,Missouri,Senior,6'5,262,4.76,3,52,8,2.5,false,0.5,1.25,73,
 49,49,Keionte Scott,S,Miami (FL),Senior,6'0,192,4.44,4,52.1,6,2.5,false,0.35,0.88,101,
-50,50,Ja'Kobi Lane,WR,USC,Junior,6'4,200,4.55,4,53.1,7,2.5,false,1.4,3.5,14,
+50,50,Ja'Kobi Lane,WR,USC,Junior,6'4,200,4.55,4,53.1,7,2.5,false,1.4,3.5,14,4870987
 51,51,Gabe Jacas,EDGE,Illinois,Senior,6'3,275,4.8,4,53.6,6,2.5,false,0.5,1.25,74,4837244
 52,52,Lee Hunter,DL,Texas Tech,Senior,6'4,325,5.2,4,54.5,4,2.5,false,0.35,0.88,102,4431551
 53,53,Josiah Trotter,LB,Missouri,Sophomore,6'2,237,4.61,4,55.7,5,2.4,false,0.4,0.96,89,
 54,54,Deontae Lawson,LB,Alabama,Senior,6'2,228,4.6,4,56.1,6,2.4,false,0.4,0.96,90,
-55,55,Jaishawn Barham,EDGE,Michigan,Senior,6'3,243,,4,56.9,2,2.4,false,0.5,1.2,75,
+55,55,Jaishawn Barham,EDGE,Michigan,Senior,6'3,243,,4,56.9,2,2.4,false,0.5,1.2,75,4685266
 56,56,Zachariah Branch,WR,Georgia,Junior,5'10,180,4.35,4,57,7,2.4,false,1.4,3.36,16,4870612
 57,57,Omar Cooper Jr.,WR,Indiana,Junior,6'0,201,4.49,4,60,6,2.3,false,1.4,3.22,17,
 58,58,Domonique Orange,DL,Iowa State,Senior senior,6'4,325,5.3,4,60.5,7,2.3,false,0.35,0.81,106,
@@ -64,46 +64,46 @@ id,rank,name,pos,school,year,size,weight,speed,tier,consensusRank,sourceCount,gr
 63,63,Julian Neal,CB,Arkansas,Senior,6'2,200,4.58,4,65.7,6,2.1,false,0.25,0.53,134,
 64,64,Antonio Williams,WR,Clemson,Junior,5'11,190,4.45,4,66.2,7,2.1,false,1.4,2.94,22,
 65,65,Chandler Rivers,CB,Duke,Senior,5'10,185,4.45,4,69.4,4,2,false,0.25,0.5,136,
-66,66,Dani Dennis-Sutton,EDGE,Penn State,Senior,6'5,265,4.68,4,69.7,7,2,false,0.5,1,85,
+66,66,Dani Dennis-Sutton,EDGE,Penn State,Senior,6'5,265,4.68,4,69.7,7,2,false,0.5,1,85,4685260
 67,67,Jamari Johnson,TE,Oregon,Sophomore,6'5,257,,4,70,1,2,false,1.2,2.4,29,
-68,68,Malik Muhammad,CB,Texas,Junior,6'0,198,4.47,4,71.6,6,1.9,false,0.25,0.48,137,
+68,68,Malik Muhammad,CB,Texas,Junior,6'0,198,4.47,4,71.6,6,1.9,false,0.25,0.48,137,4602018
 69,69,Darrell Jackson Jr.,DL,Florida State,Senior,6'5,337,5.05,4,72.6,7,1.9,false,0.35,0.66,115,
-70,70,Will Lee III,CB,Texas A&M,Senior,6'1,189,4.55,4,72.8,7,1.9,false,0.25,0.48,138,
+70,70,Will Lee III,CB,Texas A&M,Senior,6'1,189,4.55,4,72.8,7,1.9,false,0.25,0.48,138,5151083
 71,71,Derrick Moore,EDGE,Michigan,Senior,6'3,260,4.65,4,74.3,7,1.9,false,0.5,0.95,96,
 72,72,Anthony Lucas,EDGE,USC,Senior,6'5,285,4.85,4,74.8,6,1.9,false,0.5,0.95,97,
 73,73,Ahmad Moten Sr.,DL,Miami (FL),Senior,6'3,324,,4,76,4,1.8,false,0.35,0.63,120,
 74,74,Dontay Corleone,DL,Cincinnati,Senior,6'1,335,5.1,4,76.1,6,1.8,false,0.35,0.63,121,4594205
-75,75,Michael Trigg,TE,Baylor,Senior,6'4,240,4.7,4,77.5,6,1.8,false,1.2,2.16,35,
+75,75,Michael Trigg,TE,Baylor,Senior,6'4,240,4.7,4,77.5,6,1.8,false,1.2,2.16,35,4870985
 76,76,Arion Carter,LB,Tennessee,,6'1,235,,4,78,1,1.8,false,0.4,0.72,110,
-77,77,Emmett Johnson,RB,Nebraska,Junior,5'11,200,4.52,4,80.4,5,1.7,false,1.4,2.38,31,
-78,78,Malachi Fields,WR,Notre Dame,Senior,6'4,223,4.5,4,81.9,7,1.7,false,1.4,2.38,32,
-79,79,Tyreak Sapp,EDGE,Florida,Junior,6'3,272,4.76,4,82.2,7,1.7,false,0.5,0.85,103,
-80,80,Garrett Nussmeier,QB,LSU,Senior,6'1,205,4.82,4,82.4,7,1.7,true,1.6,2.72,26,
-81,81,Carson Beck,QB,Miami (FL),Senior,6'4,220,4.84,4,82.4,6,1.7,false,1.6,2.72,27,
+77,77,Emmett Johnson,RB,Nebraska,Junior,5'11,200,4.52,4,80.4,5,1.7,false,1.4,2.38,31,4714772
+78,78,Malachi Fields,WR,Notre Dame,Senior,6'4,223,4.5,4,81.9,7,1.7,false,1.4,2.38,32,4832801
+79,79,Tyreak Sapp,EDGE,Florida,Junior,6'3,272,4.76,4,82.2,7,1.7,false,0.5,0.85,103,4889957
+80,80,Garrett Nussmeier,QB,LSU,Senior,6'1,205,4.82,4,82.4,7,1.7,true,1.6,2.72,26,4567747
+81,81,Carson Beck,QB,Miami (FL),Senior,6'4,220,4.84,4,82.4,6,1.7,false,1.6,2.72,27,4430841
 82,82,Jalon Kilgore,CB,South Carolina,Junior,6'1,211,,4,82.5,2,1.7,false,0.25,0.43,144,
 83,83,Genesis Smith,S,Arizona,Junior,6'2,202,4.5,4,83.4,6,1.7,false,0.35,0.6,122,
-84,84,Daylen Everette,CB,Georgia,Senior,6'1,190,4.34,4,85.2,5,1.6,false,0.25,0.4,153,
-85,85,Harold Perkins,LB,LSU,Junior,6'1,222,4.45,4,85.3,7,1.6,false,0.4,0.64,117,
-86,86,Michael Taaffe,S,Texas,Senior,6'0,189,4.55,4,85.5,4,1.6,false,0.35,0.56,129,
+84,84,Daylen Everette,CB,Georgia,Senior,6'1,190,4.34,4,85.2,5,1.6,false,0.25,0.4,153,4870789
+85,85,Harold Perkins,LB,LSU,Junior,6'1,222,4.45,4,85.3,7,1.6,false,0.4,0.64,117,4602017
+86,86,Michael Taaffe,S,Texas,Senior,6'0,189,4.55,4,85.5,4,1.6,false,0.35,0.56,129,46110323
 87,87,Deion Burks,WR,Oklahoma,Senior,5'9,188,4.43,4,85.8,6,1.6,false,1.4,2.24,33,
 88,88,Clay Patterson,DL,Stanford,Senior,6'3,280,,4,86,1,1.6,false,0.35,0.56,130,
-89,89,Jaishawn Barham,LB,Michigan,Senior,6'3,243,4.55,4,86.1,5,1.6,false,0.4,0.64,118,
+89,89,Jaishawn Barham,LB,Michigan,Senior,6'3,243,4.55,4,86.1,5,1.6,false,0.4,0.64,118,4685266
 90,90,Davison Igbinosun,CB,Ohio State,Senior,6'2,195,4.34,4,86.1,6,1.6,false,0.25,0.4,154,
 91,91,Skyler Bell,WR,UConn,Senior,6'0,185,4.43,4,86.6,5,1.6,false,1.4,2.24,34,
 92,92,Zakee Wheatley,S,Penn State,Senior,6'2,200,4.4,4,88.5,6,1.5,false,0.35,0.52,135,
 93,93,Trinidad Chambliss,QB,Mississippi,Senior,6'1,200,4.45,4,90,6,1.5,false,1.6,2.4,30,
-94,94,Nick Singleton,RB,Penn State,Senior,6'0,224,4.39,4,93.9,5,1.4,false,1.4,1.96,39,
+94,94,Nick Singleton,RB,Penn State,Senior,6'0,224,4.39,4,93.9,5,1.4,false,1.4,1.96,39,4685519
 95,95,Cian Sloan,LB,North Carolina State,Senior,6'4,252,,4,94,1,1.4,false,0.4,0.56,131,
 96,96,Jacob Rodriguez,LB,Texas Tech,Senior,6'1,230,4.7,4,94,6,1.4,false,0.4,0.56,132,
-97,97,Kaytron Allen,RB,Penn State,Senior,5'11,217,4.55,4,94.7,6,1.4,false,1.4,1.96,40,
+97,97,Kaytron Allen,RB,Penn State,Senior,5'11,217,4.55,4,94.7,6,1.4,false,1.4,1.96,40,4685514
 98,98,Demond Claiborne,RB,Wake Forest,Senior,5'10,195,4.42,4,95.1,7,1.4,false,1.4,1.96,41,
 99,99,Mikail Kamara,EDGE,Indiana,Senior,6'1,265,4.8,4,95.2,4,1.4,false,0.5,0.7,114,
-100,100,Jack Endries,TE,Texas,Junior,6'4,240,4.68,4,96.7,6,1.4,false,1.2,1.68,45,
+100,100,Jack Endries,TE,Texas,Junior,6'4,240,4.68,4,96.7,6,1.4,false,1.2,1.68,45,4685517
 101,101,Joe Royer,TE,Cincinnati,Senior,6'5,250,4.65,5,102.9,3,1.3,false,1.2,1.56,50,
 102,102,Justin Joly,TE,NC State,Senior,6'3,251,4.75,5,103.8,5,1.2,false,1.2,1.44,58,
-103,103,C.J. Daniels,WR,Miami (FL),Senior,6'2,205,4.44,5,104.2,5,1.2,false,1.4,1.68,46,
+103,103,C.J. Daniels,WR,Miami (FL),Senior,6'2,205,4.44,5,104.2,5,1.2,false,1.4,1.68,46,4870986
 104,104,Jaheim Lawson,EDGE,Clemson,Junior,6'2,255,4.72,5,104.4,1,1.2,false,0.5,0.6,123,
-105,105,Drew Allar,QB,Penn State,Senior,6'5,235,4.9,5,105.2,6,1.2,false,1.6,1.92,43,
+105,105,Drew Allar,QB,Penn State,Senior,6'5,235,4.9,5,105.2,6,1.2,false,1.6,1.92,43,4714771
 106,106,DeMonte Capehart,DL,Clemson,Senior,6'5,313,4.75,5,105.6,6,1.2,false,0.35,0.42,145,
 107,107,Joe Royer,TE,Cincinnati,Senior,6'5,250,4.65,5,107.5,3,1.2,false,1.2,1.44,59,
 108,108,Malachi Lawrence,EDGE,UCF,Senior,6'4,250,4.78,5,107.7,5,1.2,false,0.5,0.6,124,
@@ -118,8 +118,8 @@ id,rank,name,pos,school,year,size,weight,speed,tier,consensusRank,sourceCount,gr
 117,117,Hezekiah Masses,CB,California,,,,,5,110.8,4,1.1,false,0.25,0.28,186,
 118,118,Kevin Coleman Jr.,WR,Missouri,Senior,5'11,180,4.4,5,111.1,6,1.1,false,1.4,1.54,53,
 119,119,Kyle Louis,LB,Pittsburgh,Junior,6'1,220,4.65,5,111.5,5,1.1,false,0.4,0.44,143,
-120,120,Cade Klubnik,QB,Clemson,Senior,6'2,210,4.65,5,111.6,6,1.1,false,1.6,1.76,44,
-121,121,Oscar Delp,TE,Georgia,Senior,6'5,245,4.52,5,111.8,6,1.1,false,1.2,1.32,67,
+120,120,Cade Klubnik,QB,Clemson,Senior,6'2,210,4.65,5,111.6,6,1.1,false,1.6,1.76,44,4685516
+121,121,Oscar Delp,TE,Georgia,Senior,6'5,245,4.52,5,111.8,6,1.1,false,1.2,1.32,67,4685264
 122,122,Tim Keenan III,DL,Alabama,Senior,6'2,320,5.2,5,112.4,6,1.1,false,0.35,0.39,160,
 123,123,Eric Rivers,WR,Georgia Tech,Senior,5'11,180,4.38,5,112.5,6,1.1,false,1.4,1.54,54,
 124,124,DeShon Singleton,S,Nebraska,Senior,6'3,210,,5,116,1,1,false,0.35,0.35,163,
@@ -130,7 +130,7 @@ id,rank,name,pos,school,year,size,weight,speed,tier,consensusRank,sourceCount,gr
 129,129,David Oke,DL,Arkansas,Senior,6'2,314,,5,120.3,2,1,false,0.35,0.35,166,
 130,130,Josh Cameron,WR,Baylor,Senior,6'1,224,,5,121.5,4,0.9,false,1.4,1.26,69,
 131,131,Jordan van den Berg,EDGE,Georgia Tech,Senior,6'3,300,,5,121.8,2,0.9,false,0.5,0.45,141,
-132,132,Xavier Scott,CB,Illinois,Senior,5'11,195,,5,121.8,3,0.9,false,0.25,0.23,199,
+132,132,Xavier Scott,CB,Illinois,Senior,5'11,195,,5,121.8,3,0.9,false,0.25,0.23,199,4917004
 133,133,Albert Regis,DL,Texas A&M,Senior,6'1,317,4.85,5,122,4,0.9,false,0.35,0.32,169,
 134,134,Skyler Gill-Howard,DL,Texas Tech,Senior,6'1,290,4.9,5,122.2,5,0.9,false,0.35,0.32,170,
 135,135,Bishop Fitzgerald,S,USC,Senior,5'11,205,4.42,5,122.3,4,0.9,false,0.35,0.32,171,
@@ -176,11 +176,11 @@ id,rank,name,pos,school,year,size,weight,speed,tier,consensusRank,sourceCount,gr
 175,175,Patrick Payton,EDGE,LSU,Senior,6'6,255,,5,147.8,3,0.6,false,0.5,0.3,184,
 176,176,Lance Mason,TE,Wisconsin,Senior,6'4,240,,5,148.3,3,0.6,false,1.2,0.72,113,
 177,177,Josh Moten,CB,Southern Miss,Senior,6'0,185,4.43,5,148.3,3,0.6,false,0.25,0.15,212,
-178,178,Jermaine Mathews Jr.,CB,Ohio State,Junior,5'11,190,4.38,5,150.3,3,0.5,false,0.25,0.13,226,
+178,178,Jermaine Mathews Jr.,CB,Ohio State,Junior,5'11,190,4.38,5,150.3,3,0.5,false,0.25,0.13,226,4602018
 179,179,Vincent Anthony Jr,EDGE,Duke,Senior,6'6,260,,5,150.7,5,0.5,false,0.5,0.25,195,
 180,180,Channing Canada,CB,TCU,Senior,6'1,190,,5,150.7,2,0.5,false,0.25,0.13,227,
 181,181,John Michael Gyllenborg,TE,Wyoming,Senior,6'5,251,,5,151.3,5,0.5,false,1.2,0.6,126,
-182,182,Marlin Klein,TE,Michigan,Senior,6'6,250,,5,151.9,3,0.5,false,1.2,0.6,127,
+182,182,Marlin Klein,TE,Michigan,Senior,6'6,250,,5,151.9,3,0.5,false,1.2,0.6,127,4685265
 183,183,Chris McClellon,DL,Missouri,Senior,6'4,323,,5,152,5,0.5,false,0.35,0.18,208,
 184,184,Christian Gray,CB,Notre Dame,Junior,6'0,188,4.45,5,152.1,2,0.5,false,0.25,0.13,228,
 185,185,Riley Nowakowski,TE,Indiana,Senior,6'2,249,,5,157,2,0.5,false,1.2,0.6,128,
@@ -208,7 +208,7 @@ id,rank,name,pos,school,year,size,weight,speed,tier,consensusRank,sourceCount,gr
 207,207,Jamarion Miller,RB,Alabama,Senior,5'10,221,,5,171,3,0.3,false,1.4,0.42,149,
 208,208,Antonio Kite,CB,Ole Miss,Junior,6'0,180,4.48,5,171.1,1,0.3,false,0.25,0.08,238,
 209,209,Quinten Joyner,RB,Texas Tech,Sophomore,5'11,205,4.47,5,172.2,1,0.3,false,1.4,0.42,150,
-210,210,Logan Fano,EDGE,Utah,Junior,6'5,260,,5,172.6,2,0.3,false,0.5,0.15,214,
+210,210,Logan Fano,EDGE,Utah,Junior,6'5,260,,5,172.6,2,0.3,false,0.5,0.15,214,4870723
 211,211,Jalon Daniels,QB,Kansas,Senior,6'0,220,4.58,5,172.9,4,0.3,false,1.6,0.48,139,
 212,212,Lewis Bond,WR,Boston College,Senior,5'11,190,,5,173.9,3,0.3,false,1.4,0.42,151,
 213,213,Cole Payton,QB,North Dakota State,Senior,6'3,233,,5,174.3,3,0.3,false,1.6,0.48,140,
@@ -261,7 +261,7 @@ id,rank,name,pos,school,year,size,weight,speed,tier,consensusRank,sourceCount,gr
 260,260,Chip Trayanum,RB,Toledo,Senior,5'11,227,,5,198.3,2,0,false,1.4,0,260,
 261,261,Isaac Smith,S,Mississippi State,Junior,6'0,220,4.6,5,198.9,1,0,false,0.35,0,261,
 262,262,DJ Harvey,CB,USC,Senior,5'10,190,4.44,5,199.7,3,0,false,0.25,0,262,
-263,263,Barion Brown,WR,LSU,Senior,5'11,185,4.28,5,200,4,0,false,1.4,0,263,
+263,263,Barion Brown,WR,LSU,Senior,5'11,185,4.28,5,200,4,0,false,1.4,0,263,4685262
 264,264,Hykeem Williams,WR,Colorado,Junior,6'2,220,4.32,5,200,1,0,false,1.4,0,264,
 265,265,Trey Smack,K,Florida,,,,,5,200,1,0,true,0.4,0,265,
 266,266,Luke Altmyer,QB,Illinois,Senior,6'2,205,4.75,5,200.3,4,0,false,1.6,0,266,
