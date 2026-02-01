@@ -120,7 +120,8 @@ async function loadPlayersFromCSV() {
         sources: sourcesMap[id] || [],
         highlightUrl: getHighlightUrl(player.name, player.school),
         initials: getInitials(player.name),
-        photoUrl: getPhotoUrl(player)
+        photoUrl: getPhotoUrl(player),
+        summary: player.summary || ''
       };
     });
 
