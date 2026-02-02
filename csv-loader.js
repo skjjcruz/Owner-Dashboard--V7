@@ -54,7 +54,29 @@ async function loadPlayersFromCSV() {
     const sourcesText = await sourcesResponse.text();
     const sourcesRaw = parseCSV(sourcesText);
 
-    // 3. Group sources by player_id
+    // 3. Fetch enrichment data (ESPN IDs, photos, summaries) - persists across ranking updates
+    let enrichmentMap = {};
+    try {
+      const enrichmentResponse = await fetch('./player-enrichment.csv');
+      if (enrichmentResponse.ok) {
+        const enrichmentText = await enrichmentResponse.text();
+        const enrichmentRaw = parseCSV(enrichmentText);
+        // Build lookup map by name+school (case-insensitive)
+        enrichmentRaw.forEach(e => {
+          const key = `${e.name.toLowerCase()}|${e.school.toLowerCase()}`;
+          enrichmentMap[key] = {
+            espn_id: e.espn_id || '',
+            photo_url: e.photo_url || '',
+            summary: e.summary || ''
+          };
+        });
+        console.log(`Enrichment data loaded: ${Object.keys(enrichmentMap).length} players`);
+      }
+    } catch (err) {
+      console.warn('Could not load player-enrichment.csv, continuing without enrichment data');
+    }
+
+    // 4. Group sources by player_id
     const sourcesMap = {};
     sourcesRaw.forEach(s => {
       const playerId = parseInt(s.player_id, 10);
@@ -81,23 +103,27 @@ async function loadPlayersFromCSV() {
 
     // Helper to get player photo URL
     // Priority: custom photo_url > ESPN ID > UI Avatars fallback
-    function getPhotoUrl(player) {
+    function getPhotoUrl(playerName, enrichment) {
       // 1. Use custom photo URL if provided (college athletic sites, etc.)
-      if (player.photo_url) {
-        return player.photo_url;
+      if (enrichment && enrichment.photo_url) {
+        return enrichment.photo_url;
       }
       // 2. Use ESPN CDN if ESPN ID is available
-      if (player.espn_id) {
-        return `https://a.espncdn.com/i/headshots/college-football/players/full/${player.espn_id}.png`;
+      if (enrichment && enrichment.espn_id) {
+        return `https://a.espncdn.com/i/headshots/college-football/players/full/${enrichment.espn_id}.png`;
       }
       // 3. Fallback to UI Avatars service
-      const name = encodeURIComponent(player.name);
+      const name = encodeURIComponent(playerName);
       return `https://ui-avatars.com/api/?name=${name}&background=ca8a04&color=1e293b&size=128&bold=true`;
     }
 
-    // 4. Combine players with their sources
+    // 5. Combine players with their sources and enrichment data
     const combinedPlayers = playersRaw.map(player => {
       const id = parseInt(player.id, 10);
+      // Look up enrichment data by name + school
+      const enrichmentKey = `${player.name.toLowerCase()}|${player.school.toLowerCase()}`;
+      const enrichment = enrichmentMap[enrichmentKey] || {};
+
       return {
         id: id,
         name: player.name,
@@ -120,8 +146,8 @@ async function loadPlayersFromCSV() {
         sources: sourcesMap[id] || [],
         highlightUrl: getHighlightUrl(player.name, player.school),
         initials: getInitials(player.name),
-        photoUrl: getPhotoUrl(player),
-        summary: player.summary || ''
+        photoUrl: getPhotoUrl(player.name, enrichment),
+        summary: enrichment.summary || ''
       };
     });
 
