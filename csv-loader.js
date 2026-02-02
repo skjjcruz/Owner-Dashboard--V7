@@ -71,7 +71,8 @@ async function loadPlayersFromCSV() {
             year: e.year || '',
             size: e.size || '',
             weight: e.weight || '',
-            speed: e.speed || ''
+            speed: e.speed || '',
+            fantasyMultiplier: e.fantasyMultiplier || '1.0'
           };
         });
         console.log(`Enrichment data loaded: ${Object.keys(enrichmentMap).length} players`);
@@ -145,7 +146,7 @@ async function loadPlayersFromCSV() {
         sourceCount: parseInt(player.sourceCount, 10) || 0,
         grade: parseFloat(player.grade) || 0,
         isGenerational: player.isGenerational === 'true',
-        fantasyMultiplier: parseFloat(player.fantasyMultiplier) || 1.0,
+        fantasyMultiplier: parseFloat(enrichment.fantasyMultiplier) || 1.0,
         draftScore: parseFloat(player.draftScore) || 0,
         sources: sourcesMap[id] || [],
         highlightUrl: getHighlightUrl(player.name, player.school),

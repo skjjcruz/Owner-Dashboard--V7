@@ -1,511 +1,511 @@
-name,school,espn_id,photo_url,summary,year,size,weight,speed
-Fernando Mendoza,Indiana,4837248,,"Fernando Mendoza (6'5/225) etched his legacy as the 2025 Heisman Trophy winner—the first in Indiana history—while leading the Hoosiers to a flawless 16-0 national championship season, capped by a thrilling 27-21 CFP title win over Miami. Explosive stats: 3,535 yards, nation-leading 41 passing TDs (plus 6 rushing), 70%+ completion rate, and elite poise/decision-making under pressure. Maxwell Award finalist, All-Big Ten honors, and consensus QB1/No. 1 overall mock in 2026—franchise-altering gunslinger with pinpoint accuracy and leadership. Weaknesses: Average arm strength limits elite deep-ball velocity; improved but occasional sack-prone tendencies. High-ceiling starter ready to dominate the NFL.",Junior,6'5,225,4.85
-Caleb Downs,Ohio State,4870706,,"Caleb Downs (6'0/205) proved generational after transferring to Ohio State in 2025, blending elite range, football IQ, bone-crushing tackling, ball-hawking (multiple INTs/PBUs), and versatility—earning Thorpe Award finalist, All-American honors, and consensus top-5 overall buzz as a scheme-proof defender. Unicorn traits with immediate starter potential. Weaknesses: Can be overly aggressive (sells out for hits); size/durability questions vs. bigger frames. First DB off the board in 2026.",Junior,6'0,205,4.45
-Arvell Reese,Ohio State,4950400,,"Arvell Reese (6'4/243) emerged as a sideline-to-sideline linebacker force in Ohio State's loaded defense during 2025, flashing elite range, explosive pass-rush bursts (multiple sacks/TFLs), lockdown coverage skills, and high instincts—earning All-Big Ten nods and Butkus watch list buzz. Versatile three-down fit with athleticism and physicality. Weaknesses: Still developing block-shedding strength; occasional over-pursuit in space. Rising top LB prospect in 2026 with high-ceiling starter traits.",Junior,6'4,243,4.52
-Jeremiyah Love,Notre Dame,4870808,,"Jeremiyah Love (6'0/214) exploded as Notre Dame's three-down RB dynamo in 2025, blending 4.4 speed, elite vision, receiving chops (50+ catches), and home-run ability (1,200+ all-purpose yards, 12+ TDs)—earning Doak Walker semifinalist and All-Independent honors. Dynamic playmaker thriving in zone schemes with top RB buzz in 2026. Weakness: Pass protection technique developing; occasional fumbles under contact. Versatile modern back ready for NFL.",Junior,6'0,214,4.4
-Rueben Bain,Miami (FL),4870617,,"Rueben Bain Jr. (6'3/275) exploded as one of college football's most dominant EDGE rushers in 2025, blending freakish athleticism, violent hands, and relentless motor to rack up double-digit sacks, 20+ TFLs, and pressures—earning ACC Defensive Player of the Year, Nagurski finalist, All-American honors, and top-5 EDGE buzz. A powerful frame with quick first step and run-defense strength—pure NFL disruptor with game-wrecking ability and All-Pro upside. Weaknesses: Lacks prototypical arm length and elite bend; occasional undisciplined gaps. Top-10 pick potential in 2026 as a versatile terror.",Junior,6'3,275,4.72
-Carnell Tate,Ohio State,4871023,,"Carnell Tate (6'3/195) solidified elite status as Ohio State's next WR factory product in 2025—a smooth, five-star route-runner with elite body control, strong hands, and explosive deep-threat ability (800+ yards, 8+ TDs)—earning All-Big Ten honors and Biletnikoff watch list buzz. Red-zone dominance and consistent big-play hauls position him as a top-15 WR prospect for 2026 with first-round polish and WR1 potential. Weaknesses: Lacks elite speed/explosiveness and YAC playmaking; can be jammed off the line. High-upside separator.",Junior,6'3,195,4.6
-Jordyn Tyson,Arizona State,4880281,,"Jordyn Tyson (6'2/200) became a matchup nightmare at Arizona State post-Colorado transfer in 2025, dominating with 1,000+ yards, 10+ TDs, contested-catch prowess (top-10 class rate), explosive YAC, and physical boundary dominance—earning All-Big 12 nods and Biletnikoff semifinalist buzz. Reliable hands, route nuance, and red-zone mastery make him a rising star with WR2/WR1 upside in pro schemes. Weaknesses: Not elite speed; can struggle vs. elite press-man corners. High Day 2 projection with polished, low-risk traits.",Junior,6'2,200,4.5
-David Bailey,Texas Tech,4685248,,,Senior,6'3,250,4.52
-Peter Woods,Clemson,4871063,,"Peter Woods (6'3/315) anchored Clemson's interior in 2025 as a stout run-stuffer with brute power, quick snap explosion, and disruptive pressures (multiple sacks/TFLs)—earning All-ACC nods and Outland Trophy watch list buzz. Clogs lanes effectively with high-floor traits as a reliable starter. Weaknesses: Limited pass-rush production/plan; occasional gap-sound lapses (gambles for stats). Mid-round value in 2026 with rotational upside.",Junior,6'3,315,4.75
-Keldric Faulk,Auburn,4870989,,,Junior,6'6,285,4.74
-Jermod McCoy,Tennessee,5157289,,,Junior,6'0,193,4.52
-Mansoor Delane,LSU,4880124,,,Senior,6'0,190,4.44
-Makai Lemon,USC,4870795,,,Junior,5'11,195,4.48
-Sonny Styles,Ohio State,5081807,,,Senior,6'4,243,4.48
-Kenyon Sadiq,Oregon,5083315,,,Junior,6'3,245,4.55
-Avieon Terrell,Clemson,4870988,,,Junior,5'11,180,4.39
-Ty Simpson,Alabama,4685522,,,Junior,6'2,208,4.8
-Denzel Boston,Washington,4832800,,,Junior,6'4,209,4.52
-Kayden McDonald,Ohio State,4870893,,,Junior,6'3,326,5.15
-C.J. Allen,Georgia,4870598,,,Junior,6'2,235,4.55
-Kevin Concepcion,Texas A&M,4870653,,,Junior,5'11,190,4.46
-Cashius Howell,Texas A&M,4710752,,,Senior,6'4,248,4.65
-T.J. Parker,Clemson,46112804,,,Junior,6'3,265,4.65
-Caleb Banks,Florida,4602019,,,Senior,6'6,330,5.2
-Christen Miller,Georgia,4685479,,,Junior,6'4,305,4.9
-Colton Hood,Tennessee,4921249,,,Sophomore,6'0,195,4.43
-Brandon Cisse,South Carolina,5076652,,,Junior,6'0,190,4.35
-Chris Bell,Louisville,4869961,,,Senior,6'2,220,4.44
-R Mason Thomas,Oklahoma,5081927,,,Senior,6'2,249,4.62
-Akheem Mesidor,Miami (FL),4429190,,,Senior,6'3,280,4.9
-Anthony Hill Jr.,Texas,4870805,,,Junior,6'3,238,4.5
-Keith Abney II,Arizona State,5093004,,,Junior,6'0,190,4.46
-Chris Johnson,San Diego State,,https://goaztecs.com/images/2025/8/15/Johnson_Chris.png,,Senior,6'0,185,4.55
-Romello Height,Texas Tech,,https://texastech.com/images/2025/3/27/Height_Romello.png,,Junior,6'3,240,4.7
-L.T. Overton,Alabama,4870960,,,Senior,6'5,278,4.85
-Kamari Ramsey,USC,4685518,,,Junior,6'0,205,4.52
-Dillon Thieneman,Oregon,4954445,,,Junior,6'0,205,4.35
-Germie Bernard,Alabama,4685261,,,Senior,6'1,204,4.52
-Emmanuel McNeil-Warren,Toledo,4837186,,,Senior,6'2,202,4.52
-Lee Hunter,Texas Tech,4431551,,,Senior,6'4,325,5.2
-Joshua Josephs,Tennessee,4870890,,,Senior,6'3,240,4.68
-Chris Brazzell,Tennessee,5091739,,,Junior,6'5,200,4.48
-D'angelo Ponds,Indiana,,https://iuhoosiers.com/images/2025/9/22/Ponds_DAngelo.png,,Junior,5'9,170,4.35
-Jake Golday,Cincinnati,4877652,,,Senior,6'4,240,4.55
-A.J. Haulcy,LSU,4905664,,,Senior,6'0,222,4.55
-Max Klare,Ohio State,4685265,,,Junior,6'5,243,4.7
-Elijah Sarratt,Indiana,5088338,,,Senior,6'2,209,4.6
-Zion Young,Missouri,,https://mutigers.com/images/2025/1/10/Young_Zion.png,,Senior,6'5,262,4.76
-Ja'Kobi Lane,USC,4870987,,,Junior,6'4,200,4.55
-Gabe Jacas,Illinois,4837244,,,Senior,6'3,275,4.8
-Deontae Lawson,Alabama,,https://rolltide.com/images/2025/5/15/Lawson_Deontae.png,,Senior,6'2,228,4.6
-Jaishawn Barham,Michigan,4685266,,,Senior,6'3,243,4.55
-Zachariah Branch,Georgia,4870612,,,Junior,5'10,180,4.35
-Omar Cooper Jr.,Indiana,,https://iuhoosiers.com/images/2025/9/22/Cooper_Omar.png,,Junior,6'0,201,4.49
-Jadarian Price,Notre Dame,4685512,,,Junior,5'11,209,4.44
-Eli Stowers,Vanderbilt,,https://vucommodores.com/images/2025/6/5/Stowers_Eli.png,,Senior,6'4,235,4.55
-Julian Neal,Arkansas,4871077,,,Senior,6'2,200,4.58
-Chandler Rivers,Duke,,https://goduke.com/images/2025/5/20/Rivers_Chandler.png,,Senior,5'10,185,4.45
-Dani Dennis-Sutton,Penn State,4685260,,,Senior,6'5,265,4.68
-Malik Muhammad,Texas,4602018,,,Junior,6'0,198,4.47
-Darrell Jackson Jr.,Florida State,4430154,,,Senior,6'5,337,5.05
-Will Lee III,Texas A&M,5151083,,,Senior,6'1,189,4.55
-Dontay Corleone,Cincinnati,4594205,,,Senior,6'1,335,5.1
-Michael Trigg,Baylor,4870985,,,Senior,6'4,240,4.7
-Emmett Johnson,Nebraska,4714772,,,Junior,5'11,200,4.52
-Malachi Fields,Notre Dame,4832801,,,Senior,6'4,223,4.5
-Tyreak Sapp,Florida,4889957,,,Junior,6'3,272,4.76
-Garrett Nussmeier,LSU,4567747,,,Senior,6'1,205,4.82
-Carson Beck,Miami (FL),4430841,,,Senior,6'4,220,4.84
-Genesis Smith,Arizona,5104279,,,Junior,6'2,202,4.5
-Daylen Everette,Georgia,4870789,,,Senior,6'1,190,4.34
-Harold Perkins,LSU,4602017,,,Junior,6'1,222,4.45
-Michael Taaffe,Texas,46110323,,,Senior,6'0,189,4.55
-Clay Patterson,Stanford,4872340,,,Senior,6'3,280,
-Nick Singleton,Penn State,4685519,,,Senior,6'0,224,4.39
-Kaytron Allen,Penn State,4685514,,,Senior,5'11,217,4.55
-Demond Claiborne,Wake Forest,4685038,,,Senior,5'10,195,4.42
-Mikail Kamara,Indiana,4611421,,,Senior,6'1,265,4.8
-Jack Endries,Texas,4685517,,,Junior,6'4,240,4.68
-Joe Royer,Cincinnati,4429038,,,Senior,6'5,250,4.65
-C.J. Daniels,Miami (FL),4870986,,,Senior,6'2,205,4.44
-Drew Allar,Penn State,4714771,,,Senior,6'5,235,4.9
-DeMonte Capehart,Clemson,4429304,,,Senior,6'5,313,4.75
-Malachi Lawrence,UCF,4882894,,,Senior,6'4,250,4.78
-Wesley Williams,Duke,4872244,,,Junior,6'3,265,
-Domani Jackson,Alabama,4432654,,,Senior,6'1,196,4.28
-Seth McGowan,Kentucky,4428989,,,Junior,6'1,220,4.55
-Tacario Davis,Washington,,https://gohuskies.com/images/2025/7/3/Davis_Tacario.png,,Senior,6'4,200,4.51
-Zxavian Harris,Mississippi,4685149,,,Senior,6'8,330,
-Hezekiah Masses,California,4870420,,,,,,
-Kevin Coleman Jr.,Missouri,4685368,,,Senior,5'11,180,4.4
-Kyle Louis,Pittsburgh,4872251,,,Junior,6'1,220,4.65
-Cade Klubnik,Clemson,4685516,,,Senior,6'2,210,4.65
-Oscar Delp,Georgia,4685264,,,Senior,6'5,245,4.52
-Tim Keenan III,Alabama,4431411,,,Senior,6'2,320,5.2
-Eric Rivers,Georgia Tech,5110820,,,Senior,5'11,180,4.38
-DeShon Singleton,Nebraska,4870425,,,Senior,6'3,210,
-Ted Hurst,Georgia State,4877717,,,Senior,6'3,185,4.48
-TJ Hall,Iowa,4685023,,,Senior,6'0,190,
-David Oke,Arkansas,5122486,,,Senior,6'2,314,
-Josh Cameron,Baylor,4870575,,,Senior,6'1,224,
-Jordan van den Berg,Georgia Tech,4870533,,,Senior,6'3,300,
-Xavier Scott,Illinois,4917004,,,Senior,5'11,195,
-Skyler Gill-Howard,Texas Tech,4684829,,,Senior,6'1,290,4.9
-Bishop Fitzgerald,USC,5105260,,,Senior,5'11,205,4.42
-Louis Moore,Indiana,4684131,,,Senior,5'11,200,
-Bryce Lance,North Dakota State,4684074,,,Senior,6'3,209,4.6
-Jaden Greathouse,Notre Dame,5041165,,,Junior,6'1,212,4.55
-Trey Moore,Texas,4872322,,,Senior,6'3,249,
-Brent Austin,California,4872227,,,Senior,5'11,180,
-Lander Barton,Utah,4431057,,,Senior,6'5,236,4.55
-J'Mari Taylor,Virginia,5103635,,,Senior,5'9,204,4.39
-Jeff Caldwell,Cincinnati,4872235,,,,,,
-Caden Curry,Ohio State,4684981,,,Senior,6'3,260,4.78
-Red Murdock,Buffalo,4902722,,,Senior,6'3,240,4.77
-Max Llewellyn,Iowa,4684144,,,Senior,6'5,263,
-Brenen Thompson,Mississippi State,4432608,,,Senior,5'9,170,4.34
-TJ Guy,Michigan,4683842,,,Graduated,6'4,250,
-Dallen Bentley,Utah,4882583,,,Senior,6'4,259,
-Zane Durant,Penn State,4685065,,,Senior,6'1,294,4.66
-Chase Roberts,BYU,4432611,,,Senior,6'4,210,4.5
-Dae'Quan Wright,Mississippi,4902958,,,Senior,6'4,255,
-Keanu Tanuvasa,BYU,4872338,,,Junior,6'4,300,
-Sam Roush,Stanford,4685001,,,Senior,6'5,260,
-Le'Veon Moss,Texas A&M,4685336,,,Senior,5'11,210,4.42
-Mike Washington Jr.,Arkansas,4902805,,,Senior,6'2,223,4.45
-Nadame Tucker,Western Michigan,5104996,,,Senior,6'3,250,
-Keyron Crawford,Auburn,4872321,,,Senior,6'4,255,
-Zavion Thomas,LSU,4872221,,,Senior,5'10,192,
-Rayshaun Benny,Michigan,4429348,,,Senior,6'4,305,4.9
-Thaddeus Dixon,North Carolina,4684982,,,Senior,6'1,185,4.46
-Jakobe Thomas,Miami,4870535,,,Senior,6'2,200,4.55
-Josh Cuevas,Alabama,4872228,,,Senior,6'3,256,
-Diego Pavia,Vanderbilt,4872323,,,Senior,6'0,207,4.59
-Tanner Koziol,Houston,4902796,,,Senior,6'7,240,4.76
-Nick Barrett,South Carolina,4431548,,,Senior,6'2,323,
-Terion Stewart,Virginia Tech,4684071,,,Graduated,5'9,222,
-Jalen Stroman,Notre Dame,4684784,,,Senior,6'1,201,
-Patrick Payton,LSU,4431593,,,Senior,6'6,255,
-Lance Mason,Wisconsin,5122582,,,Senior,6'4,240,
-Josh Moten,Southern Miss,4684821,,,Senior,6'0,185,4.43
-Jermaine Mathews Jr.,Ohio State,4602018,,,Junior,5'11,190,4.38
-John Michael Gyllenborg,Wyoming,4902347,,,Senior,6'5,251,
-Marlin Klein,Michigan,4685265,,,Senior,6'6,250,
-Riley Nowakowski,Indiana,4429352,,,Senior,6'2,249,
-Ethan Burke,Texas,4902877,,,Senior,6'6,259,
-Taylen Green,Arkansas,4683884,,,Senior,6'6,224,4.44
-Bud Clark,TCU,4429074,,,Senior,6'2,185,4.48
-Bryce Boettcher,Oregon,4429683,,,Senior,6'2,232,4.7
-Tyler Onyedim,Texas A&M,4684132,,,Senior,6'3,295,
-Harrison Wallace III,Mississippi,4685011,,,Senior,6'1,200,
-Sawyer Robertson,Baylor,,https://baylorbears.com/images/2025/3/10/Robertson_Sawyer.png,,Senior,6'4,220,4.85
-Reggie Virgil,Texas Tech,4902875,,,Senior,6'3,190,
-Gracen Halton,Oklahoma,4684326,,,Senior,6'2,292,4.86
-Raylen Wilson,Georgia,5041158,,,Junior,6'1,235,4.52
-VJ Payne,Kansas State,4872304,,,Senior,6'3,208,
-Nate Boerkircher,Texas A&M,4611414,,,Graduated,6'4,250,
-Devon Marshall,NC State,4870591,,,Junior,5'11,200,
-Jalen McMurray,Tennessee,4611417,,,Senior,6'0,187,
-Jamarion Miller,Alabama,4685338,,,Senior,5'10,221,
-Antonio Kite,Ole Miss,4902875,,,Junior,6'0,180,4.48
-Logan Fano,Utah,4870723,,,Junior,6'5,260,
-Jalon Daniels,Kansas,4426543,,,Senior,6'0,220,4.58
-Lewis Bond,Boston College,4684714,,,Senior,5'11,190,
-Cole Payton,North Dakota State,4684077,,,Senior,6'3,233,
-Eric McAlister,TCU,4685025,,,Senior,6'3,205,4.52
-Roman Hemby,Indiana,4683838,,,Senior,6'0,210,
-Miller Moss,Louisville,4430154,,,Senior,6'2,210,4.85
-Noah Whittington,Oregon,4432174,,,Senior,5'8,203,
-J.Michael Sturdivant,Florida,4684845,,,Senior,6'3,213,4.38
-Devin Moore,Florida,4684325,,,Senior,6'3,198,
-Cameron Ball,Arkansas,4685049,,,Senior,6'5,323,
-Kevin Jennings,SMU,4902343,,,Junior,6'0,192,4.6
-Bryson Eason,Tennessee,4428994,,,Senior,6'3,310,5.1
-Jaylon Guilbeau,Texas,4685355,,,Senior,6'0,183,
-Gunner Stockton,Georgia,4685334,,,Junior,6'1,215,4.65
-Miles Kitselman,Tennessee,4870420,,,Senior,6'5,265,4.75
-Desmond Reid,Pittsburg,4872248,,,Senior,5'8,175,4.38
-Jaydn Ott,Oklahoma,4685150,,,Senior,5'11,208,
-Deven Eastern,Minnesota,4432499,,,Senior,6'6,320,
-Noah Thomas,Georgia,4872232,,,Senior,6'5,205,4.45
-Peyton Bowen,Oklahoma,5041156,,,Junior,6'0,201,
-Jake Retzlaff,Tulane,5041285,,,Senior,6'1,205,
-Hank Beatty,Illinois,4684988,,,Senior,5'11,185,
-Brandon Cleveland,North Carolina,4902874,,,Senior,6'4,315,
-Dane Key,Nebraska,4684330,,,Senior,6'3,210,4.5
-De'Zhaun Stribling,Ole Miss,4684795,,,Senior,6'2,200,4.52
-Dillon Bell,Georgia,4685324,,,Senior,6'1,210,
-Jerry Wilson,Florida State,4902340,,,Senior,5'10,185,
-Joey Aguilar,Tennesse,5122485,,,Senior,6'3,225,4.85
-Kaelon Black,Indiana,4684072,,,Senior,5'10,211,
-Brett Norfleet,Missouri,5041154,,,Junior,6'6,263,4.66
-Cole Brevard,Texas,4428987,,,Senior,6'3,346,
-Xavier Nwankpa,Iowa,4684989,,,Senior,6'2,213,
-Jackson Kuwatch,Miami (OH),4872237,,,Senior,6'4,235,
-Cole Wisniewski,Texas Tech,4429643,,,Senior,6'4,220,
-Lake McRee,USC,4685122,,,Senior,6'4,250,
-Chip Trayanum,Toledo,4428990,,,Senior,5'11,227,
-Isaac Smith,Mississippi State,5041157,,,Junior,6'0,220,4.6
-DJ Harvey,USC,4432170,,,Senior,5'10,190,4.44
-Barion Brown,LSU,4685262,,,Senior,5'11,185,4.28
-Hykeem Williams,Colorado,5041169,,,Junior,6'2,220,4.32
-Trey Smack,Florida,4684346,,,,,,
-Luke Altmyer,Illinois,4431541,,,Senior,6'2,205,4.75
-Michael Wortham,Montana,5105259,,,Senior,5'9,177,
-DJ Rogers,TCU,4684124,,,Senior,6'3,250,4.64
-Isaiah Nwokobia,SMU,4611484,,,Senior,6'1,205,
-Collin Wright,Stanford,4902804,,,Senior,6'0,195,
-Devonta Smith,Norte Dame,4684994,,,Senior,6'0,205,
-Shamar Easter,North Carolina,5041152,,,Freshman,6'5,215,4.58
-Athan Kaliakmanis,Rutgers,4684122,,,Senior,6'3,212,
-Jack Pyburn,LSU,4902345,,,Senior,6'4,264,
-Jack Velling,Michigan State,4870534,,,Senior,6'5,245,
-Jaren Kanak,Oklahoma,4685338,,,Senior,6'2,233,
-Landon Robinson,Navy,4913217,,,Senior,6'0,287,
-Trebor Pena,Penn State,4684070,,,Senior,5'10,186,4.52
-Jamal Haynes,Georgia Tech,4432168,,,Senior,5'9,190,4.48
-Caden Fordham,North Carolina State,4431525,,,,,,
-Eric Gentry,USC,4684523,,,Senior,6'6,225,4.56
-Charles Demmings,Stephen F. Austin,4611412,,,Senior,6'1,190,
-Seydou Traore,Mississippi State,4872241,,,Senior,6'4,235,
-Jordan Hall,Georgia,5122484,,,Junior,6'4,330,5.25
-Tyreek Chappell,Texas A&M,4685117,,,Senior,5'11,180,4.45
-Jalil Farooq,Maryland,4685333,,,Senior,6'2,213,4.49
-Joe Fagnano,UCONN,4572242,,,Graduated,6'4,225,
-Kendrick Law,Kentucky,4685341,,,Senior,6'0,205,4.42
-Dalton Johnson,Arizona,4684126,,,Senior,5'11,198,
-Kaleb Elarms-Orr,TCU,4872337,,,Senior,6'2,230,
-Justin Jefferson,Alabama,4683883,,,Senior,6'1,227,
-Austin Brown,Wisconsin,4684501,,,Senior,6'1,216,
-Emmanuel Henderson,Kansas,4685337,,,Senior,6'1,190,
-Romello Brinson,SMU,4429302,,,Senior,6'2,190,
-Jordan Hudson,SMU,4685370,,,Senior,6'1,200,
-Malik Benson,Oregon,5041168,,,Senior,6'1,195,
-Mark Gronowski,Iowa,4684074,,,Graduated,6'2,235,
-Dasan McCullough,Nebraska,4685353,,,Senior,6'5,235,4.58
-Ben Bell,Virginia Tech,4684705,,,Senior,6'1,235,
-Jalen Walthall,Incarnate Word,4872339,,,Senior,6'2,180,
-Squirrel White,Florida Stare,4685010,,,Senior,5'10,170,4.28
-Eli Heidenreich,Navy,4913214,,,Senior,5'11,197,4.5
-Scooby Williams,Texas A&M,4431587,,,Senior,6'2,230,
-Wesley Bissainthe,Miami (FL),4685350,,,Senior,6'1,,
-Bauer Sharp,LSU,4872236,,,Senior,6'5,246,
-Ceyair Wright,Nebraska,4685125,,,Senior,6'0,190,
-Namdi Obiazor,TCU,4611482,,,Senior,6'3,230,
-Nyjalik Kelly,UCF,4431586,,,Senior,6'5,250,
-Tanner Arkin,Illinois,4872228,,,Senior,6'4,265,
-Jackie Marshall,Baylor,4611419,,,Senior,6'3,306,
-Kendal Daniels,Oklahoma,4432165,,,Senior,6'5,242,
-Luke Hasz,Ole Miss,5041153,,,Junior,6'3,250,4.68
-Marcus Allen,North Carolina,4684983,,,Senior,6'2,190,
-Dominic Zvada,Michigan,4902882,,,Senior,6'3,187,
-Dominic Bailey,Tennessee,4429346,,,Senior,6'3,292,
-Ricardo Hallman,Wisconsin,4684507,,,Graduated,5'10,190,
-Avery Smith,Toledo,4872226,,,Senior,5'10,185,
-Will Ferrin,BYU,4684061,,,Senior,6'3,175,
-Drew Stevens,Iowa,4902525,,,Senior,6'1,205,
-Jack Kelly,BYU,4684949,,,Senior,6'2,242,
-Keionte Scott,Miami (FL),,,,Senior,6'0,192,4.44
-Josiah Trotter,Missouri,,,,Sophomore,6'2,237,4.61
-Domonique Orange,Iowa State,,,,Senior senior,6'4,325,5.3
-Jonah Coleman,Washington,,,,Senior,5'9,228,4.5
-Taurean York,Texas A&M,,,,Junior,5'10,227,4.58
-Antonio Williams,Clemson,,,,Junior,5'11,190,4.45
-Jamari Johnson,Oregon,,,,Sophomore,6'5,257,
-Derrick Moore,Michigan,,,,Senior,6'3,260,4.65
-Anthony Lucas,USC,,,,Senior,6'5,285,4.85
-Ahmad Moten Sr.,Miami (FL),,,,Senior,6'3,324,
-Arion Carter,Tennessee,,,,,6'1,235,
-Jalon Kilgore,South Carolina,,,,Junior,6'1,211,4.48
-Deion Burks,Oklahoma,,,,Senior,5'9,188,4.43
-Davison Igbinosun,Ohio State,,,,Senior,6'2,195,4.34
-Skyler Bell,UConn,,,,Senior,6'0,185,4.43
-Zakee Wheatley,Penn State,,,,Senior,6'2,200,4.4
-Trinidad Chambliss,Mississippi,,,,Senior,6'1,200,4.45
-Cian Sloan,North Carolina State,,,,Senior,6'4,252,
-Jacob Rodriguez,Texas Tech,,,,Senior,6'1,230,4.7
-Justin Joly,NC State,,,,Senior,6'3,251,4.75
-Jaheim Lawson,Clemson,,,,Junior,6'2,255,4.72
-Wydett Williams,Ole Miss,,,,Senior,6'2,210,
-Eli Raridon,Notre Dame,,,,Senior,6'7,251,4.78
-Aaron Anderson,LSU,,,,Junior,5'8,188,4.34
-Alex McLaughlin,Washington,,,,Junior,6'2,198,
-Albert Regis,Texas A&M,,,,Senior,6'1,317,4.85
-Aaron Graves,Iowa,,,,Senior,6'5,295,4.9
-Aiden Fisher,Indiana,,,,Senior,6'1,231,
-Treydan Stukes,Arizona,,,,Senior,6'2,200,
-Jack Strand,Minnesota State,,,,Junior,6'5,240,
-Robert Spears Jennings,Oklahoma,,,,Senior,6'0,213,
-Vincent Anthony Jr,Duke,,,,Senior,6'6,260,
-Channing Canada,TCU,,,,Senior,6'1,190,
-Chris McClellon,Missouri,,,,Senior,6'4,323,
-Christian Gray,Notre Dame,,,,Junior,6'0,188,4.45
-George Gumbs Jr,Florida,,,,Senior,6'4,250,
-Cam Miller,Rutgers,,,,Senior,6'0,184,
-Gary Smith,UCLA,,,,Senior,6'2,340,
-Rahsual Faison,South Carolina,,,,Graduated,6'0,218,
-Sebastian Harsh,North Carolina Stare,,,,Senior,6'3,263,
-Jalen Husker,Maryland,,,,Senior,6'2,201,
-Caleb Douglas,Texas Tech,,,,Senior,6'4,205,
-Quinten Joyner,Texas Tech,,,,Sophomore,5'11,205,4.47
-Jeadyn Lukas,Clemson,,,,Senior,6'2,200,
-Noah Fifta,Arizona,,,,Junior,5'10,186,4.75
-Tommy Castellanos,Florida State,,,,Senior,5'11,201,
-Kyle Walljasper,Minnesota Duluth,,,,Senior,6'1,240,
-Conner Wegman,Houston,,,,Junior,6'3,210,4.85
-Raion Strader,Pittsburg,,,,,6'0,185,
-Adam Randall,Clemson,,,,Senior,6'2,235,
-Carson Ryan,BYU,,,,Senior,6'4,250,
-Devin Hobbs,Tennessee,,,,Junior,6'4,290,
-Eric O'Neil,Rutgers,,,,Senior,6'3,261,
-Lawson Luckie,Georgia,,,,Junior,6'4,240,4.65
-Alex Afari,Unknown,,,,,,,
-Khalil Alexander,Texas Stare,,,,Senior,6'3,225,4.62
-Preston Hodge,Colorado,,,,Senior,6'0,200,4.53
-Dijon Johnson,Florida,,,,Junior,6'1,204,4.48
-Damari Brown,Miami,,,,Junior,6'1,190,
-Will Kacmerek,Ohio Stare,,,,Senior,6'5,258,4.8
-Kansei Matsuzawa,Hawaii,,,,,,,
-Daniel Harris,California,,,,,6'3,195,
-Ethan Conner,Miami,,,,Sophomore,6'1,172,4.5
-Rene Kings,Louisville,,,,,,,
-Jacobe Johnson,Oklahoma,,,,Junior,6'2,208,4.54
-London Humphrey,Georgia,,,,Junior,6'2,200,4.4
-Colby Young,Georgia,,,,Senior,6'3,215,4.6
-Jalen Catalonia,Missouri,,,,Graduated,5'10,200,
-Tory Grimes,Purdue,,,,Senior,6'1,190,
-Jaylon Braxton,Ole Miss,,,,Sophomore,6'0,190,4.48
-Kyron Jones,Virginia Tech,,,,Senior,6'2,235,4.72
-Robert Henry,UTSA,,,,Senior,5'9,205,
-Dean Conners,Houston,,,,Senior,6'0,206,
-Caulin Lacy,Louisville,,,,Senior,5'10,190,4.45
-Kolby Taylor,Vanderbilt,,,,,,,
-Deuce Chester,Syracuse,,,,Senior,6'0,195,4.56
-Trey Holly,Southern U,,,,Sophomore,5'7,192,4.42
-Khalil Saunders,Kentucky,,,,,,,
-Rueben Owens II,Texas A&M,,,,Sophomore,5'11,215,4.38
-Nick Anderson,Wake Forrest,,,,Graduated,5'11,197,
-Al'Zillion Hamilton,Fresno State,,,,Senior,5'11,185,
-Raymond Cottrell,Texas A&M,,,,Freshman,6'3,210,4.56
-Mel Brown,UCONN,,,,Senior,5'9,180,
-Jaquaize Pettaway,East Carolina,,,,Junior,6'0,194,4.37
-Micah Davey,UTEP,,,,Senior,6'2,235,
-Ja'Keem Jackson,LSU,,,,Sophomore,6'0,190,4.45
-Jacob De Jesus,California,,,,Senior,5'7,170,
-Ahmaad Moses,SMU,,,,Senior,5'10,205,
-DQ Smith,South Carolina,,,,Senior,6'1,219,
-Denver Harris,UNLV,,,,Senior,6'0,190,
-Behring Morton,Texas Tech,,,,Senior,6'2,210,
-Damari Lyons,Florida,,,,Junior,6'4,318,
-Mohamed Toure,Miami (FL),,,,Graduated,6'2,,
-Nikai Martinez,Michigan State,,,,Senior,5'11,195,
-Jeremiah Franklin,Boston College,,,,Senior,6'3,244,
-Malik Spencer,Michigan State,,,,Senior,6'1,191,4.5
-Desmond Parnell,Kansas State,,,,Senior,6'0,232,
-Ayden Williams,Mississippi State,,,,Junior,6'3,205,4.65
-Stephen Hall,Missouri,,,,Senior,6'0,202,
-Xavian Sorely Jr,Arkansas,,,,Senior,6'3,225,
-Keyshaun Elliot,Arizona State,,,,Senior,6'2,235,
-Michael Harris,Maryland,,,,Junior,6'1,218,4.65
-Grayson James,Boston College,,,,Senior,6'3,218,
-Fred Davis,Northwestern,,,,Senior,6'1,200,4.29
-Logan Diggs,Ole Miss,,,,Senior,6'0,220,
-Tre Smith,Arizona,,,,Senior,6'5,262,
-Vinny Anthony,Wisconsin,,,,Senior,6'0,190,
-Walter Eget,San Jose State,,,,Senior,6'3,223,
-Makis Deal,TCU,,,,Sophomore,6'5,325,5.1
-Donovan Greene,Virginia Tech,,,,Graduated,6'2,196,
-Troy Bowles,Michigan,,,,Junior,6'0,230,4.55
-Cormani McLain,Florida,,,,Sophomore,6'2,189,4.48
-CJ Donaldson,Ohio State,,,,Senior,6'2,232,
-Shad Banks Jr.,UTSA,,,,Senior,6'1,230,4.45
-Reid Carrico,West Virginia,,,,Senior,6'2,230,4.65
-Damonic Williams,Oklahoma,,,,Senior,6'1,323,
-Star Thomas,Tennessee,,,,Senior,6'0,,
-Tony Rojas,Penn State,,,,Junior,6'2,230,4.44
-Hayes King,Georgia Tech,,,,Senior,6'3,215,4.45
-RJ Maryland,SMU,,,,Senior,6'4,240,
-Dashawn Jones,Alabama,,,,Senior,6'0,190,
-AI-Jay Henderson,Buffalo,,,,Senior,5'10,216,
-Branson Robinson,Georgia State,,,,Junior,5'10,211,4.55
-Keaton Wade,Colorado,,,,Senior,6'4,235,4.45
-Roydell Williams,Florida State,,,,Senior,5'10,223,
-Dean Miller,Kansas,,,,Senior,6'5,240,
-Korey Foreman,Fresno State,,,,Senior,6'4,250,4.75
-Sage Ryan,Ole Miss,,,,Senior,5'11,200,4.39
-Gunner Maldonado,Kansas State,,,,Senior,5'11,193,
-Anthony Hankerson,Oregon State,,,,Senior,5'8,206,
-Keyon Ware-Hudson,Oregon,,,,Senior,6'2,305,4.8
-Karon Prunty,Wake Forrest,,,,Senior,6'2,192,
-Keshawn Silver,USC,,,,Senior,6'4,330,
-Ty Thompson,Tulane,,,,Senior,6'4,224,4.7
-Mo Westmoreland,Tulane,,,,Senior,6'2,250,
-Preston Stone,Northwestern,,,,Senior,6'1,215,4.9
-Jason Henderson,Old Dominion,,,,Senior,6'1,225,4.7
-Clayton Smith,Arizona State,,,,Senior,6'5,255,4.64
-Amari Jackson,Maryland,,,,,5'11,190,
-Latrell McCutchin Sr.,Houston,,,,Senior,6'1,185,
-Dylan Brooks,Kansas,,,,Senior,6'4,245,4.6
-Gabriel Rubio,Norte Dame,,,,Senior,6'5,322,4.9
-Devin Mockobee,Purdue,,,,Senior,6'0,202,
-Avante Dickerson,Arkansas State,,,,Senior,5'11,181,4.34
-Devonte Ross,Penn State,,,,Senior,5'10,170,
-Jimmori Robinson,West Virginia,,,,Senior,6'4,250,
-Rohan Jones,Arkansas,,,,Senior,6'3,242,
-Kentrell Bullock,South Alabama,,,,Senior,5'10,205,
-Armoni Goodwin,Utah Martin,,,,Senior,5'8,195,4.42
-Christian Leary,Western Michigan,,,,Senior,5'10,180,4.4
-Jojo Earle,UNLV,,,,Senior,5'10,185,4.39
-Dacari Collins,Louisville,,,,Senior,6'4,215,4.51
-Malcom Greene,Massachusetts,,,,Senior,5'11,190,4.47
-JJ Johnson,North Carolina,,,,Graduated,5'10,200,
-Kobe Prentice,Baylor,,,,Senior,5'11,190,
-Jaiden Ausberry,Notre Dame,,,,Sophomore,6'2,228,4.61
-Aiden Hubbard,Northwestern,,,,Graduated,6'4,255,
-Makari Vickers,Colorado,,,,Sophomore,6'1,192,4.42
-Maverick McIvor,Western Kentucky,,,,Graduated,6'2,214,
-Mathew Hiberner,SMU,,,,Graduated,6'5,252,
-Marvin Jones Jr,Oklahoma,,,,Senior,6'5,262,
-Shyheim Brown,Florida State,,,,Senior,6'2,201,
-Phillip Dunham,UCF,,,,Senior,6'1,190,
-Jahmal Edrine,Virginia,,,,Senior,6'3,221,
-Damon Payne,Michigan,,,,Senior,6'4,311,5.2
-Malik Rutherford,Georgia Tech,,,,Senior,5'9,170,
-Sam Huard,USC,,,,Senior,6'1,210,4.85
-Da'Shawn Womack,Auburn,,,,,6'5,265,
-Nyland Green,Arizona Stare,,,,Senior,6'2,185,4.5
-Davon Booth,Mississippi State,,,,Graduated,5'10,205,
-Max Tomczak,Youngstown State,,,,Senior,6'0,195,
-Blake Shapen,Mississippi State,,,,Senior,6'1,210,4.76
-Prince Kollie,Vanderbilt,,,,Senior,6'1,227,4.6
-Will Whitson,Mississippi State,,,,Graduated,6'5,295,
-Tyler Van Dyke,SMU,,,,Senior,6'4,230,4.85
-Byron Caldwell Jr,San Diego State,,,,Senior,6'0,215,4.5
-Toriano Pride Jr,Missouri,,,,Senior,5'11,188,
-Wade Woodaz,Clemson,,,,Senior,6'4,235,
-Chamon Metayer,Arizona State,,,,Senior,6'4,255,
-Johnathan Jefferson,SMU,,,,Senior,6'3,315,4.9
-Jaden Bray,West Virginia,,,,Senior,6'2,209,4.46
-Angel Johnson,Washington State,,,,Senior,5'9,192,
-Demon Clowney,South Carolina,,,,Senior,6'4,255,4.55
-Amari Niblack,Texas A&M,,,,Senior,6'3,235,
-Sav'ell Smalls,Colorado,,,,Senior,6'3,265,4.58
-Chris Hilton Jr,LSU,,,,Senior,6'0,190,4.35
-Mathew Stuka,James Madison,,,,Senior,6'2,211,4.8
-Reggie Grimes II,Memphis,,,,Junior,6'4,282,4.77
-EJ Williams,Indiana,,,,Senior,6'4,203,4.49
-Stephen Dix Jr.,Arkansas,,,,Senior,6'1,240,4.66
-Kendal Dolby,Mississippi State,,,,,5'11,194,
-Jaleel Skinner,Louisville,,,,Junior,6'5,230,4.48
-Shawn Murphy,South Carolina,,,,Junior,6'3,231,4.48
-Jerand Bradley,Kansas State,,,,Senior,6'5,223,4.5
-Cash Jones,Oregon State,,,,Senior,5'11,195,
-Jay Green,Stanford,,,,Junior,6'3,215,
-Kaiden Salter,Colorado,,,,Senior,6'1,190,4.5
-Trey Cooley,Georgia Tech,,,,Senior,5'10,205,4.5
-LJ Johnson,Cal,,,,Senior,5'10,215,4.33
-Jacobian Guillory,LSU,,,,Graduated,6'2,318,
-Jaylin Davies,Oklahoma Stare,,,,Senior,5'11,180,4.6
-Roy Williams,Northern Illinois,,,,Senior,6'6,257,
-Jordan Mosley,Mississippi State,,,,Senior,6'0,195,
-Keanu Koht,Vanderbilt,,,,Senior,6'4,232,4.7
-DT Sheffield,Rutgers,,,,Senior,5'10,175,
-Chase Mason,South Dakota State,,,,Senior,6'4,240,
-Deion Colzie,Miami Ohio,,,,Senior,6'4,211,4.46
-Jaquez Moore,Duke,,,,Senior,5'10,205,
-Raesjon Davis,Oregon State,,,,Senior,6'0,223,4.64
-Miles Capers,Vanderbilt,,,,Graduated,6'4,249,
-Jeff Sims,Arizona State,,,,Senior,6'4,220,4.78
-Key Lawrence,UCLA,,,,Senior,6'1,200,4.51
-DJ Graham II,Kansas,,,,Senior,6'0,200,4.55
-Sam M'Pemba,Texas A&M,,,,Sophomore,6'3,252,4.7
-Jayden Ballard,Wisconsin,,,,Senior,6'2,205,4.48
-Zach Calzada,Kentucky,,,,Senior,6'4,230,4.75
-Stephen Thompson,Florida Stare,,,,Senior,6'1,240,4.65
-Jalen Berger,UCLA,,,,Senior,6'1,215,4.58
-Matt Lauter,Boise State,,,,Senior,6'3,245,
-Raul Aguirre Jr,Miami,,,,Junior,6'2,233,4.65
-Corey Walker,Wisconsin,,,,Senior,6'5,290,
-Jeremiah Walker,Stephen Austin,,,,Senior,6'0,192,4.5
-Hank Brown,Iowa,,,,Sophomore,6'4,215,4.85
-Jared Brown,South Carolina,,,,Senior,6'0,195,4.5
-Kevin Gilliam Jr.,Virginia Tech,,,,Senior,6'3,295,4.75
-Jordan Pollard,San Jose State,,,,Senior,6'1,202,
-Elliot Donald,Pittsburg,,,,Junior,6'3,275,4.69
-Cade Denhoff,Clemson,,,,Senior,6'5,260,4.75
-Caleb Fauria,Delaware,,,,Graduated,6'5,245,
-Ethan Calvert,Cal Ploy,,,,Senior,6'3,215,4.65
-Tywone Malone Jr.,Ohio State,,,,Senior,6'4,309,5
-Cody Jackson,Tarleton State,,,,Junior,6'0,175,4.44
-Jayden Williams,UCF,,,,Senior,5'11,185,
-Alton McCaskill,Sam Houston,,,,Junior,6'1,205,4.48
-Kam Olds,Kentucky,,,,Senior,6'4,252,
-Rodrick Pleasent,UCLA,,,,Sophomore,5'10,175,4.24
-David Daniel Sisavah,Troy,,,,Senior,6'2,190,4.46
-Triston Newsom,Missouri,,,,Graduated,6'2,230,
-Lorenzo Styles,Ohio State,,,,Senior,6'1,195,4.35
-Damarius McGhee,Florida Atlantic,,,,Senior,6'0,175,4.49
-Ja'Mori Mackin,Kentucky,,,,Senior,5'11,191,
-Derrick Davis Jr,Pittsburg,,,,Senior,6'0,210,4.56
-Rara Thomas,Troy,,,,Senior,6'2,208,4.4
-Bryce Carter,Texas State,,,,Senior,6'3,274,4.9
-Prophet Brown,USC,,,,Senior,5'11,190,4.3
-Ryan Niblet,Texas,,,,Sophomore,5'10,187,4.3
-Drew Payne,Bowling Green,,,,Senior,6'0,200,4.68
-Nyziah Hunter,Nebraska,,,,Sophomore,6'1,205,4.45
-Micah Pittman,Utah,,,,Senior,6'0,205,4.55
-Demorie Tate,Florida A&M,,,,Senior,6'1,195,4.42
-Dylan Morris,James Madison,,,,Senior,6'1,202,4.85
-Darnell Jeffries,Minnesota,,,,Senior,6'3,285,5.09
+name,school,espn_id,photo_url,summary,year,size,weight,speed,fantasyMultiplier
+Fernando Mendoza,Indiana,4837248,,"Fernando Mendoza (6'5/225) etched his legacy as the 2025 Heisman Trophy winner—the first in Indiana history—while leading the Hoosiers to a flawless 16-0 national championship season, capped by a thrilling 27-21 CFP title win over Miami. Explosive stats: 3,535 yards, nation-leading 41 passing TDs (plus 6 rushing), 70%+ completion rate, and elite poise/decision-making under pressure. Maxwell Award finalist, All-Big Ten honors, and consensus QB1/No. 1 overall mock in 2026—franchise-altering gunslinger with pinpoint accuracy and leadership. Weaknesses: Average arm strength limits elite deep-ball velocity; improved but occasional sack-prone tendencies. High-ceiling starter ready to dominate the NFL.",Junior,6'5,225,4.85,1.6
+Caleb Downs,Ohio State,4870706,,"Caleb Downs (6'0/205) proved generational after transferring to Ohio State in 2025, blending elite range, football IQ, bone-crushing tackling, ball-hawking (multiple INTs/PBUs), and versatility—earning Thorpe Award finalist, All-American honors, and consensus top-5 overall buzz as a scheme-proof defender. Unicorn traits with immediate starter potential. Weaknesses: Can be overly aggressive (sells out for hits); size/durability questions vs. bigger frames. First DB off the board in 2026.",Junior,6'0,205,4.45,0.35
+Arvell Reese,Ohio State,4950400,,"Arvell Reese (6'4/243) emerged as a sideline-to-sideline linebacker force in Ohio State's loaded defense during 2025, flashing elite range, explosive pass-rush bursts (multiple sacks/TFLs), lockdown coverage skills, and high instincts—earning All-Big Ten nods and Butkus watch list buzz. Versatile three-down fit with athleticism and physicality. Weaknesses: Still developing block-shedding strength; occasional over-pursuit in space. Rising top LB prospect in 2026 with high-ceiling starter traits.",Junior,6'4,243,4.52,0.4
+Jeremiyah Love,Notre Dame,4870808,,"Jeremiyah Love (6'0/214) exploded as Notre Dame's three-down RB dynamo in 2025, blending 4.4 speed, elite vision, receiving chops (50+ catches), and home-run ability (1,200+ all-purpose yards, 12+ TDs)—earning Doak Walker semifinalist and All-Independent honors. Dynamic playmaker thriving in zone schemes with top RB buzz in 2026. Weakness: Pass protection technique developing; occasional fumbles under contact. Versatile modern back ready for NFL.",Junior,6'0,214,4.4,1.4
+Rueben Bain,Miami (FL),4870617,,"Rueben Bain Jr. (6'3/275) exploded as one of college football's most dominant EDGE rushers in 2025, blending freakish athleticism, violent hands, and relentless motor to rack up double-digit sacks, 20+ TFLs, and pressures—earning ACC Defensive Player of the Year, Nagurski finalist, All-American honors, and top-5 EDGE buzz. A powerful frame with quick first step and run-defense strength—pure NFL disruptor with game-wrecking ability and All-Pro upside. Weaknesses: Lacks prototypical arm length and elite bend; occasional undisciplined gaps. Top-10 pick potential in 2026 as a versatile terror.",Junior,6'3,275,4.72,0.5
+Carnell Tate,Ohio State,4871023,,"Carnell Tate (6'3/195) solidified elite status as Ohio State's next WR factory product in 2025—a smooth, five-star route-runner with elite body control, strong hands, and explosive deep-threat ability (800+ yards, 8+ TDs)—earning All-Big Ten honors and Biletnikoff watch list buzz. Red-zone dominance and consistent big-play hauls position him as a top-15 WR prospect for 2026 with first-round polish and WR1 potential. Weaknesses: Lacks elite speed/explosiveness and YAC playmaking; can be jammed off the line. High-upside separator.",Junior,6'3,195,4.6,1.4
+Jordyn Tyson,Arizona State,4880281,,"Jordyn Tyson (6'2/200) became a matchup nightmare at Arizona State post-Colorado transfer in 2025, dominating with 1,000+ yards, 10+ TDs, contested-catch prowess (top-10 class rate), explosive YAC, and physical boundary dominance—earning All-Big 12 nods and Biletnikoff semifinalist buzz. Reliable hands, route nuance, and red-zone mastery make him a rising star with WR2/WR1 upside in pro schemes. Weaknesses: Not elite speed; can struggle vs. elite press-man corners. High Day 2 projection with polished, low-risk traits.",Junior,6'2,200,4.5,1.4
+David Bailey,Texas Tech,4685248,,,Senior,6'3,250,4.52,0.5
+Peter Woods,Clemson,4871063,,"Peter Woods (6'3/315) anchored Clemson's interior in 2025 as a stout run-stuffer with brute power, quick snap explosion, and disruptive pressures (multiple sacks/TFLs)—earning All-ACC nods and Outland Trophy watch list buzz. Clogs lanes effectively with high-floor traits as a reliable starter. Weaknesses: Limited pass-rush production/plan; occasional gap-sound lapses (gambles for stats). Mid-round value in 2026 with rotational upside.",Junior,6'3,315,4.75,0.35
+Keldric Faulk,Auburn,4870989,,,Junior,6'6,285,4.74,0.5
+Jermod McCoy,Tennessee,5157289,,,Junior,6'0,193,4.52,0.25
+Mansoor Delane,LSU,4880124,,,Senior,6'0,190,4.44,0.25
+Makai Lemon,USC,4870795,,,Junior,5'11,195,4.48,1.4
+Sonny Styles,Ohio State,5081807,,,Senior,6'4,243,4.48,0.4
+Kenyon Sadiq,Oregon,5083315,,,Junior,6'3,245,4.55,1.2
+Avieon Terrell,Clemson,4870988,,,Junior,5'11,180,4.39,0.25
+Ty Simpson,Alabama,4685522,,,Junior,6'2,208,4.8,1.6
+Denzel Boston,Washington,4832800,,,Junior,6'4,209,4.52,1.4
+Kayden McDonald,Ohio State,4870893,,,Junior,6'3,326,5.15,0.35
+C.J. Allen,Georgia,4870598,,,Junior,6'2,235,4.55,0.4
+Kevin Concepcion,Texas A&M,4870653,,,Junior,5'11,190,4.46,1.4
+Cashius Howell,Texas A&M,4710752,,,Senior,6'4,248,4.65,0.5
+T.J. Parker,Clemson,46112804,,,Junior,6'3,265,4.65,0.5
+Caleb Banks,Florida,4602019,,,Senior,6'6,330,5.2,0.35
+Christen Miller,Georgia,4685479,,,Junior,6'4,305,4.9,0.35
+Colton Hood,Tennessee,4921249,,,Sophomore,6'0,195,4.43,0.25
+Brandon Cisse,South Carolina,5076652,,,Junior,6'0,190,4.35,0.25
+Chris Bell,Louisville,4869961,,,Senior,6'2,220,4.44,1.4
+R Mason Thomas,Oklahoma,5081927,,,Senior,6'2,249,4.62,0.5
+Akheem Mesidor,Miami (FL),4429190,,,Senior,6'3,280,4.9,0.5
+Anthony Hill Jr.,Texas,4870805,,,Junior,6'3,238,4.5,0.4
+Keith Abney II,Arizona State,5093004,,,Junior,6'0,190,4.46,0.25
+Chris Johnson,San Diego State,,https://goaztecs.com/images/2025/8/15/Johnson_Chris.png,,Senior,6'0,185,4.55,0.25
+Romello Height,Texas Tech,,https://texastech.com/images/2025/3/27/Height_Romello.png,,Junior,6'3,240,4.7,0.5
+L.T. Overton,Alabama,4870960,,,Senior,6'5,278,4.85,0.5
+Kamari Ramsey,USC,4685518,,,Junior,6'0,205,4.52,0.35
+Dillon Thieneman,Oregon,4954445,,,Junior,6'0,205,4.35,0.35
+Germie Bernard,Alabama,4685261,,,Senior,6'1,204,4.52,1.4
+Emmanuel McNeil-Warren,Toledo,4837186,,,Senior,6'2,202,4.52,0.35
+Lee Hunter,Texas Tech,4431551,,,Senior,6'4,325,5.2,0.35
+Joshua Josephs,Tennessee,4870890,,,Senior,6'3,240,4.68,0.5
+Chris Brazzell,Tennessee,5091739,,,Junior,6'5,200,4.48,1.4
+D'angelo Ponds,Indiana,,https://iuhoosiers.com/images/2025/9/22/Ponds_DAngelo.png,,Junior,5'9,170,4.35,0.25
+Jake Golday,Cincinnati,4877652,,,Senior,6'4,240,4.55,0.4
+A.J. Haulcy,LSU,4905664,,,Senior,6'0,222,4.55,0.35
+Max Klare,Ohio State,4685265,,,Junior,6'5,243,4.7,1.2
+Elijah Sarratt,Indiana,5088338,,,Senior,6'2,209,4.6,1.4
+Zion Young,Missouri,,https://mutigers.com/images/2025/1/10/Young_Zion.png,,Senior,6'5,262,4.76,0.5
+Ja'Kobi Lane,USC,4870987,,,Junior,6'4,200,4.55,1.4
+Gabe Jacas,Illinois,4837244,,,Senior,6'3,275,4.8,0.5
+Deontae Lawson,Alabama,,https://rolltide.com/images/2025/5/15/Lawson_Deontae.png,,Senior,6'2,228,4.6,0.4
+Jaishawn Barham,Michigan,4685266,,,Senior,6'3,243,4.55,0.4
+Zachariah Branch,Georgia,4870612,,,Junior,5'10,180,4.35,1.4
+Omar Cooper Jr.,Indiana,,https://iuhoosiers.com/images/2025/9/22/Cooper_Omar.png,,Junior,6'0,201,4.49,1.4
+Jadarian Price,Notre Dame,4685512,,,Junior,5'11,209,4.44,1.4
+Eli Stowers,Vanderbilt,,https://vucommodores.com/images/2025/6/5/Stowers_Eli.png,,Senior,6'4,235,4.55,1.2
+Julian Neal,Arkansas,4871077,,,Senior,6'2,200,4.58,0.25
+Chandler Rivers,Duke,,https://goduke.com/images/2025/5/20/Rivers_Chandler.png,,Senior,5'10,185,4.45,0.25
+Dani Dennis-Sutton,Penn State,4685260,,,Senior,6'5,265,4.68,0.5
+Malik Muhammad,Texas,4602018,,,Junior,6'0,198,4.47,0.25
+Darrell Jackson Jr.,Florida State,4430154,,,Senior,6'5,337,5.05,0.35
+Will Lee III,Texas A&M,5151083,,,Senior,6'1,189,4.55,0.25
+Dontay Corleone,Cincinnati,4594205,,,Senior,6'1,335,5.1,0.35
+Michael Trigg,Baylor,4870985,,,Senior,6'4,240,4.7,1.2
+Emmett Johnson,Nebraska,4714772,,,Junior,5'11,200,4.52,1.4
+Malachi Fields,Notre Dame,4832801,,,Senior,6'4,223,4.5,1.4
+Tyreak Sapp,Florida,4889957,,,Junior,6'3,272,4.76,0.5
+Garrett Nussmeier,LSU,4567747,,,Senior,6'1,205,4.82,1.6
+Carson Beck,Miami (FL),4430841,,,Senior,6'4,220,4.84,1.6
+Genesis Smith,Arizona,5104279,,,Junior,6'2,202,4.5,0.35
+Daylen Everette,Georgia,4870789,,,Senior,6'1,190,4.34,0.25
+Harold Perkins,LSU,4602017,,,Junior,6'1,222,4.45,0.4
+Michael Taaffe,Texas,46110323,,,Senior,6'0,189,4.55,0.35
+Clay Patterson,Stanford,4872340,,,Senior,6'3,280,,0.35
+Nick Singleton,Penn State,4685519,,,Senior,6'0,224,4.39,1.4
+Kaytron Allen,Penn State,4685514,,,Senior,5'11,217,4.55,1.4
+Demond Claiborne,Wake Forest,4685038,,,Senior,5'10,195,4.42,1.4
+Mikail Kamara,Indiana,4611421,,,Senior,6'1,265,4.8,0.5
+Jack Endries,Texas,4685517,,,Junior,6'4,240,4.68,1.2
+Joe Royer,Cincinnati,4429038,,,Senior,6'5,250,4.65,1.2
+C.J. Daniels,Miami (FL),4870986,,,Senior,6'2,205,4.44,1.4
+Drew Allar,Penn State,4714771,,,Senior,6'5,235,4.9,1.6
+DeMonte Capehart,Clemson,4429304,,,Senior,6'5,313,4.75,0.35
+Malachi Lawrence,UCF,4882894,,,Senior,6'4,250,4.78,0.5
+Wesley Williams,Duke,4872244,,,Junior,6'3,265,,0.5
+Domani Jackson,Alabama,4432654,,,Senior,6'1,196,4.28,0.25
+Seth McGowan,Kentucky,4428989,,,Junior,6'1,220,4.55,1.4
+Tacario Davis,Washington,,https://gohuskies.com/images/2025/7/3/Davis_Tacario.png,,Senior,6'4,200,4.51,0.25
+Zxavian Harris,Mississippi,4685149,,,Senior,6'8,330,,0.35
+Hezekiah Masses,California,4870420,,,,,,,0.25
+Kevin Coleman Jr.,Missouri,4685368,,,Senior,5'11,180,4.4,1.4
+Kyle Louis,Pittsburgh,4872251,,,Junior,6'1,220,4.65,0.4
+Cade Klubnik,Clemson,4685516,,,Senior,6'2,210,4.65,1.6
+Oscar Delp,Georgia,4685264,,,Senior,6'5,245,4.52,1.2
+Tim Keenan III,Alabama,4431411,,,Senior,6'2,320,5.2,0.35
+Eric Rivers,Georgia Tech,5110820,,,Senior,5'11,180,4.38,1.4
+DeShon Singleton,Nebraska,4870425,,,Senior,6'3,210,,0.35
+Ted Hurst,Georgia State,4877717,,,Senior,6'3,185,4.48,1.4
+TJ Hall,Iowa,4685023,,,Senior,6'0,190,,0.25
+David Oke,Arkansas,5122486,,,Senior,6'2,314,,0.35
+Josh Cameron,Baylor,4870575,,,Senior,6'1,224,,1.4
+Jordan van den Berg,Georgia Tech,4870533,,,Senior,6'3,300,,0.5
+Xavier Scott,Illinois,4917004,,,Senior,5'11,195,,0.25
+Skyler Gill-Howard,Texas Tech,4684829,,,Senior,6'1,290,4.9,0.35
+Bishop Fitzgerald,USC,5105260,,,Senior,5'11,205,4.42,0.35
+Louis Moore,Indiana,4684131,,,Senior,5'11,200,,0.35
+Bryce Lance,North Dakota State,4684074,,,Senior,6'3,209,4.6,1.4
+Jaden Greathouse,Notre Dame,5041165,,,Junior,6'1,212,4.55,1.4
+Trey Moore,Texas,4872322,,,Senior,6'3,249,,0.4
+Brent Austin,California,4872227,,,Senior,5'11,180,,0.25
+Lander Barton,Utah,4431057,,,Senior,6'5,236,4.55,0.4
+J'Mari Taylor,Virginia,5103635,,,Senior,5'9,204,4.39,1.4
+Jeff Caldwell,Cincinnati,4872235,,,,,,,1.4
+Caden Curry,Ohio State,4684981,,,Senior,6'3,260,4.78,0.5
+Red Murdock,Buffalo,4902722,,,Senior,6'3,240,4.77,0.4
+Max Llewellyn,Iowa,4684144,,,Senior,6'5,263,,0.5
+Brenen Thompson,Mississippi State,4432608,,,Senior,5'9,170,4.34,1.4
+TJ Guy,Michigan,4683842,,,Graduated,6'4,250,,0.5
+Dallen Bentley,Utah,4882583,,,Senior,6'4,259,,1.2
+Zane Durant,Penn State,4685065,,,Senior,6'1,294,4.66,0.35
+Chase Roberts,BYU,4432611,,,Senior,6'4,210,4.5,1.4
+Dae'Quan Wright,Mississippi,4902958,,,Senior,6'4,255,,1.2
+Keanu Tanuvasa,BYU,4872338,,,Junior,6'4,300,,0.35
+Sam Roush,Stanford,4685001,,,Senior,6'5,260,,1.2
+Le'Veon Moss,Texas A&M,4685336,,,Senior,5'11,210,4.42,1.4
+Mike Washington Jr.,Arkansas,4902805,,,Senior,6'2,223,4.45,1.4
+Nadame Tucker,Western Michigan,5104996,,,Senior,6'3,250,,0.5
+Keyron Crawford,Auburn,4872321,,,Senior,6'4,255,,0.5
+Zavion Thomas,LSU,4872221,,,Senior,5'10,192,,1.4
+Rayshaun Benny,Michigan,4429348,,,Senior,6'4,305,4.9,0.35
+Thaddeus Dixon,North Carolina,4684982,,,Senior,6'1,185,4.46,0.25
+Jakobe Thomas,Miami,4870535,,,Senior,6'2,200,4.55,0.35
+Josh Cuevas,Alabama,4872228,,,Senior,6'3,256,,1.2
+Diego Pavia,Vanderbilt,4872323,,,Senior,6'0,207,4.59,1.6
+Tanner Koziol,Houston,4902796,,,Senior,6'7,240,4.76,1.2
+Nick Barrett,South Carolina,4431548,,,Senior,6'2,323,,0.35
+Terion Stewart,Virginia Tech,4684071,,,Graduated,5'9,222,,1.4
+Jalen Stroman,Notre Dame,4684784,,,Senior,6'1,201,,0.35
+Patrick Payton,LSU,4431593,,,Senior,6'6,255,,0.5
+Lance Mason,Wisconsin,5122582,,,Senior,6'4,240,,1.2
+Josh Moten,Southern Miss,4684821,,,Senior,6'0,185,4.43,0.25
+Jermaine Mathews Jr.,Ohio State,4602018,,,Junior,5'11,190,4.38,0.25
+John Michael Gyllenborg,Wyoming,4902347,,,Senior,6'5,251,,1.2
+Marlin Klein,Michigan,4685265,,,Senior,6'6,250,,1.2
+Riley Nowakowski,Indiana,4429352,,,Senior,6'2,249,,1.2
+Ethan Burke,Texas,4902877,,,Senior,6'6,259,,0.5
+Taylen Green,Arkansas,4683884,,,Senior,6'6,224,4.44,1.6
+Bud Clark,TCU,4429074,,,Senior,6'2,185,4.48,0.35
+Bryce Boettcher,Oregon,4429683,,,Senior,6'2,232,4.7,0.4
+Tyler Onyedim,Texas A&M,4684132,,,Senior,6'3,295,,0.35
+Harrison Wallace III,Mississippi,4685011,,,Senior,6'1,200,,1.4
+Sawyer Robertson,Baylor,,https://baylorbears.com/images/2025/3/10/Robertson_Sawyer.png,,Senior,6'4,220,4.85,1.6
+Reggie Virgil,Texas Tech,4902875,,,Senior,6'3,190,,1.4
+Gracen Halton,Oklahoma,4684326,,,Senior,6'2,292,4.86,0.35
+Raylen Wilson,Georgia,5041158,,,Junior,6'1,235,4.52,0.4
+VJ Payne,Kansas State,4872304,,,Senior,6'3,208,,0.35
+Nate Boerkircher,Texas A&M,4611414,,,Graduated,6'4,250,,1.2
+Devon Marshall,NC State,4870591,,,Junior,5'11,200,,0.25
+Jalen McMurray,Tennessee,4611417,,,Senior,6'0,187,,0.25
+Jamarion Miller,Alabama,4685338,,,Senior,5'10,221,,1.4
+Antonio Kite,Ole Miss,4902875,,,Junior,6'0,180,4.48,0.25
+Logan Fano,Utah,4870723,,,Junior,6'5,260,,0.5
+Jalon Daniels,Kansas,4426543,,,Senior,6'0,220,4.58,1.6
+Lewis Bond,Boston College,4684714,,,Senior,5'11,190,,1.4
+Cole Payton,North Dakota State,4684077,,,Senior,6'3,233,,1.6
+Eric McAlister,TCU,4685025,,,Senior,6'3,205,4.52,1.4
+Roman Hemby,Indiana,4683838,,,Senior,6'0,210,,1.4
+Miller Moss,Louisville,4430154,,,Senior,6'2,210,4.85,1.6
+Noah Whittington,Oregon,4432174,,,Senior,5'8,203,,1.4
+J.Michael Sturdivant,Florida,4684845,,,Senior,6'3,213,4.38,1.4
+Devin Moore,Florida,4684325,,,Senior,6'3,198,,0.25
+Cameron Ball,Arkansas,4685049,,,Senior,6'5,323,,0.35
+Kevin Jennings,SMU,4902343,,,Junior,6'0,192,4.6,1.6
+Bryson Eason,Tennessee,4428994,,,Senior,6'3,310,5.1,0.35
+Jaylon Guilbeau,Texas,4685355,,,Senior,6'0,183,,0.25
+Gunner Stockton,Georgia,4685334,,,Junior,6'1,215,4.65,1.6
+Miles Kitselman,Tennessee,4870420,,,Senior,6'5,265,4.75,1.2
+Desmond Reid,Pittsburg,4872248,,,Senior,5'8,175,4.38,1.4
+Jaydn Ott,Oklahoma,4685150,,,Senior,5'11,208,,1.4
+Deven Eastern,Minnesota,4432499,,,Senior,6'6,320,,0.35
+Noah Thomas,Georgia,4872232,,,Senior,6'5,205,4.45,1.4
+Peyton Bowen,Oklahoma,5041156,,,Junior,6'0,201,,0.35
+Jake Retzlaff,Tulane,5041285,,,Senior,6'1,205,,1.6
+Hank Beatty,Illinois,4684988,,,Senior,5'11,185,,1.4
+Brandon Cleveland,North Carolina,4902874,,,Senior,6'4,315,,0.35
+Dane Key,Nebraska,4684330,,,Senior,6'3,210,4.5,1.4
+De'Zhaun Stribling,Ole Miss,4684795,,,Senior,6'2,200,4.52,1.4
+Dillon Bell,Georgia,4685324,,,Senior,6'1,210,,1.4
+Jerry Wilson,Florida State,4902340,,,Senior,5'10,185,,0.25
+Joey Aguilar,Tennesse,5122485,,,Senior,6'3,225,4.85,1.6
+Kaelon Black,Indiana,4684072,,,Senior,5'10,211,,1.4
+Brett Norfleet,Missouri,5041154,,,Junior,6'6,263,4.66,1.2
+Cole Brevard,Texas,4428987,,,Senior,6'3,346,,0.35
+Xavier Nwankpa,Iowa,4684989,,,Senior,6'2,213,,0.35
+Jackson Kuwatch,Miami (OH),4872237,,,Senior,6'4,235,,0.5
+Cole Wisniewski,Texas Tech,4429643,,,Senior,6'4,220,,0.35
+Lake McRee,USC,4685122,,,Senior,6'4,250,,1.2
+Chip Trayanum,Toledo,4428990,,,Senior,5'11,227,,1.4
+Isaac Smith,Mississippi State,5041157,,,Junior,6'0,220,4.6,0.35
+DJ Harvey,USC,4432170,,,Senior,5'10,190,4.44,0.25
+Barion Brown,LSU,4685262,,,Senior,5'11,185,4.28,1.4
+Hykeem Williams,Colorado,5041169,,,Junior,6'2,220,4.32,1.4
+Trey Smack,Florida,4684346,,,,,,,0.4
+Luke Altmyer,Illinois,4431541,,,Senior,6'2,205,4.75,1.6
+Michael Wortham,Montana,5105259,,,Senior,5'9,177,,1.4
+DJ Rogers,TCU,4684124,,,Senior,6'3,250,4.64,1.2
+Isaiah Nwokobia,SMU,4611484,,,Senior,6'1,205,,0.35
+Collin Wright,Stanford,4902804,,,Senior,6'0,195,,0.25
+Devonta Smith,Norte Dame,4684994,,,Senior,6'0,205,,0.25
+Shamar Easter,North Carolina,5041152,,,Freshman,6'5,215,4.58,1.2
+Athan Kaliakmanis,Rutgers,4684122,,,Senior,6'3,212,,1.6
+Jack Pyburn,LSU,4902345,,,Senior,6'4,264,,0.5
+Jack Velling,Michigan State,4870534,,,Senior,6'5,245,,1.2
+Jaren Kanak,Oklahoma,4685338,,,Senior,6'2,233,,1.2
+Landon Robinson,Navy,4913217,,,Senior,6'0,287,,0.35
+Trebor Pena,Penn State,4684070,,,Senior,5'10,186,4.52,1.4
+Jamal Haynes,Georgia Tech,4432168,,,Senior,5'9,190,4.48,1.4
+Caden Fordham,North Carolina State,4431525,,,,,,,0.5
+Eric Gentry,USC,4684523,,,Senior,6'6,225,4.56,0.4
+Charles Demmings,Stephen F. Austin,4611412,,,Senior,6'1,190,,0.25
+Seydou Traore,Mississippi State,4872241,,,Senior,6'4,235,,1.2
+Jordan Hall,Georgia,5122484,,,Junior,6'4,330,5.25,0.35
+Tyreek Chappell,Texas A&M,4685117,,,Senior,5'11,180,4.45,0.35
+Jalil Farooq,Maryland,4685333,,,Senior,6'2,213,4.49,1.4
+Joe Fagnano,UCONN,4572242,,,Graduated,6'4,225,,1.6
+Kendrick Law,Kentucky,4685341,,,Senior,6'0,205,4.42,1.4
+Dalton Johnson,Arizona,4684126,,,Senior,5'11,198,,0.35
+Kaleb Elarms-Orr,TCU,4872337,,,Senior,6'2,230,,0.4
+Justin Jefferson,Alabama,4683883,,,Senior,6'1,227,,0.4
+Austin Brown,Wisconsin,4684501,,,Senior,6'1,216,,0.35
+Emmanuel Henderson,Kansas,4685337,,,Senior,6'1,190,,1.4
+Romello Brinson,SMU,4429302,,,Senior,6'2,190,,1.4
+Jordan Hudson,SMU,4685370,,,Senior,6'1,200,,1.4
+Malik Benson,Oregon,5041168,,,Senior,6'1,195,,1.4
+Mark Gronowski,Iowa,4684074,,,Graduated,6'2,235,,1.6
+Dasan McCullough,Nebraska,4685353,,,Senior,6'5,235,4.58,0.5
+Ben Bell,Virginia Tech,4684705,,,Senior,6'1,235,,0.5
+Jalen Walthall,Incarnate Word,4872339,,,Senior,6'2,180,,1.4
+Squirrel White,Florida Stare,4685010,,,Senior,5'10,170,4.28,1.4
+Eli Heidenreich,Navy,4913214,,,Senior,5'11,197,4.5,1.4
+Scooby Williams,Texas A&M,4431587,,,Senior,6'2,230,,0.4
+Wesley Bissainthe,Miami (FL),4685350,,,Senior,6'1,,,0.4
+Bauer Sharp,LSU,4872236,,,Senior,6'5,246,,1.2
+Ceyair Wright,Nebraska,4685125,,,Senior,6'0,190,,0.25
+Namdi Obiazor,TCU,4611482,,,Senior,6'3,230,,0.4
+Nyjalik Kelly,UCF,4431586,,,Senior,6'5,250,,0.5
+Tanner Arkin,Illinois,4872228,,,Senior,6'4,265,,1.2
+Jackie Marshall,Baylor,4611419,,,Senior,6'3,306,,0.5
+Kendal Daniels,Oklahoma,4432165,,,Senior,6'5,242,,0.35
+Luke Hasz,Ole Miss,5041153,,,Junior,6'3,250,4.68,1.2
+Marcus Allen,North Carolina,4684983,,,Senior,6'2,190,,0.25
+Dominic Zvada,Michigan,4902882,,,Senior,6'3,187,,0.4
+Dominic Bailey,Tennessee,4429346,,,Senior,6'3,292,,0.5
+Ricardo Hallman,Wisconsin,4684507,,,Graduated,5'10,190,,0.25
+Avery Smith,Toledo,4872226,,,Senior,5'10,185,,0.25
+Will Ferrin,BYU,4684061,,,Senior,6'3,175,,0.4
+Drew Stevens,Iowa,4902525,,,Senior,6'1,205,,0.4
+Jack Kelly,BYU,4684949,,,Senior,6'2,242,,0.4
+Keionte Scott,Miami (FL),,,,Senior,6'0,192,4.44,0.35
+Josiah Trotter,Missouri,,,,Sophomore,6'2,237,4.61,0.4
+Domonique Orange,Iowa State,,,,Senior senior,6'4,325,5.3,0.35
+Jonah Coleman,Washington,,,,Senior,5'9,228,4.5,1.4
+Taurean York,Texas A&M,,,,Junior,5'10,227,4.58,0.4
+Antonio Williams,Clemson,,,,Junior,5'11,190,4.45,1.4
+Jamari Johnson,Oregon,,,,Sophomore,6'5,257,,1.2
+Derrick Moore,Michigan,,,,Senior,6'3,260,4.65,0.5
+Anthony Lucas,USC,,,,Senior,6'5,285,4.85,0.5
+Ahmad Moten Sr.,Miami (FL),,,,Senior,6'3,324,,0.35
+Arion Carter,Tennessee,,,,,6'1,235,,0.4
+Jalon Kilgore,South Carolina,,,,Junior,6'1,211,4.48,0.35
+Deion Burks,Oklahoma,,,,Senior,5'9,188,4.43,1.4
+Davison Igbinosun,Ohio State,,,,Senior,6'2,195,4.34,0.25
+Skyler Bell,UConn,,,,Senior,6'0,185,4.43,1.4
+Zakee Wheatley,Penn State,,,,Senior,6'2,200,4.4,0.35
+Trinidad Chambliss,Mississippi,,,,Senior,6'1,200,4.45,1.6
+Cian Sloan,North Carolina State,,,,Senior,6'4,252,,0.4
+Jacob Rodriguez,Texas Tech,,,,Senior,6'1,230,4.7,0.4
+Justin Joly,NC State,,,,Senior,6'3,251,4.75,1.2
+Jaheim Lawson,Clemson,,,,Junior,6'2,255,4.72,0.5
+Wydett Williams,Ole Miss,,,,Senior,6'2,210,,0.35
+Eli Raridon,Notre Dame,,,,Senior,6'7,251,4.78,1.2
+Aaron Anderson,LSU,,,,Junior,5'8,188,4.34,1.4
+Alex McLaughlin,Washington,,,,Junior,6'2,198,,0.35
+Albert Regis,Texas A&M,,,,Senior,6'1,317,4.85,0.35
+Aaron Graves,Iowa,,,,Senior,6'5,295,4.9,0.35
+Aiden Fisher,Indiana,,,,Senior,6'1,231,,0.4
+Treydan Stukes,Arizona,,,,Senior,6'2,200,,0.25
+Jack Strand,Minnesota State,,,,Junior,6'5,240,,1.6
+Robert Spears Jennings,Oklahoma,,,,Senior,6'0,213,,0.35
+Vincent Anthony Jr,Duke,,,,Senior,6'6,260,,0.5
+Channing Canada,TCU,,,,Senior,6'1,190,,0.25
+Chris McClellon,Missouri,,,,Senior,6'4,323,,0.35
+Christian Gray,Notre Dame,,,,Junior,6'0,188,4.45,0.25
+George Gumbs Jr,Florida,,,,Senior,6'4,250,,0.5
+Cam Miller,Rutgers,,,,Senior,6'0,184,,0.25
+Gary Smith,UCLA,,,,Senior,6'2,340,,0.35
+Rahsual Faison,South Carolina,,,,Graduated,6'0,218,,1.4
+Sebastian Harsh,North Carolina Stare,,,,Senior,6'3,263,,0.5
+Jalen Husker,Maryland,,,,Senior,6'2,201,,0.35
+Caleb Douglas,Texas Tech,,,,Senior,6'4,205,,1.4
+Quinten Joyner,Texas Tech,,,,Sophomore,5'11,205,4.47,1.4
+Jeadyn Lukas,Clemson,,,,Senior,6'2,200,,0.25
+Noah Fifta,Arizona,,,,Junior,5'10,186,4.75,1.6
+Tommy Castellanos,Florida State,,,,Senior,5'11,201,,1.6
+Kyle Walljasper,Minnesota Duluth,,,,Senior,6'1,240,,1.6
+Conner Wegman,Houston,,,,Junior,6'3,210,4.85,1.6
+Raion Strader,Pittsburg,,,,,6'0,185,,0.25
+Adam Randall,Clemson,,,,Senior,6'2,235,,1.4
+Carson Ryan,BYU,,,,Senior,6'4,250,,1.2
+Devin Hobbs,Tennessee,,,,Junior,6'4,290,,0.35
+Eric O'Neil,Rutgers,,,,Senior,6'3,261,,0.5
+Lawson Luckie,Georgia,,,,Junior,6'4,240,4.65,1.2
+Alex Afari,Unknown,,,,,,,,0.4
+Khalil Alexander,Texas Stare,,,,Senior,6'3,225,4.62,0.4
+Preston Hodge,Colorado,,,,Senior,6'0,200,4.53,0.25
+Dijon Johnson,Florida,,,,Junior,6'1,204,4.48,0.25
+Damari Brown,Miami,,,,Junior,6'1,190,,0.25
+Will Kacmerek,Ohio Stare,,,,Senior,6'5,258,4.8,1.2
+Kansei Matsuzawa,Hawaii,,,,,,,,0.4
+Daniel Harris,California,,,,,6'3,195,,0.25
+Ethan Conner,Miami,,,,Sophomore,6'1,172,4.5,0.25
+Rene Kings,Louisville,,,,,,,,0.35
+Jacobe Johnson,Oklahoma,,,,Junior,6'2,208,4.54,0.25
+London Humphrey,Georgia,,,,Junior,6'2,200,4.4,1.4
+Colby Young,Georgia,,,,Senior,6'3,215,4.6,1.4
+Jalen Catalonia,Missouri,,,,Graduated,5'10,200,,0.35
+Tory Grimes,Purdue,,,,Senior,6'1,190,,0.25
+Jaylon Braxton,Ole Miss,,,,Sophomore,6'0,190,4.48,0.35
+Kyron Jones,Virginia Tech,,,,Senior,6'2,235,4.72,1.6
+Robert Henry,UTSA,,,,Senior,5'9,205,,1.4
+Dean Conners,Houston,,,,Senior,6'0,206,,1.4
+Caulin Lacy,Louisville,,,,Senior,5'10,190,4.45,1.4
+Kolby Taylor,Vanderbilt,,,,,,,,0.25
+Deuce Chester,Syracuse,,,,Senior,6'0,195,4.56,0.35
+Trey Holly,Southern U,,,,Sophomore,5'7,192,4.42,1.4
+Khalil Saunders,Kentucky,,,,,,,,0.35
+Rueben Owens II,Texas A&M,,,,Sophomore,5'11,215,4.38,1.4
+Nick Anderson,Wake Forrest,,,,Graduated,5'11,197,,0.35
+Al'Zillion Hamilton,Fresno State,,,,Senior,5'11,185,,0.25
+Raymond Cottrell,Texas A&M,,,,Freshman,6'3,210,4.56,1.4
+Mel Brown,UCONN,,,,Senior,5'9,180,,1.4
+Jaquaize Pettaway,East Carolina,,,,Junior,6'0,194,4.37,1.4
+Micah Davey,UTEP,,,,Senior,6'2,235,,0.4
+Ja'Keem Jackson,LSU,,,,Sophomore,6'0,190,4.45,0.25
+Jacob De Jesus,California,,,,Senior,5'7,170,,1.4
+Ahmaad Moses,SMU,,,,Senior,5'10,205,,0.35
+DQ Smith,South Carolina,,,,Senior,6'1,219,,0.35
+Denver Harris,UNLV,,,,Senior,6'0,190,,0.25
+Behring Morton,Texas Tech,,,,Senior,6'2,210,,1.6
+Damari Lyons,Florida,,,,Junior,6'4,318,,0.35
+Mohamed Toure,Miami (FL),,,,Graduated,6'2,,,0.4
+Nikai Martinez,Michigan State,,,,Senior,5'11,195,,0.35
+Jeremiah Franklin,Boston College,,,,Senior,6'3,244,,1.2
+Malik Spencer,Michigan State,,,,Senior,6'1,191,4.5,0.35
+Desmond Parnell,Kansas State,,,,Senior,6'0,232,,0.4
+Ayden Williams,Mississippi State,,,,Junior,6'3,205,4.65,1.4
+Stephen Hall,Missouri,,,,Senior,6'0,202,,0.25
+Xavian Sorely Jr,Arkansas,,,,Senior,6'3,225,,0.4
+Keyshaun Elliot,Arizona State,,,,Senior,6'2,235,,0.4
+Michael Harris,Maryland,,,,Junior,6'1,218,4.65,0.4
+Grayson James,Boston College,,,,Senior,6'3,218,,1.6
+Fred Davis,Northwestern,,,,Senior,6'1,200,4.29,0.25
+Logan Diggs,Ole Miss,,,,Senior,6'0,220,,1.4
+Tre Smith,Arizona,,,,Senior,6'5,262,,0.5
+Vinny Anthony,Wisconsin,,,,Senior,6'0,190,,1.4
+Walter Eget,San Jose State,,,,Senior,6'3,223,,1.6
+Makis Deal,TCU,,,,Sophomore,6'5,325,5.1,0.35
+Donovan Greene,Virginia Tech,,,,Graduated,6'2,196,,1.4
+Troy Bowles,Michigan,,,,Junior,6'0,230,4.55,0.4
+Cormani McLain,Florida,,,,Sophomore,6'2,189,4.48,0.25
+CJ Donaldson,Ohio State,,,,Senior,6'2,232,,1.4
+Shad Banks Jr.,UTSA,,,,Senior,6'1,230,4.45,0.4
+Reid Carrico,West Virginia,,,,Senior,6'2,230,4.65,0.4
+Damonic Williams,Oklahoma,,,,Senior,6'1,323,,0.35
+Star Thomas,Tennessee,,,,Senior,6'0,,,1.4
+Tony Rojas,Penn State,,,,Junior,6'2,230,4.44,0.4
+Hayes King,Georgia Tech,,,,Senior,6'3,215,4.45,1.6
+RJ Maryland,SMU,,,,Senior,6'4,240,,1.2
+Dashawn Jones,Alabama,,,,Senior,6'0,190,,0.25
+AI-Jay Henderson,Buffalo,,,,Senior,5'10,216,,1.4
+Branson Robinson,Georgia State,,,,Junior,5'10,211,4.55,1.4
+Keaton Wade,Colorado,,,,Senior,6'4,235,4.45,0.5
+Roydell Williams,Florida State,,,,Senior,5'10,223,,1.4
+Dean Miller,Kansas,,,,Senior,6'5,240,,0.5
+Korey Foreman,Fresno State,,,,Senior,6'4,250,4.75,0.5
+Sage Ryan,Ole Miss,,,,Senior,5'11,200,4.39,0.35
+Gunner Maldonado,Kansas State,,,,Senior,5'11,193,,0.35
+Anthony Hankerson,Oregon State,,,,Senior,5'8,206,,1.4
+Keyon Ware-Hudson,Oregon,,,,Senior,6'2,305,4.8,0.35
+Karon Prunty,Wake Forrest,,,,Senior,6'2,192,,0.25
+Keshawn Silver,USC,,,,Senior,6'4,330,,0.35
+Ty Thompson,Tulane,,,,Senior,6'4,224,4.7,1.2
+Mo Westmoreland,Tulane,,,,Senior,6'2,250,,0.5
+Preston Stone,Northwestern,,,,Senior,6'1,215,4.9,1.6
+Jason Henderson,Old Dominion,,,,Senior,6'1,225,4.7,0.4
+Clayton Smith,Arizona State,,,,Senior,6'5,255,4.64,0.35
+Amari Jackson,Maryland,,,,,5'11,190,,0.25
+Latrell McCutchin Sr.,Houston,,,,Senior,6'1,185,,0.25
+Dylan Brooks,Kansas,,,,Senior,6'4,245,4.6,0.5
+Gabriel Rubio,Norte Dame,,,,Senior,6'5,322,4.9,0.35
+Devin Mockobee,Purdue,,,,Senior,6'0,202,,1.4
+Avante Dickerson,Arkansas State,,,,Senior,5'11,181,4.34,0.25
+Devonte Ross,Penn State,,,,Senior,5'10,170,,1.4
+Jimmori Robinson,West Virginia,,,,Senior,6'4,250,,0.5
+Rohan Jones,Arkansas,,,,Senior,6'3,242,,1.2
+Kentrell Bullock,South Alabama,,,,Senior,5'10,205,,1.4
+Armoni Goodwin,Utah Martin,,,,Senior,5'8,195,4.42,1.4
+Christian Leary,Western Michigan,,,,Senior,5'10,180,4.4,1.4
+Jojo Earle,UNLV,,,,Senior,5'10,185,4.39,1.4
+Dacari Collins,Louisville,,,,Senior,6'4,215,4.51,1.4
+Malcom Greene,Massachusetts,,,,Senior,5'11,190,4.47,0.25
+JJ Johnson,North Carolina,,,,Graduated,5'10,200,,0.35
+Kobe Prentice,Baylor,,,,Senior,5'11,190,,1.4
+Jaiden Ausberry,Notre Dame,,,,Sophomore,6'2,228,4.61,0.4
+Aiden Hubbard,Northwestern,,,,Graduated,6'4,255,,0.5
+Makari Vickers,Colorado,,,,Sophomore,6'1,192,4.42,0.25
+Maverick McIvor,Western Kentucky,,,,Graduated,6'2,214,,1.6
+Mathew Hiberner,SMU,,,,Graduated,6'5,252,,1.2
+Marvin Jones Jr,Oklahoma,,,,Senior,6'5,262,,0.5
+Shyheim Brown,Florida State,,,,Senior,6'2,201,,0.35
+Phillip Dunham,UCF,,,,Senior,6'1,190,,0.35
+Jahmal Edrine,Virginia,,,,Senior,6'3,221,,1.4
+Damon Payne,Michigan,,,,Senior,6'4,311,5.2,0.35
+Malik Rutherford,Georgia Tech,,,,Senior,5'9,170,,1.4
+Sam Huard,USC,,,,Senior,6'1,210,4.85,1.6
+Da'Shawn Womack,Auburn,,,,,6'5,265,,0.5
+Nyland Green,Arizona Stare,,,,Senior,6'2,185,4.5,0.25
+Davon Booth,Mississippi State,,,,Graduated,5'10,205,,1.4
+Max Tomczak,Youngstown State,,,,Senior,6'0,195,,1.4
+Blake Shapen,Mississippi State,,,,Senior,6'1,210,4.76,1.6
+Prince Kollie,Vanderbilt,,,,Senior,6'1,227,4.6,0.4
+Will Whitson,Mississippi State,,,,Graduated,6'5,295,,0.5
+Tyler Van Dyke,SMU,,,,Senior,6'4,230,4.85,1.6
+Byron Caldwell Jr,San Diego State,,,,Senior,6'0,215,4.5,1.4
+Toriano Pride Jr,Missouri,,,,Senior,5'11,188,,0.25
+Wade Woodaz,Clemson,,,,Senior,6'4,235,,0.4
+Chamon Metayer,Arizona State,,,,Senior,6'4,255,,1.2
+Johnathan Jefferson,SMU,,,,Senior,6'3,315,4.9,0.35
+Jaden Bray,West Virginia,,,,Senior,6'2,209,4.46,1.4
+Angel Johnson,Washington State,,,,Senior,5'9,192,,1.4
+Demon Clowney,South Carolina,,,,Senior,6'4,255,4.55,0.4
+Amari Niblack,Texas A&M,,,,Senior,6'3,235,,1.2
+Sav'ell Smalls,Colorado,,,,Senior,6'3,265,4.58,1.2
+Chris Hilton Jr,LSU,,,,Senior,6'0,190,4.35,1.4
+Mathew Stuka,James Madison,,,,Senior,6'2,211,4.8,1.6
+Reggie Grimes II,Memphis,,,,Junior,6'4,282,4.77,0.35
+EJ Williams,Indiana,,,,Senior,6'4,203,4.49,1.4
+Stephen Dix Jr.,Arkansas,,,,Senior,6'1,240,4.66,0.4
+Kendal Dolby,Mississippi State,,,,,5'11,194,,0.35
+Jaleel Skinner,Louisville,,,,Junior,6'5,230,4.48,1.2
+Shawn Murphy,South Carolina,,,,Junior,6'3,231,4.48,0.4
+Jerand Bradley,Kansas State,,,,Senior,6'5,223,4.5,1.4
+Cash Jones,Oregon State,,,,Senior,5'11,195,,1.4
+Jay Green,Stanford,,,,Junior,6'3,215,,0.35
+Kaiden Salter,Colorado,,,,Senior,6'1,190,4.5,1.6
+Trey Cooley,Georgia Tech,,,,Senior,5'10,205,4.5,1.4
+LJ Johnson,Cal,,,,Senior,5'10,215,4.33,1.4
+Jacobian Guillory,LSU,,,,Graduated,6'2,318,,0.35
+Jaylin Davies,Oklahoma Stare,,,,Senior,5'11,180,4.6,0.25
+Roy Williams,Northern Illinois,,,,Senior,6'6,257,,0.5
+Jordan Mosley,Mississippi State,,,,Senior,6'0,195,,1.4
+Keanu Koht,Vanderbilt,,,,Senior,6'4,232,4.7,0.4
+DT Sheffield,Rutgers,,,,Senior,5'10,175,,1.4
+Chase Mason,South Dakota State,,,,Senior,6'4,240,,1.6
+Deion Colzie,Miami Ohio,,,,Senior,6'4,211,4.46,1.4
+Jaquez Moore,Duke,,,,Senior,5'10,205,,1.4
+Raesjon Davis,Oregon State,,,,Senior,6'0,223,4.64,0.4
+Miles Capers,Vanderbilt,,,,Graduated,6'4,249,,0.5
+Jeff Sims,Arizona State,,,,Senior,6'4,220,4.78,1.6
+Key Lawrence,UCLA,,,,Senior,6'1,200,4.51,0.35
+DJ Graham II,Kansas,,,,Senior,6'0,200,4.55,0.25
+Sam M'Pemba,Texas A&M,,,,Sophomore,6'3,252,4.7,0.4
+Jayden Ballard,Wisconsin,,,,Senior,6'2,205,4.48,1.4
+Zach Calzada,Kentucky,,,,Senior,6'4,230,4.75,1.6
+Stephen Thompson,Florida Stare,,,,Senior,6'1,240,4.65,0.4
+Jalen Berger,UCLA,,,,Senior,6'1,215,4.58,1.4
+Matt Lauter,Boise State,,,,Senior,6'3,245,,1.2
+Raul Aguirre Jr,Miami,,,,Junior,6'2,233,4.65,0.4
+Corey Walker,Wisconsin,,,,Senior,6'5,290,,0.5
+Jeremiah Walker,Stephen Austin,,,,Senior,6'0,192,4.5,0.25
+Hank Brown,Iowa,,,,Sophomore,6'4,215,4.85,1.6
+Jared Brown,South Carolina,,,,Senior,6'0,195,4.5,1.4
+Kevin Gilliam Jr.,Virginia Tech,,,,Senior,6'3,295,4.75,0.35
+Jordan Pollard,San Jose State,,,,Senior,6'1,202,,0.4
+Elliot Donald,Pittsburg,,,,Junior,6'3,275,4.69,0.35
+Cade Denhoff,Clemson,,,,Senior,6'5,260,4.75,0.5
+Caleb Fauria,Delaware,,,,Graduated,6'5,245,,1.2
+Ethan Calvert,Cal Ploy,,,,Senior,6'3,215,4.65,0.4
+Tywone Malone Jr.,Ohio State,,,,Senior,6'4,309,5,0.35
+Cody Jackson,Tarleton State,,,,Junior,6'0,175,4.44,1.4
+Jayden Williams,UCF,,,,Senior,5'11,185,,0.35
+Alton McCaskill,Sam Houston,,,,Junior,6'1,205,4.48,1.4
+Kam Olds,Kentucky,,,,Senior,6'4,252,,0.5
+Rodrick Pleasent,UCLA,,,,Sophomore,5'10,175,4.24,0.25
+David Daniel Sisavah,Troy,,,,Senior,6'2,190,4.46,0.35
+Triston Newsom,Missouri,,,,Graduated,6'2,230,,0.4
+Lorenzo Styles,Ohio State,,,,Senior,6'1,195,4.35,0.35
+Damarius McGhee,Florida Atlantic,,,,Senior,6'0,175,4.49,0.25
+Ja'Mori Mackin,Kentucky,,,,Senior,5'11,191,,1.4
+Derrick Davis Jr,Pittsburg,,,,Senior,6'0,210,4.56,1.4
+Rara Thomas,Troy,,,,Senior,6'2,208,4.4,1.4
+Bryce Carter,Texas State,,,,Senior,6'3,274,4.9,0.5
+Prophet Brown,USC,,,,Senior,5'11,190,4.3,0.25
+Ryan Niblet,Texas,,,,Sophomore,5'10,187,4.3,1.4
+Drew Payne,Bowling Green,,,,Senior,6'0,200,4.68,1.6
+Nyziah Hunter,Nebraska,,,,Sophomore,6'1,205,4.45,1.4
+Micah Pittman,Utah,,,,Senior,6'0,205,4.55,1.4
+Demorie Tate,Florida A&M,,,,Senior,6'1,195,4.42,0.25
+Dylan Morris,James Madison,,,,Senior,6'1,202,4.85,1.6
+Darnell Jeffries,Minnesota,,,,Senior,6'3,285,5.09,0.35
