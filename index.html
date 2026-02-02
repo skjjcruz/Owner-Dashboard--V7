@@ -621,6 +621,14 @@
                               )}
                             </div>
 
+                            {player && (
+                              <img
+                                src={player.photoUrl}
+                                alt={player.name}
+                                className="hidden md:block w-10 h-10 rounded-full object-cover flex-shrink-0 bg-slate-700"
+                              />
+                            )}
+
                             <div className="flex-1 min-w-0">
                               <div className="pick-name font-bold truncate text-xs md:text-base">{displayName}</div>
                               {displayDetails && (
@@ -644,6 +652,19 @@
                                 </div>
                               )}
                             </div>
+
+                            {player && (
+                              <button
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  setSelectedPlayerDetail(player);
+                                }}
+                                className="text-xs px-1.5 md:px-3 py-0.5 md:py-1.5 rounded bg-slate-700 hover:bg-slate-600 flex-shrink-0"
+                              >
+                                <span className="md:hidden">ℹ️</span>
+                                <span className="hidden md:inline">Details</span>
+                              </button>
+                            )}
                           </div>
                         );
                       })}
