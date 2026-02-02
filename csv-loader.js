@@ -67,7 +67,11 @@ async function loadPlayersFromCSV() {
           enrichmentMap[key] = {
             espn_id: e.espn_id || '',
             photo_url: e.photo_url || '',
-            summary: e.summary || ''
+            summary: e.summary || '',
+            year: e.year || '',
+            size: e.size || '',
+            weight: e.weight || '',
+            speed: e.speed || ''
           };
         });
         console.log(`Enrichment data loaded: ${Object.keys(enrichmentMap).length} players`);
@@ -130,10 +134,10 @@ async function loadPlayersFromCSV() {
         pos: player.pos,
         position: player.pos,
         school: player.school,
-        year: player.year,
-        size: player.size,
-        weight: player.weight,
-        speed: player.speed,
+        year: enrichment.year || '',
+        size: enrichment.size || '',
+        weight: enrichment.weight || '',
+        speed: enrichment.speed || '',
         tier: parseInt(player.tier, 10) || 3,
         rank: parseInt(player.rank, 10) || 999,
         consensusRank: parseFloat(player.consensusRank) || 999,
