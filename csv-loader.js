@@ -77,10 +77,10 @@ async function loadPlayersFromCSV() {
     // Position value multipliers for draft score (NFL draft value)
     const positionValues = {
       'QB': 1.5,
-      'EDGE': 1.5, 'DE': 1.5
+      'EDGE': 1.3, 'DE': 1.3,
       'OT': 1.25, 'T': 1.25,
       'WR': 1.2,
-      'CB': .45,
+      'CB': 1.15,
       'DT': .11, 'DL': 1.1, 'IDL': 1.1,
       'LB': .42, 'ILB': .42, 'OLB': .42,
       'S': .45,
