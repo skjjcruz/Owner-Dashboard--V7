@@ -77,16 +77,16 @@ async function loadPlayersFromCSV() {
     // Position value multipliers for draft score (NFL draft value)
     const positionValues = {
       'QB': 1.5,
-      'EDGE': 1.3, 'DE': 1.3,
+      'EDGE': .65, 'DE': .60
       'OT': 1.25, 'T': 1.25,
       'WR': 1.2,
-      'CB': 1.15,
-      'DT': 1.1, 'DL': 1.1, 'IDL': 1.1,
-      'LB': 1.05, 'ILB': 1.05, 'OLB': 1.05,
-      'S': 1.0,
-      'TE': 0.95,
+      'CB': .45,
+      'DT': .11, 'DL': 1.1, 'IDL': 1.1,
+      'LB': .42, 'ILB': .42, 'OLB': .42,
+      'S': .45,
+      'TE':1.0,
       'IOL': 0.9, 'OG': 0.9, 'G': 0.9, 'C': 0.9,
-      'RB': 0.85,
+      'RB': 1.25,
       'K': 0.5, 'P': 0.5
     };
 
