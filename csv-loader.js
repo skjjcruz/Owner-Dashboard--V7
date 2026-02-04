@@ -74,7 +74,7 @@ async function loadPlayersFromCSV() {
       return Math.max(1.0, 3.0 - (rank - 224) * 0.01); // Below 3.0 for UDFA
     }
 
-    // Position value multipliers for draft score
+    // Position value multipliers for draft score (NFL draft value)
     const positionValues = {
       'QB': 1.5,
       'EDGE': 1.3, 'DE': 1.3,
@@ -89,6 +89,30 @@ async function loadPlayersFromCSV() {
       'RB': 0.85,
       'K': 0.5, 'P': 0.5
     };
+
+    // Fantasy position multipliers (based on PPG analysis)
+    // Higher = more fantasy valuable, QB is baseline at 1.0
+    const fantasyPositionMultipliers = {
+      'QB': 1.0,
+      'RB': 0.672,
+      'WR': 0.494,
+      'K': 0.477,
+      'TE': 0.438,
+      'DE': 0.409, 'EDGE': 0.409,
+      'LB': 0.346, 'ILB': 0.346, 'OLB': 0.346,
+      'DL': 0.317, 'IDL': 0.317,
+      'DB': 0.285, 'S': 0.285,
+      'CB': 0.265,
+      'DT': 0.265,
+      // OL positions have very low fantasy value
+      'OT': 0.15, 'T': 0.15, 'IOL': 0.15, 'OG': 0.15, 'G': 0.15, 'C': 0.15, 'OL': 0.15,
+      'P': 0.2
+    };
+
+    // Get fantasy multiplier for a position
+    function getFantasyMultiplier(pos) {
+      return fantasyPositionMultipliers[pos] || 0.3; // Default for unknown positions
+    }
 
     // Calculate draft score (combines rank and position value)
     function calculateDraftScore(rank, pos) {
@@ -249,8 +273,8 @@ async function loadPlayersFromCSV() {
       const draftScore = calculateDraftScore(rank, pos);
       const generational = isGenerational(rank, grade);
 
-      // Fantasy rank: apply position multiplier
-      const fantasyMultiplier = enrichment.fantasyMultiplier || 1.0;
+      // Fantasy rank: apply position multiplier (use enrichment override if set, otherwise position-based)
+      const fantasyMultiplier = enrichment.fantasyMultiplier || getFantasyMultiplier(pos);
       const fantasyRank = Math.round(rank / fantasyMultiplier);
 
       // Calculate rank change for arrows
