@@ -389,7 +389,7 @@
       const draftOrder = generateDraftOrder();
 
       // Positions to exclude from fantasy rankings (low fantasy value)
-      const excludedFantasyPositions = ['OL', 'OT', 'IOL', 'T', 'G', 'C', 'OG', 'P', 'K'];
+      const excludedFantasyPositions = ['OL', 'OT', 'IOL', 'T', 'G', 'C', 'OG', 'P', 'K', 'LS'];
 
       const filteredPlayers = players
         .filter(p => {
@@ -715,7 +715,7 @@
                     }`}
                     title="Toggle position filters"
                   >
-                    {showPositionFilters ? '▼' : '▶'} {selectedPos}
+                    {showPositionFilters ? '▼' : '▶'} {selectedPos === 'ALL' ? 'Positions' : selectedPos}
                   </button>
                 </div>
 
@@ -745,14 +745,14 @@
               </div>
 
               <div className="flex-1 overflow-y-auto scroll-container">
-                {filteredPlayers.map((player) => (
+                {filteredPlayers.map((player, displayIndex) => (
                   <div
                     key={player.id}
                     className="player-card-mobile p-1 md:p-3 hover:bg-slate-800 border-b border-slate-700"
                   >
                     <div className="flex items-center gap-0.5 md:gap-3">
                       <div className="player-rank-number w-10 md:w-16 text-slate-500 font-bold text-xs md:text-base text-center flex-shrink-0 flex items-center justify-center gap-0.5">
-                        <span>#{rankingMode === 'fantasy' ? player.fantasyRank : player.rank}</span>
+                        <span>#{displayIndex + 1}</span>
                         {player.rankChange > 0 && (
                           <span className="text-green-500 text-[8px] md:text-xs" title={`Up ${player.rankChange} from #${player.previousRank}`}>▲</span>
                         )}
