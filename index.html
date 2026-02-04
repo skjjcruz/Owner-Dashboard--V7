@@ -389,7 +389,7 @@
       const draftOrder = generateDraftOrder();
 
       // Positions to exclude from fantasy rankings (low fantasy value)
-      const excludedFantasyPositions = ['OL', 'OT', 'IOL', 'T', 'G', 'C', 'OG', 'P', 'K'];
+      const excludedFantasyPositions = ['OL', 'OT', 'IOL', 'T', 'G', 'C', 'OG', 'P', 'K', 'LS'];
 
       const filteredPlayers = players
         .filter(p => {
@@ -912,14 +912,8 @@
                         </div>
                       </div>
                       <div className="mt-2 text-[10px] text-slate-400">
-                        {selectedPlayerDetail.isGenerational && ['EDGE', 'LB', 'DL', 'S', 'CB'].includes(selectedPlayerDetail.pos) && (
-                          <div className="text-yellow-400">
-                            Elite defender bonus applied (+1.5)
-                          </div>
-                        )}
                         <div className="mt-0.5">
                           Formula: Grade ({selectedPlayerDetail.grade}) × Multiplier ({selectedPlayerDetail.fantasyMultiplier})
-                          {selectedPlayerDetail.isGenerational && ['EDGE', 'LB', 'DL', 'S', 'CB'].includes(selectedPlayerDetail.pos) && ' + 1.5 (elite defender bonus)'}
                         </div>
                       </div>
                     </div>
