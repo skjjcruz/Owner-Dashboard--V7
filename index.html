@@ -388,8 +388,8 @@
 
       const draftOrder = generateDraftOrder();
 
-      // Positions to exclude from fantasy rankings (low fantasy value)
-      const excludedFantasyPositions = ['OL', 'OT', 'IOL', 'T', 'G', 'C', 'OG', 'P', 'K', 'LS'];
+      // Positions to always exclude (OL/special teams - no fantasy value)
+      const excludedPositions = ['OL', 'OT', 'IOL', 'T', 'G', 'C', 'OG', 'P', 'LS'];
 
       const filteredPlayers = players
         .filter(p => {
@@ -397,9 +397,9 @@
           const matchesSearch = p.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
                                (p.school && p.school.toLowerCase().includes(searchTerm.toLowerCase()));
           const notDrafted = !Object.values(draftPicks).includes(p.id);
-          // In fantasy mode, exclude OL/special teams positions
-          const notExcludedFantasy = rankingMode !== 'fantasy' || !excludedFantasyPositions.includes(p.pos);
-          return matchesPos && matchesSearch && notDrafted && notExcludedFantasy;
+          // Always exclude OL/special teams positions
+          const notExcludedPosition = !excludedPositions.includes(p.pos);
+          return matchesPos && matchesSearch && notDrafted && notExcludedPosition;
         })
         .sort((a, b) => {
           if (rankingMode === 'fantasy') {
