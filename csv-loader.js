@@ -106,18 +106,32 @@ async function loadPlayersFromCSV() {
     // LOAD DATA FILES
     // ============================================
 
-    // 1. Fetch main player data (simple 3-column: name, pos, school)
-    const playersResponse = await fetch('./players.csv');
-    if (!playersResponse.ok) {
-      throw new Error(`Failed to load players.csv: ${playersResponse.status}`);
+    // 1. Fetch main player data - try both players.csv and player.csv
+    let playersText = null;
+    let playersResponse = await fetch('./players.csv');
+    if (playersResponse.ok) {
+      playersText = await playersResponse.text();
+      console.log('Loaded players.csv');
+    } else {
+      // Try alternate filename
+      playersResponse = await fetch('./player.csv');
+      if (playersResponse.ok) {
+        playersText = await playersResponse.text();
+        console.log('Loaded player.csv');
+      } else {
+        throw new Error('Failed to load player data: neither players.csv nor player.csv found');
+      }
     }
-    const playersText = await playersResponse.text();
     const playersRaw = parseCSV(playersText);
 
-    // Detect if this is the old format (has 'rank' column) or new simple format
-    const hasRankColumn = playersRaw.length > 0 && playersRaw[0].hasOwnProperty('rank');
-    console.log(`Players.csv format: ${hasRankColumn ? 'Legacy (with rank column)' : 'Simple (row order = rank)'}`);
-
+    // Detect if this has a Rank column (case-insensitive check)
+    const hasRankColumn = playersRaw.length > 0 && (
+      playersRaw[0].hasOwnProperty('rank') ||
+      playersRaw[0].hasOwnProperty('Rank') ||
+      playersRaw[0].hasOwnProperty('RANK')
+    );
+    console.log(`Players file format: ${hasRankColumn ? 'Has Rank column' : 'Row order = rank'}`);
+    console.log(`Columns detected:`, playersRaw.length > 0 ? Object.keys(playersRaw[0]) : 'none');
     // 2. Fetch source rankings (optional - for backwards compatibility)
     let sourcesMap = {};
     try {
@@ -208,13 +222,22 @@ async function loadPlayersFromCSV() {
     // ============================================
 
     const combinedPlayers = playersRaw.map((player, index) => {
-      // Determine rank: use row index for simple format, or existing rank column
-      const rank = hasRankColumn ? (parseInt(player.rank, 10) || index + 1) : (index + 1);
+      // Determine rank: use Rank column if present, otherwise use row index
+      const rank = hasRankColumn
+        ? (parseInt(player.rank || player.Rank || player.RANK, 10) || index + 1)
+        : (index + 1);
 
-      // Get player name and position (handle both old and new column names)
-      const name = player.name || player.Name || player.player || player.Player || '';
-      const pos = player.pos || player.Pos || player.position || player.Position || '';
-      const school = player.school || player.School || player.college || player.College || '';
+      // Get player name (handle many variations including "Player Name" with space)
+      const name = player.name || player.Name || player.player || player.Player ||
+                   player['Player Name'] || player['player name'] || player['PLAYER NAME'] || '';
+
+      // Get position (handle variations)
+      const pos = player.pos || player.Pos || player.position || player.Position ||
+                  player.POS || player.POSITION || '';
+
+      // Get school (handle variations including "College")
+      const school = player.school || player.School || player.college || player.College ||
+                     player.SCHOOL || player.COLLEGE || '';
 
       // Look up enrichment data by name + school
       const enrichmentKey = `${name.toLowerCase()}|${school.toLowerCase()}`;
