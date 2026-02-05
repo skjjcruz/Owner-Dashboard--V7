@@ -403,8 +403,8 @@
         })
         .sort((a, b) => {
           if (rankingMode === 'fantasy') {
-            // For fantasy, sort by draftScore descending (higher is better)
-            return (b.draftScore || 0) - (a.draftScore || 0);
+            // For fantasy, sort by fantasyRank ascending (lower is better)
+            return (a.fantasyRank || 999) - (b.fantasyRank || 999);
           } else {
             // For consensus, sort by consensusRank ascending (lower is better)
             return (a.consensusRank || 999) - (b.consensusRank || 999);
