@@ -201,6 +201,9 @@ async function loadPlayersFromCSV() {
           };
         });
         console.log(`Enrichment data loaded: ${Object.keys(enrichmentMap).length} players`);
+        // Debug: Show first few enrichment keys to verify format
+        const sampleKeys = Object.keys(enrichmentMap).slice(0, 5);
+        console.log(`Sample enrichment keys:`, sampleKeys);
       }
     } catch (err) {
       console.warn('Could not load player-enrichment.csv, continuing without enrichment data');
@@ -264,6 +267,17 @@ async function loadPlayersFromCSV() {
       // Look up enrichment data by name + school
       const enrichmentKey = `${name.toLowerCase()}|${school.toLowerCase()}`;
       const enrichment = enrichmentMap[enrichmentKey] || {};
+
+      // Debug: Log if enrichment was found and if it has espn_id
+      if (Object.keys(enrichment).length > 0) {
+        if (enrichment.espn_id) {
+          console.log(`✓ Enrichment found for ${name}: espn_id=${enrichment.espn_id}`);
+        } else {
+          console.log(`⚠ Enrichment found for ${name} but NO espn_id`);
+        }
+      } else {
+        console.log(`✗ No enrichment found for: "${name}" at "${school}" (key: ${enrichmentKey})`);
+      }
 
       // Calculate all scores from rank
       const tier = calculateTier(rank);
