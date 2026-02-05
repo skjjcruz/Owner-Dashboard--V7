@@ -631,6 +631,10 @@
                                 src={player.photoUrl}
                                 alt={player.name}
                                 className="hidden md:block w-10 h-10 rounded-full object-cover flex-shrink-0 bg-slate-700"
+                                onError={(e) => {
+                                  e.target.onerror = null;
+                                  e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(player.name)}&background=ca8a04&color=1e293b&size=128&bold=true`;
+                                }}
                               />
                             )}
 
@@ -764,6 +768,10 @@
                         src={player.photoUrl}
                         alt={player.name}
                         className="hidden md:block w-10 h-10 rounded-full object-cover flex-shrink-0 bg-slate-700"
+                        onError={(e) => {
+                          e.target.onerror = null;
+                          e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(player.name)}&background=ca8a04&color=1e293b&size=128&bold=true`;
+                        }}
                       />
                       <div
                         className="flex-1 min-w-0 cursor-pointer"
@@ -809,6 +817,10 @@
                       src={selectedPlayerDetail.photoUrl}
                       alt={selectedPlayerDetail.name}
                       className="w-16 h-16 rounded-full object-cover bg-slate-700"
+                      onError={(e) => {
+                        e.target.onerror = null;
+                        e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(selectedPlayerDetail.name)}&background=ca8a04&color=1e293b&size=128&bold=true`;
+                      }}
                     />
                     <div>
                       <h2 className="text-2xl font-bold text-yellow-500">{selectedPlayerDetail.name}</h2>

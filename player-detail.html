@@ -336,7 +336,8 @@
             // Player photo
             if (player.photoURL) {
                 const photoEl = document.getElementById('playerPhoto');
-                photoEl.innerHTML = `<img src="${player.photoURL}" alt="${player.name}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">`;
+                const fallbackUrl = `https://ui-avatars.com/api/?name=${encodeURIComponent(player.name)}&background=ca8a04&color=1e293b&size=128&bold=true`;
+                photoEl.innerHTML = `<img src="${player.photoURL}" alt="${player.name}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;" onerror="this.onerror=null;this.src='${fallbackUrl}'">`;
             }
 
             // Player summary
