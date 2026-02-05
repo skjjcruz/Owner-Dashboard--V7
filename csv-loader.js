@@ -272,7 +272,7 @@ async function loadPlayersFromCSV() {
       const generational = isGenerational(rank, grade);
 
       // Fantasy rank: apply position multiplier (use enrichment override if set, otherwise position-based)
-      const fantasyMultiplier = enrichment.fantasyMultiplier || getFantasyMultiplier(pos);
+      const fantasyMultiplier = getFantasyMultiplier(pos);
       const fantasyRank = Math.round(rank / fantasyMultiplier);
 
       // Calculate rank change for arrows
