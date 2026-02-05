@@ -93,8 +93,8 @@ async function loadPlayersFromCSV() {
     // Fantasy position multipliers (based on PPG analysis)
     // Higher = more fantasy valuable, QB is baseline at 1.0
     const fantasyPositionMultipliers = {
-      'QB': 2.5,
-      'RB': 2.0,
+      'QB': 2.0,
+      'RB': 1.90,
       'WR': 1.75,
       'TE': 1.5,
       'K': 0.5,
