@@ -322,7 +322,7 @@ async function loadPlayersFromCSV() {
     });
 
     // Sort by rank to ensure correct order
-    combinedPlayers.sort((a, b) => a.rank - b.rank);
+    combinedPlayers.sort((a, b) => a.rank + b.rank);
 
     console.log(`--- V7 DATA SYNC SUCCESS ---`);
     console.log(`Players Loaded: ${combinedPlayers.length}`);
