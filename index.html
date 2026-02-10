@@ -757,11 +757,11 @@
                     <div className="flex items-center gap-0.5 md:gap-3">
                       <div className="player-rank-number w-10 md:w-16 text-slate-500 font-bold text-xs md:text-base text-center flex-shrink-0 flex items-center justify-center gap-0.5">
                         <span>#{displayIndex + 1}</span>
-                        {player.rankChange > 0 && (
-                          <span className="text-green-500 text-[8px] md:text-xs" title={`Up ${player.rankChange} from #${player.previousRank}`}>▲</span>
-                        )}
                         {player.rankChange < 0 && (
-                          <span className="text-red-500 text-[8px] md:text-xs" title={`Down ${Math.abs(player.rankChange)} from #${player.previousRank}`}>▼</span>
+                          <span className="text-green-500 text-[8px] md:text-xs" title={`Up ${Math.abs(player.rankChange)} from #${player.previousRank}`}>▲</span>
+                        )}
+                        {player.rankChange > 0 && (
+                          <span className="text-red-500 text-[8px] md:text-xs" title={`Down ${player.rankChange} from #${player.previousRank}`}>▼</span>
                         )}
                       </div>
                       <img
@@ -775,7 +775,7 @@
                       />
                       <div
                         className="flex-1 min-w-0 cursor-pointer"
-                        onClick={() => handlePlayerClick(player)}
+                        onClick={() => setSelectedPlayerDetail(player)}
                       >
                         <div className="player-name font-bold text-xs md:text-base truncate flex items-center gap-1">
                           {player.name}
@@ -787,12 +787,12 @@
                       <button
                         onClick={(e) => {
                           e.stopPropagation();
-                          setSelectedPlayerDetail(player);
+                          handlePlayerClick(player);
                         }}
-                        className="text-xs px-1.5 md:px-3 py-0.5 md:py-1.5 rounded bg-slate-700 hover:bg-slate-600 flex-shrink-0"
+                        className="text-xs px-1.5 md:px-3 py-0.5 md:py-1.5 rounded bg-yellow-600 hover:bg-yellow-500 text-slate-900 font-bold flex-shrink-0"
                       >
-                        <span className="md:hidden">ℹ️</span>
-                        <span className="hidden md:inline">Details</span>
+                        <span className="md:hidden">+</span>
+                        <span className="hidden md:inline">DB</span>
                       </button>
                     </div>
                   </div>
@@ -883,11 +883,11 @@
                       <div className="text-slate-400 text-xs uppercase mb-1">Consensus Rank</div>
                       <div className="text-yellow-500 text-xl font-bold flex items-center gap-1">
                         #{selectedPlayerDetail.rank}
-                        {selectedPlayerDetail.rankChange > 0 && (
-                          <span className="text-green-500 text-sm">▲{selectedPlayerDetail.rankChange}</span>
-                        )}
                         {selectedPlayerDetail.rankChange < 0 && (
-                          <span className="text-red-500 text-sm">▼{Math.abs(selectedPlayerDetail.rankChange)}</span>
+                          <span className="text-green-500 text-sm">▲{Math.abs(selectedPlayerDetail.rankChange)}</span>
+                        )}
+                        {selectedPlayerDetail.rankChange > 0 && (
+                          <span className="text-red-500 text-sm">▼{selectedPlayerDetail.rankChange}</span>
                         )}
                       </div>
                       {selectedPlayerDetail.previousRank && selectedPlayerDetail.rankChange !== 0 && (
@@ -931,41 +931,208 @@
                     </div>
                   )}
 
-                  {/* Source Rankings */}
+                  {/* Career Stats */}
                   <div className="bg-slate-800 rounded-lg p-4 border border-slate-700">
-                    <h3 className="text-yellow-500 font-bold text-lg mb-4">Source Rankings</h3>
-                    {selectedPlayerDetail.sources && selectedPlayerDetail.sources.length > 0 ? (
-                      <div className="overflow-x-auto">
-                        <table className="w-full">
-                          <thead>
-                            <tr className="border-b border-slate-700">
-                              <th className="text-left py-2 px-3 text-yellow-500 text-sm">Source</th>
-                              <th className="text-right py-2 px-3 text-yellow-500 text-sm">Rank</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            {selectedPlayerDetail.sources
-                              .sort((a, b) => a.rank - b.rank)
-                              .map((src, idx) => (
-                                <tr key={idx} className="border-b border-slate-700 hover:bg-slate-700">
-                                  <td className="py-2 px-3 text-slate-100">
-                                    {src.source}
-                                    {src.weight !== 1 && (
-                                      <span className="ml-2 text-xs text-slate-500">
-                                        (weight: {src.weight})
-                                      </span>
-                                    )}
-                                  </td>
-                                  <td className="py-2 px-3 text-right font-bold text-slate-100">
-                                    #{src.rank}
-                                  </td>
+                    <h3 className="text-yellow-500 font-bold text-lg mb-4">Career Stats</h3>
+
+                    {/* Stats tables will be position-specific */}
+                    {['QB'].includes(selectedPlayerDetail.pos) && (
+                      <div className="space-y-4">
+                        {/* Passing */}
+                        <div>
+                          <h4 className="text-slate-400 text-sm font-bold mb-2">Passing</h4>
+                          <div className="overflow-x-auto">
+                            <table className="w-full text-sm">
+                              <thead>
+                                <tr className="border-b border-slate-700 text-slate-500 text-xs">
+                                  <th className="text-left py-2 px-2">SEASON</th>
+                                  <th className="text-left py-2 px-2">TEAM</th>
+                                  <th className="text-right py-2 px-2">CMP</th>
+                                  <th className="text-right py-2 px-2">ATT</th>
+                                  <th className="text-right py-2 px-2">CMP%</th>
+                                  <th className="text-right py-2 px-2">YDS</th>
+                                  <th className="text-right py-2 px-2">TD</th>
+                                  <th className="text-right py-2 px-2">INT</th>
+                                  <th className="text-right py-2 px-2">RTG</th>
                                 </tr>
-                              ))}
-                          </tbody>
-                        </table>
+                              </thead>
+                              <tbody>
+                                <tr className="border-b border-slate-700 text-slate-400">
+                                  <td className="py-2 px-2" colSpan="9">Stats coming soon...</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        {/* Rushing */}
+                        <div>
+                          <h4 className="text-slate-400 text-sm font-bold mb-2">Rushing</h4>
+                          <div className="overflow-x-auto">
+                            <table className="w-full text-sm">
+                              <thead>
+                                <tr className="border-b border-slate-700 text-slate-500 text-xs">
+                                  <th className="text-left py-2 px-2">SEASON</th>
+                                  <th className="text-left py-2 px-2">TEAM</th>
+                                  <th className="text-right py-2 px-2">CAR</th>
+                                  <th className="text-right py-2 px-2">YDS</th>
+                                  <th className="text-right py-2 px-2">AVG</th>
+                                  <th className="text-right py-2 px-2">TD</th>
+                                  <th className="text-right py-2 px-2">LNG</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr className="border-b border-slate-700 text-slate-400">
+                                  <td className="py-2 px-2" colSpan="7">Stats coming soon...</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
                       </div>
-                    ) : (
-                      <div className="text-center py-4 text-slate-500">No source rankings available.</div>
+                    )}
+
+                    {['RB'].includes(selectedPlayerDetail.pos) && (
+                      <div className="space-y-4">
+                        {/* Rushing */}
+                        <div>
+                          <h4 className="text-slate-400 text-sm font-bold mb-2">Rushing</h4>
+                          <div className="overflow-x-auto">
+                            <table className="w-full text-sm">
+                              <thead>
+                                <tr className="border-b border-slate-700 text-slate-500 text-xs">
+                                  <th className="text-left py-2 px-2">SEASON</th>
+                                  <th className="text-left py-2 px-2">TEAM</th>
+                                  <th className="text-right py-2 px-2">CAR</th>
+                                  <th className="text-right py-2 px-2">YDS</th>
+                                  <th className="text-right py-2 px-2">AVG</th>
+                                  <th className="text-right py-2 px-2">TD</th>
+                                  <th className="text-right py-2 px-2">LNG</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr className="border-b border-slate-700 text-slate-400">
+                                  <td className="py-2 px-2" colSpan="7">Stats coming soon...</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        {/* Receiving */}
+                        <div>
+                          <h4 className="text-slate-400 text-sm font-bold mb-2">Receiving</h4>
+                          <div className="overflow-x-auto">
+                            <table className="w-full text-sm">
+                              <thead>
+                                <tr className="border-b border-slate-700 text-slate-500 text-xs">
+                                  <th className="text-left py-2 px-2">SEASON</th>
+                                  <th className="text-left py-2 px-2">TEAM</th>
+                                  <th className="text-right py-2 px-2">REC</th>
+                                  <th className="text-right py-2 px-2">YDS</th>
+                                  <th className="text-right py-2 px-2">AVG</th>
+                                  <th className="text-right py-2 px-2">TD</th>
+                                  <th className="text-right py-2 px-2">LNG</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr className="border-b border-slate-700 text-slate-400">
+                                  <td className="py-2 px-2" colSpan="7">Stats coming soon...</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+
+                    {['WR', 'TE'].includes(selectedPlayerDetail.pos) && (
+                      <div className="space-y-4">
+                        {/* Receiving */}
+                        <div>
+                          <h4 className="text-slate-400 text-sm font-bold mb-2">Receiving</h4>
+                          <div className="overflow-x-auto">
+                            <table className="w-full text-sm">
+                              <thead>
+                                <tr className="border-b border-slate-700 text-slate-500 text-xs">
+                                  <th className="text-left py-2 px-2">SEASON</th>
+                                  <th className="text-left py-2 px-2">TEAM</th>
+                                  <th className="text-right py-2 px-2">REC</th>
+                                  <th className="text-right py-2 px-2">YDS</th>
+                                  <th className="text-right py-2 px-2">AVG</th>
+                                  <th className="text-right py-2 px-2">TD</th>
+                                  <th className="text-right py-2 px-2">LNG</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr className="border-b border-slate-700 text-slate-400">
+                                  <td className="py-2 px-2" colSpan="7">Stats coming soon...</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+
+                    {['EDGE', 'DE', 'DL', 'DT', 'IDL', 'LB', 'ILB', 'OLB', 'CB', 'S', 'DB'].includes(selectedPlayerDetail.pos) && (
+                      <div className="space-y-4">
+                        {/* Defense */}
+                        <div>
+                          <h4 className="text-slate-400 text-sm font-bold mb-2">Defense</h4>
+                          <div className="overflow-x-auto">
+                            <table className="w-full text-sm">
+                              <thead>
+                                <tr className="border-b border-slate-700 text-slate-500 text-xs">
+                                  <th className="text-left py-2 px-2">SEASON</th>
+                                  <th className="text-left py-2 px-2">TEAM</th>
+                                  <th className="text-right py-2 px-2">TOT</th>
+                                  <th className="text-right py-2 px-2">SOLO</th>
+                                  <th className="text-right py-2 px-2">SACK</th>
+                                  <th className="text-right py-2 px-2">TFL</th>
+                                  <th className="text-right py-2 px-2">PD</th>
+                                  <th className="text-right py-2 px-2">INT</th>
+                                  <th className="text-right py-2 px-2">FF</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr className="border-b border-slate-700 text-slate-400">
+                                  <td className="py-2 px-2" colSpan="9">Stats coming soon...</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+
+                    {['K'].includes(selectedPlayerDetail.pos) && (
+                      <div className="space-y-4">
+                        {/* Kicking */}
+                        <div>
+                          <h4 className="text-slate-400 text-sm font-bold mb-2">Kicking</h4>
+                          <div className="overflow-x-auto">
+                            <table className="w-full text-sm">
+                              <thead>
+                                <tr className="border-b border-slate-700 text-slate-500 text-xs">
+                                  <th className="text-left py-2 px-2">SEASON</th>
+                                  <th className="text-left py-2 px-2">TEAM</th>
+                                  <th className="text-right py-2 px-2">FGM</th>
+                                  <th className="text-right py-2 px-2">FGA</th>
+                                  <th className="text-right py-2 px-2">FG%</th>
+                                  <th className="text-right py-2 px-2">LNG</th>
+                                  <th className="text-right py-2 px-2">XPM</th>
+                                  <th className="text-right py-2 px-2">XPA</th>
+                                  <th className="text-right py-2 px-2">PTS</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr className="border-b border-slate-700 text-slate-400">
+                                  <td className="py-2 px-2" colSpan="9">Stats coming soon...</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
                     )}
                   </div>
                 </div>
