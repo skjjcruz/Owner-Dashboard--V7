@@ -787,7 +787,7 @@
                   >
                     <div className="flex items-center gap-0.5 md:gap-3">
                       <div className="player-rank-number w-10 md:w-16 text-silver font-bold text-xs md:text-base text-center flex-shrink-0 flex items-center justify-center gap-0.5">
-                        <span>#{displayIndex + 1}</span>
+                        <span>#{rankingMode === 'consensus' ? player.rank : (displayIndex + 1)}</span>
                         {(() => {
                           const change = rankingMode === 'fantasy' ? player.fantasyRankChange : player.rankChange;
                           const prevRank = rankingMode === 'fantasy' ? player.previousFantasyRank : player.previousRank;
