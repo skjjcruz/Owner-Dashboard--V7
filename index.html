@@ -787,7 +787,7 @@
                   >
                     <div className="flex items-center gap-0.5 md:gap-3">
                       <div className="player-rank-number w-10 md:w-16 text-silver font-bold text-xs md:text-base text-center flex-shrink-0 flex items-center justify-center gap-0.5">
-                        <span>#{rankingMode === 'consensus' ? player.rank : (displayIndex + 1)}</span>
+                        <span>#{displayIndex + 1}</span>
                         {(() => {
                           const change = rankingMode === 'fantasy' ? player.fantasyRankChange : player.rankChange;
                           const prevRank = rankingMode === 'fantasy' ? player.previousFantasyRank : player.previousRank;
@@ -912,19 +912,28 @@
                       <div className="text-gold text-xl font-bold">{selectedPlayerDetail.speed ? selectedPlayerDetail.speed + 's' : 'N/A'}</div>
                     </div>
                     <div className="bg-charcoal rounded-lg p-4 border border-gold/20">
-                      <div className="text-silver text-xs uppercase mb-1">Consensus Rank</div>
-                      <div className="text-gold text-xl font-bold flex items-center gap-1">
-                        #{selectedPlayerDetail.rank}
-                        {selectedPlayerDetail.rankChange > 0 && (
-                          <span className="text-win-green text-sm">▲{selectedPlayerDetail.rankChange}</span>
-                        )}
-                        {selectedPlayerDetail.rankChange < 0 && (
-                          <span className="text-loss-red text-sm">▼{Math.abs(selectedPlayerDetail.rankChange)}</span>
-                        )}
-                      </div>
-                      {selectedPlayerDetail.previousRank && selectedPlayerDetail.rankChange !== 0 && (
-                        <div className="text-silver text-xs mt-1">Previously #{selectedPlayerDetail.previousRank}</div>
-                      )}
+                      <div className="text-silver text-xs uppercase mb-1">{rankingMode === 'fantasy' ? 'Fantasy' : 'Consensus'} Rank</div>
+                      {(() => {
+                        const displayRank = filteredPlayers.findIndex(p => p.id === selectedPlayerDetail.id) + 1;
+                        const change = rankingMode === 'fantasy' ? selectedPlayerDetail.fantasyRankChange : selectedPlayerDetail.rankChange;
+                        const prevRank = rankingMode === 'fantasy' ? selectedPlayerDetail.previousFantasyRank : selectedPlayerDetail.previousRank;
+                        return (
+                          <React.Fragment>
+                            <div className="text-gold text-xl font-bold flex items-center gap-1">
+                              #{displayRank || '—'}
+                              {change > 0 && (
+                                <span className="text-win-green text-sm">▲{change}</span>
+                              )}
+                              {change < 0 && (
+                                <span className="text-loss-red text-sm">▼{Math.abs(change)}</span>
+                              )}
+                            </div>
+                            {prevRank && change !== 0 && (
+                              <div className="text-silver text-xs mt-1">Previously #{prevRank}</div>
+                            )}
+                          </React.Fragment>
+                        );
+                      })()}
                     </div>
                   </div>
 
@@ -1149,7 +1158,7 @@
                         </div>
                         <div>
                           <div className="text-silver text-[10px] uppercase mb-0.5">Fantasy Rank</div>
-                          <div className="text-gold text-base font-bold">#{selectedPlayerDetail.fantasyRank}</div>
+                          <div className="text-gold text-base font-bold">#{filteredPlayers.findIndex(p => p.id === selectedPlayerDetail.id) + 1 || '—'}</div>
                         </div>
                         <div>
                           <div className="text-silver text-[10px] uppercase mb-0.5">Grade</div>
