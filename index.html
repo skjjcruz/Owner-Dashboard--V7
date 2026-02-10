@@ -788,11 +788,11 @@
                     <div className="flex items-center gap-0.5 md:gap-3">
                       <div className="player-rank-number w-10 md:w-16 text-silver font-bold text-xs md:text-base text-center flex-shrink-0 flex items-center justify-center gap-0.5">
                         <span>#{displayIndex + 1}</span>
-                        {player.rankChange < 0 && (
-                          <span className="text-win-green text-[8px] md:text-xs" title={`Up ${Math.abs(player.rankChange)} from #${player.previousRank}`}>▲</span>
-                        )}
                         {player.rankChange > 0 && (
-                          <span className="text-loss-red text-[8px] md:text-xs" title={`Down ${player.rankChange} from #${player.previousRank}`}>▼</span>
+                          <span className="text-win-green text-[8px] md:text-xs" title={`Up ${player.rankChange} from #${player.previousRank}`}>▲</span>
+                        )}
+                        {player.rankChange < 0 && (
+                          <span className="text-loss-red text-[8px] md:text-xs" title={`Down ${Math.abs(player.rankChange)} from #${player.previousRank}`}>▼</span>
                         )}
                       </div>
                       <img
@@ -914,11 +914,11 @@
                       <div className="text-silver text-xs uppercase mb-1">Consensus Rank</div>
                       <div className="text-gold text-xl font-bold flex items-center gap-1">
                         #{selectedPlayerDetail.rank}
-                        {selectedPlayerDetail.rankChange < 0 && (
-                          <span className="text-win-green text-sm">▲{Math.abs(selectedPlayerDetail.rankChange)}</span>
-                        )}
                         {selectedPlayerDetail.rankChange > 0 && (
-                          <span className="text-loss-red text-sm">▼{selectedPlayerDetail.rankChange}</span>
+                          <span className="text-win-green text-sm">▲{selectedPlayerDetail.rankChange}</span>
+                        )}
+                        {selectedPlayerDetail.rankChange < 0 && (
+                          <span className="text-loss-red text-sm">▼{Math.abs(selectedPlayerDetail.rankChange)}</span>
                         )}
                       </div>
                       {selectedPlayerDetail.previousRank && selectedPlayerDetail.rankChange !== 0 && (
