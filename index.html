@@ -787,6 +787,25 @@
                   >
                     <div className="flex items-center gap-0.5 md:gap-3">
                       <div className="player-rank-number w-10 md:w-16 text-silver font-bold text-xs md:text-base text-center flex-shrink-0 flex items-center justify-center gap-0.5">
+                        <span>#{rankingMode === 'fantasy' ? player.fantasyRank : player.rank}</span>
+                        {rankingMode === 'fantasy' ? (
+                          <>
+                            {player.fantasyRankChange > 0 && (
+                              <span className="text-win-green text-[8px] md:text-xs" title={`Up ${player.fantasyRankChange} from #${player.previousFantasyRank}`}>▲</span>
+                            )}
+                            {player.fantasyRankChange < 0 && (
+                              <span className="text-loss-red text-[8px] md:text-xs" title={`Down ${Math.abs(player.fantasyRankChange)} from #${player.previousFantasyRank}`}>▼</span>
+                            )}
+                          </>
+                        ) : (
+                          <>
+                            {player.rankChange > 0 && (
+                              <span className="text-win-green text-[8px] md:text-xs" title={`Up ${player.rankChange} from #${player.previousRank}`}>▲</span>
+                            )}
+                            {player.rankChange < 0 && (
+                              <span className="text-loss-red text-[8px] md:text-xs" title={`Down ${Math.abs(player.rankChange)} from #${player.previousRank}`}>▼</span>
+                            )}
+                          </>
                         <span>#{displayIndex + 1}</span>
                         {player.rankChange < 0 && (
                           <span className="text-win-green text-[8px] md:text-xs" title={`Up ${Math.abs(player.rankChange)} from #${player.previousRank}`}>▲</span>
