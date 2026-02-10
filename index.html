@@ -788,13 +788,12 @@
                     <div className="flex items-center gap-0.5 md:gap-3">
                       <div className="player-rank-number w-10 md:w-16 text-silver font-bold text-xs md:text-base text-center flex-shrink-0 flex items-center justify-center gap-0.5">
                         <span>#{displayIndex + 1}</span>
-                        {(() => {
-                          const change = rankingMode === 'fantasy' ? player.fantasyRankChange : player.rankChange;
-                          const prevRank = rankingMode === 'fantasy' ? player.previousFantasyRank : player.previousRank;
-                          if (change > 0) return <span className="text-win-green text-[8px] md:text-xs" title={`Up ${change} from #${prevRank}`}>▲</span>;
-                          if (change < 0) return <span className="text-loss-red text-[8px] md:text-xs" title={`Down ${Math.abs(change)} from #${prevRank}`}>▼</span>;
-                          return null;
-                        })()}
+                        {rankingMode === 'consensus' && player.rankChange > 0 && (
+                          <span className="text-win-green text-[8px] md:text-xs" title={`Up ${player.rankChange} from #${player.previousRank}`}>▲</span>
+                        )}
+                        {rankingMode === 'consensus' && player.rankChange < 0 && (
+                          <span className="text-loss-red text-[8px] md:text-xs" title={`Down ${Math.abs(player.rankChange)} from #${player.previousRank}`}>▼</span>
+                        )}
                       </div>
                       <img
                         src={player.photoUrl}
@@ -915,20 +914,21 @@
                       <div className="text-silver text-xs uppercase mb-1">{rankingMode === 'fantasy' ? 'Fantasy' : 'Consensus'} Rank</div>
                       {(() => {
                         const displayRank = filteredPlayers.findIndex(p => p.id === selectedPlayerDetail.id) + 1;
-                        const change = rankingMode === 'fantasy' ? selectedPlayerDetail.fantasyRankChange : selectedPlayerDetail.rankChange;
-                        const prevRank = rankingMode === 'fantasy' ? selectedPlayerDetail.previousFantasyRank : selectedPlayerDetail.previousRank;
+                        const change = selectedPlayerDetail.rankChange;
+                        const prevRank = selectedPlayerDetail.previousRank;
+                        const showArrows = rankingMode === 'consensus';
                         return (
                           <React.Fragment>
                             <div className="text-gold text-xl font-bold flex items-center gap-1">
                               #{displayRank || '—'}
-                              {change > 0 && (
+                              {showArrows && change > 0 && (
                                 <span className="text-win-green text-sm">▲{change}</span>
                               )}
-                              {change < 0 && (
+                              {showArrows && change < 0 && (
                                 <span className="text-loss-red text-sm">▼{Math.abs(change)}</span>
                               )}
                             </div>
-                            {prevRank && change !== 0 && (
+                            {showArrows && prevRank && change !== 0 && (
                               <div className="text-silver text-xs mt-1">Previously #{prevRank}</div>
                             )}
                           </React.Fragment>
