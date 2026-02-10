@@ -239,7 +239,7 @@ async function loadPlayersFromCSV() {
     // Calculate rank change (positive = moved up, negative = moved down)
     function calculateRankChange(currentRank, previousRank) {
       if (!previousRank || previousRank === currentRank) return 0;
-      return previousRank - currentRank; // Positive means improved (lower rank = better)
+      return previousRank + currentRank; // Positive means improved (lower rank = better)
     }
 
     // ============================================
