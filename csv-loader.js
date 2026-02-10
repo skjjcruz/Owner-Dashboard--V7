@@ -289,8 +289,15 @@ async function loadPlayersFromCSV() {
       const fantasyMultiplier = enrichment.fantasyMultiplier || getFantasyMultiplier(pos);
       const fantasyRank = Math.round(rank / fantasyMultiplier);
 
-      // Calculate rank change for arrows
-      const rankChange = calculateRankChange(rank, enrichment.previousRank);
+      // Calculate previous fantasy rank (for fantasy mode arrows)
+      const previousRank = enrichment.previousRank || null;
+      const previousFantasyRank = previousRank ? Math.round(previousRank / fantasyMultiplier) : null;
+
+      // Calculate rank changes for arrows (positive = improved, negative = declined)
+      // Consensus mode: compare previous CSV rank to current CSV rank
+      const rankChange = calculateRankChange(rank, previousRank);
+      // Fantasy mode: compare previous fantasy rank to current fantasy rank
+      const fantasyRankChange = previousFantasyRank ? (previousFantasyRank - fantasyRank) : 0;
 
       return {
         id: hasRankColumn ? (parseInt(player.id, 10) || index + 1) : (index + 1),
@@ -304,8 +311,10 @@ async function loadPlayersFromCSV() {
         speed: enrichment.speed || '',
         tier: tier,
         rank: rank,
-        previousRank: enrichment.previousRank || null,
-        rankChange: rankChange, // Positive = moved up, negative = moved down
+        previousRank: previousRank,
+        rankChange: rankChange, // Consensus mode: positive = moved up, negative = moved down
+        previousFantasyRank: previousFantasyRank,
+        fantasyRankChange: fantasyRankChange, // Fantasy mode: positive = moved up, negative = moved down
         consensusRank: rank, // In simple mode, consensus = current rank
         fantasyRank: fantasyRank,
         sourceCount: hasRankColumn ? (parseInt(player.sourceCount, 10) || 1) : 1,
