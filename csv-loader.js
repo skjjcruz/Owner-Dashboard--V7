@@ -306,7 +306,7 @@ async function loadPlayersFromCSV() {
         rank: rank,
         previousRank: enrichment.previousRank || null,
         rankChange: rankChange, // Positive = moved up, negative = moved down
-        consensusRank: consensusRank, // In simple mode, consensus = current rank
+        consensusRank: rank, // In simple mode, consensus = current rank
         fantasyRank: fantasyRank,
         sourceCount: hasRankColumn ? (parseInt(player.sourceCount, 10) || 1) : 1,
         grade: grade,
