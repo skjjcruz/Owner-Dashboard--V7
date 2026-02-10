@@ -93,10 +93,10 @@ async function loadPlayersFromCSV() {
     // Fantasy position multipliers (based on PPG analysis)
     // Higher = more fantasy valuable, QB is baseline at 1.0
     const fantasyPositionMultipliers = {
-      'QB': 1.0,
-      'RB': 0.672,
-      'WR': 0.575,
-      'TE': 0.5,
+      'QB': 2.0,
+      'RB': 1.90,
+      'WR': 1.75,
+      'TE': 1.5,
       'K': 0.5,
       'DE': 0.409, 'EDGE': 0.409,
       'LB': 0.346, 'ILB': 0.346, 'OLB': 0.346,
@@ -286,7 +286,7 @@ async function loadPlayersFromCSV() {
       const generational = isGenerational(rank, grade);
 
       // Fantasy rank: apply position multiplier (use enrichment override if set, otherwise position-based)
-      const fantasyMultiplier = enrichment.fantasyMultiplier || getFantasyMultiplier(pos);
+      const fantasyMultiplier = getFantasyMultiplier(pos);
       const fantasyRank = Math.round(rank / fantasyMultiplier);
 
       // Calculate previous fantasy rank (for fantasy mode arrows)
@@ -338,8 +338,8 @@ async function loadPlayersFromCSV() {
     console.log(`Sample Player:`, combinedPlayers[0]);
 
     // Log rank changes summary (positive rankChange = improved, negative = declined)
-    const movedUp = combinedPlayers.filter(p => p.rankChange > 0).length;
-    const movedDown = combinedPlayers.filter(p => p.rankChange < 0).length;
+    const movedUp = combinedPlayers.filter(p => p.rankChange < 0).length;
+    const movedDown = combinedPlayers.filter(p => p.rankChange > 0).length;
     const unchanged = combinedPlayers.filter(p => p.rankChange === 0 && p.previousRank).length;
     console.log(`Rank Changes: ↑${movedUp} moved up, ↓${movedDown} moved down, ${unchanged} unchanged`);
 
