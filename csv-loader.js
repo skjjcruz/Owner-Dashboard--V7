@@ -289,8 +289,14 @@ async function loadPlayersFromCSV() {
       const fantasyMultiplier = getFantasyMultiplier(pos);
       const fantasyRank = Math.round(rank / fantasyMultiplier);
 
-      // Calculate rank change for arrows
+      // Calculate rank change for arrows (consensus)
       const rankChange = calculateRankChange(rank, enrichment.previousRank);
+
+      // Calculate fantasy rank change: previous fantasy rank vs current fantasy rank
+      const previousFantasyRank = enrichment.previousRank
+        ? Math.round(enrichment.previousRank / fantasyMultiplier)
+        : null;
+      const fantasyRankChange = calculateRankChange(fantasyRank, previousFantasyRank);
 
       return {
         id: hasRankColumn ? (parseInt(player.id, 10) || index + 1) : (index + 1),
@@ -308,6 +314,8 @@ async function loadPlayersFromCSV() {
         rankChange: rankChange, // Positive = moved up, negative = moved down
         consensusRank: rank, // In simple mode, consensus = current rank
         fantasyRank: fantasyRank,
+        previousFantasyRank: previousFantasyRank,
+        fantasyRankChange: fantasyRankChange,
         sourceCount: hasRankColumn ? (parseInt(player.sourceCount, 10) || 1) : 1,
         grade: grade,
         isGenerational: generational,
@@ -329,8 +337,8 @@ async function loadPlayersFromCSV() {
     console.log(`Sample Player:`, combinedPlayers[0]);
 
     // Log rank changes summary (positive rankChange = improved, negative = declined)
-    const movedUp = combinedPlayers.filter(p => p.rankChange < 0).length;
-    const movedDown = combinedPlayers.filter(p => p.rankChange > 0).length;
+    const movedUp = combinedPlayers.filter(p => p.rankChange > 0).length;
+    const movedDown = combinedPlayers.filter(p => p.rankChange < 0).length;
     const unchanged = combinedPlayers.filter(p => p.rankChange === 0 && p.previousRank).length;
     console.log(`Rank Changes: ↑${movedUp} moved up, ↓${movedDown} moved down, ${unchanged} unchanged`);
 
