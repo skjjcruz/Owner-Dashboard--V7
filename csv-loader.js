@@ -328,7 +328,7 @@ async function loadPlayersFromCSV() {
     console.log(`Players Loaded: ${combinedPlayers.length}`);
     console.log(`Sample Player:`, combinedPlayers[0]);
 
-    // Log rank changes summary (negative rankChange = improved, positive = declined)
+    // Log rank changes summary (positive rankChange = improved, negative = declined)
     const movedUp = combinedPlayers.filter(p => p.rankChange < 0).length;
     const movedDown = combinedPlayers.filter(p => p.rankChange > 0).length;
     const unchanged = combinedPlayers.filter(p => p.rankChange === 0 && p.previousRank).length;
