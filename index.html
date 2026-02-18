@@ -896,23 +896,6 @@
                     </div>
                   )}
 
-                  {/* Source Rankings */}
-                  {selectedPlayerDetail.sources && selectedPlayerDetail.sources.length > 0 && (
-                    <div className="bg-charcoal rounded-lg p-4 border border-gold/20 mb-6">
-                      <h3 className="font-bebas text-gold font-bold tracking-wide text-sm mb-3">Source Rankings</h3>
-                      <div className="grid grid-cols-2 gap-2">
-                        {[...selectedPlayerDetail.sources]
-                          .sort((a, b) => a.rank - b.rank)
-                          .map((s, i) => (
-                            <div key={i} className="flex justify-between items-center py-1.5 px-3 bg-off-black rounded border border-gold/10">
-                              <span className="text-silver text-xs">{s.source}</span>
-                              <span className="text-gold font-bold text-xs">#{s.rank}</span>
-                            </div>
-                          ))}
-                      </div>
-                    </div>
-                  )}
-
                   {/* Stats Grid */}
                   <div className="grid grid-cols-4 gap-4 mb-6">
                     <div className="bg-charcoal rounded-lg p-4 border border-gold/20">
@@ -954,214 +937,9 @@
                     </div>
                   </div>
 
-                  {/* Career Stats */}
-                  <div className="bg-charcoal rounded-lg p-4 border border-gold/20">
-                    <h3 className="font-bebas text-gold font-bold tracking-wide text-lg mb-4">Career Stats</h3>
-
-                    {/* Stats tables will be position-specific */}
-                    {['QB'].includes(selectedPlayerDetail.pos) && (
-                      <div className="space-y-4">
-                        {/* Passing */}
-                        <div>
-                          <h4 className="text-silver text-sm font-bold mb-2">Passing</h4>
-                          <div className="overflow-x-auto">
-                            <table className="w-full text-sm">
-                              <thead>
-                                <tr className="border-b border-gold/20 text-silver text-xs">
-                                  <th className="text-left py-2 px-2">SEASON</th>
-                                  <th className="text-left py-2 px-2">TEAM</th>
-                                  <th className="text-right py-2 px-2">CMP</th>
-                                  <th className="text-right py-2 px-2">ATT</th>
-                                  <th className="text-right py-2 px-2">CMP%</th>
-                                  <th className="text-right py-2 px-2">YDS</th>
-                                  <th className="text-right py-2 px-2">TD</th>
-                                  <th className="text-right py-2 px-2">INT</th>
-                                  <th className="text-right py-2 px-2">RTG</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr className="border-b border-gold/20 text-silver">
-                                  <td className="py-2 px-2" colSpan="9">Stats coming soon...</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
-                        {/* Rushing */}
-                        <div>
-                          <h4 className="text-silver text-sm font-bold mb-2">Rushing</h4>
-                          <div className="overflow-x-auto">
-                            <table className="w-full text-sm">
-                              <thead>
-                                <tr className="border-b border-gold/20 text-silver text-xs">
-                                  <th className="text-left py-2 px-2">SEASON</th>
-                                  <th className="text-left py-2 px-2">TEAM</th>
-                                  <th className="text-right py-2 px-2">CAR</th>
-                                  <th className="text-right py-2 px-2">YDS</th>
-                                  <th className="text-right py-2 px-2">AVG</th>
-                                  <th className="text-right py-2 px-2">TD</th>
-                                  <th className="text-right py-2 px-2">LNG</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr className="border-b border-gold/20 text-silver">
-                                  <td className="py-2 px-2" colSpan="7">Stats coming soon...</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
-                      </div>
-                    )}
-
-                    {['RB'].includes(selectedPlayerDetail.pos) && (
-                      <div className="space-y-4">
-                        {/* Rushing */}
-                        <div>
-                          <h4 className="text-silver text-sm font-bold mb-2">Rushing</h4>
-                          <div className="overflow-x-auto">
-                            <table className="w-full text-sm">
-                              <thead>
-                                <tr className="border-b border-gold/20 text-silver text-xs">
-                                  <th className="text-left py-2 px-2">SEASON</th>
-                                  <th className="text-left py-2 px-2">TEAM</th>
-                                  <th className="text-right py-2 px-2">CAR</th>
-                                  <th className="text-right py-2 px-2">YDS</th>
-                                  <th className="text-right py-2 px-2">AVG</th>
-                                  <th className="text-right py-2 px-2">TD</th>
-                                  <th className="text-right py-2 px-2">LNG</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr className="border-b border-gold/20 text-silver">
-                                  <td className="py-2 px-2" colSpan="7">Stats coming soon...</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
-                        {/* Receiving */}
-                        <div>
-                          <h4 className="text-silver text-sm font-bold mb-2">Receiving</h4>
-                          <div className="overflow-x-auto">
-                            <table className="w-full text-sm">
-                              <thead>
-                                <tr className="border-b border-gold/20 text-silver text-xs">
-                                  <th className="text-left py-2 px-2">SEASON</th>
-                                  <th className="text-left py-2 px-2">TEAM</th>
-                                  <th className="text-right py-2 px-2">REC</th>
-                                  <th className="text-right py-2 px-2">YDS</th>
-                                  <th className="text-right py-2 px-2">AVG</th>
-                                  <th className="text-right py-2 px-2">TD</th>
-                                  <th className="text-right py-2 px-2">LNG</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr className="border-b border-gold/20 text-silver">
-                                  <td className="py-2 px-2" colSpan="7">Stats coming soon...</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
-                      </div>
-                    )}
-
-                    {['WR', 'TE'].includes(selectedPlayerDetail.pos) && (
-                      <div className="space-y-4">
-                        {/* Receiving */}
-                        <div>
-                          <h4 className="text-silver text-sm font-bold mb-2">Receiving</h4>
-                          <div className="overflow-x-auto">
-                            <table className="w-full text-sm">
-                              <thead>
-                                <tr className="border-b border-gold/20 text-silver text-xs">
-                                  <th className="text-left py-2 px-2">SEASON</th>
-                                  <th className="text-left py-2 px-2">TEAM</th>
-                                  <th className="text-right py-2 px-2">REC</th>
-                                  <th className="text-right py-2 px-2">YDS</th>
-                                  <th className="text-right py-2 px-2">AVG</th>
-                                  <th className="text-right py-2 px-2">TD</th>
-                                  <th className="text-right py-2 px-2">LNG</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr className="border-b border-gold/20 text-silver">
-                                  <td className="py-2 px-2" colSpan="7">Stats coming soon...</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
-                      </div>
-                    )}
-
-                    {['EDGE', 'DE', 'DL', 'DT', 'IDL', 'LB', 'ILB', 'OLB', 'CB', 'S', 'DB'].includes(selectedPlayerDetail.pos) && (
-                      <div className="space-y-4">
-                        {/* Defense */}
-                        <div>
-                          <h4 className="text-silver text-sm font-bold mb-2">Defense</h4>
-                          <div className="overflow-x-auto">
-                            <table className="w-full text-sm">
-                              <thead>
-                                <tr className="border-b border-gold/20 text-silver text-xs">
-                                  <th className="text-left py-2 px-2">SEASON</th>
-                                  <th className="text-left py-2 px-2">TEAM</th>
-                                  <th className="text-right py-2 px-2">TOT</th>
-                                  <th className="text-right py-2 px-2">SOLO</th>
-                                  <th className="text-right py-2 px-2">SACK</th>
-                                  <th className="text-right py-2 px-2">TFL</th>
-                                  <th className="text-right py-2 px-2">PD</th>
-                                  <th className="text-right py-2 px-2">INT</th>
-                                  <th className="text-right py-2 px-2">FF</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr className="border-b border-gold/20 text-silver">
-                                  <td className="py-2 px-2" colSpan="9">Stats coming soon...</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
-                      </div>
-                    )}
-
-                    {['K'].includes(selectedPlayerDetail.pos) && (
-                      <div className="space-y-4">
-                        {/* Kicking */}
-                        <div>
-                          <h4 className="text-silver text-sm font-bold mb-2">Kicking</h4>
-                          <div className="overflow-x-auto">
-                            <table className="w-full text-sm">
-                              <thead>
-                                <tr className="border-b border-gold/20 text-silver text-xs">
-                                  <th className="text-left py-2 px-2">SEASON</th>
-                                  <th className="text-left py-2 px-2">TEAM</th>
-                                  <th className="text-right py-2 px-2">FGM</th>
-                                  <th className="text-right py-2 px-2">FGA</th>
-                                  <th className="text-right py-2 px-2">FG%</th>
-                                  <th className="text-right py-2 px-2">LNG</th>
-                                  <th className="text-right py-2 px-2">XPM</th>
-                                  <th className="text-right py-2 px-2">XPA</th>
-                                  <th className="text-right py-2 px-2">PTS</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr className="border-b border-gold/20 text-silver">
-                                  <td className="py-2 px-2" colSpan="9">Stats coming soon...</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
-                      </div>
-                    )}
-                  </div>
-
                   {/* Fantasy Scoring */}
                   {selectedPlayerDetail.draftScore && (
-                    <div className="bg-gold/10 bg-opacity-30 rounded-lg p-4 border border-gold/40 mt-6">
+                    <div className="bg-gold/10 bg-opacity-30 rounded-lg p-4 border border-gold/40 mb-6">
                       <h3 className="font-bebas text-gold font-bold tracking-wide text-sm mb-2 flex items-center gap-1">
                         🏈 Fantasy Draft Score
                         {selectedPlayerDetail.isGenerational && (
@@ -1190,6 +968,23 @@
                         <div className="mt-0.5">
                           Formula: Grade ({selectedPlayerDetail.grade}) × Multiplier ({selectedPlayerDetail.fantasyMultiplier})
                         </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Source Rankings */}
+                  {selectedPlayerDetail.sources && selectedPlayerDetail.sources.length > 0 && (
+                    <div className="bg-charcoal rounded-lg p-4 border border-gold/20">
+                      <h3 className="font-bebas text-gold font-bold tracking-wide text-sm mb-3">Source Rankings</h3>
+                      <div className="grid grid-cols-2 gap-2">
+                        {[...selectedPlayerDetail.sources]
+                          .sort((a, b) => a.rank - b.rank)
+                          .map((s, i) => (
+                            <div key={i} className="flex justify-between items-center py-1.5 px-3 bg-off-black rounded border border-gold/10">
+                              <span className="text-silver text-xs">{s.source}</span>
+                              <span className="text-gold font-bold text-xs">#{s.rank}</span>
+                            </div>
+                          ))}
                       </div>
                     </div>
                   )}
