@@ -154,6 +154,13 @@ async function loadPlayersFromCSV() {
     );
     console.log(`Players file format: ${hasRankColumn ? 'Has Rank column' : 'Row order = rank'}`);
     console.log(`Columns detected:`, playersRaw.length > 0 ? Object.keys(playersRaw[0]) : 'none');
+
+    // Detect source columns in player.csv (any column not in the standard set)
+    const STANDARD_COLS = new Set(['rank', 'player name', 'player', 'name', 'pos', 'position', 'college', 'school', 'player_id', 'id', '_rowindex']);
+    const allPlayerCols = playersRaw.length > 0 ? Object.keys(playersRaw[0]) : [];
+    const sourceColsFromCSV = allPlayerCols.filter(c => !STANDARD_COLS.has(c.toLowerCase()));
+    console.log(`Source columns found in player.csv:`, sourceColsFromCSV);
+
     // 2. Fetch source rankings (optional - for backwards compatibility)
     let sourcesMap = {};
     try {
@@ -185,11 +192,12 @@ async function loadPlayersFromCSV() {
         const enrichmentText = await enrichmentResponse.text();
         const enrichmentRaw = parseCSV(enrichmentText);
 
-        // Build lookup map by name+school (case-insensitive)
+        // Build lookup map by name only (case-insensitive); school comes FROM enrichment
         enrichmentRaw.forEach(e => {
-          const key = `${e.name.toLowerCase()}|${e.school.toLowerCase()}`;
+          const key = e.name.toLowerCase().trim();
           enrichmentMap[key] = {
-            previousRank: parseInt(e.Number, 10) || null, // New: track previous rank
+            previousRank: parseInt(e.Number, 10) || null,
+            school: e.school || '',
             espn_id: e.espn_id || '',
             photo_url: e.photo_url || '',
             summary: e.summary || '',
@@ -260,13 +268,14 @@ async function loadPlayersFromCSV() {
       const pos = player.pos || player.Pos || player.position || player.Position ||
                   player.POS || player.POSITION || '';
 
-      // Get school (handle variations including "College")
-      const school = player.school || player.School || player.college || player.College ||
-                     player.SCHOOL || player.COLLEGE || '';
-
-      // Look up enrichment data by name + school
-      const enrichmentKey = `${name.toLowerCase()}|${school.toLowerCase()}`;
+      // Look up enrichment data by name only (school comes FROM enrichment)
+      const enrichmentKey = name.toLowerCase().trim();
       const enrichment = enrichmentMap[enrichmentKey] || {};
+
+      // School: use enrichment as primary source, fall back to player.csv
+      const school = enrichment.school ||
+                     player.school || player.School || player.college || player.College ||
+                     player.SCHOOL || player.COLLEGE || '';
 
       // Debug: Log if enrichment was found and if it has espn_id
       if (Object.keys(enrichment).length > 0) {
@@ -313,7 +322,23 @@ async function loadPlayersFromCSV() {
         isGenerational: generational,
         fantasyMultiplier: fantasyMultiplier,
         draftScore: draftScore,
-        sources: sourcesMap[index + 1] || [],
+        sources: (() => {
+          // Build sources from player.csv source columns if present, else fall back to player-sources.csv
+          if (sourceColsFromCSV.length > 0) {
+            const srcs = [];
+            sourceColsFromCSV.forEach(col => {
+              const val = player[col];
+              if (val && val.trim() && val.trim() !== 'N/A' && val.trim() !== '-') {
+                const rankVal = parseInt(val.trim(), 10);
+                if (!isNaN(rankVal)) {
+                  srcs.push({ source: col, rank: rankVal, weight: 1.0 });
+                }
+              }
+            });
+            return srcs;
+          }
+          return sourcesMap[hasRankColumn ? rank : (index + 1)] || [];
+        })(),
         highlightUrl: getHighlightUrl(name, school),
         initials: getInitials(name),
         photoUrl: getPhotoUrl(name, enrichment),
