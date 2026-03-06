@@ -1,5 +1,5 @@
 /**
- * CSV Loader - Simplified V7 Version
+ * CSV Loader - Simplified V10 Version
  *
  * This system uses two CSV files:
  * 1. players.csv - Simple 3-column file (name, pos, school) in ranked order
@@ -349,7 +349,7 @@ async function loadPlayersFromCSV() {
     // Sort by rank to ensure correct order
     combinedPlayers.sort((a, b) => a.rank - b.rank);
 
-    console.log(`--- V7 DATA SYNC SUCCESS ---`);
+    console.log(`--- V10 DATA SYNC SUCCESS ---`);
     console.log(`Players Loaded: ${combinedPlayers.length}`);
     console.log(`Sample Player:`, combinedPlayers[0]);
 
