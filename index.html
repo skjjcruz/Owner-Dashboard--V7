@@ -10,6 +10,12 @@
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="./csv-loader.js"></script>
+  <!-- Supabase JS v2 (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+  <!-- Supabase project credentials — edit before deploying -->
+  <script src="./supabase-config.js"></script>
+  <!-- Draft board + mock draft Supabase helpers -->
+  <script src="./supabase-draft-client.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -207,6 +213,10 @@
       const [leagueRosters, setLeagueRosters] = useState([]);
       const [leagueUsers, setLeagueUsers] = useState([]);
 
+      // Supabase save/load state
+      const [isSaving, setIsSaving] = useState(false);
+      const [saveMsg, setSaveMsg] = useState('');
+
       // Auto-load on mount if we have URL params
       useEffect(() => {
         if (urlParams.username) {
@@ -398,6 +408,63 @@
         window.location.href = 'https://skjjcruz.github.io/Owner-Dashboard---V10/';
       };
 
+      // ---- Supabase: save current draft board --------------------------------
+      const handleSaveDraft = async () => {
+        if (!window.SupabaseDraftClient) {
+          setSaveMsg('Supabase not configured.');
+          return;
+        }
+        setIsSaving(true);
+        setSaveMsg('Saving…');
+        const { data, error } = await window.SupabaseDraftClient.saveDraftBoard({
+          picks:           draftPicks,
+          sleeperDraftId:  selectedDraft?.draft_id || null,
+          sleeperUsername: sleeperUsername || null,
+          leagueId:        selectedLeague?.id || null,
+          draftYear:       draftYear || null,
+          boardName:       selectedDraft
+            ? `${sleeperUsername} — ${selectedDraft.season}`
+            : `${sleeperUsername} draft board`,
+          numTeams,
+          numRounds,
+          draftType,
+        });
+        setIsSaving(false);
+        if (error) {
+          console.error('Save failed:', error);
+          setSaveMsg('Save failed ✗');
+        } else {
+          setSaveMsg('Saved ✓');
+        }
+        setTimeout(() => setSaveMsg(''), 3000);
+      };
+
+      // ---- Supabase: load saved picks for current Sleeper draft_id -----------
+      const handleLoadSavedDraft = async () => {
+        if (!window.SupabaseDraftClient) {
+          setSaveMsg('Supabase not configured.');
+          return;
+        }
+        const draftId = selectedDraft?.draft_id;
+        if (!draftId) {
+          setSaveMsg('Select a draft first.');
+          setTimeout(() => setSaveMsg(''), 3000);
+          return;
+        }
+        setIsSaving(true);
+        setSaveMsg('Loading saved picks…');
+        const { data, error } = await window.SupabaseDraftClient.loadDraftBoardBySleeperDraftId(draftId);
+        setIsSaving(false);
+        if (error || !data) {
+          setSaveMsg(error ? 'Load failed ✗' : 'No saved board found.');
+          setTimeout(() => setSaveMsg(''), 3000);
+          return;
+        }
+        setDraftPicks(data.picks || {});
+        setSaveMsg('Loaded ✓');
+        setTimeout(() => setSaveMsg(''), 3000);
+      };
+
       const generateDraftOrder = () => {
         const order = [];
         for (let round = 1; round <= numRounds; round++) {
@@ -547,6 +614,28 @@
                 </div>
 
                 <div className="flex gap-2 items-center">
+                  <button
+                    onClick={handleSaveDraft}
+                    disabled={isSaving}
+                    title="Save current draft board to Supabase"
+                    className="px-2 py-1 bg-win-green hover:bg-green-600 disabled:bg-charcoal disabled:cursor-not-allowed text-black rounded text-xs font-bold whitespace-nowrap"
+                  >
+                    {isSaving ? '…' : '💾 Save'}
+                  </button>
+
+                  <button
+                    onClick={handleLoadSavedDraft}
+                    disabled={isSaving}
+                    title="Load previously saved picks from Supabase"
+                    className="px-2 py-1 bg-blue-600 hover:bg-blue-700 disabled:bg-charcoal disabled:cursor-not-allowed text-white rounded text-xs font-bold whitespace-nowrap"
+                  >
+                    {isSaving ? '…' : '📂 Load'}
+                  </button>
+
+                  {saveMsg && (
+                    <span className="text-[10px] text-silver whitespace-nowrap">{saveMsg}</span>
+                  )}
+
                   <button
                     onClick={() => setDraftPicks({})}
                     className="px-2 py-1 bg-loss-red hover:bg-loss-red rounded text-xs font-bold text-white whitespace-nowrap"
