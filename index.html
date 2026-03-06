@@ -10,6 +10,12 @@
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="./csv-loader.js"></script>
+  <!-- Supabase JS v2 (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+  <!-- Supabase project credentials — edit before deploying -->
+  <script src="./supabase-config.js"></script>
+  <!-- Draft board + mock draft Supabase helpers -->
+  <script src="./supabase-draft-client.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -207,6 +213,10 @@
       const [leagueRosters, setLeagueRosters] = useState([]);
       const [leagueUsers, setLeagueUsers] = useState([]);
 
+      // Refs: prevent auto-save from firing during initial load/restore
+      const isRestoringRef = React.useRef(true);
+      const autoSaveTimerRef = React.useRef(null);
+
       // Auto-load on mount if we have URL params
       useEffect(() => {
         if (urlParams.username) {
@@ -335,25 +345,38 @@
 
       const loadDraftPicks = async (draftId) => {
         if (!draftId) return;
-        
+
+        isRestoringRef.current = true;
         try {
           setStatus('Loading draft picks…');
-          
+
+          // 1. Check Supabase for a previously saved board first.
+          //    If the owner already built one, restore it and skip Sleeper.
+          if (window.SupabaseDraftClient) {
+            const { data: saved } = await window.SupabaseDraftClient.loadDraftBoardBySleeperDraftId(draftId);
+            if (saved && saved.picks && Object.keys(saved.picks).length > 0) {
+              setDraftPicks(saved.picks);
+              setStatus(`Board restored ✅ - ${Object.keys(saved.picks).length} picks`);
+              return;
+            }
+          }
+
+          // 2. No saved board — fall back to Sleeper API picks as a baseline.
           // Load Sleeper player database if not already loaded
           if (!sleeperPlayers) {
             setStatus('Loading player database…');
             const playersData = await fetchJSON(`https://api.sleeper.app/v1/players/${SPORT}`);
             setSleeperPlayers(playersData);
           }
-          
+
           const picksData = await fetchJSON(`https://api.sleeper.app/v1/draft/${draftId}/picks`);
-          
+
           if (!picksData || picksData.length === 0) {
             setDraftPicks({});
             setStatus('No picks found for this draft.');
             return;
           }
-          
+
           // Map picks to our format with player data
           const mappedPicks = {};
           picksData.forEach(pick => {
@@ -364,13 +387,15 @@
               pickedBy: pick.picked_by
             };
           });
-          
+
           setDraftPicks(mappedPicks);
           setStatus(`Draft loaded ✅ - ${picksData.length} picks`);
-          
+
         } catch (err) {
           console.error('Error loading picks:', err);
           setStatus('Failed to load draft picks.');
+        } finally {
+          isRestoringRef.current = false;
         }
       };
 
@@ -397,6 +422,35 @@
         // Always navigate back to the dashboard URL
         window.location.href = 'https://skjjcruz.github.io/Owner-Dashboard---V10/';
       };
+
+      // ---- Supabase: stable key for the current board -----------------------
+      // Uses the Sleeper draft_id when available, otherwise a composite key.
+      const getBoardKey = () => {
+        if (selectedDraft?.draft_id) return selectedDraft.draft_id;
+        return `custom_${sleeperUsername || 'anon'}_${selectedLeague?.id || 'none'}`;
+      };
+
+      // ---- Supabase: auto-save on every draftPicks change (debounced 600ms) -
+      useEffect(() => {
+        if (isRestoringRef.current) return;   // skip while loading/restoring
+        if (!window.SupabaseDraftClient) return;
+
+        clearTimeout(autoSaveTimerRef.current);
+        autoSaveTimerRef.current = setTimeout(async () => {
+          const { error } = await window.SupabaseDraftClient.saveDraftBoard({
+            picks:           draftPicks,
+            sleeperDraftId:  getBoardKey(),
+            sleeperUsername: sleeperUsername || null,
+            leagueId:        selectedLeague?.id || null,
+            draftYear:       draftYear || null,
+            boardName:       `${sleeperUsername || 'owner'} — ${draftYear || 'custom'}`,
+            numTeams,
+            numRounds,
+            draftType,
+          });
+          if (error) console.error('[auto-save] Failed:', error.message);
+        }, 600);
+      }, [draftPicks]);
 
       const generateDraftOrder = () => {
         const order = [];
