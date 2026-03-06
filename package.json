@@ -2,11 +2,13 @@
   "name": "owner-dashboard-v5",
   "version": "1.0.0",
   "description": "NFL Draft Dynasty Rankings Dashboard",
+  "type": "module",
   "scripts": {
     "update-data": "node update-player-data.js",
     "restore-backup": "node restore-backup.js",
     "process": "node process-excel-rankings.js",
-    "convert": "node convert-to-csv.js"
+    "convert": "node convert-to-csv.js",
+    "migrate": "node migrate-to-supabase.js"
   },
   "dependencies": {
     "xlsx": "^0.18.5"
