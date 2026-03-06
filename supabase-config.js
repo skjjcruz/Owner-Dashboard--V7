@@ -9,5 +9,5 @@
  * Never put your service_role key here.
  */
 
-const SUPABASE_URL      = 'YOUR_SUPABASE_URL';       // e.g. https://xyzxyz.supabase.co
+const SUPABASE_URL      = 'https://sxshiqyxhhifvtfqawbq.supabase.co';
 const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_KEY';  // Project Settings → API → anon public
