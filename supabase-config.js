@@ -10,4 +10,4 @@
  */
 
 const SUPABASE_URL      = 'https://sxshiqyxhhifvtfqawbq.supabase.co';
-const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_KEY';  // Project Settings → API → anon public
+const SUPABASE_ANON_KEY = 'sb_publishable_5p-lnHKiF1NBaAvoTwO4kA_9bkPrs1-';
