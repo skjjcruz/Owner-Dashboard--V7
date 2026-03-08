@@ -336,8 +336,8 @@
           setSelectedDraft(mostRecent);
           setDraftYear(mostRecent.season);
           
-          // Load picks for this draft (pass fresh rosters/users before React state settles)
-          await loadDraftPicks(mostRecent.draft_id, rostersData, usersData);
+          // Load picks for this draft (pass fresh rosters/users/leagueId before React state settles)
+          await loadDraftPicks(mostRecent.draft_id, rostersData, usersData, leagueId);
           
         } catch (err) {
           console.error('Error loading drafts:', err);
@@ -345,30 +345,51 @@
         }
       };
 
-      const loadDraftPicks = async (draftId, rostersOverride, usersOverride) => {
+      const loadDraftPicks = async (draftId, rostersOverride, usersOverride, leagueIdOverride) => {
         if (!draftId) return;
 
         isRestoringRef.current = true;
         try {
           setStatus('Loading draft picks…');
 
-          // 1. Fetch draft details + compute slot owners (who owns each draft position)
-          const draftDetails = await fetchJSON(`https://api.sleeper.app/v1/draft/${draftId}`);
+          // 1. Fetch draft details + traded picks in parallel to resolve current pick ownership
+          const leagueId = leagueIdOverride !== undefined ? leagueIdOverride : selectedLeague?.id;
+          const [draftDetails, tradedPicksRaw] = await Promise.all([
+            fetchJSON(`https://api.sleeper.app/v1/draft/${draftId}`),
+            leagueId
+              ? fetchJSON(`https://api.sleeper.app/v1/league/${leagueId}/traded_picks`).catch(() => [])
+              : Promise.resolve([])
+          ]);
+
           const slotToRosterId = draftDetails?.slot_to_roster_id || {};
+          const draftSeason = draftDetails?.season;
           const rosters = rostersOverride !== undefined ? rostersOverride : leagueRosters;
           const users = usersOverride !== undefined ? usersOverride : leagueUsers;
+
+          // Filter traded picks to this draft's season
+          const tradedPicks = (tradedPicksRaw || []).filter(tp => String(tp.season) === String(draftSeason));
+
           if (Object.keys(slotToRosterId).length && rosters.length && users.length) {
             const slotOwners = {};
-            Object.entries(slotToRosterId).forEach(([slot, rosterId]) => {
-              const roster = rosters.find(r => r.roster_id === rosterId);
-              if (roster) {
-                const user = users.find(u => u.user_id === roster.owner_id);
-                if (user) {
-                  slotOwners[parseInt(slot)] = {
-                    userId: user.user_id,
-                    displayName: user.display_name || user.username,
-                    avatar: user.avatar
-                  };
+            // Key: "round_slot" so each round can have a different owner after trades
+            Object.entries(slotToRosterId).forEach(([slot, originalRosterId]) => {
+              const slotNum = parseInt(slot);
+              for (let round = 1; round <= numRounds; round++) {
+                // Check if this pick was traded — traded_picks uses roster_id (original team) to identify picks
+                const traded = tradedPicks.find(
+                  tp => tp.roster_id === originalRosterId && parseInt(tp.round) === round
+                );
+                const currentRosterId = traded ? traded.owner_id : originalRosterId;
+                const roster = rosters.find(r => r.roster_id === currentRosterId);
+                if (roster) {
+                  const user = users.find(u => u.user_id === roster.owner_id);
+                  if (user) {
+                    slotOwners[`${round}_${slotNum}`] = {
+                      userId: user.user_id,
+                      displayName: user.display_name || user.username,
+                      avatar: user.avatar
+                    };
+                  }
                 }
               }
             });
@@ -429,7 +450,7 @@
         if (draft) {
           setSelectedDraft(draft);
           setDraftYear(year);
-          loadDraftPicks(draft.draft_id);
+          loadDraftPicks(draft.draft_id, undefined, undefined, selectedLeague?.id);
         }
       };
 
@@ -679,8 +700,8 @@
                         const pickData = draftPicks[pick.key];
                         const isSelected = selectedPickSlot === pick.key;
 
-                        // Slot owner — who owns this draft position regardless of who made the pick
-                        const slotOwner = draftSlotOwners[pick.slot] || null;
+                        // Slot owner — current post-trade owner of this round+slot pick
+                        const slotOwner = draftSlotOwners[`${pick.round}_${pick.slot}`] || null;
                         const isMySlot = slotOwner?.userId === sleeperUserId;
 
                         let player = null;
