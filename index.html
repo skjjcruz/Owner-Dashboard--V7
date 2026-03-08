@@ -243,23 +243,24 @@
           });
       }, []);
 
-      const fetchSleeperUser = async (username) => {
+      const fetchSleeperUser = async (username, season) => {
         if (!username) {
           setStatus('Enter a Sleeper username.');
           return;
         }
-        
+
+        const activeSeason = season || leagueSeason;
         setLoading(true);
-        
+
         try {
           setStatus('Loading Sleeper user…');
           const userData = await fetchJSON(`https://api.sleeper.app/v1/user/${encodeURIComponent(username)}`);
           setSleeperUserId(userData.user_id);
           localStorage.setItem(LS_LOCKED_USERNAME, username);
-          
+
           setStatus('Loading leagues…');
           const leaguesData = await fetchJSON(
-            `https://api.sleeper.app/v1/user/${userData.user_id}/leagues/${SPORT}/${leagueSeason}`
+            `https://api.sleeper.app/v1/user/${userData.user_id}/leagues/${SPORT}/${activeSeason}`
           );
           
           if (!leaguesData || leaguesData.length === 0) {
@@ -573,7 +574,11 @@
                   <label className="text-xs text-silver whitespace-nowrap">League Season:</label>
                   <select
                     value={leagueSeason}
-                    onChange={(e) => setLeagueSeason(e.target.value)}
+                    onChange={(e) => {
+                      const s = e.target.value;
+                      setLeagueSeason(s);
+                      if (sleeperUsername) fetchSleeperUser(sleeperUsername, s);
+                    }}
                     className="bg-charcoal border border-gold/30 rounded px-2 py-1 text-xs text-white"
                   >
                     {['2026', '2025', '2024', '2023'].map(year => (
