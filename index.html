@@ -212,6 +212,7 @@
       const [sleeperPlayers, setSleeperPlayers] = useState(null);
       const [leagueRosters, setLeagueRosters] = useState([]);
       const [leagueUsers, setLeagueUsers] = useState([]);
+      const [draftSlotOwners, setDraftSlotOwners] = useState({}); // { slotNum: {userId, displayName, avatar} }
 
       // Refs: prevent auto-save from firing during initial load/restore
       const isRestoringRef = React.useRef(true);
@@ -334,8 +335,8 @@
           setSelectedDraft(mostRecent);
           setDraftYear(mostRecent.season);
           
-          // Load picks for this draft
-          await loadDraftPicks(mostRecent.draft_id);
+          // Load picks for this draft (pass fresh rosters/users before React state settles)
+          await loadDraftPicks(mostRecent.draft_id, rostersData, usersData);
           
         } catch (err) {
           console.error('Error loading drafts:', err);
@@ -343,14 +344,37 @@
         }
       };
 
-      const loadDraftPicks = async (draftId) => {
+      const loadDraftPicks = async (draftId, rostersOverride, usersOverride) => {
         if (!draftId) return;
 
         isRestoringRef.current = true;
         try {
           setStatus('Loading draft picks…');
 
-          // 1. Check Supabase for a previously saved board first.
+          // 1. Fetch draft details + compute slot owners (who owns each draft position)
+          const draftDetails = await fetchJSON(`https://api.sleeper.app/v1/draft/${draftId}`);
+          const slotToRosterId = draftDetails?.slot_to_roster_id || {};
+          const rosters = rostersOverride !== undefined ? rostersOverride : leagueRosters;
+          const users = usersOverride !== undefined ? usersOverride : leagueUsers;
+          if (Object.keys(slotToRosterId).length && rosters.length && users.length) {
+            const slotOwners = {};
+            Object.entries(slotToRosterId).forEach(([slot, rosterId]) => {
+              const roster = rosters.find(r => r.roster_id === rosterId);
+              if (roster) {
+                const user = users.find(u => u.user_id === roster.owner_id);
+                if (user) {
+                  slotOwners[parseInt(slot)] = {
+                    userId: user.user_id,
+                    displayName: user.display_name || user.username,
+                    avatar: user.avatar
+                  };
+                }
+              }
+            });
+            setDraftSlotOwners(slotOwners);
+          }
+
+          // 2. Check Supabase for a previously saved board first.
           //    If the owner already built one, restore it and skip Sleeper.
           if (window.SupabaseDraftClient) {
             const { data: saved } = await window.SupabaseDraftClient.loadDraftBoardBySleeperDraftId(draftId);
@@ -361,7 +385,7 @@
             }
           }
 
-          // 2. No saved board — fall back to Sleeper API picks as a baseline.
+          // 3. No saved board — fall back to Sleeper API picks as a baseline.
           // Load Sleeper player database if not already loaded
           if (!sleeperPlayers) {
             setStatus('Loading player database…');
@@ -464,6 +488,7 @@
               pick: pickNum,
               overall: (round - 1) * numTeams + team,
               team: pickNum,
+              slot: team, // draft slot (owner's assigned position, 1-N)
               key: `${round}.${String(pickNum).padStart(2, '0')}`
             });
           }
@@ -649,10 +674,13 @@
                         const pickData = draftPicks[pick.key];
                         const isSelected = selectedPickSlot === pick.key;
 
+                        // Slot owner — who owns this draft position regardless of who made the pick
+                        const slotOwner = draftSlotOwners[pick.slot] || null;
+                        const isMySlot = slotOwner?.userId === sleeperUserId;
+
                         let player = null;
                         let displayName = 'Available';
                         let displayDetails = null;
-                        let ownerInfo = null;
                         let isMyPick = false;
                         let playerRank = null;
 
@@ -669,18 +697,8 @@
                                 : 'Unknown Player';
                               displayDetails = pickData.metadata?.position || '';
                             }
-
-                            // Get owner info
-                            const pickedByUserId = pickData.pickedBy;
-                            const owner = leagueUsers.find(u => u.user_id === pickedByUserId);
-                            if (owner) {
-                              ownerInfo = {
-                                name: owner.display_name || owner.username,
-                                avatar: owner.avatar
-                              };
-                              // Check if this is the logged-in user's pick
-                              isMyPick = pickedByUserId === sleeperUserId;
-                            }
+                            // Check if logged-in user actually made this pick
+                            isMyPick = pickData.pickedBy === sleeperUserId;
                           } else {
                             // Mock player data (for manual drafting)
                             player = players.find(p => p.id === pickData);
@@ -692,14 +710,14 @@
                             }
                           }
                         }
-                        
+
                         return (
                           <div
                             key={pick.key}
                             onClick={() => handlePickSlotClick(pick.key)}
                             className={`draft-board-pick p-1 md:p-3 rounded border cursor-pointer transition-all flex items-center gap-1 md:gap-3 ${
                               isSelected ? 'border-gold bg-gold bg-opacity-10' :
-                              isMyPick ? 'border-emerald-600 bg-emerald-900 bg-opacity-40' :
+                              isMySlot ? 'border-red-700 bg-red-950' :
                               pickData ? 'border-gold/30 bg-charcoal' :
                               'border-gold/30 bg-charcoal hover:border-gold/40'
                             }`}
@@ -730,18 +748,19 @@
                                   {displayDetails}
                                 </div>
                               )}
-                              {ownerInfo && (
-                                <div className="flex items-center gap-0.5 md:gap-2 mt-0.5 md:mt-1">
-                                  {ownerInfo.avatar && (
+                              {/* Always show the slot owner subdued — helps all owners see their picks */}
+                              {slotOwner && (
+                                <div className="flex items-center gap-0.5 md:gap-1 mt-0.5">
+                                  {slotOwner.avatar && (
                                     <img
-                                      src={`https://sleepercdn.com/avatars/thumbs/${ownerInfo.avatar}`}
+                                      src={`https://sleepercdn.com/avatars/thumbs/${slotOwner.avatar}`}
                                       alt=""
-                                      className="w-2.5 h-2.5 md:w-5 md:h-5 rounded-full"
+                                      className="w-2 h-2 md:w-3.5 md:h-3.5 rounded-full opacity-50"
                                       onError={(e) => e.target.style.display = 'none'}
                                     />
                                   )}
-                                  <span className="text-[9px] md:text-xs text-silver">
-                                    {isMyPick ? '✓ ' : ''}{ownerInfo.name}
+                                  <span className={`text-[8px] md:text-[10px] ${isMySlot ? 'text-red-300/70' : 'text-silver/40'}`}>
+                                    {slotOwner.displayName}
                                   </span>
                                 </div>
                               )}
